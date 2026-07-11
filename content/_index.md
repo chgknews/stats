@@ -8,6 +8,6 @@ This is the landing page.
 ## Разделы
 
 {{< cards >}}
-  {{< card link="countries" title="Чемпионаты стран" icon="book-open" >}}
-  {{< card link="world" title="Чемпионаты мира" icon="user" >}}
+  {{< card link="countries" title="Чемпионаты стран" icon="flag" >}}
+  {{< card link="world" title="Чемпионаты мира" icon="globe" >}}
 {{< /cards >}}

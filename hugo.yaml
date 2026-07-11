@@ -41,7 +41,7 @@ menu:
 
 params:
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: false
 
   footer:
