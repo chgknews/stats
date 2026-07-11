@@ -1,0 +1,49 @@
+# Hugo configuration file
+title: ChGKStats
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Страны
+      pageRef: /countries
+      weight: 1
+    - name: ЧМ
+      pageRef: /world
+      weight: 2
+    - name: Search
+      weight: 3
+      params:
+        type: search
+    - name: chgknews
+      weight: 4
+      url: "https://t.me/chgknews"
+      params:
+        icon: telegram
+    - name: Рассылка
+      weight: 5
+      url: "https://chgknews.substack.com/"
+      params:
+        icon: mail
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
