@@ -1,12 +1,12 @@
 ---
-title: Чемпионаты мира
+title: Статистика ЧМ
 weight: 1
 bookCollapseSection: true
 ---
 
 # Чемпионаты мира
 
-## Зал славы чемпионата мира <a name="atop"></a>
+## Зал славы <a name="atop"></a>
  - [Команды](#teams)
  - [Игроки](#players)
  - [Чемпионаты по годам](#years)

@@ -5,7 +5,7 @@ title: Строгие синхроны
 # Строго синхронные турниры
 *Список (не)регулярно пополняется*
 
-| Дата | Название | Место |
-| ---- | -------- | ----- |
-| 30 августа | [Friendship Games](https://rating.chgk.info/tournament/13493) | строгий синхрон |
-| 27 сентября | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) | строгий синхрон |
+| Дата | Название | 
+| ---- | -------- | 
+| 30 августа | [Friendship Games](https://rating.chgk.info/tournament/13493) | 
+| 27 сентября | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) | 
