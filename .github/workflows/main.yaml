@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Regenerate calendar and redeploy every Monday at 03:00 UTC (07:00 Yerevan)
+    - cron: "0 3 * * 1"
   workflow_dispatch:
 permissions:
   contents: read
@@ -103,6 +106,14 @@ jobs:
             echo "Installing Node.js dependencies..."
             npm ci
           fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update calendar from Google Sheets
+        run: python3 scripts/generate_calendar.py
 
       - name: Cache restore
         id: cache-restore
