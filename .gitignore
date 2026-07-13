@@ -3,8 +3,5 @@ public/
 resources/
 .hugo_build.lock
 
-# Editor
-.vscode/
-
 # Other
 .DS_Store
