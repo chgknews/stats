@@ -54,6 +54,12 @@ jobs:
           go-version: ${{ env.GO_VERSION }}
           cache: false
       
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ matrix.hugo-version }}
+          extended: true
+
       - name: Install Node.js
         if: hashFiles('package-lock.json') != ''
         uses: actions/setup-node@v6
@@ -129,15 +135,6 @@ jobs:
         with:
           include-hidden-files: false
           path: ./public
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: ${{ matrix.hugo-version }}
-          extended: true
-
-      - name: Run Hugo
-        run: hugo --minify
 
 
   deploy:
