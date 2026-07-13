@@ -14,15 +14,15 @@ params:
 
 ### Команды <a name="teams"></a>
 
-<table class="uk-table uk-table-divider uk-table-hover uk-width-3-4">
+<table>
 <thead>
 <tr>
 <th>Название</th>
 <th>Город</th>
-<th class ="uk-text-center">I</th>
-<th class ="uk-text-center">II</th>
-<th class ="uk-text-center">III</th>
-<th class ="uk-text-center">∑</th>
+<th>I</th>
+<th>II</th>
+<th>III</th>
+<th>∑</th>
 </tr>
 </thead>
 <tbody>
