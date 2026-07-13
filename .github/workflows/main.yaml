@@ -27,11 +27,7 @@ jobs:
 
       # Set the build time zone
       TZ: Asia/Yerevan
-    strategy:
-      matrix:
-        hugo-version:
-          - 'latest'
-          - '0.158.0'
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -58,7 +54,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ matrix.hugo-version }}
+          hugo-version: ${{ HUGO_VERSION }}
           extended: true
 
       - name: Install Node.js
