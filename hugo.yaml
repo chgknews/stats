@@ -20,11 +20,14 @@ markup:
 
 menu:
   home:
+    - name: "Календарь"
+      pageRef: "/tournaments/calendar/"
+      weight: 1
     - name: "Страны"
-      pageRef: "/results/countries/"
+      pageRef: "/tournaments/countries/"
       weight: 10
     - name: "ЧМ"
-      pageRef: "/results/world/"
+      pageRef: "/tournaments/world/"
       weight: 11
     - name: "Тг-канал"
       url: "https://t.me/chgknews"
@@ -63,7 +66,7 @@ params:
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection: results
+  BookSection: tournaments
 
   # (Optional, default none) Set template for commit link for the page. Requires enableGitInfo.
   # When set enabled 'Last Modified' and a link to the commit in the footer of the page.

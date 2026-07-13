@@ -1,8 +1,7 @@
 ---
 title: Чемпионаты мира
 weight: 1
-params:
-  bookFlatSection: true
+bookCollapseSection: true
 ---
 
 # Чемпионаты мира
