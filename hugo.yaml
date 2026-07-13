@@ -1,4 +1,4 @@
-baseURL: http://0.0.0.0:1313/
+baseURL: https://chgknews.github.io/stats/
 title: chgkstats
 theme: hugo-book
 
