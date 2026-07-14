@@ -158,8 +158,8 @@ def event_to_table_row(event: Event, today: date) -> str:
         + " | ".join(
             [
                 format_event_date(event.date_start, event.date_end, today),
-                format_name(event.name, event.link, event.comment),
                 event.place,
+                format_name(event.name, event.link, event.comment),
             ]
         )
         + " |"
