@@ -11,6 +11,7 @@ title: В Европе
 | 5–6 сентября | [Dziki Sopot](https://rating.chgk.info/tournament/13780) | Сопот |
 | 12–13 сентября | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) | Юрмала |
 | 19–20 сентября | [Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии) | Цюрих |
+| 3–4 октября | [Открытый чемпионат Чехии](https://telegram.me/o44praha/248) | Прага |
 | 10–11 октября | [Кубок Паэльи](https://telegram.me/chgknews/1491) (I чемпионат Испании) | Валенсия |
 | 24–25 октября | [Кубок Мюнхгаузена](https://telegram.me/Chgk_lv/193) | Саулкрасти |
 | 24–25 октября | [Открытый кубок Адриатики](https://telegram.me/chgknews/1505) | Будва |

@@ -36,6 +36,7 @@ title: Все турниры
 | 3 октября | [Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832) | Смоленск |
 | 3–4 октября | [Bug Major](https://telegram.me/bugmajor/102) | Брест |
 | 3–4 октября | [Город героев](https://telegram.me/chgknews/1426) | Волгоград |
+| 3–4 октября | [Открытый чемпионат Чехии](https://telegram.me/o44praha/248) | Прага |
 | 9–11 октября | [Caspian Cup](https://telegram.me/chgknews/1407) | Баку |
 | 10–11 октября | [Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108) | Калуга |
 | 10–11 октября | [Кубок Паэльи](https://telegram.me/chgknews/1491) (I чемпионат Испании) | Валенсия |
