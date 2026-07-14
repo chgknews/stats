@@ -7,5 +7,5 @@ title: В Азии
 
 | Дата | Название | Место |
 | ---- | -------- | ----- |
-| 15–16 августа | [Каспийский осётр](https://t.me/chgknews/1439) | Актау |
-| 12–13 сентября | [Nevermore](https://t.me/nevermorequestionsalmaty/90) | Ташкент |
+| 15–16 августа | [Каспийский осётр](https://telegram.me/chgknews/1439) | Актау |
+| 12–13 сентября | [Nevermore](https://telegram.me/nevermorequestionsalmaty/90) | Ташкент |

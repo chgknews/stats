@@ -30,7 +30,7 @@ menu:
       pageRef: "/tournaments/world/"
       weight: 11
     - name: "Тг-канал"
-      url: "https://t.me/chgknews"
+      url: "https://telegram.me/chgknews"
       weight: 12
     - name: "Рассылка"
       url: "https://chgknews.substack.com/"
@@ -39,7 +39,7 @@ menu:
   # before: []
   after:
     - name: "Связаться"
-      url: "http://t.me/perenoel"
+      url: "http://telegram.me/perenoel"
       weight: 10
 
 taxonomies:
