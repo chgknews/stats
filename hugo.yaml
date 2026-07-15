@@ -2,7 +2,7 @@ baseURL: https://chgknews.github.io/stats/
 title: chgkstats
 theme: hugo-book
 
-copyright: "Powered by Hugo, theme – Hugo Book"
+copyright: "Powered by [Hugo](https://gohugo.io/), theme – [Hugo Book](https://github.com/alex-shpak/hugo-book/tree/main)"
 
 # Book configuration
 disablePathToLower: true
@@ -21,20 +21,23 @@ markup:
 menu:
   home:
     - name: "Календарь"
-      pageRef: "/tournaments/calendar/"
+      pageRef: "/info/calendar/"
       weight: 1
     - name: "Страны"
-      pageRef: "/tournaments/countries/"
-      weight: 10
+      pageRef: "/info/countries/"
+      weight: 5
     - name: "ЧМ"
-      pageRef: "/tournaments/world/"
+      pageRef: "/info/world/"
+      weight: 10
+    - name: "Летоись"
+      pageRef: "/info/chronicle/"
       weight: 11
     - name: "Тг-канал"
       url: "https://telegram.me/chgknews"
-      weight: 12
+      weight: 13
     - name: "Рассылка"
       url: "https://chgknews.substack.com/"
-      weight: 13
+      weight: 14
 
   # before: []
   after:
@@ -66,7 +69,7 @@ params:
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection: tournaments
+  BookSection: info
 
   # (Optional, default none) Set template for commit link for the page. Requires enableGitInfo.
   # When set enabled 'Last Modified' and a link to the commit in the footer of the page.
