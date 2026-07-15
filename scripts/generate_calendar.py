@@ -23,7 +23,7 @@ SHEET_CSV_URL = (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CALENDAR_DIR = REPO_ROOT / "content" / "tournaments" / "calendar"
+CALENDAR_DIR = REPO_ROOT / "content" / "info" / "calendar"
 INDEX_WINDOW_DAYS = 45
 
 MONTHS_GENITIVE = {
