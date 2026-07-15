@@ -29,9 +29,6 @@ menu:
     - name: "ЧМ"
       pageRef: "/info/world/"
       weight: 10
-    - name: "Летоись"
-      pageRef: "/info/chronicle/"
-      weight: 11
     - name: "Тг-канал"
       url: "https://telegram.me/chgknews"
       weight: 13
