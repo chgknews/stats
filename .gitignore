@@ -5,3 +5,4 @@ resources/
 
 # Other
 .DS_Store
+credentials.json
