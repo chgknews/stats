@@ -8,4 +8,5 @@ title: В Азии
 | Дата | Место | Название |
 | ---- | -------- | ----- |
 | 15–16 августа | Актау | [Каспийский осётр](https://telegram.me/chgknews/1439) |
-| 12–13 сентября | Ташкент | [Nevermore](https://telegram.me/nevermorequestionsalmaty/90) |
+| 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
+| 10 октября | Тель-Авив | [Чемпионат Израиля](https://rating.chgk.info/tournament/13979) |
