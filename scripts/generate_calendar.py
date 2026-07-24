@@ -211,6 +211,7 @@ OUTPUTS: list[tuple[str, Callable[[Event, date], bool]]] = [
     ("ukraine.md", lambda event, today: has_type(event, "ukraine")),
     ("caucasus.md", lambda event, today: has_type(event, "caucasus")),
     ("america.md", lambda event, today: has_type(event, "america")),
+    ("near_east.md", lambda event, today: has_type(event, "near_east")),
     ("synch.md", lambda event, today: has_type(event, "synch")),
     ("youth.md", lambda event, today: has_type(event, "youth")),
     ("school.md", lambda event, today: has_type(event, "school")),
