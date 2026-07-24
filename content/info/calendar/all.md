@@ -1,5 +1,5 @@
 ---
-weight: 11
+weight: 12
 title: Все турниры
 ---
 # Все турниры
@@ -25,7 +25,7 @@ title: Все турниры
 | 12–13 сентября | Оксфорд | [Nevermore: Oxford](https://rating.chgk.info/tournament/14010) |
 | 12–13 сентября | Сан-Хосе | [Nevermore: San José](https://rating.chgk.info/tournament/14009) |
 | 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
-| 12–13 сентября | Екатеринбург | [Nevermore: Yekaterinburg](https://rating.chgk.info/tournament/14007) |
+| 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
 | 12–13 сентября | Юрмала | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) |
 | 12–13 сентября | Ивано-Франковск | [Батькiвськi збори](https://telegram.me/chgknews/1445) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди взрослых) |
@@ -35,7 +35,7 @@ title: Все турниры
 | 26–27 сентября | Уфа | [Турнир трёх шурупов](https://telegram.me/chgknews/1418) |
 | 26–27 сентября | онлайн | [Чемпионат Украины](https://telegram.me/LigaUK/932) (на украинском языке) |
 | 27 сентября | [площадки](https://rating.chgk.info/tournament/13156/requests) | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) (строгий синхрон) |
-| 2–4 октября | Ярославль | [Octobeardest](https://rating.chgk.info/tournament/13712) |
+| 2–4 октября | Ярославль | [Octobearfest](https://rating.chgk.info/tournament/13712) |
 | 3 октября | Смоленск | [Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832) |
 | 3–4 октября | Брест | [Bug Major](https://telegram.me/bugmajor/102) |
 | 3–4 октября | Волгоград | [Город героев](https://telegram.me/chgknews/1426) |

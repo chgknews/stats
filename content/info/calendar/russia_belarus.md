@@ -15,7 +15,7 @@ title: В Беларуси и России
 | 28–30 августа | Самара | [Полёт мыслей](https://rating.chgk.info/tournament/13880) |
 | 12–13 сентября | Санкт-Петербург | [Nevermore](https://rating.chgk.info/tournament/13176) |
 | 12–13 сентября | Минск | [Nevermore: Minsk](https://rating.chgk.info/tournament/14008) |
-| 12–13 сентября | Екатеринбург | [Nevermore: Yekaterinburg](https://rating.chgk.info/tournament/14007) |
+| 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди взрослых) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди школьников) |
 | 26–27 сентября | Красноярск | [Енисейская знать](https://rating.chgk.info/tournament/13868) |

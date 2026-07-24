@@ -1,5 +1,5 @@
 ---
-weight: 9
+weight: 10
 title: Молодёжные турниры
 ---
 # Молодёжные турниры
@@ -7,4 +7,4 @@ title: Молодёжные турниры
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 2–4 октября | Ярославль | [Octobeardest](https://rating.chgk.info/tournament/13712) |
+| 2–4 октября | Ярославль | [Octobearfest](https://rating.chgk.info/tournament/13712) |
