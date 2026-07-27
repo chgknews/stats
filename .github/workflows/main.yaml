@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # Regenerate calendar and redeploy every Monday at 03:00 UTC (07:00 Yerevan)
-    - cron: "0 3 * * 1"
+    # Regenerate calendar and redeploy every Sunday at 03:00 UTC (07:00 Yerevan)
+    - cron: "0 20 * * 7"
   workflow_dispatch:
 permissions:
   contents: read
