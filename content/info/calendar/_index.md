@@ -17,3 +17,14 @@ title: Календарь
 | 28–30 августа | Самара | [Полёт мыслей](https://rating.chgk.info/tournament/13880) |
 | 30 августа | [площадки](https://rating.chgk.info/tournament/13493/requests) | [Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
+| 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке) |
+| 12–13 сентября | Санкт-Петербург | [Nevermore](https://rating.chgk.info/tournament/13176) |
+| 12–13 сентября | Тбилиси | [Nevermore-6: Tbilisi](https://telegram.me/nevermorequestionsbtm/114) |
+| 12–13 сентября | Минск | [Nevermore: Minsk](https://rating.chgk.info/tournament/14008) |
+| 12–13 сентября | Сан-Хосе | [Nevermore: San José](https://rating.chgk.info/tournament/14009) |
+| 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
+| 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
+| 12–13 сентября | Юрмала | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) |
+| 12–13 сентября | Ивано-Франковск | [Батькiвськi збори](https://telegram.me/chgknews/1445) |
+| 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди взрослых) |
+| 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди школьников) |

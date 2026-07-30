@@ -16,11 +16,10 @@ title: Все турниры
 | 28–30 августа | Самара | [Полёт мыслей](https://rating.chgk.info/tournament/13880) |
 | 30 августа | [площадки](https://rating.chgk.info/tournament/13493/requests) | [Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
-| 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) |
+| 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке) |
 | 12–13 сентября | Санкт-Петербург | [Nevermore](https://rating.chgk.info/tournament/13176) |
 | 12–13 сентября | Тбилиси | [Nevermore-6: Tbilisi](https://telegram.me/nevermorequestionsbtm/114) |
 | 12–13 сентября | Минск | [Nevermore: Minsk](https://rating.chgk.info/tournament/14008) |
-| 12–13 сентября | Оксфорд | [Nevermore: Oxford](https://rating.chgk.info/tournament/14010) |
 | 12–13 сентября | Сан-Хосе | [Nevermore: San José](https://rating.chgk.info/tournament/14009) |
 | 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
 | 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
@@ -41,12 +40,12 @@ title: Все турниры
 | 9–11 октября | Баку | [Caspian Cup](https://telegram.me/chgknews/1407) |
 | 10 октября | Тель-Авив | [Чемпионат Израиля](https://rating.chgk.info/tournament/13979) |
 | 10–11 октября | Калуга | [Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108) |
-| 10–11 октября | Валенсия | [Кубок Паэльи](https://telegram.me/chgknews/1491) (I чемпионат Испании) |
+| 10–11 октября | Валенсия | [Кубок Паэльи](https://telegram.me/chgknews/1491) (чемпионат Испании) |
 | 17–18 октября | Владимир | [Владимир Open](https://telegram.me/chgknews/1496) |
 | 24–25 октября | Саулкрасти | [Кубок Мюнхгаузена](https://telegram.me/Chgk_lv/193) |
 | 24–25 октября | Минск | [Нестерка](https://telegram.me/chgknews/1490) |
 | 24–25 октября | Будва | [Открытый кубок Адриатики](https://telegram.me/chgknews/1505) |
-| 24–25 октября | пока неизвестно | Чемпионат США |
+| 24–25 октября | Филадельфия | [Чемпионат США](https://rating.chgk.info/tournament/14044) |
 | 6–8 ноября | Мюнхен | [Чемпионат Германии](https://telegram.me/chgknews/1457) |
 | 14–15 ноября | Белград | [Балканфест](https://t.me/balkanfest/2337) |
 | 21–22 ноября | Барселона | [Открытый чемпионат Барселоны](https://telegram.me/chgknews/1499) |

@@ -9,11 +9,10 @@ title: В Европе
 | ---- | -------- | ----- |
 | 21–23 августа | Байрсброн | [Умлаут на каникулах](https://telegram.me/chgknews/1420) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
-| 12–13 сентября | Оксфорд | [Nevermore: Oxford](https://rating.chgk.info/tournament/14010) |
 | 12–13 сентября | Юрмала | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) |
 | 19–20 сентября | Цюрих | [Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии) |
 | 3–4 октября | Прага | [Открытый чемпионат Чехии](https://telegram.me/o44praha/248) |
-| 10–11 октября | Валенсия | [Кубок Паэльи](https://telegram.me/chgknews/1491) (I чемпионат Испании) |
+| 10–11 октября | Валенсия | [Кубок Паэльи](https://telegram.me/chgknews/1491) (чемпионат Испании) |
 | 24–25 октября | Саулкрасти | [Кубок Мюнхгаузена](https://telegram.me/Chgk_lv/193) |
 | 24–25 октября | Будва | [Открытый кубок Адриатики](https://telegram.me/chgknews/1505) |
 | 6–8 ноября | Мюнхен | [Чемпионат Германии](https://telegram.me/chgknews/1457) |
