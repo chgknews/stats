@@ -143,7 +143,7 @@ weight: 1
 
 <small>*[Наверх](#atop)*</small>
 
-## Игроки <a name="players"></a>
+### Игроки <a name="players"></a>
 
 <table class="uk-table uk-table-divider uk-table-hover uk-width-2-3">
 <thead>

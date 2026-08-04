@@ -76,7 +76,7 @@ weight: 1
 <td>5</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/98778">Council faces the wrath of the tulip grove defende</a></td>
+<td><a href="https://rating.chgk.info/teams/98778">Council faces the wrath of the tulip grove defenders</a></td>
 <td>сборная</td>
 <td>1</td>
 <td>1</td>
