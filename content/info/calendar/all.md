@@ -21,14 +21,14 @@ title: Все турниры
 | 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
 | 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
 | 12–13 сентября | Юрмала | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) |
-| 12–13 сентября | Ивано-Франковск | [Батькiвськi збори](https://telegram.me/chgknews/1445) |
+| 12–13 сентября | Ивано-Франковск | [Батькiвськi збори](https://telegram.me/chgknews/1445) (на украинском языке) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди взрослых) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди школьников) |
 | 19–20 сентября | Цюрих | [Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии) |
-| 26–27 сентября | Красноярск | [Енисейская знать](https://rating.chgk.info/tournament/13868) |
+| 26–27 сентября | Красноярск | [Енисейская знать](https://t.me/chgknews/1528) |
 | 26–27 сентября | Уфа | [Турнир трёх шурупов](https://telegram.me/chgknews/1418) |
 | 26–27 сентября | онлайн | [Чемпионат Украины](https://telegram.me/LigaUK/932) (на украинском языке) |
-| 27 сентября | [площадки](https://rating.chgk.info/tournament/13156/requests) | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) (строгий синхрон) |
+| 27 сентября | [площадки](https://rating.chgk.info/tournament/13156/requests) | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) |
 | 2–4 октября | Ярославль | [Octobearfest](https://rating.chgk.info/tournament/13712) |
 | 3 октября | Смоленск | [Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832) |
 | 3–4 октября | Брест | [Bug Major](https://telegram.me/bugmajor/102) |
@@ -48,6 +48,6 @@ title: Все турниры
 | 14–15 ноября | Белград | [Балканфест](https://t.me/balkanfest/2337) |
 | 21–22 ноября | Барселона | [Открытый чемпионат Барселоны](https://telegram.me/chgknews/1499) |
 | 8–10 января 2027 года | Вроцлав | [Сугробушки](https://telegram.me/turnirushki/222) |
-| 15 мая 2027 года | Хельсинки | XXI Чемпионат Финляндии (на русском языке) |
+| 15 мая 2027 года | Хельсинки | XXI Чемпионат Финляндии |
 | 21–24 мая 2027 года | Кемер | [Турецкий берег](https://rating.chgk.info/tournament/13720) |
 | 27 июня 2027 года | Тбилиси | XXXII Чемпионат Грузии (на грузинском языке) |
