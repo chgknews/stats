@@ -8,10 +8,8 @@ title: Календарь
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 15–16 августа | Актау | [Каспийский осётр](https://telegram.me/chgknews/1439) |
 | 21–23 августа | Байрсброн | [Умлаут на каникулах](https://telegram.me/chgknews/1420) |
 | 22–23 августа | Витебск | [Кубок княгини Ольги](https://vk.com/wall-89780700_22420) |
-| 28–30 августа | Самара | [Полёт мыслей](https://rating.chgk.info/tournament/13880) |
 | 30 августа | [площадки](https://rating.chgk.info/tournament/13493/requests) | [Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
 | 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке) |
@@ -26,3 +24,12 @@ title: Календарь
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди взрослых) |
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди школьников) |
 | 19–20 сентября | Цюрих | [Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии) |
+| 26–27 сентября | Красноярск | [Енисейская знать](https://t.me/chgknews/1528) |
+| 26–27 сентября | Уфа | [Турнир трёх шурупов](https://telegram.me/chgknews/1418) |
+| 26–27 сентября | онлайн | [Чемпионат Украины](https://telegram.me/LigaUK/932) (на украинском языке) |
+| 27 сентября | [площадки](https://rating.chgk.info/tournament/13156/requests) | [Гёмбёц — 9](https://rating.chgk.info/tournament/13156) |
+| 2–4 октября | Ярославль | [Octobearfest](https://t.me/chgknews/1530) |
+| 3 октября | Смоленск | [Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832) |
+| 3–4 октября | Брест | [Bug Major](https://telegram.me/bugmajor/102) |
+| 3–4 октября | Волгоград | [Город героев](https://telegram.me/chgknews/1426) |
+| 3–4 октября | Прага | [Открытый чемпионат Чехии](https://telegram.me/o44praha/248) |

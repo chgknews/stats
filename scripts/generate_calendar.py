@@ -8,6 +8,7 @@ import csv
 import io
 import re
 import sys
+from collections import defaultdict
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -42,6 +43,22 @@ MONTHS_GENITIVE = {
 }
 
 EMBEDDED_LINK_RE = re.compile(r"\s*\(https?://[^)]+\)\s*$")
+TOKEN_SPLIT_RE = re.compile(r"[,;|]+|\s+")
+
+AGE_TAGS = frozenset({"youth", "student", "school"})
+GAME_TAGS = frozenset({"ssi", "kvrm"})
+GEOGRAPHY_TAGS = frozenset(
+    {
+        "russia_belarus",
+        "europe",
+        "asia",
+        "ukraine",
+        "caucasus",
+        "america",
+        "near_east",
+        "synch",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -53,7 +70,9 @@ class Event:
     link: str
     comment: str
     champs: bool
-    types: frozenset[str]
+    geographies: frozenset[str]
+    ages: frozenset[str]
+    games: frozenset[str]
 
 
 def parse_date(value: str) -> date | None:
@@ -68,27 +87,56 @@ def parse_date(value: str) -> date | None:
     return None
 
 
-def parse_types(value: str) -> frozenset[str]:
-    parts = re.split(r"[,;|]+|\s+", value.strip().lower())
-    return frozenset(part for part in parts if part)
+def parse_tokens(*values: str) -> list[str]:
+    tokens: list[str] = []
+    for value in values:
+        for part in TOKEN_SPLIT_RE.split(value.strip().lower()):
+            if part:
+                tokens.append(part)
+    return tokens
 
 
 def is_yes(value: str) -> bool:
     return value.strip().lower() == "yes"
 
 
-def parse_events(rows: list[dict[str, str]]) -> list[Event]:
+def first_value(columns: dict[str, list[str]], *keys: str) -> str:
+    for key in keys:
+        for value in columns.get(key, []):
+            if value.strip():
+                return value.strip()
+    return ""
+
+
+def classify_tags(columns: dict[str, list[str]]) -> tuple[frozenset[str], frozenset[str], frozenset[str]]:
+    geographies = set(parse_tokens(*columns.get("geography", [])))
+    ages = set(parse_tokens(*columns.get("age", [])))
+    games = set(parse_tokens(*columns.get("game", [])))
+
+    # Old sheets kept mixed flags in a single "type" column.
+    for token in parse_tokens(*columns.get("type", [])):
+        if token in AGE_TAGS:
+            ages.add(token)
+        elif token in GAME_TAGS:
+            games.add(token)
+        else:
+            geographies.add(token)
+
+    return frozenset(geographies), frozenset(ages), frozenset(games)
+
+
+def parse_events(rows: list[dict[str, list[str]]]) -> list[Event]:
     events: list[Event] = []
 
     for row in rows:
-        date_start = parse_date(row.get("date_start", ""))
-        date_end = parse_date(row.get("date_end", "")) or date_start
-        name = (row.get("name") or "").strip()
-        place = (row.get("place") or "").strip()
-        link = (row.get("link") or "").strip()
-        comment = (row.get("comment") or "").strip()
-        champs = is_yes(row.get("champ?", "") or row.get("champs", ""))
-        types = parse_types(row.get("type", ""))
+        date_start = parse_date(first_value(row, "date_start"))
+        date_end = parse_date(first_value(row, "date_end")) or date_start
+        name = first_value(row, "name")
+        place = first_value(row, "place")
+        link = first_value(row, "link")
+        comment = first_value(row, "comment")
+        champs = is_yes(first_value(row, "champ?", "champs", "champs?"))
+        geographies, ages, games = classify_tags(row)
 
         if not date_start or not name:
             continue
@@ -105,7 +153,9 @@ def parse_events(rows: list[dict[str, str]]) -> list[Event]:
                 link=link,
                 comment=comment,
                 champs=champs,
-                types=types,
+                geographies=geographies,
+                ages=ages,
+                games=games,
             )
         )
 
@@ -189,13 +239,38 @@ def fetch_sheet_csv(url: str = SHEET_CSV_URL) -> str:
         return response.read().decode("utf-8-sig")
 
 
-def load_rows(csv_text: str) -> list[dict[str, str]]:
-    reader = csv.DictReader(io.StringIO(csv_text))
-    return [dict(row) for row in reader]
+def load_rows(csv_text: str) -> list[dict[str, list[str]]]:
+    reader = csv.reader(io.StringIO(csv_text))
+    try:
+        raw_header = next(reader)
+    except StopIteration:
+        return []
+
+    header = [name.strip().lower() for name in raw_header]
+    rows: list[dict[str, list[str]]] = []
+
+    for raw_row in reader:
+        if not any(cell.strip() for cell in raw_row):
+            continue
+        columns: dict[str, list[str]] = defaultdict(list)
+        for key, value in zip(header, raw_row):
+            if key:
+                columns[key].append(value.strip())
+        rows.append(columns)
+
+    return rows
 
 
-def has_type(event: Event, type_name: str) -> bool:
-    return type_name in event.types
+def has_geography(event: Event, geography: str) -> bool:
+    return geography in event.geographies
+
+
+def has_age(event: Event, age: str) -> bool:
+    return age in event.ages
+
+
+def has_game(event: Event, game: str) -> bool:
+    return game in event.games
 
 
 def within_index_window(event: Event, today: date) -> bool:
@@ -205,16 +280,18 @@ def within_index_window(event: Event, today: date) -> bool:
 OUTPUTS: list[tuple[str, Callable[[Event, date], bool]]] = [
     ("_index.md", within_index_window),
     ("champs.md", lambda event, today: event.champs),
-    ("russia_belarus.md", lambda event, today: has_type(event, "russia_belarus")),
-    ("europe.md", lambda event, today: has_type(event, "europe")),
-    ("asia.md", lambda event, today: has_type(event, "asia")),
-    ("ukraine.md", lambda event, today: has_type(event, "ukraine")),
-    ("caucasus.md", lambda event, today: has_type(event, "caucasus")),
-    ("america.md", lambda event, today: has_type(event, "america")),
-    ("near_east.md", lambda event, today: has_type(event, "near_east")),
-    ("synch.md", lambda event, today: has_type(event, "synch")),
-    ("youth.md", lambda event, today: has_type(event, "youth")),
-    ("school.md", lambda event, today: has_type(event, "school")),
+    ("russia_belarus.md", lambda event, today: has_geography(event, "russia_belarus")),
+    ("europe.md", lambda event, today: has_geography(event, "europe")),
+    ("asia.md", lambda event, today: has_geography(event, "asia")),
+    ("ukraine.md", lambda event, today: has_geography(event, "ukraine")),
+    ("caucasus.md", lambda event, today: has_geography(event, "caucasus")),
+    ("america.md", lambda event, today: has_geography(event, "america")),
+    ("near_east.md", lambda event, today: has_geography(event, "near_east")),
+    ("synch.md", lambda event, today: has_geography(event, "synch")),
+    ("youth.md", lambda event, today: has_age(event, "youth")),
+    ("student.md", lambda event, today: has_age(event, "student")),
+    ("school.md", lambda event, today: has_age(event, "school")),
+    ("svoyak.md", lambda event, today: has_game(event, "ssi")),
     ("all.md", lambda event, today: True),
 ]
 
@@ -237,6 +314,13 @@ def generate_all(
     return result
 
 
+def sheet_csv_url(gid: str) -> str:
+    return (
+        f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}/export"
+        f"?format=csv&gid={gid}"
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Generate calendar markdown files from Google Sheets."
@@ -251,6 +335,11 @@ def main() -> int:
         "--csv",
         type=Path,
         help="Read events from a local CSV file instead of Google Sheets",
+    )
+    parser.add_argument(
+        "--gid",
+        default=SHEET_GID,
+        help=f"Google Sheet tab gid (default: {SHEET_GID})",
     )
     parser.add_argument(
         "--date",
@@ -278,7 +367,7 @@ def main() -> int:
         csv_text = (
             args.csv.read_text(encoding="utf-8-sig")
             if args.csv
-            else fetch_sheet_csv()
+            else fetch_sheet_csv(sheet_csv_url(args.gid))
         )
     except (OSError, URLError) as exc:
         print(f"Failed to read sheet data: {exc}", file=sys.stderr)

@@ -9,5 +9,4 @@ title: На Южном Кавказе
 | ---- | -------- | ----- |
 | 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке) |
 | 12–13 сентября | Тбилиси | [Nevermore-6: Tbilisi](https://telegram.me/nevermorequestionsbtm/114) |
-| 9–11 октября | Баку | [Caspian Cup](https://telegram.me/chgknews/1407) |
 | 27 июня 2027 года | Тбилиси | XXXII Чемпионат Грузии (на грузинском языке) |

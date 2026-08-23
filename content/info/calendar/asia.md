@@ -7,5 +7,5 @@ title: В Азии
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 15–16 августа | Актау | [Каспийский осётр](https://telegram.me/chgknews/1439) |
 | 12–13 сентября | Ташкент | [Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90) |
+| 9–11 октября | Баку | [Caspian Cup](https://telegram.me/chgknews/1407) |

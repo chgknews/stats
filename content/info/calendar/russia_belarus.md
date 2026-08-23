@@ -8,7 +8,6 @@ title: В Беларуси и России
 | Дата | Место | Название |
 | ---- | -------- | ----- |
 | 22–23 августа | Витебск | [Кубок княгини Ольги](https://vk.com/wall-89780700_22420) |
-| 28–30 августа | Самара | [Полёт мыслей](https://rating.chgk.info/tournament/13880) |
 | 12–13 сентября | Санкт-Петербург | [Nevermore](https://rating.chgk.info/tournament/13176) |
 | 12–13 сентября | Минск | [Nevermore: Minsk](https://rating.chgk.info/tournament/14008) |
 | 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |
@@ -16,9 +15,14 @@ title: В Беларуси и России
 | 12–13 сентября | Москва | Чемпионат России по спортивному ЧГК (среди школьников) |
 | 26–27 сентября | Красноярск | [Енисейская знать](https://t.me/chgknews/1528) |
 | 26–27 сентября | Уфа | [Турнир трёх шурупов](https://telegram.me/chgknews/1418) |
+| 2–4 октября | Ярославль | [Octobearfest](https://t.me/chgknews/1530) |
 | 3 октября | Смоленск | [Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832) |
 | 3–4 октября | Брест | [Bug Major](https://telegram.me/bugmajor/102) |
 | 3–4 октября | Волгоград | [Город героев](https://telegram.me/chgknews/1426) |
 | 10–11 октября | Калуга | [Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108) |
 | 17–18 октября | Владимир | [Владимир Open](https://telegram.me/chgknews/1496) |
+| 24–25 октября | Архангельск | [Говоря](https://rating.chgk.info/tournament/14086) |
 | 24–25 октября | Минск | [Нестерка](https://telegram.me/chgknews/1490) |
+| 24–25 октября | Москва | [Сретенка](https://rating.chgk.info/tournament/14106) («зеркало» Нестерки) |
+| 31 октября–1 ноября | Нижний Новгород | [НижВышФест](https://rating.chgk.info/tournament/14143) |
+| 13–15 ноября | Санкт-Петербург | [Полифест](https://t.me/polyfest24/413) |
