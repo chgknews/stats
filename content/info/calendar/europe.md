@@ -7,7 +7,6 @@ title: В Европе
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 21–23 августа | Байрсброн | [Умлаут на каникулах](https://telegram.me/chgknews/1420) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
 | 12–13 сентября | Юрмала | [Бархатный сезон](https://telegram.me/BS_Jurmala/29) |
 | 19–20 сентября | Цюрих | [Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии) |

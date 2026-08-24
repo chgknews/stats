@@ -23,9 +23,9 @@ from google.oauth2 import service_account
 # ----------------------------------------------------------------------
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
 SERVICE_ACCOUNT_FILE = 'credentials.json'   # путь к вашему JSON‑ключу
-DOCUMENT_ID = '1wOn8Ci2mTDaynyCGj_jJwWhfTrBeYDmMdKMobIaakzU'   # ID из ссылки
-OUTPUT_FILE = 'content/info/chronicle/2025.md'
-YEAR = 2025
+DOCUMENT_ID = '1yY7-VlyTSo_EhecwBUIdTx77akdrYpsCOW_0tod0JQI'   # ID из ссылки
+YEAR = 2026
+OUTPUT_FILE = f'content/info/chronicle/{YEAR}.md'
 
 # ----------------------------------------------------------------------
 # Конвертация элементов Docs в HTML (сохраняем форматирование)
@@ -159,6 +159,8 @@ def get_html_from_cell(cell, content):
                 else:
                     if style.get('bold'):
                         para_html.append(f'<b>{text}</b>')
+                    elif style.get('italic'):
+                        para_html.append(f'<i>{text}</i>')
                     else:
                         para_html.append(text)
             # Соединяем содержимое абзаца и добавляем <br> если есть несколько абзацев
@@ -168,7 +170,7 @@ def get_html_from_cell(cell, content):
                 if combined:
                     html_parts.append(combined)
     # Разделяем абзацы тегом <br> (так как в ячейке может быть несколько абзацев)
-    return '<br>'.join(html_parts)
+    return '<br><br>'.join(html_parts)
 
 # ----------------------------------------------------------------------
 # Генерация HTML‑таблицы (аналогично предыдущему шаблону)

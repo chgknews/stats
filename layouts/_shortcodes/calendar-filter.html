@@ -1,0 +1,75 @@
+{{ $events := slice }}
+{{ with site.Data.calendar }}
+  {{ with .events }}{{ $events = . }}{{ end }}
+{{ end }}
+
+<div class="calendar-filter" id="calendar-filter">
+  <div class="calendar-filter__toolbar">
+    <button type="button" class="book-btn" id="calendar-filter-toggle" aria-expanded="true" aria-controls="calendar-filter-form">Скрыть фильтры</button>
+    <button type="reset" class="book-btn" form="calendar-filter-form">Сбросить</button>
+    <span class="calendar-filter__count" id="calendar-filter-count"></span>
+  </div>
+
+  <form class="calendar-filter__form" id="calendar-filter-form">
+    <fieldset class="calendar-filter__group">
+      <legend>География</legend>
+      <div class="calendar-filter__options">
+        <label><input type="checkbox" name="geo" value="russia_belarus"> Беларусь и Россия</label>
+        <label><input type="checkbox" name="geo" value="europe"> Европа</label>
+        <label><input type="checkbox" name="geo" value="ukraine"> Украина</label>
+        <label><input type="checkbox" name="geo" value="asia"> Азия</label>
+        <label><input type="checkbox" name="geo" value="caucasus"> Южный Кавказ</label>
+        <label><input type="checkbox" name="geo" value="near_east"> Ближний Восток</label>
+        <label><input type="checkbox" name="geo" value="america"> Северная Америка</label>
+        <label><input type="checkbox" name="geo" value="synch"> Строгие синхроны</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="calendar-filter__group">
+      <legend>Возраст</legend>
+      <div class="calendar-filter__options">
+        <label><input type="checkbox" name="age" value="school"> Школьные</label>
+        <label><input type="checkbox" name="age" value="student"> Студенческие (до 23)</label>
+        <label><input type="checkbox" name="age" value="youth"> Молодёжные (до 30)</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="calendar-filter__group">
+      <legend>Ещё</legend>
+      <div class="calendar-filter__options">
+        <label><input type="checkbox" name="game" value="ssi"> Своя игра</label>
+        <label><input type="checkbox" name="champ" value="1"> Чемпионаты стран</label>
+      </div>
+    </fieldset>
+  </form>
+
+  <table class="calendar-filter__table">
+    <thead>
+      <tr>
+        <th>Дата</th>
+        <th>Место</th>
+        <th>Название</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $events }}
+      <tr
+        data-geo="{{ delimit .geography " " }}"
+        data-age="{{ delimit .age " " }}"
+        data-game="{{ delimit .game " " }}"
+        data-champ="{{ cond .champ "1" "0" }}"
+      >
+        <td>{{ .date }}</td>
+        <td>{{ .place_html | safeHTML }}</td>
+        <td>{{ .name_html | safeHTML }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <p class="calendar-filter__empty" id="calendar-filter-empty" hidden>Нет турниров, подходящих под выбранные фильтры.</p>
+</div>
+
+{{ with resources.Get "calendar-filter.js" | resources.Minify }}
+<script>{{ .Content | safeJS }}</script>
+{{ end }}

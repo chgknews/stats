@@ -7,7 +7,6 @@ title: В Беларуси и России
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 22–23 августа | Витебск | [Кубок княгини Ольги](https://vk.com/wall-89780700_22420) |
 | 12–13 сентября | Санкт-Петербург | [Nevermore](https://rating.chgk.info/tournament/13176) |
 | 12–13 сентября | Минск | [Nevermore: Minsk](https://rating.chgk.info/tournament/14008) |
 | 12–13 сентября | Екатеринбург | [Nevermore: Ural](https://rating.chgk.info/tournament/14007) |

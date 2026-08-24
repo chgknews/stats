@@ -7,8 +7,6 @@ title: Все турниры
 
 | Дата | Место | Название |
 | ---- | -------- | ----- |
-| 21–23 августа | Байрсброн | [Умлаут на каникулах](https://telegram.me/chgknews/1420) |
-| 22–23 августа | Витебск | [Кубок княгини Ольги](https://vk.com/wall-89780700_22420) |
 | 30 августа | [площадки](https://rating.chgk.info/tournament/13493/requests) | [Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон) |
 | 5–6 сентября | Сопот | [Dziki Sopot](https://rating.chgk.info/tournament/13780) |
 | 12 сентября | Гюмри | [Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке) |

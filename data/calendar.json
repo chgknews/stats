@@ -1,0 +1,762 @@
+{
+  "generated": "2026-08-24",
+  "events": [
+    {
+      "date": "30 августа",
+      "date_start": "2026-08-30",
+      "date_end": "2026-08-30",
+      "place": "[площадки](https://rating.chgk.info/tournament/13493/requests)",
+      "name": "[Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournament/13493/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13493\">Friendship Games</a> (строгий синхрон)",
+      "geography": [
+        "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "5–6 сентября",
+      "date_start": "2026-09-05",
+      "date_end": "2026-09-06",
+      "place": "Сопот",
+      "name": "[Dziki Sopot](https://rating.chgk.info/tournament/13780)",
+      "place_html": "Сопот",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13780\">Dziki Sopot</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-12",
+      "place": "Гюмри",
+      "name": "[Открытый чемпионат Армении](https://telegram.me/ChgkgamesArmenia/471) (на русском языке)",
+      "place_html": "Гюмри",
+      "name_html": "<a href=\"https://telegram.me/ChgkgamesArmenia/471\">Открытый чемпионат Армении</a> (на русском языке)",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Санкт-Петербург",
+      "name": "[Nevermore](https://rating.chgk.info/tournament/13176)",
+      "place_html": "Санкт-Петербург",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13176\">Nevermore</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Тбилиси",
+      "name": "[Nevermore-6: Tbilisi](https://telegram.me/nevermorequestionsbtm/114)",
+      "place_html": "Тбилиси",
+      "name_html": "<a href=\"https://telegram.me/nevermorequestionsbtm/114\">Nevermore-6: Tbilisi</a>",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Минск",
+      "name": "[Nevermore: Minsk](https://rating.chgk.info/tournament/14008)",
+      "place_html": "Минск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14008\">Nevermore: Minsk</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Сан-Хосе",
+      "name": "[Nevermore: San José](https://rating.chgk.info/tournament/14009)",
+      "place_html": "Сан-Хосе",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14009\">Nevermore: San José</a>",
+      "geography": [
+        "america"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Ташкент",
+      "name": "[Nevermore: Toshkent](https://telegram.me/nevermorequestionsalmaty/90)",
+      "place_html": "Ташкент",
+      "name_html": "<a href=\"https://telegram.me/nevermorequestionsalmaty/90\">Nevermore: Toshkent</a>",
+      "geography": [
+        "asia"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Екатеринбург",
+      "name": "[Nevermore: Ural](https://rating.chgk.info/tournament/14007)",
+      "place_html": "Екатеринбург",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14007\">Nevermore: Ural</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Юрмала",
+      "name": "[Бархатный сезон](https://telegram.me/BS_Jurmala/29)",
+      "place_html": "Юрмала",
+      "name_html": "<a href=\"https://telegram.me/BS_Jurmala/29\">Бархатный сезон</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Ивано-Франковск",
+      "name": "[Батькiвськi збори](https://telegram.me/chgknews/1445) (на украинском языке)",
+      "place_html": "Ивано-Франковск",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1445\">Батькiвськi збори</a> (на украинском языке)",
+      "geography": [
+        "ukraine"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Москва",
+      "name": "Чемпионат России по спортивному ЧГК (среди взрослых)",
+      "place_html": "Москва",
+      "name_html": "Чемпионат России по спортивному ЧГК (среди взрослых)",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "12–13 сентября",
+      "date_start": "2026-09-12",
+      "date_end": "2026-09-13",
+      "place": "Москва",
+      "name": "Чемпионат России по спортивному ЧГК (среди школьников)",
+      "place_html": "Москва",
+      "name_html": "Чемпионат России по спортивному ЧГК (среди школьников)",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "19–20 сентября",
+      "date_start": "2026-09-19",
+      "date_end": "2026-09-20",
+      "place": "Цюрих",
+      "name": "[Helvetia Cup](https://telegram.me/chgknews/1459) (чемпионат Швейцарии)",
+      "place_html": "Цюрих",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1459\">Helvetia Cup</a> (чемпионат Швейцарии)",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "26–27 сентября",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "place": "Красноярск",
+      "name": "[Енисейская знать](https://t.me/chgknews/1528)",
+      "place_html": "Красноярск",
+      "name_html": "<a href=\"https://t.me/chgknews/1528\">Енисейская знать</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "26–27 сентября",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "place": "Уфа",
+      "name": "[Турнир трёх шурупов](https://telegram.me/chgknews/1418)",
+      "place_html": "Уфа",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1418\">Турнир трёх шурупов</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "26–27 сентября",
+      "date_start": "2026-09-26",
+      "date_end": "2026-09-27",
+      "place": "онлайн",
+      "name": "[Чемпионат Украины](https://telegram.me/LigaUK/932) (на украинском языке)",
+      "place_html": "онлайн",
+      "name_html": "<a href=\"https://telegram.me/LigaUK/932\">Чемпионат Украины</a> (на украинском языке)",
+      "geography": [
+        "ukraine"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "27 сентября",
+      "date_start": "2026-09-27",
+      "date_end": "2026-09-27",
+      "place": "[площадки](https://rating.chgk.info/tournament/13156/requests)",
+      "name": "[Гёмбёц — 9](https://rating.chgk.info/tournament/13156)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournament/13156/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13156\">Гёмбёц — 9</a>",
+      "geography": [
+        "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "2–4 октября",
+      "date_start": "2026-10-02",
+      "date_end": "2026-10-04",
+      "place": "Ярославль",
+      "name": "[Octobearfest](https://t.me/chgknews/1530)",
+      "place_html": "Ярославль",
+      "name_html": "<a href=\"https://t.me/chgknews/1530\">Octobearfest</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student",
+        "youth"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3 октября",
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "place": "Смоленск",
+      "name": "[Чемпионат Смоленска ДИКСИ](https://rating.chgk.info/tournament/13832)",
+      "place_html": "Смоленск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13832\">Чемпионат Смоленска ДИКСИ</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3–4 октября",
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-04",
+      "place": "Брест",
+      "name": "[Bug Major](https://telegram.me/bugmajor/102)",
+      "place_html": "Брест",
+      "name_html": "<a href=\"https://telegram.me/bugmajor/102\">Bug Major</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3–4 октября",
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-04",
+      "place": "Волгоград",
+      "name": "[Город героев](https://telegram.me/chgknews/1426)",
+      "place_html": "Волгоград",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1426\">Город героев</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3–4 октября",
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-04",
+      "place": "Прага",
+      "name": "[Открытый чемпионат Чехии](https://telegram.me/o44praha/248)",
+      "place_html": "Прага",
+      "name_html": "<a href=\"https://telegram.me/o44praha/248\">Открытый чемпионат Чехии</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "9–11 октября",
+      "date_start": "2026-10-09",
+      "date_end": "2026-10-11",
+      "place": "Баку",
+      "name": "[Caspian Cup](https://telegram.me/chgknews/1407)",
+      "place_html": "Баку",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1407\">Caspian Cup</a>",
+      "geography": [
+        "asia"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "10 октября",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-10",
+      "place": "Тель-Авив",
+      "name": "[Чемпионат Израиля](https://rating.chgk.info/tournament/13979)",
+      "place_html": "Тель-Авив",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13979\">Чемпионат Израиля</a>",
+      "geography": [
+        "near_east"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "10–11 октября",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "place": "Калуга",
+      "name": "[Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108)",
+      "place_html": "Калуга",
+      "name_html": "<a href=\"https://telegram.me/Ghost_teen_eye_dwarf/108\">Гостиный двор</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "10–11 октября",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "place": "Валенсия",
+      "name": "[Кубок Паэльи](https://telegram.me/chgknews/1491) (чемпионат Испании)",
+      "place_html": "Валенсия",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1491\">Кубок Паэльи</a> (чемпионат Испании)",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "17–18 октября",
+      "date_start": "2026-10-17",
+      "date_end": "2026-10-18",
+      "place": "Владимир",
+      "name": "[Владимир Open](https://telegram.me/chgknews/1496)",
+      "place_html": "Владимир",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1496\">Владимир Open</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Архангельск",
+      "name": "[Говоря](https://rating.chgk.info/tournament/14086)",
+      "place_html": "Архангельск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14086\">Говоря</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Саулкрасти",
+      "name": "[Кубок Мюнхгаузена](https://t.me/chgknews/1529)",
+      "place_html": "Саулкрасти",
+      "name_html": "<a href=\"https://t.me/chgknews/1529\">Кубок Мюнхгаузена</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Минск",
+      "name": "[Нестерка](https://telegram.me/chgknews/1490)",
+      "place_html": "Минск",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1490\">Нестерка</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Будва",
+      "name": "[Открытый кубок Адриатики](https://telegram.me/chgknews/1505)",
+      "place_html": "Будва",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1505\">Открытый кубок Адриатики</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Москва",
+      "name": "[Сретенка](https://rating.chgk.info/tournament/14106) («зеркало» Нестерки)",
+      "place_html": "Москва",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14106\">Сретенка</a> («зеркало» Нестерки)",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "24–25 октября",
+      "date_start": "2026-10-24",
+      "date_end": "2026-10-25",
+      "place": "Филадельфия",
+      "name": "[Чемпионат США](https://t.me/chgknews/1538)",
+      "place_html": "Филадельфия",
+      "name_html": "<a href=\"https://t.me/chgknews/1538\">Чемпионат США</a>",
+      "geography": [
+        "america"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "31 октября–1 ноября",
+      "date_start": "2026-10-31",
+      "date_end": "2026-11-01",
+      "place": "Нижний Новгород",
+      "name": "[НижВышФест](https://rating.chgk.info/tournament/14143)",
+      "place_html": "Нижний Новгород",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14143\">НижВышФест</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "1 ноября",
+      "date_start": "2026-11-01",
+      "date_end": "2026-11-01",
+      "place": "[площадки](https://rating.chgk.info/tournament/13980/requests)",
+      "name": "[Нулевой километр](https://rating.chgk.info/tournament/13980)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournament/13980/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13980\">Нулевой километр</a>",
+      "geography": [
+        "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "6–8 ноября",
+      "date_start": "2026-11-06",
+      "date_end": "2026-11-08",
+      "place": "Мюнхен",
+      "name": "[Чемпионат Германии](https://telegram.me/chgknews/1457)",
+      "place_html": "Мюнхен",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1457\">Чемпионат Германии</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "13–15 ноября",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-15",
+      "place": "Санкт-Петербург",
+      "name": "[Полифест](https://t.me/polyfest24/413)",
+      "place_html": "Санкт-Петербург",
+      "name_html": "<a href=\"https://t.me/polyfest24/413\">Полифест</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "14–15 ноября",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-15",
+      "place": "Белград",
+      "name": "[Балканфест](https://t.me/balkanfest/2337)",
+      "place_html": "Белград",
+      "name_html": "<a href=\"https://t.me/balkanfest/2337\">Балканфест</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "21–22 ноября",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-22",
+      "place": "Барселона",
+      "name": "[Открытый чемпионат Барселоны](https://telegram.me/chgknews/1499)",
+      "place_html": "Барселона",
+      "name_html": "<a href=\"https://telegram.me/chgknews/1499\">Открытый чемпионат Барселоны</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "8–10 января 2027 года",
+      "date_start": "2027-01-08",
+      "date_end": "2027-01-10",
+      "place": "Вроцлав",
+      "name": "[Сугробушки](https://telegram.me/turnirushki/222)",
+      "place_html": "Вроцлав",
+      "name_html": "<a href=\"https://telegram.me/turnirushki/222\">Сугробушки</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "15 мая 2027 года",
+      "date_start": "2027-05-15",
+      "date_end": "2027-05-15",
+      "place": "Хельсинки",
+      "name": "XXI Чемпионат Финляндии",
+      "place_html": "Хельсинки",
+      "name_html": "XXI Чемпионат Финляндии",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "21–24 мая 2027 года",
+      "date_start": "2027-05-21",
+      "date_end": "2027-05-24",
+      "place": "Кемер",
+      "name": "[Турецкий берег](https://rating.chgk.info/tournament/13720)",
+      "place_html": "Кемер",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13720\">Турецкий берег</a>",
+      "geography": [
+        "near_east"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "27 июня 2027 года",
+      "date_start": "2027-06-27",
+      "date_end": "2027-06-27",
+      "place": "Тбилиси",
+      "name": "XXXII Чемпионат Грузии (на грузинском языке)",
+      "place_html": "Тбилиси",
+      "name_html": "XXXII Чемпионат Грузии (на грузинском языке)",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    }
+  ]
+}

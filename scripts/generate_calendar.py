@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html
 import io
+import json
 import re
 import sys
 from collections import defaultdict
@@ -25,6 +27,7 @@ SHEET_CSV_URL = (
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CALENDAR_DIR = REPO_ROOT / "content" / "info" / "calendar"
+CALENDAR_JSON_PATH = REPO_ROOT / "data" / "calendar.json"
 INDEX_WINDOW_DAYS = 45
 
 MONTHS_GENITIVE = {
@@ -44,6 +47,7 @@ MONTHS_GENITIVE = {
 
 EMBEDDED_LINK_RE = re.compile(r"\s*\(https?://[^)]+\)\s*$")
 TOKEN_SPLIT_RE = re.compile(r"[,;|]+|\s+")
+MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 AGE_TAGS = frozenset({"youth", "student", "school"})
 GAME_TAGS = frozenset({"ssi", "kvrm"})
@@ -202,6 +206,20 @@ def format_name(name: str, link: str, comment: str) -> str:
     return cell
 
 
+def markdown_inline_to_html(text: str) -> str:
+    parts: list[str] = []
+    last = 0
+    for match in MARKDOWN_LINK_RE.finditer(text):
+        parts.append(html.escape(text[last : match.start()]))
+        parts.append(
+            f'<a href="{html.escape(match.group(2), quote=True)}">'
+            f"{html.escape(match.group(1))}</a>"
+        )
+        last = match.end()
+    parts.append(html.escape(text[last:]))
+    return "".join(parts)
+
+
 def event_to_table_row(event: Event, today: date) -> str:
     return (
         "| "
@@ -296,13 +314,42 @@ OUTPUTS: list[tuple[str, Callable[[Event, date], bool]]] = [
 ]
 
 
+def collect_events(csv_text: str, today: date | None = None) -> tuple[list[Event], date]:
+    today = today or date.today()
+    events = sort_events(drop_past_events(parse_events(load_rows(csv_text)), today))
+    return events, today
+
+
+def event_to_dict(event: Event, today: date) -> dict[str, object]:
+    return {
+        "date": format_event_date(event.date_start, event.date_end, today),
+        "date_start": event.date_start.isoformat(),
+        "date_end": event.date_end.isoformat(),
+        "place": event.place,
+        "name": format_name(event.name, event.link, event.comment),
+        "place_html": markdown_inline_to_html(event.place),
+        "name_html": markdown_inline_to_html(format_name(event.name, event.link, event.comment)),
+        "geography": sorted(event.geographies),
+        "age": sorted(event.ages),
+        "game": sorted(event.games),
+        "champ": event.champs,
+    }
+
+
+def events_to_json(events: list[Event], today: date) -> str:
+    payload = {
+        "generated": today.isoformat(),
+        "events": [event_to_dict(event, today) for event in events],
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+
+
 def generate_all(
     calendar_dir: Path,
     csv_text: str,
     today: date | None = None,
-) -> dict[str, str]:
-    today = today or date.today()
-    events = sort_events(drop_past_events(parse_events(load_rows(csv_text)), today))
+) -> tuple[dict[str, str], str]:
+    events, today = collect_events(csv_text, today)
 
     result: dict[str, str] = {}
     for filename, predicate in OUTPUTS:
@@ -311,7 +358,7 @@ def generate_all(
         filtered = [event for event in events if predicate(event, today)]
         result[filename] = build_markdown(header, filtered, today)
 
-    return result
+    return result, events_to_json(events, today)
 
 
 def sheet_csv_url(gid: str) -> str:
@@ -347,6 +394,12 @@ def main() -> int:
         help="Override current date (YYYY-MM-DD) for filtering and formatting",
     )
     parser.add_argument(
+        "--json",
+        type=Path,
+        default=CALENDAR_JSON_PATH,
+        help=f"Write filter data JSON here (default: {CALENDAR_JSON_PATH})",
+    )
+    parser.add_argument(
         "--stdout",
         action="store_true",
         help="Print generated markdown to stdout instead of writing files",
@@ -373,7 +426,7 @@ def main() -> int:
         print(f"Failed to read sheet data: {exc}", file=sys.stderr)
         return 1
 
-    generated = generate_all(calendar_dir, csv_text, today=args.date)
+    generated, json_text = generate_all(calendar_dir, csv_text, today=args.date)
 
     if args.stdout:
         for filename in generated:
@@ -387,6 +440,10 @@ def main() -> int:
         output_path = calendar_dir / filename
         output_path.write_text(markdown, encoding="utf-8")
         print(f"Wrote {output_path}")
+
+    args.json.parent.mkdir(parents=True, exist_ok=True)
+    args.json.write_text(json_text, encoding="utf-8")
+    print(f"Wrote {args.json}")
 
     return 0
 

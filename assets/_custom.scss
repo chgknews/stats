@@ -1,4 +1,78 @@
 /* You can add custom styles here. */
 
+.calendar-filter__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.calendar-filter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0 0 1rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--border-radius);
+  background: var(--gray-100);
+}
+
+.calendar-filter.is-collapsed .calendar-filter__form {
+  display: none;
+}
+
+.calendar-filter__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.65rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.calendar-filter__group legend {
+  float: left;
+  width: auto;
+  padding: 0;
+  margin: 0 0.65rem 0 0;
+  font-size: var(--font-size-smaller);
+  font-weight: 600;
+}
+
+.calendar-filter__options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0.7rem;
+}
+
+.calendar-filter__group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+  font-size: var(--font-size-smaller);
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.calendar-filter__count {
+  color: var(--gray-500);
+  font-size: var(--font-size-smaller);
+}
+
+.calendar-filter__table {
+  width: 100%;
+}
+
+.calendar-filter__empty {
+  margin-top: 1rem;
+}
+
 // @import "plugins/numbered";
 // @import "plugins/scrollbars";
