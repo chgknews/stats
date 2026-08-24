@@ -3,9 +3,9 @@
   {{ with .events }}{{ $events = . }}{{ end }}
 {{ end }}
 
-<div class="calendar-filter" id="calendar-filter">
+<div class="calendar-filter is-collapsed" id="calendar-filter">
   <div class="calendar-filter__toolbar">
-    <button type="button" class="book-btn" id="calendar-filter-toggle" aria-expanded="true" aria-controls="calendar-filter-form">Скрыть фильтры</button>
+    <button type="button" class="book-btn" id="calendar-filter-toggle" aria-expanded="false" aria-controls="calendar-filter-form">Показать фильтры</button>
     <button type="reset" class="book-btn" form="calendar-filter-form">Сбросить</button>
     <span class="calendar-filter__count" id="calendar-filter-count"></span>
   </div>

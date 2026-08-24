@@ -57,7 +57,7 @@
     if (age.length) params.set("age", age.join(","));
     if (game.length) params.set("game", game.join(","));
     if (champOnly) params.set("champ", "1");
-    if (root.classList.contains("is-collapsed")) params.set("hide", "1");
+    if (!root.classList.contains("is-collapsed")) params.set("show", "1");
     const query = params.toString();
     const next = query ? "?" + query : window.location.pathname;
     history.replaceState(null, "", next);
@@ -76,7 +76,7 @@
     restore("game", "game");
     const champInput = form.querySelector('input[name="champ"]');
     if (champInput) champInput.checked = params.get("champ") === "1";
-    setCollapsed(params.get("hide") === "1");
+    setCollapsed(params.get("show") !== "1");
   }
 
   function setCollapsed(collapsed) {

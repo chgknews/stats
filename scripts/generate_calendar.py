@@ -25,7 +25,6 @@ SHEET_CSV_URL = (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CALENDAR_DIR = REPO_ROOT / "content" / "info" / "calendar"
 CALENDAR_JSON_PATH = REPO_ROOT / "data" / "calendar.json"
 
 MONTHS_GENITIVE = {
