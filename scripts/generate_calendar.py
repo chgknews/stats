@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate calendar markdown files from the chgk_calendar Google Sheet."""
+"""Generate filter-page data from the chgk_calendar Google Sheet."""
 
 from __future__ import annotations
 
@@ -12,9 +12,8 @@ import re
 import sys
 from collections import defaultdict
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
-from typing import Callable
 from urllib.error import URLError
 from urllib.request import urlopen
 
@@ -28,7 +27,6 @@ SHEET_CSV_URL = (
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CALENDAR_DIR = REPO_ROOT / "content" / "info" / "calendar"
 CALENDAR_JSON_PATH = REPO_ROOT / "data" / "calendar.json"
-INDEX_WINDOW_DAYS = 45
 
 MONTHS_GENITIVE = {
     1: "января",
@@ -51,18 +49,6 @@ MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 
 AGE_TAGS = frozenset({"youth", "student", "school"})
 GAME_TAGS = frozenset({"ssi", "kvrm"})
-GEOGRAPHY_TAGS = frozenset(
-    {
-        "russia_belarus",
-        "europe",
-        "asia",
-        "ukraine",
-        "caucasus",
-        "america",
-        "near_east",
-        "synch",
-    }
-)
 
 
 @dataclass(frozen=True)
@@ -220,38 +206,6 @@ def markdown_inline_to_html(text: str) -> str:
     return "".join(parts)
 
 
-def event_to_table_row(event: Event, today: date) -> str:
-    return (
-        "| "
-        + " | ".join(
-            [
-                format_event_date(event.date_start, event.date_end, today),
-                event.place,
-                format_name(event.name, event.link, event.comment),
-            ]
-        )
-        + " |"
-    )
-
-
-def read_header(markdown_path: Path) -> str:
-    text = markdown_path.read_text(encoding="utf-8")
-    lines = text.splitlines(keepends=True)
-
-    for index, line in enumerate(lines):
-        if line.startswith("| ----"):
-            return "".join(lines[: index + 1]).rstrip("\n") + "\n"
-
-    raise ValueError(f"Could not find table header in {markdown_path}")
-
-
-def build_markdown(header: str, events: list[Event], today: date) -> str:
-    body = "\n".join(event_to_table_row(event, today) for event in events)
-    if body:
-        body += "\n"
-    return header + body
-
-
 def fetch_sheet_csv(url: str = SHEET_CSV_URL) -> str:
     with urlopen(url, timeout=30) as response:
         return response.read().decode("utf-8-sig")
@@ -277,41 +231,6 @@ def load_rows(csv_text: str) -> list[dict[str, list[str]]]:
         rows.append(columns)
 
     return rows
-
-
-def has_geography(event: Event, geography: str) -> bool:
-    return geography in event.geographies
-
-
-def has_age(event: Event, age: str) -> bool:
-    return age in event.ages
-
-
-def has_game(event: Event, game: str) -> bool:
-    return game in event.games
-
-
-def within_index_window(event: Event, today: date) -> bool:
-    return event.date_start <= today + timedelta(days=INDEX_WINDOW_DAYS)
-
-
-OUTPUTS: list[tuple[str, Callable[[Event, date], bool]]] = [
-    ("_index.md", within_index_window),
-    ("champs.md", lambda event, today: event.champs),
-    ("russia_belarus.md", lambda event, today: has_geography(event, "russia_belarus")),
-    ("europe.md", lambda event, today: has_geography(event, "europe")),
-    ("asia.md", lambda event, today: has_geography(event, "asia")),
-    ("ukraine.md", lambda event, today: has_geography(event, "ukraine")),
-    ("caucasus.md", lambda event, today: has_geography(event, "caucasus")),
-    ("america.md", lambda event, today: has_geography(event, "america")),
-    ("near_east.md", lambda event, today: has_geography(event, "near_east")),
-    ("synch.md", lambda event, today: has_geography(event, "synch")),
-    ("youth.md", lambda event, today: has_age(event, "youth")),
-    ("student.md", lambda event, today: has_age(event, "student")),
-    ("school.md", lambda event, today: has_age(event, "school")),
-    ("svoyak.md", lambda event, today: has_game(event, "ssi")),
-    ("all.md", lambda event, today: True),
-]
 
 
 def collect_events(csv_text: str, today: date | None = None) -> tuple[list[Event], date]:
@@ -344,21 +263,9 @@ def events_to_json(events: list[Event], today: date) -> str:
     return json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
 
 
-def generate_all(
-    calendar_dir: Path,
-    csv_text: str,
-    today: date | None = None,
-) -> tuple[dict[str, str], str]:
+def generate_filter_json(csv_text: str, today: date | None = None) -> str:
     events, today = collect_events(csv_text, today)
-
-    result: dict[str, str] = {}
-    for filename, predicate in OUTPUTS:
-        markdown_path = calendar_dir / filename
-        header = read_header(markdown_path)
-        filtered = [event for event in events if predicate(event, today)]
-        result[filename] = build_markdown(header, filtered, today)
-
-    return result, events_to_json(events, today)
+    return events_to_json(events, today)
 
 
 def sheet_csv_url(gid: str) -> str:
@@ -370,13 +277,7 @@ def sheet_csv_url(gid: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Generate calendar markdown files from Google Sheets."
-    )
-    parser.add_argument(
-        "--calendar-dir",
-        type=Path,
-        default=CALENDAR_DIR,
-        help=f"Directory with calendar markdown files (default: {CALENDAR_DIR})",
+        description="Generate calendar filter data from Google Sheets."
     )
     parser.add_argument(
         "--csv",
@@ -402,19 +303,9 @@ def main() -> int:
     parser.add_argument(
         "--stdout",
         action="store_true",
-        help="Print generated markdown to stdout instead of writing files",
+        help="Print generated JSON to stdout instead of writing a file",
     )
     args = parser.parse_args()
-
-    calendar_dir = args.calendar_dir
-    if not calendar_dir.is_dir():
-        print(f"Calendar directory not found: {calendar_dir}", file=sys.stderr)
-        return 1
-
-    missing = [name for name, _ in OUTPUTS if not (calendar_dir / name).exists()]
-    if missing:
-        print(f"Missing markdown files in {calendar_dir}: {', '.join(missing)}", file=sys.stderr)
-        return 1
 
     try:
         csv_text = (
@@ -426,25 +317,15 @@ def main() -> int:
         print(f"Failed to read sheet data: {exc}", file=sys.stderr)
         return 1
 
-    generated, json_text = generate_all(calendar_dir, csv_text, today=args.date)
+    json_text = generate_filter_json(csv_text, today=args.date)
 
     if args.stdout:
-        for filename in generated:
-            sys.stdout.write(f"===== {filename} =====\n")
-            sys.stdout.write(generated[filename])
-            if not generated[filename].endswith("\n"):
-                sys.stdout.write("\n")
+        sys.stdout.write(json_text)
         return 0
-
-    for filename, markdown in generated.items():
-        output_path = calendar_dir / filename
-        output_path.write_text(markdown, encoding="utf-8")
-        print(f"Wrote {output_path}")
 
     args.json.parent.mkdir(parents=True, exist_ok=True)
     args.json.write_text(json_text, encoding="utf-8")
     print(f"Wrote {args.json}")
-
     return 0
 
 
