@@ -2,7 +2,7 @@ baseURL: https://chgknews.github.io/stats/
 title: chgkstats
 theme: hugo-book
 
-copyright: "Powered by [Hugo](https://gohugo.io/), theme – [Hugo Book](https://github.com/alex-shpak/hugo-book/tree/main). [Boosty](https://boosty.to/chgknews) / [Buy Me a Coffee](https://buymeacoffee.com/chgknewsind)."
+copyright: "Powered by [Hugo](https://gohugo.io/), theme – [Hugo Book](https://github.com/alex-shpak/hugo-book/tree/main)."
 
 # Book configuration
 disablePathToLower: true
@@ -44,6 +44,9 @@ menu:
     - name: "Связаться"
       url: "http://telegram.me/perenoel"
       weight: 10
+    - name: "Поддержать"
+      url: "/donate"
+      weight: 11
 
 taxonomies:
   tag: tags
