@@ -1,6 +1,7 @@
 ---
 title: Армения
 weight: 1
+bookToC: false
 ---
 
 # Армения
@@ -21,28 +22,28 @@ weight: 1
 </thead>
 <tbody>
 <tr>
-<td><a href="https://rating.chgk.info/teams/1025">Двин (РПА-DAF / ДАФ)</a></td>
+<td><a href="https://rating.chgk.info/teams/1025">Двин (РПА-DAF / DAF / ДАФ)</a></td>
 <td>Ереван</td>
-<td>3</td>
+<td>5</td>
 <td>6</td>
 <td>6</td>
-<td>15</td>
+<td>17</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/245">Айастан</a></td>
 <td>Ереван</td>
 <td>2</td>
-<td>5</td>
+<td>7</td>
 <td>6</td>
-<td>13</td>
+<td>15</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/640">Перезагрузка</a></td>
+<td><a href="https://rating.chgk.info/teams/640">Перезагрузка (Перезагрузка-Орион)</a></td>
 <td>Ереван</td>
 <td>7</td>
 <td>3</td>
-<td>0</td>
-<td>10</td>
+<td>2</td>
+<td>12</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/56664">Арагаст</a></td>
@@ -75,6 +76,14 @@ weight: 1
 <td>0</td>
 <td>3</td>
 <td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/149">АССА</a></td>
+<td>Ереван</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/103264">Арамазд — Григорян</a></td>
@@ -117,14 +126,6 @@ weight: 1
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/30688">Армения-эрудит</a></td>
-<td>Ереван</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/29563">ДаФ (Команда Марка Григоряна)</a></td>
 <td>Ереван</td>
 <td>0</td>
@@ -138,6 +139,14 @@ weight: 1
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/30688">Армения-эрудит</a></td>
+<td>Ереван</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>1</td>
 </tr>
 <tr>
@@ -181,23 +190,87 @@ weight: 1
 
 <table>
 <thead>
-<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th></tr>
+<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">ССИ</th></tr>
+<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/29973">Павел Солахян</a></td>
+<td>21</td>
+<td>5</td>
+<td>1</td>
+<td>27</td>
 <td>13</td>
 <td>4</td>
+<td>1</td>
+<td>8</td>
+<td>1</td>
 <td>0</td>
-<td>17</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1562">Арам Арутюнян</a></td>
+<td>10</td>
+<td>8</td>
+<td>2</td>
+<td>20</td>
 <td>9</td>
 <td>5</td>
 <td>1</td>
-<td>15</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/16154">Тигран Кочарян</a></td>
+<td>8</td>
+<td>4</td>
+<td>5</td>
+<td>17</td>
+<td>7</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/20345">Ева Махмурян</a></td>
+<td>0</td>
+<td>7</td>
+<td>10</td>
+<td>17</td>
+<td>0</td>
+<td>5</td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19143">Тигран Магакян</a></td>
+<td>4</td>
+<td>6</td>
+<td>4</td>
+<td>14</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6708">Асмик Гаряка</a></td>
+<td>4</td>
+<td>6</td>
+<td>4</td>
+<td>14</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8118">Левон Григорян</a></td>
@@ -205,6 +278,12 @@ weight: 1
 <td>6</td>
 <td>4</td>
 <td>13</td>
+<td>3</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/658">Нора Аланакян</a></td>
@@ -212,20 +291,12 @@ weight: 1
 <td>6</td>
 <td>4</td>
 <td>13</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/16154">Тигран Кочарян</a></td>
-<td>7</td>
-<td>4</td>
-<td>1</td>
-<td>12</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/19143">Тигран Магакян</a></td>
 <td>3</td>
 <td>6</td>
-<td>3</td>
-<td>12</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/22734">Левон Никогосян</a></td>
@@ -233,6 +304,25 @@ weight: 1
 <td>4</td>
 <td>4</td>
 <td>11</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/278">Араик Аветисян</a></td>
+<td>0</td>
+<td>6</td>
+<td>5</td>
+<td>11</td>
+<td>0</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/176">Сергей Абрамян</a></td>
@@ -240,6 +330,25 @@ weight: 1
 <td>2</td>
 <td>0</td>
 <td>10</td>
+<td>8</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6796">Аргишти Геворкян</a></td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>10</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31349">Роберт Татоян</a></td>
@@ -247,6 +356,12 @@ weight: 1
 <td>3</td>
 <td>6</td>
 <td>10</td>
+<td>1</td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19565">Ваагн Малоян</a></td>
@@ -254,13 +369,12 @@ weight: 1
 <td>4</td>
 <td>6</td>
 <td>10</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/20345">Ева Махмурян</a></td>
 <td>0</td>
 <td>4</td>
 <td>6</td>
-<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12219">Евгения Иванова</a></td>
@@ -268,20 +382,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>9</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/6708">Асмик Гаряка</a></td>
-<td>3</td>
-<td>3</td>
-<td>3</td>
-<td>9</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/278">Араик Аветисян</a></td>
+<td>8</td>
+<td>1</td>
 <td>0</td>
-<td>4</td>
-<td>5</td>
-<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19811">Сурен Манукян</a></td>
@@ -289,6 +395,12 @@ weight: 1
 <td>1</td>
 <td>2</td>
 <td>8</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/639">Арутюн Алавердян</a></td>
@@ -296,6 +408,12 @@ weight: 1
 <td>3</td>
 <td>4</td>
 <td>8</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12915">Айк Казазян</a></td>
@@ -303,13 +421,38 @@ weight: 1
 <td>0</td>
 <td>1</td>
 <td>7</td>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/6796">Аргишти Геворкян</a></td>
-<td>2</td>
+<td><a href="https://rating.chgk.info/player/28255">Ваган Сардарян</a></td>
+<td>3</td>
+<td>3</td>
 <td>1</td>
-<td>4</td>
 <td>7</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2033">Вардан Багирян</a></td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>7</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/28544">Маргар Седракян</a></td>
@@ -317,6 +460,12 @@ weight: 1
 <td>0</td>
 <td>2</td>
 <td>6</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31378">Альгис Тваскис</a></td>
@@ -324,20 +473,12 @@ weight: 1
 <td>3</td>
 <td>0</td>
 <td>6</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/28255">Ваган Сардарян</a></td>
 <td>3</td>
 <td>3</td>
 <td>0</td>
-<td>6</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2033">Вардан Багирян</a></td>
-<td>3</td>
-<td>3</td>
 <td>0</td>
-<td>6</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/49574">Самвел Хачатрян</a></td>
@@ -345,6 +486,12 @@ weight: 1
 <td>3</td>
 <td>2</td>
 <td>6</td>
+<td>1</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/61120">Артём Гукасян</a></td>
@@ -352,6 +499,12 @@ weight: 1
 <td>2</td>
 <td>4</td>
 <td>6</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/29552">Степан Смбатян</a></td>
@@ -359,13 +512,25 @@ weight: 1
 <td>2</td>
 <td>4</td>
 <td>6</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/34614">Ара Чарчян</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/30530">Александр Степанян</a></td>
 <td>1</td>
-<td>4</td>
+<td>3</td>
+<td>1</td>
 <td>5</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/24757">Артём Петросян</a></td>
@@ -373,6 +538,25 @@ weight: 1
 <td>3</td>
 <td>2</td>
 <td>5</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/34614">Ара Чарчян</a></td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19568">Арег Малхасян</a></td>
@@ -380,6 +564,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/42837">Рачья Гумроян</a></td>
@@ -387,6 +577,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>4</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31132">Арсен Тавадян</a></td>
@@ -394,6 +590,12 @@ weight: 1
 <td>1</td>
 <td>2</td>
 <td>4</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/109746">Виген Ананян</a></td>
@@ -401,6 +603,12 @@ weight: 1
 <td>3</td>
 <td>1</td>
 <td>4</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/33943">Гайк Хемчян</a></td>
@@ -408,6 +616,12 @@ weight: 1
 <td>1</td>
 <td>3</td>
 <td>4</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/96330">Наталья Комар</a></td>
@@ -415,34 +629,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/61094">Арутюн Арзуманян</a></td>
-<td>0</td>
-<td>1</td>
 <td>2</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/195702">Давид Акопян</a></td>
-<td>0</td>
 <td>1</td>
-<td>2</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/46976">Мансур Зиятдинов</a></td>
 <td>0</td>
 <td>0</td>
-<td>3</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/34476">Роман Цуркан</a></td>
 <td>0</td>
 <td>0</td>
-<td>3</td>
-<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/40118">Эдгар Маркосян</a></td>
@@ -450,6 +642,64 @@ weight: 1
 <td>2</td>
 <td>1</td>
 <td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/61094">Арутюн Арзуманян</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/195702">Давид Акопян</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/46976">Мансур Зиятдинов</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/34476">Роман Цуркан</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/116424">Арина Далецкая</a></td>
@@ -457,6 +707,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/96039">Дмитрий Диденко</a></td>
@@ -464,6 +720,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/25121">Дмитрий Плотников</a></td>
@@ -471,6 +733,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/38168">Максим Карачун</a></td>
@@ -478,6 +746,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31848">Александр Тобенгауз</a></td>
@@ -485,6 +759,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/6794">Альберт Геворкян</a></td>
@@ -492,6 +772,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/17203">Арам Кулиджанян</a></td>
@@ -499,6 +785,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/64613">Арсен Ааронян</a></td>
@@ -506,34 +798,12 @@ weight: 1
 <td>0</td>
 <td>1</td>
 <td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30530">Александр Степанян</a></td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/64623">Гурген Есаян</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/101518">Евгений Марголин</a></td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/35889">Игорь Шевченко</a></td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8121">Марк Григорян</a></td>
@@ -541,6 +811,64 @@ weight: 1
 <td>2</td>
 <td>0</td>
 <td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/64623">Гурген Есаян</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35889">Игорь Шевченко</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/101518">Евгений Марголин</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/28275">Карен Саркисян</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/56486">Райганат Каримулаева</a></td>
@@ -548,6 +876,12 @@ weight: 1
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/24850">Александр Печеный</a></td>
@@ -555,6 +889,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/60585">Анна Арцруни</a></td>
@@ -562,6 +902,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31553">Ваге Тер-Минасян</a></td>
@@ -569,6 +915,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/87809">Виктория Вяземская</a></td>
@@ -576,6 +928,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12773">Владимир Итыгин</a></td>
@@ -583,6 +941,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/60018">Левон Манукян</a></td>
@@ -590,6 +954,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/11853">Микаэл Золян</a></td>
@@ -597,6 +967,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8131">Шант Григорян</a></td>
@@ -604,6 +980,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/60584">Эмиль Манукян</a></td>
@@ -611,6 +993,12 @@ weight: 1
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/113357">Алексей Овчинников</a></td>
@@ -618,6 +1006,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/115151">Андрей Маврин</a></td>
@@ -625,41 +1019,25 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/209">Арман Авакян</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/1695">Армен Аствацатрян</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/2026">Арсен Багдатян</a></td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8110">Артём Григорян</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30152">Артём Сорожкин</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/97663">Астхик Петросян</a></td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/20657">Ашот Мельян</a></td>
@@ -667,41 +1045,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/60017">Гагик Саакян</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8667">Гайк Гюзалян</a></td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/148624">Дамир Маликов</a></td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30236">Данила Софинский</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/63529">Дмитрий Тарарыков</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/28440">Екатерина Свешникова</a></td>
@@ -709,6 +1058,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/33293">Игорь Философов</a></td>
@@ -716,20 +1071,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/50761">Ирина Вопян</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/28275">Карен Саркисян</a></td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/113330">Константин Шведов</a></td>
@@ -737,34 +1084,25 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9235">Маргарита Джагацпанян</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/131934">Мери Арутюнян</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/13631">Мария Карпова</a></td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/60016">Месроп Акопян</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/4763">Михаил Быстров</a></td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
-<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/136830">Михаил Московченко</a></td>
@@ -772,6 +1110,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/32901">Наиль Фарукшин</a></td>
@@ -779,13 +1123,25 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/50763">Ованес Ованесян</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/33624">Ренат Хайбуллин</a></td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/119877">Светлана Смолоногова</a></td>
@@ -793,6 +1149,12 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31493">Сергей Терентьев</a></td>
@@ -800,6 +1162,246 @@ weight: 1
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/107372">Юлия Маврина</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Авет Керопян</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/209">Арман Авакян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/1695">Армен Аствацатрян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8110">Артём Григорян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30152">Артём Сорожкин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/97663">Астхик Петросян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/60017">Гагик Саакян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8667">Гайк Гюзалян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/148624">Дамир Маликов</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30236">Данила Софинский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/63529">Дмитрий Тарарыков</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/50761">Ирина Вопян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9235">Маргарита Джагацпанян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/131934">Мери Арутюнян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/60016">Месроп Акопян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/4763">Михаил Быстров</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/50763">Ованес Ованесян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/186">Хачатур Аброян</a></td>
@@ -807,11 +1409,23 @@ weight: 1
 <td>0</td>
 <td>1</td>
 <td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/107372">Юлия Маврина</a></td>
+<td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/31998">Григор Топушян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
@@ -822,6 +1436,11 @@ weight: 1
 
 
 ### Турниры по годам<a name="years"></a>
+
+- [Спортивное «Что? Где? Когда?»](#chgk)
+- [Спортивная «Своя игра»](#ssi)
+
+#### [Спортивное «Что? Где? Когда?»](#chgk_years)<a name="chgk"></a>
 
 - [XXVII чемпионат Армении по спортивному ЧГК (2026)](#chgk_2026)
 - [XXVI чемпионат Армении по спортивному ЧГК (2025)](#chgk_2025)
@@ -842,6 +1461,8 @@ weight: 1
 - [XII чемпионат Армении по спортивному ЧГК (2010)](#chgk_2010)
 - [XI чемпионат Армении по спортивному ЧГК (2009)](#chgk_2009)
 - [X чемпионат Армении по спортивному ЧГК (2008)](#chgk_2008)
+- [IX чемпионат Армении по спортивному ЧГК (2007)](#chgk_2007)
+- [VIII чемпионат Армении по спортивному ЧГК (2006)](#chgk_2006)
 - [VII чемпионат Армении по спортивному ЧГК (2005)](#chgk_2005)
 - [V чемпионат Армении по спортивному ЧГК (2003)](#chgk_2003)
 - [IV чемпионат Армении по спортивному ЧГК (2001)](#chgk_2001)
@@ -849,10 +1470,31 @@ weight: 1
 - [II чемпионат Армении по спортивному ЧГК (1995)](#chgk_1995)
 - [I чемпионат Армении по спортивному ЧГК (1994)](#chgk_1994)
 
-<small>*[Наверх](#atop)*</small>
+#### [Спортивная «Своя игра»](#ssi_years)<a name="ssi"></a>
 
-**XXVII чемпионат Армении по спортивному «Что? Где? Когда?»** пройдёт 12 сентября 2026 года в Гюмри. <a name="chgk_2026"></a> Больше информации — в [в анонсе](https://telegram.me/ChgkgamesArmenia/471).
+- [XVII чемпионат Армении по ССИ (2019)](#ssi_2019)
+- [XVI чемпионат Армении по ССИ (2018)](#ssi_2018)
+- [XV чемпионат Армении по ССИ (2017)](#ssi_2017)
+- [XIV чемпионат Армении по ССИ (2016)](#ssi_2016)
+- [XIII чемпионат Армении по ССИ (2015)](#ssi_2015)
+- [IX чемпионат Армении по ССИ (2011)](#ssi_2011)
+- [VIII чемпионат Армении по ССИ (2010)](#ssi_2010)
+- [VII чемпионат Армении по ССИ (2009)](#ssi_2009)
+- [VI чемпионат Армении по ССИ (2008)](#ssi_2008)
+- [V чемпионат Армении по ССИ (2007)](#ssi_2007)
+- [IV чемпионат Армении по ССИ (2006)](#ssi_2006)
+- [III чемпионат Армении по ССИ (2005)](#ssi_2005)
+- [II чемпионат Армении по ССИ (2004)](#ssi_2004)
+- [I чемпионат Армении по ССИ (2003)](#ssi_2003)
 
+<small>*[Наверх](#years)*</small>
+
+#### Чемпионаты Армении по спортивному «Что? Где? Когда?»<a name="chgk_years"></a>
+
+
+**XXVII чемпионат Армении по спортивному «Что? Где? Когда?»** пройдёт 12 сентября 2026 года в Гюмри. <a name="chgk_2026"></a>
+
+Больше информации о турнире — [в анонсе](https://telegram.me/ChgkgamesArmenia/471).
 
 <small>*[К списку турниров](#years)*</small>
 
@@ -1182,6 +1824,30 @@ weight: 1
 
 ---
 
+**IX чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 9 июня 2007 года в Ереване. <a name="chgk_2007"></a>
+
+Победитель: **[«DAF» (Ереван)](https://rating.chgk.info/teams/1025)**
+
+*Состав команды [«DAF»](https://rating.chgk.info/teams/1025) (Ереван) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+
+Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван). Третье место разделили команды [«Перезагрузка»](https://rating.chgk.info/teams/640) (Ереван) и [«АССА»](https://rating.chgk.info/teams/149) (Ереван). Больше информации о турнире — [здесь](https://chgk-am.livejournal.com/43906.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**VIII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 4 июня 2006 года в Ереване. <a name="chgk_2006"></a>
+
+Победитель: **[«DAF» (Ереван)](https://rating.chgk.info/teams/1025)**
+
+*Состав команды [«DAF»](https://rating.chgk.info/teams/1025) (Ереван) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+
+Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван). Третье место разделили команды [«АССА»](https://rating.chgk.info/teams/149) (Ереван) и [«Перезагрузка-Орион»](https://rating.chgk.info/teams/640) (Ереван).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
 **VII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 18 июня 2005 года в Ереване. <a name="chgk_2005"></a>
 
 Победитель: **[«РПА-DAF» (Ереван)](https://rating.chgk.info/teams/1025)**
@@ -1233,7 +1899,7 @@ weight: 1
 
 **III чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 23 октября 1998 года в Ереване. <a name="chgk_1998"></a>
 
-Первое место разделили команды **[«ЕрГМУ» (Ереван)](https://rating.chgk.info/teams/29565)** и **[«Максфилд» (Гюмри)](https://rating.chgk.info/teams/38741)**. Состав «ЕрГМУ»:
+Первое место разделили команды [«ЕрГМУ»](https://rating.chgk.info/teams/29565) (Ереван) и [«Максфилд»](https://rating.chgk.info/teams/38741) (Гюмри). Состав [«ЕрГМУ»](https://rating.chgk.info/teams/29565) (Ереван):
 - Анна Арцруни
 - Эмиль Манукян
 - Левон Манукян
@@ -1241,7 +1907,7 @@ weight: 1
 - Микаэл Золян
 - Арутюн Алавердян
 
-*Состав второй команды, «Максфилд», неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+*Состав команды [«Максфилд»](https://rating.chgk.info/teams/38741) (Гюмри) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
 Третье место разделили команды [«Двин»](https://rating.chgk.info/teams/1025) (Ереван) и [«Орфей»](https://rating.chgk.info/teams/51169) (Ереван).
 
@@ -1268,15 +1934,166 @@ weight: 1
 
 Победитель: **[«Факиры» (Гюмри)](https://rating.chgk.info/teams/35735)**
 
-*Состав победителей неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+*Состав команды [«Факиры»](https://rating.chgk.info/teams/35735) (Гюмри) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
  Больше информации о турнире — [в Летописи](http://letopis.chgk.info/199412Yerevan.html).
 
 <small>*[К списку турниров](#years)*</small>
 
 ---
 
-Статистика неполна, поскольку на следующих турнирах пока нет составов:
-- [Турнир с id 1740](https://rating.chgk.info/tournament/1740)
-- Турнир с id 42
-- [Турнир с id 2399](https://rating.chgk.info/tournament/2399)
-- [Турнир с id 11561](https://rating.chgk.info/tournament/11561)
+#### Чемпионаты Армении по спортивной «Своей игре»<a name="ssi_years"></a>
+
+
+**XVII чемпионат Армении по спортивной «Своей игре»** прошёл 2 ноября 2019 года в Ереване. <a name="ssi_2019"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Ева Махмурян](https://rating.chgk.info/player/20345), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1329653126#gid=1329653126).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**XVI чемпионат Армении по спортивной «Своей игре»** прошёл 30 июня 2018 года в Ереване. <a name="ssi_2018"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Ева Махмурян](https://rating.chgk.info/player/20345), третье — [Тигран Магакян](https://rating.chgk.info/player/19143).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=2043986205#gid=2043986205).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**XV чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2017"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Арам Арутюнян](https://rating.chgk.info/player/1562), третье — [Ева Махмурян](https://rating.chgk.info/player/20345).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1306338601#gid=1306338601).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**XIV чемпионат Армении по спортивной «Своей игре»** прошёл 11 июня 2016 года в Ереване. <a name="ssi_2016"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Арам Арутюнян](https://rating.chgk.info/player/1562), третье — [Ева Махмурян](https://rating.chgk.info/player/20345).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1103250116#gid=1103250116).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**XIII чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2015"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=398184109#gid=398184109).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**IX чемпионат Армении по спортивной «Своей игре»** прошёл 23–24 июля 2011 года в Ереване. <a name="ssi_2011"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/u/0/d/1vBT7ZBCCtypSmzjfaMOJO4jomgdB7uSXGYJRAYkjSQs/pub?hl=en_US&pli=1&hl=en_US&hl=en_US&gid=4&pli=1). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/111792.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**VIII чемпионат Армении по спортивной «Своей игре»** прошёл 18 июля 2010 года в Ереване. <a name="ssi_2010"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Араик Аветисян](https://rating.chgk.info/player/278), третье — [Арам Арутюнян](https://rating.chgk.info/player/1562). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/83932.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**VII чемпионат Армении по спортивной «Своей игре»** прошёл 12 июля 2009 года в Ереване. <a name="ssi_2009"></a>
+
+Победитель: **[Арам Арутюнян](https://rating.chgk.info/player/1562)**
+
+Второе место занял [Александр Степанян](https://rating.chgk.info/player/30530), третье — [Григор Топушян](https://rating.chgk.info/player/31998). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/54138.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**VI чемпионат Армении по спортивной «Своей игре»** прошёл 6 июля 2008 года в Ереване. <a name="ssi_2008"></a>
+
+Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
+
+Второе место занял [Арам Арутюнян](https://rating.chgk.info/player/1562), третье — [Ева Махмурян](https://rating.chgk.info/player/20345). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/19867.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**V чемпионат Армении по спортивной «Своей игре»** прошёл 15 июля 2007 года в Ереване. <a name="ssi_2007"></a>
+
+Победитель: **[Александр Степанян](https://rating.chgk.info/player/30530)**
+
+Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Ева Махмурян](https://rating.chgk.info/player/20345). Больше информации о турнире — [здесь](https://chgk-am.livejournal.com/52069.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**IV чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2006"></a>
+
+Победитель: **[Тигран Кочарян](https://rating.chgk.info/player/16154)**
+
+*На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**III чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2005"></a>
+
+Победитель: **[Аргишти Геворкян](https://rating.chgk.info/player/6796)**
+
+Второе место занял [Павел Солахян](https://rating.chgk.info/player/29973).
+
+*На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**II чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2004"></a>
+
+Победитель: **[Асмик Гаряка](https://rating.chgk.info/player/6708)**
+
+*На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+
+<small>*[К списку турниров](#years)*</small>
+
+---
+
+**I чемпионат Армении по спортивной «Своей игре»** прошёл 23 февраля 2003 года в Ереване. <a name="ssi_2003"></a>
+
+Победитель: **[Тигран Магакян](https://rating.chgk.info/player/19143)**
+
+Второе место занял [Аргишти Геворкян](https://rating.chgk.info/player/6796), третье — [Асмик Гаряка](https://rating.chgk.info/player/6708). Больше информации о турнире — [в Летописи](http://news.chgk.info/200302ErevanJeop.html).
+
+<small>*[К списку турниров](#years)*</small>
+
+---
