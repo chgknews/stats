@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24",
+  "generated": "2026-08-28",
   "events": [
     {
       "date": "30 августа",
@@ -57,9 +57,9 @@
       "date_start": "2026-09-12",
       "date_end": "2026-09-13",
       "place": "Санкт-Петербург",
-      "name": "[Nevermore](https://rating.chgk.info/tournament/13176)",
+      "name": "[Nevermore](https://t.me/Nevermorequestions/245)",
       "place_html": "Санкт-Петербург",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13176\">Nevermore</a>",
+      "name_html": "<a href=\"https://t.me/Nevermorequestions/245\">Nevermore</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -91,9 +91,9 @@
       "date_start": "2026-09-12",
       "date_end": "2026-09-13",
       "place": "Минск",
-      "name": "[Nevermore: Minsk](https://rating.chgk.info/tournament/14008)",
+      "name": "[Nevermore: Minsk](https://t.me/synchclub1/1117)",
       "place_html": "Минск",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14008\">Nevermore: Minsk</a>",
+      "name_html": "<a href=\"https://t.me/synchclub1/1117\">Nevermore: Minsk</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -159,9 +159,9 @@
       "date_start": "2026-09-12",
       "date_end": "2026-09-13",
       "place": "Юрмала",
-      "name": "[Бархатный сезон](https://telegram.me/BS_Jurmala/29)",
+      "name": "[Бархатный сезон](https://telegram.me/BS_Jurmala/29) (пакет пересекается с Nevermore)",
       "place_html": "Юрмала",
-      "name_html": "<a href=\"https://telegram.me/BS_Jurmala/29\">Бархатный сезон</a>",
+      "name_html": "<a href=\"https://telegram.me/BS_Jurmala/29\">Бархатный сезон</a> (пакет пересекается с Nevermore)",
       "geography": [
         "europe"
       ],
@@ -201,7 +201,7 @@
       ],
       "age": [],
       "game": [
-        "kvrm"
+        "chgk"
       ],
       "champ": true
     },
@@ -220,7 +220,7 @@
         "school"
       ],
       "game": [
-        "kvrm"
+        "chgk"
       ],
       "champ": true
     },
@@ -297,11 +297,28 @@
       "date_start": "2026-09-27",
       "date_end": "2026-09-27",
       "place": "[площадки](https://rating.chgk.info/tournament/13156/requests)",
-      "name": "[Гёмбёц — 9](https://rating.chgk.info/tournament/13156)",
+      "name": "[Гёмбёц — 9](https://rating.chgk.info/tournament/13156) (строгий синхрон)",
       "place_html": "<a href=\"https://rating.chgk.info/tournament/13156/requests\">площадки</a>",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13156\">Гёмбёц — 9</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13156\">Гёмбёц — 9</a> (строгий синхрон)",
       "geography": [
         "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "29 сентября",
+      "date_start": "2026-09-29",
+      "date_end": "2026-09-29",
+      "place": "Ашхабад",
+      "name": "[Мемориал Романа Теплякова](https://rating.chgk.info/tournament/14087)",
+      "place_html": "Ашхабад",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14087\">Мемориал Романа Теплякова</a>",
+      "geography": [
+        "asia"
       ],
       "age": [],
       "game": [
@@ -398,6 +415,23 @@
       "champ": true
     },
     {
+      "date": "4 октября",
+      "date_start": "2026-10-04",
+      "date_end": "2026-10-04",
+      "place": "Нижний Новгород",
+      "name": "[Кубок Дятловых гор](https://rating.chgk.info/tournament/14153) (турнир по спортивному «Что? Где? Когда?»)",
+      "place_html": "Нижний Новгород",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14153\">Кубок Дятловых гор</a> (турнир по спортивному «Что? Где? Когда?»)",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
       "date": "9–11 октября",
       "date_start": "2026-10-09",
       "date_end": "2026-10-11",
@@ -430,23 +464,6 @@
         "kvrm"
       ],
       "champ": true
-    },
-    {
-      "date": "10–11 октября",
-      "date_start": "2026-10-10",
-      "date_end": "2026-10-11",
-      "place": "Калуга",
-      "name": "[Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108)",
-      "place_html": "Калуга",
-      "name_html": "<a href=\"https://telegram.me/Ghost_teen_eye_dwarf/108\">Гостиный двор</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
     },
     {
       "date": "10–11 октября",
@@ -608,9 +625,9 @@
       "date_start": "2026-11-01",
       "date_end": "2026-11-01",
       "place": "[площадки](https://rating.chgk.info/tournament/13980/requests)",
-      "name": "[Нулевой километр](https://rating.chgk.info/tournament/13980)",
+      "name": "[Нулевой километр](https://rating.chgk.info/tournament/13980) (строгий синхрон)",
       "place_html": "<a href=\"https://rating.chgk.info/tournament/13980/requests\">площадки</a>",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13980\">Нулевой километр</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13980\">Нулевой километр</a> (строгий синхрон)",
       "geography": [
         "synch"
       ],
@@ -636,6 +653,23 @@
         "kvrm"
       ],
       "champ": true
+    },
+    {
+      "date": "7–8 ноября",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-08",
+      "place": "Калуга",
+      "name": "[Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108)",
+      "place_html": "Калуга",
+      "name_html": "<a href=\"https://telegram.me/Ghost_teen_eye_dwarf/108\">Гостиный двор</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
     },
     {
       "date": "13–15 ноября",
@@ -729,9 +763,9 @@
       "date_start": "2027-05-21",
       "date_end": "2027-05-24",
       "place": "Кемер",
-      "name": "[Турецкий берег](https://rating.chgk.info/tournament/13720)",
+      "name": "[Турецкий берег](https://rating.chgk.info/tournament/13720) (чемпионат Турции)",
       "place_html": "Кемер",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13720\">Турецкий берег</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/13720\">Турецкий берег</a> (чемпионат Турции)",
       "geography": [
         "near_east"
       ],
