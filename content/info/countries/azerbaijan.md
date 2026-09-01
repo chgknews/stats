@@ -73,7 +73,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Нет данных</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -1974,12 +1974,22 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
+<div class="country-tab-start" data-tab="missing-data"></div>
 
+<a id="missing-data"></a>
 
-Статистика неполна, поскольку на следующих турнирах пока нет составов:
-- Турнир с id 17
-- [Турнир с id 42](https://rating.chgk.info/tournament/42)
-- [Турнир с id 1395](https://rating.chgk.info/tournament/1395)
-- [Турнир с id 1304](https://rating.chgk.info/tournament/1304)
-</div>
+Ниже собрана информация о том, каких данных не хватает в том или ином турнире.
+
+<table>
+<thead>
+<tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
+</thead>
+<tbody>
+<tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/42">III чемпионат Азербайджана по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
+<tr><td>2003</td><td><a href="https://rating.chgk.info/tournament/1395">II чемпионат Азербайджана по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
+<tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1304">I чемпионат Азербайджана по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
+<tr><td>2001</td><td>I чемпионат Азербайджана по БР</td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>

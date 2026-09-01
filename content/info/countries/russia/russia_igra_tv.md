@@ -1,5 +1,5 @@
 ---
-title: От «Игры-ТВ»
+title: От «Игры-ТВ
 weight: 1
 bookToC: false
 ---
@@ -356,6 +356,3 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
-
-</div>

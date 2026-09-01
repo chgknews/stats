@@ -1451,6 +1451,3 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
-
-</div>

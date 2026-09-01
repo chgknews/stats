@@ -1,10 +1,10 @@
 ---
-title: 2001 — 2019
+title: 2001–2019
 weight: 1
 bookToC: false
 ---
 
-# Россия 
+# Россия (2001–2019)
 
 Чемпионаты России по спортивному ЧГК проводятся с 2001 года. Чемпионаты России по эрудит-квартету проводятся с 2012 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Сейчас не хватает информации об итогах ЧРЭК 2013 и 2014 годов. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
 
@@ -73,7 +73,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="game-ssi_f" aria-selected="false">Турниры по ССИ с фальстартами</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="game-ssi_f" aria-selected="false">Турниры по ССИ с фальстартами</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Нет данных</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -2803,6 +2803,22 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
+<div class="country-tab-start" data-tab="missing-data"></div>
 
-</div>
+<a id="missing-data"></a>
+
+Ниже собрана информация о том, каких данных не хватает в том или ином турнире.
+
+<table>
+<thead>
+<tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
+</thead>
+<tbody>
+<tr><td>2009</td><td><a href="https://rating.chgk.info/tournament/484">IX чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2007</td><td><a href="https://rating.chgk.info/tournament/226">VII чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2006</td><td><a href="https://rating.chgk.info/tournament/141">VI чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/22">IV чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>

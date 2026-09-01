@@ -73,7 +73,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Нет данных</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -197,14 +197,6 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/43452">Клеver</a></td>
-<td>Тель-Авив</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/91853">Неглинка</a></td>
 <td>сборная</td>
 <td>0</td>
@@ -231,6 +223,14 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/teams/99146">Мория</a></td>
 <td>Иерусалим</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/43452">Питер Пингвинз (Клеver)</a></td>
+<td>Тель-Авив</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -294,17 +294,17 @@ else wrapTabs();
 <td>15</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/15152">Игорь Колмаков</a></td>
-<td>4</td>
-<td>5</td>
-<td>3</td>
-<td>12</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/18160">Олег Лейбман</a></td>
 <td>6</td>
 <td>4</td>
 <td>1</td>
+<td>11</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/15152">Игорь Колмаков</a></td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
 <td>11</td>
 </tr>
 <tr>
@@ -441,13 +441,6 @@ else wrapTabs();
 <td>4</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/30278">Лев Спивак</a></td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/37259">Юрий Яковлев</a></td>
 <td>0</td>
 <td>2</td>
@@ -539,14 +532,14 @@ else wrapTabs();
 <td>3</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/15870">Серж Корский</a></td>
+<td><a href="https://rating.chgk.info/player/30278">Лев Спивак</a></td>
 <td>0</td>
 <td>2</td>
 <td>1</td>
 <td>3</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/2548">Тимур Барский</a></td>
+<td><a href="https://rating.chgk.info/player/15870">Серж Корский</a></td>
 <td>0</td>
 <td>2</td>
 <td>1</td>
@@ -721,7 +714,7 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/15031">Юрий Козьмин</a></td>
+<td><a href="https://rating.chgk.info/player/2548">Тимур Барский</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -889,13 +882,6 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/119352">Матвей Гомон</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/18513">Мила Литовская</a></td>
 <td>0</td>
 <td>1</td>
@@ -904,13 +890,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/18514">Михаил Литовский</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/58616">Михаил Сраго</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -1106,6 +1085,13 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/15031">Юрий Козьмин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/25991">Ян Приворотский</a></td>
 <td>0</td>
 <td>0</td>
@@ -1181,7 +1167,7 @@ else wrapTabs();
 - Даниил Либерзон
 - Ольга Агаханова
 
-Второе место разделили команды [«Братья»](https://rating.chgk.info/teams/641) (Тель-Авив) и [«Клеver»](https://rating.chgk.info/teams/43452) (Тель-Авив).
+Второе место заняла команда [«Братья»](https://rating.chgk.info/teams/641) (Тель-Авив), третье — [«Питер Пингвинз»](https://rating.chgk.info/teams/43452) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10477).
 
@@ -1562,12 +1548,23 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
+<div class="country-tab-start" data-tab="missing-data"></div>
 
+<a id="missing-data"></a>
 
-Статистика неполна, поскольку на следующих турнирах пока нет составов:
-- [Турнир с id 21](https://rating.chgk.info/tournament/21)
-- [Турнир с id 1381](https://rating.chgk.info/tournament/1381)
-- Турнир с id 112
-- [Турнир с id 1270](https://rating.chgk.info/tournament/1270)
-</div>
+Ниже собрана информация о том, каких данных не хватает в том или ином турнире.
+
+<table>
+<thead>
+<tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
+</thead>
+<tbody>
+<tr><td>2019</td><td><a href="https://rating.chgk.info/tournament/5674">XXIV чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/21">IX чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
+<tr><td>2003</td><td><a href="https://rating.chgk.info/tournament/1381">VIII чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
+<tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1270">VII чемпионат Израиля по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
+<tr><td>1995</td><td>I чемпионат Израиля по ЧГК</td><td>неизвестны составы победителя и обладателей второго и третьего мест, место проведения турнира, точная дата проведения турнира.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>
