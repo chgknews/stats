@@ -55,25 +55,59 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Нет данных</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -1658,7 +1692,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a>
+<a id="game-chgk"></a><a id="chgk_contents" name="chgk_contents"></a>
 
 - [XVI чемпионат Азербайджана по спортивному ЧГК (2026)](#chgk_2026)
 - [XV чемпионат Азербайджана по спортивному ЧГК (2025)](#chgk_2025)
@@ -1678,7 +1712,7 @@ else wrapTabs();
 - [I чемпионат Азербайджана по спортивному ЧГК (2002)](#chgk_2002)
 
 
-**XVI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 26 апреля 2026 года в Баку. <a name="chgk_2026"></a>
+**XVI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 26 апреля 2026 года в Баку. <a id="chgk_2026"></a>
 
 Победитель: **[«М4А1» (Баку)](https://rating.chgk.info/teams/40131)**
 - Владимир Бабиор
@@ -1692,9 +1726,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12349). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/361) и [здесь](https://t.me/chgknews/1432).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**XV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 25 мая 2025 года в Баку. <a name="chgk_2025"></a>
+**XV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 25 мая 2025 года в Баку. <a id="chgk_2025"></a>
 
 Победитель: **[«М4А1» (Баку)](https://rating.chgk.info/teams/40131)**
 - Гейдар Гамзаев
@@ -1708,9 +1744,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11016), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6510). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/261) и [здесь](https://t.me/chgknews/1160).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**XIV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 21 апреля 2024 года в Баку. <a name="chgk_2024"></a>
+**XIV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 21 апреля 2024 года в Баку. <a id="chgk_2024"></a>
 
 Победитель: **[«Brainstorm» (Баку)](https://rating.chgk.info/teams/6074)**
 - Яна Лялякина
@@ -1724,9 +1762,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9897), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5927). Больше информации о турнире — [здесь](https://t.me/chgknews/802).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**XIII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 5 февраля 2023 года в Баку. <a name="chgk_2023"></a>
+**XIII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 5 февраля 2023 года в Баку. <a id="chgk_2023"></a>
 
 Победитель: **[«Поминки по финикам» (Баку)](https://rating.chgk.info/teams/67979)**
 - Эльнур Гасымзаде
@@ -1740,9 +1780,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8560), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5597). Больше информации о турнире — [здесь](https://t.me/chgknews/428).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**XII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 14 апреля 2019 года в Баку. <a name="chgk_2019"></a>
+**XII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 14 апреля 2019 года в Баку. <a id="chgk_2019"></a>
 
 Победитель: **[«Команда Гусейнова» (Баку)](https://rating.chgk.info/teams/299)**
 - Борис Царицын
@@ -1756,9 +1798,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5573), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/90).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**XI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 11 декабря 2016 года в Баку. <a name="chgk_2016"></a>
+**XI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 11 декабря 2016 года в Баку. <a id="chgk_2016"></a>
 
 Победитель: **[«Brainstorm» (Баку)](https://rating.chgk.info/teams/6074)**
 - Илья Мурзинов
@@ -1773,9 +1817,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4148), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1081).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**X чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 3 мая 2015 года в Баку. <a name="chgk_2015"></a>
+**X чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 3 мая 2015 года в Баку. <a id="chgk_2015"></a>
 
 Победитель: **[«Команда Гусейнова» (Баку)](https://rating.chgk.info/teams/299)**
 - Джамиль Салманов
@@ -1789,9 +1835,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3350), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1816).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**IX чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 18 мая 2013 года в Баку. <a name="chgk_2013"></a>
+**IX чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 18 мая 2013 года в Баку. <a id="chgk_2013"></a>
 
 Победитель: **[«Команда Касумова» (Баку)](https://rating.chgk.info/teams/243)**
 - Алексей Уланов
@@ -1806,9 +1854,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2266), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2729).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**VIII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 8 июня 2012 года в Баку. <a name="chgk_2012"></a>
+**VIII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 8 июня 2012 года в Баку. <a id="chgk_2012"></a>
 
 Победитель: **[«Команда Касумова» (Баку)](https://rating.chgk.info/teams/243)**
 - Алексей Уланов
@@ -1823,9 +1873,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2130), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3069). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/201206Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**VII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 9–10 мая 2008 года в Баку. <a name="chgk_2008"></a>
+**VII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 9–10 мая 2008 года в Баку. <a id="chgk_2008"></a>
 
 Победитель: **[«Команда Касумова» (Баку)](https://rating.chgk.info/teams/243)**
 - Рауф Наджафли
@@ -1840,9 +1892,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/338). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200805Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**VI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 мая 2007 года в Баку. <a name="chgk_2007"></a>
+**VI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 мая 2007 года в Баку. <a id="chgk_2007"></a>
 
 Победитель: **[«Yo!J» (Баку)](https://rating.chgk.info/teams/2723)**
 - Джахангир Фараджуллаев
@@ -1856,9 +1910,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/242), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4635). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200705Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**V чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 17 июня 2006 года в Баку. <a name="chgk_2006"></a>
+**V чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 17 июня 2006 года в Баку. <a id="chgk_2006"></a>
 
 Победитель: **[«Команда Гусейнова» (Баку)](https://rating.chgk.info/teams/299)**
 - Роман Оркодашвили
@@ -1872,9 +1928,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/147), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4360). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200606Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**IV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 июня 2005 года в Баку. <a name="chgk_2005"></a>
+**IV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 июня 2005 года в Баку. <a id="chgk_2005"></a>
 
 Победитель: **[«Команда Гусейнова» (Баку)](https://rating.chgk.info/teams/299)**
 - Роман Оркодашвили
@@ -1888,9 +1946,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/107), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4007). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200506Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**III чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 8 мая 2004 года в Баку. <a name="chgk_2004"></a>
+**III чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 8 мая 2004 года в Баку. <a id="chgk_2004"></a>
 
 Победитель: **[«Команда Касумова» (Баку)](https://rating.chgk.info/teams/243)**
 - Рауф Наджафли
@@ -1904,9 +1964,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/42), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3486). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200405Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**II чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 10 мая 2003 года в Баку. <a name="chgk_2003"></a>
+**II чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 10 мая 2003 года в Баку. <a id="chgk_2003"></a>
 
 Победитель: **[«Команда Гусейнова» (Баку)](https://rating.chgk.info/teams/299)**
 - Хафиз Гаибов
@@ -1920,9 +1982,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1395). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200305Baku.html).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
-**I чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 3–4 мая 2002 года в Баку. <a name="chgk_2002"></a>
+**I чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 3–4 мая 2002 года в Баку. <a id="chgk_2002"></a>
 
 Победитель: **[«Команда Касумова» (Баку)](https://rating.chgk.info/teams/243)**
 - Фуад Мусаев
@@ -1938,18 +2002,20 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1304).
 
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-brain"></div>
 
-<a id="game-brain"></a>
+<a id="game-brain"></a><a id="brain_contents" name="brain_contents"></a>
 
 - [IV чемпионат Азербайджана по БР (2005)](#brain_2005)
 - [I чемпионат Азербайджана по БР (2001)](#brain_2001)
 
 
-**IV чемпионат Азербайджана по брейн-рингу** прошёл 24–25 декабря 2005 года в Баку. <a name="brain_2005"></a>
+**IV чемпионат Азербайджана по брейн-рингу** прошёл 24–25 декабря 2005 года в Баку. <a id="brain_2005"></a>
 
 Победитель: **[«Огуз» (Баку)](https://rating.chgk.info/teams/487)**
 - Октай Магеррамов
@@ -1961,15 +2027,19 @@ else wrapTabs();
 
 Второе место заняла команда [«Команда Бабаева»](https://rating.chgk.info/teams/2271) (Баку), третье — [«Yo!J»](https://rating.chgk.info/teams/2723) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200512Baku.html).
 
+*[К оглавлению](#brain_contents)*
+
 ---
 
-**I чемпионат Азербайджана по брейн-рингу** прошёл 22–23 декабря 2001 года в Баку. <a name="brain_2001"></a>
+**I чемпионат Азербайджана по брейн-рингу** прошёл 22–23 декабря 2001 года в Баку. <a id="brain_2001"></a>
 
 Победитель: **[«Команда Лятифова» (Баку)](https://rating.chgk.info/teams/32752)**
 
 *Состав команды [«Команда Лятифова»](https://rating.chgk.info/teams/32752) (Баку) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
 Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку). Третье место разделили команды [«Команда Зейналова»](https://rating.chgk.info/teams/33236) (Баку) и [«Команда Рагимова»](https://rating.chgk.info/teams/32841) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200112Baku.html).
+
+*[К оглавлению](#brain_contents)*
 
 ---
 

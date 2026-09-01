@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -3342,7 +3376,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-kvrm"></div>
 
-<a id="game-kvrm"></a>
+<a id="game-kvrm"></a><a id="kvrm_contents" name="kvrm_contents"></a>
 
 - [XIV чемпионат Казахстана по КВРМ (2026)](#kvrm_2026)
 - [XIII чемпионат Казахстана по КВРМ (2025)](#kvrm_2025)
@@ -3374,6 +3408,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13686). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1bt02DmEyO7HaKnIDEuuLxjZ8NVneUI4a?usp=sharing). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/125) и [здесь](https://t.me/chgknews/1501).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XIII чемпионат Казахстана по командной викторине с раундами по минуте** прошёл 14–15 июня 2025 года в Алматы. <a name="kvrm_2025"></a>
@@ -3390,6 +3427,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12094), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6452). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1Gwsd4MRNj3k5upsmrYpv4sr5zjB8YryR). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/79) и [здесь](https://t.me/chgknews/1178).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XII чемпионат Казахстана по командной викторине с раундами по минуте** прошёл 1–2 июня 2024 года в Астане. <a name="kvrm_2024"></a>
@@ -3405,6 +3445,9 @@ else wrapTabs();
 Второе место заняла команда [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана), третье — [«Рецессивный доминант»](https://rating.chgk.info/teams/91036) (Астана).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10723), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6441). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chgkastana) и [здесь](https://t.me/chgknews/858).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3423,6 +3466,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9008), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6442). Фотографии с турнира можно посмотреть по [этой ссылке](https://disk.yandex.kz/d/c0EJO7xdM-giZQ).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **X чемпионат Казахстана по командной викторине с раундами по минуте** прошёл 8–9 октября 2022 года в Алматы. <a name="kvrm_2022"></a>
@@ -3438,6 +3484,9 @@ else wrapTabs();
 Второе место заняла команда [«Простые работяги»](https://rating.chgk.info/teams/88108) (Алматы), третье — [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8555), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5403).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3456,6 +3505,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5487).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **VIII чемпионат Казахстана по спортивному «Что? Где? Когда?»** прошёл 16–17 июня 2018 года в Актау. <a name="chgk_2018"></a>
@@ -3471,6 +3523,9 @@ else wrapTabs();
 Второе место заняла команда [«И никого не стало»](https://rating.chgk.info/teams/65159) (Алматы), третье — [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5049).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3488,6 +3543,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4235).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **VI чемпионат Казахстана по спортивному «Что? Где? Когда?»** прошёл 23–24 апреля 2016 года в Астане. <a name="chgk_2016"></a>
@@ -3503,6 +3561,9 @@ else wrapTabs();
 Второе место заняла команда [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана), третье — [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3790).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3521,6 +3582,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3291).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **IV чемпионат Казахстана по спортивному «Что? Где? Когда?»** прошёл 28–29 марта 2014 года в Алматы. <a name="chgk_2014"></a>
@@ -3537,6 +3601,9 @@ else wrapTabs();
 Второе место заняла команда [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана), третье — [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2848).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3555,6 +3622,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2414).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **II чемпионат Казахстана по спортивному «Что? Где? Когда?»** прошёл 17–18 февраля 2012 года в Астане. <a name="chgk_2012"></a>
@@ -3570,6 +3640,9 @@ else wrapTabs();
 Второе место заняла команда [«Glory»](https://rating.chgk.info/teams/37654) (Алматы), третье — [«Альфа»](https://rating.chgk.info/teams/27683) (Алматы).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2015), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3151).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -3587,12 +3660,15 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1874), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3520).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-brain"></div>
 
-<a id="game-brain"></a>
+<a id="game-brain"></a><a id="brain_contents" name="brain_contents"></a>
 
 - [X чемпионат Казахстана по БР (2026)](#brain_2026)
 - [IX чемпионат Казахстана по БР (2024)](#brain_2024)
@@ -3621,6 +3697,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1W6crPMcXTU6TyXW66QQxjfgasK3cs2gQYwX9LMC4qYE/edit?gid=727059521#gid=727059521). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1bt02DmEyO7HaKnIDEuuLxjZ8NVneUI4a?usp=sharing). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/125) и [здесь](https://t.me/chgknews/1501).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 **IX чемпионат Казахстана по брейн-рингу** прошёл 1–2 июня 2024 года в Астане. <a name="brain_2024"></a>
@@ -3637,6 +3716,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1k7HtGU4FYnnC_symgVwpsjxynFt6KjYaiaDF4XIYPqg/edit#gid=1085381949). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chgkastana) и [здесь](https://t.me/chgknews/858).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 **VIII чемпионат Казахстана по брейн-рингу** прошёл 17–18 июня 2023 года в Алматы. <a name="brain_2023"></a>
@@ -3650,6 +3732,9 @@ else wrapTabs();
 - Юрий Воропаев
 
 Второе место заняла команда [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы), третье — [«Ангел в тюбетейке»](https://rating.chgk.info/teams/89600) (Астана).
+
+
+*[К оглавлению](#brain_contents)*
 
 ---
 
@@ -3666,6 +3751,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Приятные люди»](https://rating.chgk.info/teams/76272) (Астана), третье — [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 **VI чемпионат Казахстана по брейн-рингу** прошёл 6–7 апреля 2019 года в Алматы. <a name="brain_2019"></a>
@@ -3679,6 +3767,9 @@ else wrapTabs();
 - Дмитрий Клепиков
 
 Второе место заняла команда [«Басенджи»](https://rating.chgk.info/teams/68172) (Алматы), третье — [«Der Рефрижератор»](https://rating.chgk.info/teams/42364) (Караганда).
+
+
+*[К оглавлению](#brain_contents)*
 
 ---
 
@@ -3694,6 +3785,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Каспий»](https://rating.chgk.info/teams/38145) (Актау), третье — [«Эрудит»](https://rating.chgk.info/teams/37797) (Алматы).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 **IV чемпионат Казахстана по брейн-рингу** прошёл 25–26 марта 2017 года в Астане. <a name="brain_2017"></a>
@@ -3707,6 +3801,9 @@ else wrapTabs();
 - Руслан Каримов
 
 Второе место заняла команда [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана), третье — [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана).
+
+
+*[К оглавлению](#brain_contents)*
 
 ---
 
@@ -3722,6 +3819,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Крылья Гавриила»](https://rating.chgk.info/teams/27685) (Алматы), третье — [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 **II чемпионат Казахстана по брейн-рингу** прошёл 9–10 мая 2015 года в Астане. <a name="brain_2015"></a>
@@ -3735,6 +3835,9 @@ else wrapTabs();
 - Чингиз Жылкыбаев
 
 Второе место заняла команда [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана), третье — [«Ничоси»](https://rating.chgk.info/teams/49225) (Алматы).
+
+
+*[К оглавлению](#brain_contents)*
 
 ---
 
@@ -3751,12 +3854,15 @@ else wrapTabs();
 
 Второе место заняла команда [«Эрудит»](https://rating.chgk.info/teams/37797) (Алматы), третье — [«Крылья Гавриила»](https://rating.chgk.info/teams/27685) (Алматы).
 
+
+*[К оглавлению](#brain_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-hamsa"></div>
 
-<a id="game-hamsa"></a>
+<a id="game-hamsa"></a><a id="hamsa_contents" name="hamsa_contents"></a>
 
 - [XI чемпионат Казахстана по «Хамсе» (2025)](#hamsa_2025)
 - [X чемпионат Казахстана по «Хамсе» (2024)](#hamsa_2024)
@@ -3786,6 +3892,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/12ui1bKV_u2JBfGmfkJ79b7eztJXXiBdnUy8d16FJ3ws/edit?gid=373395725#gid=373395725). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1Gwsd4MRNj3k5upsmrYpv4sr5zjB8YryR). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/79) и [здесь](https://t.me/chgknews/1178).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **X чемпионат Казахстана по «Хамсе»** прошёл 1–2 июня 2024 года в Астане. <a name="hamsa_2024"></a>
@@ -3802,6 +3911,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1k7HtGU4FYnnC_symgVwpsjxynFt6KjYaiaDF4XIYPqg/edit#gid=900255789). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chgkastana) и [здесь](https://t.me/chgknews/858).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **IX чемпионат Казахстана по «Хамсе»** прошёл 17–18 июня 2023 года в Алматы. <a name="hamsa_2023"></a>
@@ -3817,6 +3929,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Простые работяги»](https://rating.chgk.info/teams/88108) (Алматы), третье — [«Вжух»](https://rating.chgk.info/teams/59835) (Алматы).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **VIII чемпионат Казахстана по «Хамсе»** прошёл 8–9 октября 2022 года в Алматы. <a name="hamsa_2022"></a>
@@ -3831,6 +3946,9 @@ else wrapTabs();
 - Александр Марков
 
 Второе место заняла команда [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы), третье — [«Приятные люди»](https://rating.chgk.info/teams/76272) (Астана).
+
+
+*[К оглавлению](#hamsa_contents)*
 
 ---
 
@@ -3848,6 +3966,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана), третье — [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **VI чемпионат Казахстана по «Хамсе»** прошёл 16–17 июня 2018 года в Актау. <a name="hamsa_2018"></a>
@@ -3861,6 +3982,9 @@ else wrapTabs();
 - Анвар Мухаметкалиев
 
 Второе место заняла команда [«Резко континентальные»](https://rating.chgk.info/teams/42100) (Астана), третье — [«Каспий»](https://rating.chgk.info/teams/38145) (Актау).
+
+
+*[К оглавлению](#hamsa_contents)*
 
 ---
 
@@ -3876,6 +4000,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы), третье — [«Тропик Рака»](https://rating.chgk.info/teams/45560) (Астана).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **IV чемпионат Казахстана по «Хамсе»** прошёл 23–24 апреля 2016 года в Астане. <a name="hamsa_2016"></a>
@@ -3889,6 +4016,9 @@ else wrapTabs();
 - Герман Смирнов
 
 Второе место заняла команда [«Крылья Гавриила»](https://rating.chgk.info/teams/27685) (Алматы), третье — [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана).
+
+
+*[К оглавлению](#hamsa_contents)*
 
 ---
 
@@ -3905,6 +4035,9 @@ else wrapTabs();
 
 Второе место разделили команды [«ДНК»](https://rating.chgk.info/teams/45560) (Астана), [«Бедлам»](https://rating.chgk.info/teams/41492) (Астана) и [«Крылья Гавриила»](https://rating.chgk.info/teams/27685) (Алматы).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **II чемпионат Казахстана по «Хамсе»** прошёл 28–29 марта 2014 года в Алматы. <a name="hamsa_2014"></a>
@@ -3920,6 +4053,9 @@ else wrapTabs();
 
 Второе место заняла команда [«Север Помнит»](https://rating.chgk.info/teams/41492) (Астана), третье — [«Brain Art»](https://rating.chgk.info/teams/27684) (Алматы).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 **I чемпионат Казахстана по «Хамсе»** прошёл 31 мая–1 июня 2013 года в Алматы. <a name="hamsa_2013"></a>
@@ -3934,12 +4070,15 @@ else wrapTabs();
 
 Второе место заняла команда [«Poker Face»](https://rating.chgk.info/teams/42320) (Караганда), третье — [«Альфа»](https://rating.chgk.info/teams/27683) (Алматы).
 
+
+*[К оглавлению](#hamsa_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi"></div>
 
-<a id="game-ssi"></a>
+<a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
 
 - [XIII чемпионат Казахстана по ССИ (2026)](#ssi_2026)
 - [XII чемпионат Казахстана по ССИ (2025)](#ssi_2025)
@@ -3964,6 +4103,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1oQtIDoGK1yt6W-8NZO77MjcBgWRdZgfVYVVQ-FHhFeM/edit?gid=869786358#gid=869786358). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1bt02DmEyO7HaKnIDEuuLxjZ8NVneUI4a?usp=sharing). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/125) и [здесь](https://t.me/chgknews/1501).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **XII чемпионат Казахстана по спортивной «Своей игре»** прошёл 14–15 июня 2025 года в Алматы. <a name="ssi_2025"></a>
@@ -3973,6 +4115,9 @@ else wrapTabs();
 Второе место занял [Серафим Шибанов](https://rating.chgk.info/player/36120), третье — [Умбет Ержан](https://rating.chgk.info/player/80113).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/111dXYLvLbA0kAibq4_Ma2snfkmfz6fNzuFboA87EPsc/edit?gid=1094989862#gid=1094989862). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1Gwsd4MRNj3k5upsmrYpv4sr5zjB8YryR). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chkiixiii/79) и [здесь](https://t.me/chgknews/1178).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -3984,6 +4129,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1k7HtGU4FYnnC_symgVwpsjxynFt6KjYaiaDF4XIYPqg/edit#gid=1078057135). Больше информации о турнире — [в этом телеграм-канале](https://t.me/chgkastana) и [здесь](https://t.me/chgknews/858).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **X чемпионат Казахстана по спортивной «Своей игре»** прошёл 17–18 июня 2023 года в Алматы. <a name="ssi_2023"></a>
@@ -3991,6 +4139,9 @@ else wrapTabs();
 Победитель: **[Валерий Есаулков](https://rating.chgk.info/player/122503)**
 
 Второе место занял [Антон Горский](https://rating.chgk.info/player/51774), третье — [Азат Тургунов](https://rating.chgk.info/player/59147).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -4000,6 +4151,9 @@ else wrapTabs();
 
 Второе место занял [Азат Тургунов](https://rating.chgk.info/player/59147), третье — [Чингиз Жылкыбаев](https://rating.chgk.info/player/51725).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **VIII чемпионат Казахстана по спортивной «Своей игре»** прошёл 6–7 апреля 2019 года в Алматы. <a name="ssi_2019"></a>
@@ -4007,6 +4161,9 @@ else wrapTabs();
 Победитель: **[Антон Горский](https://rating.chgk.info/player/51774)**
 
 Второе место занял [Валерий Есаулков](https://rating.chgk.info/player/122503), третье — [Сергей Чистяков](https://rating.chgk.info/player/66296).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -4016,6 +4173,9 @@ else wrapTabs();
 
 Второе место занял [Валерий Есаулков](https://rating.chgk.info/player/122503), третье — [Руслан Шуканов](https://rating.chgk.info/player/57328).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **VI чемпионат Казахстана по спортивной «Своей игре»** прошёл 25–26 марта 2017 года в Астане. <a name="ssi_2017"></a>
@@ -4023,6 +4183,9 @@ else wrapTabs();
 Победитель: **[Анвар Мухаметкалиев](https://rating.chgk.info/player/51715)**
 
 Второе место занял [Талгат Шагамбаев](https://rating.chgk.info/player/53984), третье — [Бауржан Бектемиров](https://rating.chgk.info/player/2885).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -4032,6 +4195,9 @@ else wrapTabs();
 
 Второе место занял [Сергей Чистяков](https://rating.chgk.info/player/66296), третье — [Азат Тургунов](https://rating.chgk.info/player/59147).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **IV чемпионат Казахстана по спортивной «Своей игре»** прошёл 9–10 мая 2015 года в Астане. <a name="ssi_2015"></a>
@@ -4039,6 +4205,9 @@ else wrapTabs();
 Победитель: **[Анвар Мухаметкалиев](https://rating.chgk.info/player/51715)**
 
 Второе место занял [Ерлан Кузбаков](https://rating.chgk.info/player/62768), третье — [Игорь Пятов](https://rating.chgk.info/player/58995).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -4048,6 +4217,9 @@ else wrapTabs();
 
 Второе место занял [Анвар Мухаметкалиев](https://rating.chgk.info/player/51715), третье — [Герман Смирнов](https://rating.chgk.info/player/29607).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **II чемпионат Казахстана по спортивной «Своей игре»** прошёл 31 мая–1 июня 2013 года в Алматы. <a name="ssi_2013"></a>
@@ -4056,6 +4228,9 @@ else wrapTabs();
 
 Второе место занял [Станислав Конев](https://rating.chgk.info/player/54160), третье — [Сергей Чистяков](https://rating.chgk.info/player/66296).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **I чемпионат Казахстана по спортивной «Своей игре»** прошёл 17–18 февраля 2012 года в Астане. <a name="ssi_2012"></a>
@@ -4063,6 +4238,9 @@ else wrapTabs();
 Победитель: **[Анвар Мухаметкалиев](https://rating.chgk.info/player/51715)**
 
 Второе место занял [Адиль Тажин](https://rating.chgk.info/player/59150), третье — [Игорь Линцов](https://rating.chgk.info/player/18394).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 

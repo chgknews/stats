@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -2407,7 +2441,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a>
+<a id="game-chgk"></a><a id="chgk_contents" name="chgk_contents"></a>
 
 - [XIX чемпионат России по спортивному ЧГК (2019)](#chgk_2019)
 - [XVIII чемпионат России по спортивному ЧГК (2018)](#chgk_2018)
@@ -2444,6 +2478,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5465), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5276).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **XVIII чемпионат России по спортивному «Что? Где? Когда?»** прошёл 30 апреля–1 мая 2018 года в Санкт-Петербурге. <a name="chgk_2018"></a>
@@ -2459,6 +2496,9 @@ else wrapTabs();
 Второе место заняла команда [«Ксеп»](https://rating.chgk.info/teams/670) (Москва), третье — [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4936), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/856).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2476,6 +2516,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4247), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1184).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **XVI чемпионат России по спортивному «Что? Где? Когда?»** прошёл 7–8 мая 2016 года в Воронеже. <a name="chgk_2016"></a>
@@ -2492,6 +2535,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3825), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1525).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **XV чемпионат России по спортивному «Что? Где? Когда?»** прошёл 16–17 мая 2015 года в Санкт-Петербурге. <a name="chgk_2015"></a>
@@ -2507,6 +2553,9 @@ else wrapTabs();
 Второе место заняла команда [«Ксеп»](https://rating.chgk.info/teams/670) (Москва), третье — [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3099), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1918).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2525,6 +2574,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2813), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2480).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **XIII чемпионат России по спортивному «Что? Где? Когда?»** прошёл 12–13 апреля 2013 года в Пскове. <a name="chgk_2013"></a>
@@ -2542,6 +2594,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2117), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2867).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **XII чемпионат России по спортивному «Что? Где? Когда?»** прошёл 18–19 мая 2012 года в Москве. <a name="chgk_2012"></a>
@@ -2557,6 +2612,9 @@ else wrapTabs();
 Второе место заняла команда [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург), третье — [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1983), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3239).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2575,6 +2633,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1710), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3889).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **X чемпионат России по спортивному «Что? Где? Когда?»** прошёл 19–20 февраля 2010 года в Москве. <a name="chgk_2010"></a>
@@ -2590,6 +2651,9 @@ else wrapTabs();
 Второе место заняла команда [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург). Третье место разделили команды [«Афина»](https://rating.chgk.info/teams/2) (Москва) и [«Команда Кузьмина»](https://rating.chgk.info/teams/5) (Москва).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/583), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4145).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2609,6 +2673,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/484), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4542).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **VIII чемпионат России по спортивному «Что? Где? Когда?»** прошёл 8–9 марта 2008 года в Москве. <a name="chgk_2008"></a>
@@ -2626,6 +2693,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/315), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4858).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **VII чемпионат России по спортивному «Что? Где? Когда?»** прошёл 23–24 февраля 2007 года в Казани. <a name="chgk_2007"></a>
@@ -2641,6 +2711,9 @@ else wrapTabs();
 Второе место разделили команды [«Неспроста»](https://rating.chgk.info/teams/1) (Москва) и [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/226), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4531).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2658,6 +2731,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/141), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4233).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **V чемпионат России по спортивному «Что? Где? Когда?»** прошёл 25–26 февраля 2005 года в Москве. <a name="chgk_2005"></a>
@@ -2673,6 +2749,9 @@ else wrapTabs();
 Второе место заняла команда [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург), третье — [«Неспроста»](https://rating.chgk.info/teams/1) (Москва).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/76), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3922).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2691,6 +2770,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/22), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3371).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **III чемпионат России по спортивному «Что? Где? Когда?»** прошёл 15–16 февраля 2003 года в Москве. <a name="chgk_2003"></a>
@@ -2707,6 +2789,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1369), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2771).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 **II чемпионат России по спортивному «Что? Где? Когда?»** прошёл 31 января–2 февраля 2002 года в Москве. <a name="chgk_2002"></a>
@@ -2722,6 +2807,9 @@ else wrapTabs();
 Второе место заняла команда [«Транссфера»](https://rating.chgk.info/teams/175) (Санкт-Петербург). Третье место разделили команды [«Неспроста»](https://rating.chgk.info/teams/1) (Москва) и [«Афина»](https://rating.chgk.info/teams/2) (Москва).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1224), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2247).
+
+
+*[К оглавлению](#chgk_contents)*
 
 ---
 
@@ -2740,12 +2828,15 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1082), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1630).
 
+
+*[К оглавлению](#chgk_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ek"></div>
 
-<a id="game-ek"></a>
+<a id="game-ek"></a><a id="ek_contents" name="ek_contents"></a>
 
 - [I чемпионат России по ЭК (2012)](#ek_2012)
 
@@ -2764,12 +2855,15 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1MLb11WySRRX6yP6rXSUXF4JAuO78VtB7_zkmTZPLzRM/edit?gid=8#gid=8).
 
+
+*[К оглавлению](#ek_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi"></div>
 
-<a id="game-ssi"></a>
+<a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
 
 - [I чемпионат России по ССИ (2007)](#ssi_2007)
 
@@ -2782,12 +2876,15 @@ else wrapTabs();
 
 Полные результаты можно найти [на этой странице](http://si-chross.chgk.info/index.php?page=results_wf), вопросы турнира можно почитать [здесь](https://db.chgk.info/tour/russv07). Больше информации о турнире — [на сайте чемпионата](http://si-chross.chgk.info/index.php).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi_f"></div>
 
-<a id="game-ssi_f"></a>
+<a id="game-ssi_f"></a><a id="ssi_f_contents" name="ssi_f_contents"></a>
 
 - [I чемпионат России по ССИ с фальстартами (2007)](#ssi_f_2007)
 
@@ -2799,6 +2896,9 @@ else wrapTabs();
 Второе место занял [Пётр Казённов](https://rating.chgk.info/player/12987), третье — [Евгений Калюков](https://rating.chgk.info/player/13196).
 
 Полные результаты можно найти [на этой странице](http://si-chross.chgk.info/index.php?page=result_falstart), вопросы турнира можно почитать [здесь](https://db.chgk.info/tour/russv07). Больше информации о турнире — [на сайте чемпионата](http://si-chross.chgk.info/index.php).
+
+
+*[К оглавлению](#ssi_f_contents)*
 
 ---
 

@@ -102,19 +102,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -847,7 +881,9 @@ class StatsGenerator:
                     section, tournaments_data, game_types
                 )
                 self._write_tab_start(result_file, self._game_tab_id(section))
-                self._write_game_tournaments(result_file, section, tournament_list)
+                self._write_game_tournaments(
+                    result_file, section, tournament_list, len(sections) > 1
+                )
                 self._write_tab_end(result_file)
 
             if extra_description or missing_rows:
@@ -868,6 +904,13 @@ class StatsGenerator:
     @staticmethod
     def _game_tab_id(game: str) -> str:
         return f"game-{game}"
+
+    @staticmethod
+    def _contents_anchor(game: str, multiple_games: bool) -> str:
+        """Year-list target: contents, or chgk_contents / hamsa_contents when several games share a page."""
+        if multiple_games:
+            return f"{game}_{constants.CONTENTS_ANCHOR}"
+        return constants.CONTENTS_ANCHOR
 
     @staticmethod
     def _has_shared_primary_games(game_types: List[str]) -> bool:
@@ -1613,9 +1656,14 @@ class StatsGenerator:
         file: TextIO,
         game_type: str,
         tournament_list: List[TournamentData],
+        multiple_games: bool = False,
     ) -> None:
         """Year list and edition blocks for one game, shown inside a tab."""
-        file.write(f'<a id="{self._game_tab_id(game_type)}"></a>\n\n')
+        contents = self._contents_anchor(game_type, multiple_games)
+        file.write(
+            f'<a id="{self._game_tab_id(game_type)}"></a>'
+            f'<a id="{contents}" name="{contents}"></a>\n\n'
+        )
         for tournament in tournament_list:
             file.write(
                 f"- [{self._years_entry_label(tournament)}]"
@@ -1623,13 +1671,14 @@ class StatsGenerator:
             )
         file.write("\n")
         for tournament in tournament_list:
-            self._write_tournament_details(file, tournament, game_type)
+            self._write_tournament_details(file, tournament, game_type, contents)
 
     def _write_tournament_details(
         self,
         file: TextIO,
         tournament: TournamentData,
         game_type: str,
+        contents_anchor: str = "",
     ) -> None:
         name_tournament = self.get_name_tournament(
             tournament, constants.GAMES_FULL_NAMES_CASE
@@ -1658,7 +1707,7 @@ class StatsGenerator:
         file.write(language_note)
         if not is_in_future and not tournament.awardees:
             file.write(f"{constants.RESULTS_NOT_COUNTED} ")
-        file.write(f'<a name="{anchor}"></a>')
+        file.write(f'<a id="{anchor}"></a>')
         if tournament.awardees:
             file.write("\n")
             winners = self._awardees_at_place(tournament, 0)
@@ -1672,7 +1721,10 @@ class StatsGenerator:
         self._write_tournament_links(file, tournament.links, is_in_future)
         if not tournament.countable and self._has_finished(tournament):
             file.write(f"\n\n*{constants.UNCOUNTABLE_NOTE}*")
-        file.write("\n\n---\n")
+        file.write(
+            f"\n\n*[{constants.BACK_TO_CONTENTS}]"
+            f"(#{contents_anchor or constants.CONTENTS_ANCHOR})*\n\n---\n"
+        )
 
     def _write_tournament_sheet_info(
         self, file: TextIO, tournament: TournamentData

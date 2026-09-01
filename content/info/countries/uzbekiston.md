@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -2125,7 +2159,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-kvrm"></div>
 
-<a id="game-kvrm"></a>
+<a id="game-kvrm"></a><a id="kvrm_contents" name="kvrm_contents"></a>
 
 - [V чемпионат Узбекистана по «Заковату» (2026)](#zakovat_2026)
 - [IV чемпионат Узбекистана по «Заковату» (2025)](#zakovat_2025)
@@ -2164,6 +2198,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13657).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **IV чемпионат Узбекистана по «Заковату»** прошёл 7–8 июня 2025 года в Ташкенте. <a name="zakovat_2025"></a>
@@ -2179,6 +2216,9 @@ else wrapTabs();
 Второе место заняла команда [«Комната»](https://rating.chgk.info/teams/98988) (Ташкент), третье — [«КАД»](https://rating.chgk.info/teams/59318) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12039).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2196,6 +2236,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10780).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **II чемпионат Узбекистана по «Заковату»** прошёл 14 мая 2023 года в Ташкенте. <a name="zakovat_2023"></a>
@@ -2210,6 +2253,9 @@ else wrapTabs();
 Второе место заняла команда [«Мистерия»](https://rating.chgk.info/teams/2909) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9157).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2228,6 +2274,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8287).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XVI чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 27 октября 2019 года в Ташкенте. <a name="chgk_2019"></a>
@@ -2244,6 +2293,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5989).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XV чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 21–22 апреля 2018 года в Ташкенте. <a name="chgk_2018"></a>
@@ -2259,6 +2311,9 @@ else wrapTabs();
 Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент). Третье место разделили команды [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент) и [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4745).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2278,6 +2333,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4197).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XIII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 21–22 мая 2016 года в Ташкенте. <a name="chgk_2016"></a>
@@ -2296,6 +2354,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3613).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **XII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 28–29 марта 2015 года в Ташкенте. <a name="chgk_2015"></a>
@@ -2311,6 +2372,9 @@ else wrapTabs();
 Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3253).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2330,6 +2394,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2826).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **X чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 20–21 апреля 2013 года в Ташкенте. <a name="chgk_2013"></a>
@@ -2346,6 +2413,9 @@ else wrapTabs();
 Второе место заняла команда [«ParadoX»](https://rating.chgk.info/teams/4749) (Навои), третье — [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2362).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2364,6 +2434,9 @@ else wrapTabs();
 Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2099).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2384,6 +2457,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1775).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **VII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 28–29 мая 2010 года в Ташкенте. <a name="chgk_2010"></a>
@@ -2402,6 +2478,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/665).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **VI чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 9 мая 2009 года в Ташкенте. <a name="chgk_2009"></a>
@@ -2419,6 +2498,9 @@ else wrapTabs();
 Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [«Брюссельские»](https://rating.chgk.info/teams/815) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/456).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2439,6 +2521,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/340).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **IV чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 5 мая 2007 года в Ташкенте. <a name="chgk_2007"></a>
@@ -2456,6 +2541,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/243).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **III чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 13 мая 2006 года в Ташкенте. <a name="chgk_2006"></a>
@@ -2472,6 +2560,9 @@ else wrapTabs();
 Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [«Dream team»](https://rating.chgk.info/teams/3687) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/169).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 
@@ -2491,6 +2582,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/95).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **I чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл в 2004 году в Ташкенте. <a name="chgk_2004"></a>
@@ -2504,12 +2598,15 @@ else wrapTabs();
 - Рим Валеев
 
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi"></div>
 
-<a id="game-ssi"></a>
+<a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
 
 - [XV чемпионат Узбекистана по ССИ (2026)](#ssi_2026)
 - [XIV чемпионат Узбекистана по ССИ (2025)](#ssi_2025)
@@ -2536,6 +2633,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1Qr7GOSy2jy-oiloNYhx83lz4mvmrUcoeDUVDPT3yRiQ/edit?gid=1573363467#gid=1573363467). Больше информации о турнире — [здесь](https://t.me/chgknews/1375).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **XIV чемпионат Узбекистана по спортивной «Своей игре»** прошёл 25 января 2025 года в Ташкенте. <a name="ssi_2025"></a>
@@ -2545,6 +2645,9 @@ else wrapTabs();
 Второе место занял [Павел Корнилов](https://rating.chgk.info/player/174012), третье — [Егор Дружинин](https://rating.chgk.info/player/9801).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1obYf9XLtdzMaUCsyclm8ePN3-WwJpYDlwt4_iqg4JwQ/edit?gid=1573363467#gid=1573363467). Больше информации о турнире — [здесь](https://t.me/chgknews/1027).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -2556,6 +2659,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1fQ8xiH6y5hiwnn_eqgdSTYIdYFR6X0mkCON7PfgT7h8/edit?usp=sharing). Больше информации о турнире — [здесь](https://t.me/chgknews/765).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **XII чемпионат Узбекистана по спортивной «Своей игре»** прошёл 23 февраля 2023 года в Ташкенте. <a name="ssi_2023"></a>
@@ -2566,6 +2672,9 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1rzY7x0JCcM9Yaa0lBlAhJCEP5vY2sELek_5F554M9Cg/edit#gid=1573363467). Больше информации о турнире — [в этом телеграм-канале](https://t.me/iivtiivt/52) и [здесь](https://t.me/chgknews/442).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **XI чемпионат Узбекистана по спортивной «Своей игре»** прошёл 6 февраля 2022 года в Ташкенте. <a name="ssi_2022"></a>
@@ -2573,6 +2682,9 @@ else wrapTabs();
 Победитель: **[Артём Семёнов](https://rating.chgk.info/player/28654)**
 
 Второе место занял [Акрам Икрамов](https://rating.chgk.info/player/12482), третье — [Александр Ли](https://rating.chgk.info/player/18316). Больше информации о турнире — [в этом телеграм-канале](https://t.me/auluz/297).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -2582,6 +2694,9 @@ else wrapTabs();
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Георгий Шванов](https://rating.chgk.info/player/131786). Больше информации о турнире — [в этом телеграм-канале](https://t.me/auluz/271).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **IX чемпионат Узбекистана по спортивной «Своей игре»** прошёл 15 декабря 2019 года в Ташкенте. <a name="ssi_2019"></a>
@@ -2589,6 +2704,9 @@ else wrapTabs();
 Победитель: **[Акрам Икрамов](https://rating.chgk.info/player/12482)**
 
 Второе место занял [Игорь Аипкин](https://rating.chgk.info/player/487), третье — [Сардор Ахмедов](https://rating.chgk.info/player/75099). Больше информации о турнире — [в этом телеграм-канале](https://t.me/auluz/224).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -2598,6 +2716,9 @@ else wrapTabs();
 
 *На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **VII чемпионат Узбекистана по спортивной «Своей игре»** прошёл 28–29 марта 2015 года в Ташкенте. <a name="ssi_2015"></a>
@@ -2605,6 +2726,9 @@ else wrapTabs();
 Победитель: **[Наиль Фарукшин](https://rating.chgk.info/player/32901)**
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Алексей Акименко](https://rating.chgk.info/player/535).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -2614,6 +2738,9 @@ else wrapTabs();
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Азизбек Юсуфов](https://rating.chgk.info/player/37142).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **V чемпионат Узбекистана по спортивной «Своей игре»** прошёл 20–21 апреля 2013 года в Ташкенте. <a name="ssi_2013"></a>
@@ -2622,6 +2749,9 @@ else wrapTabs();
 
 Второе место занял [Хаким Батыралиев](https://rating.chgk.info/player/2673), третье — [Абдулазиз Джалилов](https://rating.chgk.info/player/9240).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **IV чемпионат Узбекистана по спортивной «Своей игре»** прошёл 5–6 мая 2012 года в Ташкенте. <a name="ssi_2012"></a>
@@ -2629,6 +2759,9 @@ else wrapTabs();
 Победитель: **[Мурод Хамраев](https://rating.chgk.info/player/48843)**
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Сергей Щербаков](https://rating.chgk.info/player/36821).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 
@@ -2640,6 +2773,9 @@ else wrapTabs();
 
 *На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **II чемпионат Узбекистана по спортивной «Своей игре»** прошёл 13 декабря 2009 года в Ташкенте. <a name="ssi_2009"></a>
@@ -2648,6 +2784,9 @@ else wrapTabs();
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Руслан Каримов](https://rating.chgk.info/player/13535).
 
+
+*[К оглавлению](#ssi_contents)*
+
 ---
 
 **I чемпионат Узбекистана по спортивной «Своей игре»** прошёл 7 июля 2007 года в Ташкенте. <a name="ssi_2007"></a>
@@ -2655,6 +2794,9 @@ else wrapTabs();
 Победитель: **[Игорь Глущенко](https://rating.chgk.info/player/7215)**
 
 Второе место занял [Галина Прибыткова](https://rating.chgk.info/player/25981), третье — [Елена Бударина](https://rating.chgk.info/player/4339).
+
+
+*[К оглавлению](#ssi_contents)*
 
 ---
 

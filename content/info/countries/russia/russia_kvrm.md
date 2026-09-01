@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -1347,7 +1381,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ek"></div>
 
-<a id="game-ek"></a>
+<a id="game-ek"></a><a id="ek_contents" name="ek_contents"></a>
 
 - [I ЧР по эрудит-квартету (2026)](#ek_2026)
 
@@ -1365,12 +1399,15 @@ else wrapTabs();
 
 Полные результаты можно найти [на этой странице](https://dope.pecheny.me/fest/chr2026/game/ek/). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
 
+
+*[К оглавлению](#ek_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ksi"></div>
 
-<a id="game-ksi"></a>
+<a id="game-ksi"></a><a id="ksi_contents" name="ksi_contents"></a>
 
 - [II ЧР по командной «Своей игре» (2026)](#ksi_2026)
 - [I ЧР по командной «Своей игре» (2025)](#ksi_2025)
@@ -1388,6 +1425,9 @@ else wrapTabs();
 Второе место заняла команда [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург), третье — [«ff»](https://rating.chgk.info/teams/45470) (Москва).
 
 Полные результаты можно найти [на этой странице](https://dope.pecheny.me/fest/chr2026/game/ksi/#results). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
+
+
+*[К оглавлению](#ksi_contents)*
 
 ---
 
@@ -1407,12 +1447,15 @@ else wrapTabs();
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1qs9hVN3FGheWolq96-6zixSnAP6bi53HLNDd-pPTC2Y/edit?gid=896277444#gid=896277444). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/108) и [здесь](https://t.me/chgknews/1487).
 
+
+*[К оглавлению](#ksi_contents)*
+
 ---
 
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-kvrm"></div>
 
-<a id="game-kvrm"></a>
+<a id="game-kvrm"></a><a id="kvrm_contents" name="kvrm_contents"></a>
 
 - [II ЧР по КВРМ (2026)](#kvrm_2026)
 - [I ЧР по КВРМ (2025)](#kvrm_2025)
@@ -1432,6 +1475,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12826), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6900). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
 
+
+*[К оглавлению](#kvrm_contents)*
+
 ---
 
 **I ЧР по КВРМ** прошёл 13–14 июня 2025 года в Москве. <a name="kvrm_2025"></a>
@@ -1447,6 +1493,9 @@ else wrapTabs();
 Второе место заняла команда [«Первая сборная»](https://rating.chgk.info/teams/4109) (Москва), третье — [«Рождённый с ПТСР»](https://rating.chgk.info/teams/103505) (Раменское).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11749), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6369). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/108) и [здесь](https://t.me/chgknews/1487).
+
+
+*[К оглавлению](#kvrm_contents)*
 
 ---
 

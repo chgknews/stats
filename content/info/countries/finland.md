@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -879,7 +913,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a>
+<a id="game-chgk"></a><a name="contents"></a>
 
 - [XX чемпионат Финляндии по спортивному ЧГК (2026)](#chgk_2026)
 - [XIX чемпионат Финляндии по спортивному ЧГК (2025)](#chgk_2025)
@@ -917,6 +951,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13759).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **XIX чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 17 мая 2025 года в Хельсинки. <a name="chgk_2025"></a>
@@ -930,6 +967,9 @@ else wrapTabs();
 Второе место разделили команды [«Мы-6»](https://rating.chgk.info/teams/3950) (Хельсинки) и [«Пробковый ноктурлабиум»](https://rating.chgk.info/teams/91946) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12186).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -945,6 +985,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11375).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **XVII чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 20 мая 2023 года в Хельсинки. <a name="chgk_2023"></a>
@@ -958,6 +1001,9 @@ else wrapTabs();
 Второе место заняла команда [«Эмси-Эмси»](https://rating.chgk.info/teams/129) (Хельсинки), третье — [«Один и Пустота»](https://rating.chgk.info/teams/58400) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11374).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -973,6 +1019,9 @@ else wrapTabs();
 Второе место заняла команда [«Мы-6»](https://rating.chgk.info/teams/3950) (Хельсинки), третье — [«Дети капитана Врунгеля»](https://rating.chgk.info/teams/133) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5524).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -990,6 +1039,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4887).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **XIV чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 13 мая 2017 года в Хельсинки. <a name="chgk_2017"></a>
@@ -1004,6 +1056,9 @@ else wrapTabs();
 Второе место разделили команды [«Эмси-Эмси»](https://rating.chgk.info/teams/129) (Хельсинки) и [«Мы-6»](https://rating.chgk.info/teams/3950) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4299).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1020,6 +1075,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3812).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **XII чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 9 мая 2015 года в Хельсинки. <a name="chgk_2015"></a>
@@ -1034,6 +1092,9 @@ else wrapTabs();
 Второе место заняла команда [«Дети капитана Врунгеля»](https://rating.chgk.info/teams/133) (Хельсинки), третье — [«Primus inter pares»](https://rating.chgk.info/teams/3522) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3349).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1050,6 +1111,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2890).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **X чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 31 мая 2013 года в Хельсинки. <a name="chgk_2013"></a>
@@ -1065,6 +1129,9 @@ else wrapTabs();
 Второе место заняла команда [«Дети капитана Врунгеля»](https://rating.chgk.info/teams/133) (Хельсинки), третье — [«777»](https://rating.chgk.info/teams/3521) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2405).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1083,6 +1150,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2110).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **VIII чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 13 мая 2011 года в Хельсинки. <a name="chgk_2011"></a>
@@ -1099,6 +1169,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1829).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **VII чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 14 мая 2010 года в Хельсинки. <a name="chgk_2010"></a>
@@ -1113,6 +1186,9 @@ else wrapTabs();
 Второе место разделили команды [«Седьмой этаж»](https://rating.chgk.info/teams/132) (Хельсинки) и [«Primus inter pares»](https://rating.chgk.info/teams/3522) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/635).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1129,6 +1205,9 @@ else wrapTabs();
 Второе место разделили команды [«Седьмой этаж»](https://rating.chgk.info/teams/132) (Хельсинки) и [«Мы-6»](https://rating.chgk.info/teams/3950) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/451).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1147,6 +1226,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/337).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **IV чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 20 апреля 2007 года в Хельсинки. <a name="chgk_2007"></a>
@@ -1163,6 +1245,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/238).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **III чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 21 апреля 2006 года в Хельсинки. <a name="chgk_2006"></a>
@@ -1174,6 +1259,9 @@ else wrapTabs();
 Второе место разделили команды [«Склочные пузырьки»](https://rating.chgk.info/teams/131) (Хельсинки), [«Дети капитана Врунгеля»](https://rating.chgk.info/teams/133) (Хельсинки) и [«777»](https://rating.chgk.info/teams/3521) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/193).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -1187,6 +1275,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/94).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **I чемпионат Финляндии по спортивному «Что? Где? Когда?»** прошёл 17 апреля 2004 года в Хельсинки. <a name="chgk_2004"></a>
@@ -1198,6 +1289,9 @@ else wrapTabs();
 Второе место заняла команда [«Столичные лобстеры»](https://rating.chgk.info/teams/130) (Эспоо), третье — [«Склочные пузырьки»](https://rating.chgk.info/teams/131) (Хельсинки).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/24).
+
+
+*[К оглавлению](#contents)*
 
 ---
 

@@ -55,19 +55,53 @@ function wrapTabs(){
   buttons.forEach(function(b){
     b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
   });
+  function findTarget(hash){
+    if(!hash)return null;
+    function match(root){
+      if(!root)return null;
+      var el=root.getElementById?root.getElementById(hash):null;
+      if(el)return el;
+      if(root.querySelector){
+        try{
+          el=root.querySelector('[id="'+hash+'"], [name="'+hash+'"]');
+          if(el)return el;
+        }catch(e){}
+      }
+      var named=(root.getElementsByName?root.getElementsByName(hash):[]);
+      if(named&&named.length)return named[0];
+      return null;
+    }
+    var visible=document.querySelector(".country-tab-panel:not([hidden])");
+    var el=match(visible)||match(document);
+    if(el)return el;
+    try{
+      var decoded=decodeURIComponent(hash);
+      if(decoded!==hash){
+        hash=decoded;
+        visible=document.querySelector(".country-tab-panel:not([hidden])");
+        return match(visible)||match(document);
+      }
+    }catch(e){}
+    return null;
+  }
   function tabFromHash(){
     var hash=(location.hash||"").replace(/^#/,"");
     if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
     if(document.getElementById("country-tab-"+hash))return hash;
-    var el=document.getElementById(hash);
+    var el=findTarget(hash);
     if(el){
       var panel=el.closest(".country-tab-panel");
       if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
     }
     return buttons[0]&&buttons[0].getAttribute("data-tab");
   }
-  show(tabFromHash());
-  window.addEventListener("hashchange",function(){show(tabFromHash());});
+  function reveal(){
+    show(tabFromHash());
+    var el=findTarget((location.hash||"").replace(/^#/,""));
+    if(el)window.requestAnimationFrame(function(){el.scrollIntoView();});
+  }
+  reveal();
+  window.addEventListener("hashchange",reveal);
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
 else wrapTabs();
@@ -310,7 +344,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a>
+<a id="game-chgk"></a><a name="contents"></a>
 
 - [XXII Чемпионат России по спортивному «Что? Где? Когда?» (2026)](#chgk_2026)
 - [XXI Чемпионат России по спортивному «Что? Где? Когда?» (2025)](#chgk_2025)
@@ -320,6 +354,9 @@ else wrapTabs();
 **XXII Чемпионат России по спортивному «Что? Где? Когда?»** пройдёт 12–13 сентября 2026 года в Москве. <a name="chgk_2026"></a>
 
 Больше информации о турнире — [в анонсе](https://t.me/sportchgk/202) и [в этом телеграм-канале](https://t.me/sportchgk).
+
+
+*[К оглавлению](#contents)*
 
 ---
 
@@ -337,6 +374,9 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12459).
 
+
+*[К оглавлению](#contents)*
+
 ---
 
 **XX Чемпионат России по спортивному «Что? Где? Когда?»** прошёл 29–30 июня 2024 года в Москве. <a name="chgk_2024"></a>
@@ -352,6 +392,9 @@ else wrapTabs();
 Второе место заняла команда [«810»](https://rating.chgk.info/teams/98160) (Москва), третье — [«БиВНИ ИА»](https://rating.chgk.info/teams/82209) (Москва).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10899), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6412).
+
+
+*[К оглавлению](#contents)*
 
 ---
 

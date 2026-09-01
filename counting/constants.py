@@ -7,6 +7,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TEAMS_ANCHORS = "teams"
 PLAYERS_ANCHORS = "players"
 MISSING_DATA_ANCHORS = "missing-data"
+CONTENTS_ANCHOR = "contents"
+BACK_TO_CONTENTS = "К оглавлению"
 
 # context
 TEAMS_CONTEXT = "Команды"
