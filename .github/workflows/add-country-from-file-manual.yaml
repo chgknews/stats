@@ -1,0 +1,114 @@
+name: Add country from IDs file (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Country slug (worksheet/tab name), e.g. 'armenia'"
+        required: true
+        type: string
+      ids_file:
+        description: "Path to IDs file in repo, e.g. 'tests/armenia.txt'"
+        required: true
+        type: string
+      game:
+        description: "Game type (default: chgk)"
+        required: false
+        type: string
+        default: "chgk"
+      number:
+        description: "Optional: last championship number (-n)"
+        required: false
+        type: string
+        default: ""
+      writeback:
+        description: "Write back to Google Sheets (creates/rewrites the tab)"
+        required: false
+        type: boolean
+        default: true
+      commit_message:
+        description: "Commit message (optional)"
+        required: false
+        type: string
+        default: "feat: add new country"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: add-country-from-file-manual
+  cancel-in-progress: false
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write Google credentials
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: |
+          if [ -z "$GOOGLE_SHEETS_CREDENTIALS" ]; then
+            echo "GOOGLE_SHEETS_CREDENTIALS secret not set"
+            exit 1
+          fi
+          echo "$GOOGLE_SHEETS_CREDENTIALS" > credentials.json
+
+      - name: Generate country outputs
+        env:
+          SLUG: ${{ inputs.slug }}
+          IDS_FILE: ${{ inputs.ids_file }}
+          GAME: ${{ inputs.game }}
+          NUMBER: ${{ inputs.number }}
+          WRITEBACK: ${{ inputs.writeback }}
+        run: |
+          set -euo pipefail
+
+          if [ ! -f "$IDS_FILE" ]; then
+            echo "IDs file not found: $IDS_FILE"
+            exit 1
+          fi
+
+          RO="--read-only-sheets"
+          if [ "$WRITEBACK" = "true" ]; then RO=""; fi
+
+          EXTRA=""
+          if [ -n "${NUMBER// /}" ]; then
+            EXTRA="-n ${NUMBER}"
+          fi
+
+          python scripts/count_champions.py -f "$IDS_FILE" -cn "$SLUG" -g "$GAME" $EXTRA $RO
+
+      - name: Commit and push
+        env:
+          MSG: ${{ inputs.commit_message }}
+          SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add content/info/countries/ content/tournaments/countries/ content/countries/ data/ .github/sheets_state.json || true
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+
+          # Make the default message a bit more informative if unchanged.
+          if [ "$MSG" = "feat: add new country" ]; then
+            MSG="feat: add ${SLUG} stats"
+          fi
+          git commit -m "$MSG"
+          git push

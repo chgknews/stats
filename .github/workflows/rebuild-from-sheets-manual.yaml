@@ -1,0 +1,93 @@
+name: Rebuild from Google Sheets (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: "Comma-separated country slugs (e.g. 'armenia,montenegro')"
+        required: true
+        type: string
+      writeback:
+        description: "Write back to Google Sheets (full tab rewrite)"
+        required: false
+        type: boolean
+        default: false
+      commit_message:
+        description: "Commit message (optional)"
+        required: false
+        type: string
+        default: "chore: rebuild from Google Sheets"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-from-sheets-manual
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write Google credentials
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: |
+          if [ -z "$GOOGLE_SHEETS_CREDENTIALS" ]; then
+            echo "GOOGLE_SHEETS_CREDENTIALS secret not set"
+            exit 1
+          fi
+          echo "$GOOGLE_SHEETS_CREDENTIALS" > credentials.json
+
+      - name: Rebuild countries
+        env:
+          COUNTRIES: ${{ inputs.countries }}
+          WRITEBACK: ${{ inputs.writeback }}
+        run: |
+          set -euo pipefail
+          if [ -z "${COUNTRIES// /}" ]; then
+            echo "No countries provided"
+            exit 1
+          fi
+
+          RO="--read-only-sheets"
+          if [ "$WRITEBACK" = "true" ]; then RO=""; fi
+
+          IFS=',' read -ra LIST <<< "$COUNTRIES"
+          for c in "${LIST[@]}"; do
+            c="$(echo "$c" | xargs)"
+            [ -z "$c" ] && continue
+            echo "Rebuilding $c"
+            python scripts/count_champions.py -ug "$c" $RO
+          done
+
+      - name: Commit and push
+        env:
+          MSG: ${{ inputs.commit_message }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Markdown pages + public JSON snapshots.
+          git add content/info/countries/ content/tournaments/countries/ content/countries/ data/ .github/sheets_state.json || true
+
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "$MSG"
+          git push

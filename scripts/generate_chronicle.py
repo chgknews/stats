@@ -18,14 +18,16 @@ import json
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
 # ----------------------------------------------------------------------
 # Конфигурация
 # ----------------------------------------------------------------------
 SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
-SERVICE_ACCOUNT_FILE = 'credentials.json'   # путь к вашему JSON‑ключу
+SERVICE_ACCOUNT_FILE = str(REPO_ROOT / 'credentials.json')
 DOCUMENT_ID = '1yY7-VlyTSo_EhecwBUIdTx77akdrYpsCOW_0tod0JQI'   # ID из ссылки
 YEAR = 2026
-OUTPUT_FILE = f'content/info/chronicle/{YEAR}.md'
+OUTPUT_FILE = str(REPO_ROOT / 'content' / 'info' / 'chronicle' / f'{YEAR}.md')
 
 # ----------------------------------------------------------------------
 # Конвертация элементов Docs в HTML (сохраняем форматирование)
