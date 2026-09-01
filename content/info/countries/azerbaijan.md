@@ -6,14 +6,78 @@ bookToC: false
 
 # Азербайджан
 
-Чемпионаты Азербайджана по брейн-рингу проводятся с 2001 года, по спортивному ЧГК — с 2002 года.
+Чемпионаты Азербайджана по брейн-рингу проводятся с 2001 года, по спортивному ЧГК — с 2002 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
@@ -92,20 +156,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/242">Команда Азимова</a></td>
-<td>Баку</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/2723">Yo!J</a></td>
 <td>Баку</td>
 <td>1</td>
@@ -120,6 +170,20 @@ bookToC: false
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/242">Команда Азимова</a></td>
+<td>Баку</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/40131">М4А1</a></td>
 <td>Баку</td>
 <td>2</td>
@@ -129,20 +193,6 @@ bookToC: false
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/5842">КиПЛ</a></td>
-<td>Баку</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -176,43 +226,15 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/543">Команда Мусаева</a></td>
+<td><a href="https://rating.chgk.info/teams/5842">КиПЛ</a></td>
 <td>Баку</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>2</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/1611">ТН</a></td>
-<td>Баку</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/6521">Эверест</a></td>
-<td>Баку</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -246,6 +268,20 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/6521">Эверест</a></td>
+<td>Баку</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/2271">Команда Бабаева</a></td>
 <td>Баку</td>
 <td>0</td>
@@ -257,6 +293,34 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/543">Команда Мусаева</a></td>
+<td>Баку</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/1611">ТН</a></td>
+<td>Баку</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -290,9 +354,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -379,19 +444,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/323">Заур Агаев</a></td>
-<td>0</td>
-<td>3</td>
-<td>6</td>
-<td>9</td>
-<td>0</td>
-<td>3</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/21889">Азиз Муршудли</a></td>
 <td>4</td>
 <td>4</td>
@@ -403,6 +455,19 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/323">Заур Агаев</a></td>
+<td>0</td>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+<td>0</td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/59">Руфат Абдулла</a></td>
@@ -509,6 +574,19 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/20522">Руфат Мейбализаде</a></td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/9265">Орхан Джафаров</a></td>
 <td>0</td>
 <td>1</td>
@@ -522,14 +600,14 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/20522">Руфат Мейбализаде</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/32579">Алексей Уланов</a></td>
 <td>2</td>
-<td>3</td>
-<td>5</td>
-<td>0</td>
 <td>2</td>
-<td>3</td>
+<td>0</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -556,19 +634,6 @@ bookToC: false
 <td>2</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/32579">Алексей Уланов</a></td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>4</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -613,19 +678,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/32886">Джахангир Фараджуллаев</a></td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/47536">Эльнур Гасымзаде</a></td>
 <td>1</td>
 <td>2</td>
@@ -634,6 +686,19 @@ bookToC: false
 <td>1</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/32886">Джахангир Фараджуллаев</a></td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -678,6 +743,19 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/39926">Малик Рамазанзаде</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/7047">Илья Гинзбург</a></td>
 <td>2</td>
 <td>0</td>
@@ -691,17 +769,17 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/39926">Малик Рамазанзаде</a></td>
-<td>2</td>
+<td><a href="https://rating.chgk.info/player/856">Теймур Алиев</a></td>
 <td>1</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>3</td>
-<td>2</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/6418">Хафиз Гайыб</a></td>
@@ -741,19 +819,6 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/856">Теймур Алиев</a></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12033">Нигяр Ибрагимова</a></td>
@@ -886,19 +951,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/8743">Вюгар Дадашев</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/1907">Гюнель Бабаева</a></td>
 <td>0</td>
 <td>2</td>
@@ -925,7 +977,20 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/19715">Сеймур Мамедов</a></td>
+<td><a href="https://rating.chgk.info/player/31140">Эргюн Тагиев</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8743">Вюгар Дадашев</a></td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
@@ -938,17 +1003,17 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/31140">Эргюн Тагиев</a></td>
+<td><a href="https://rating.chgk.info/player/19715">Сеймур Мамедов</a></td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>0</td>
+<td>2</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/107872">Анна Гаузер</a></td>
@@ -1172,6 +1237,253 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/8599">Абдулазим Гусейнов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10631">Илькин Етирмишли</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19153">Октай Магеррамов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Рустам Рустамов</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/441">Эльдар Адильзаде</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/34875">Юрий Чернов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2054">Джавид Бадалбейли</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/52103">Джалал Оруджев</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/33672">Илькин Халилов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/34480">Максим Цурков</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19699">Мамедшакир Мамедзаде</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2064">Ширин Баджанова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/860">Эмин Алиев</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/20963">Лала Мирзоева</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/24364">Мурад Пашазаде</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2362">Наиля Баннаева</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/7419">Ольга Голуб</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8608">Султан Гусейнов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/1906">Эмин Бабаев</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/6719">Айнур Гасанова</a></td>
 <td>0</td>
 <td>0</td>
@@ -1224,19 +1536,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/2054">Джавид Бадалбейли</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/19703">Джавид Мамедов</a></td>
 <td>0</td>
 <td>0</td>
@@ -1245,19 +1544,6 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/52103">Джалал Оруджев</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1276,19 +1562,6 @@ bookToC: false
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/33672">Илькин Халилов</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/17658">Кямран Захид</a></td>
 <td>0</td>
 <td>0</td>
@@ -1297,32 +1570,6 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/34480">Максим Цурков</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/19699">Мамедшакир Мамедзаде</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1405,200 +1652,13 @@ bookToC: false
 <td>0</td>
 <td>0</td>
 </tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2064">Ширин Баджанова</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/860">Эмин Алиев</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8599">Абдулазим Гусейнов</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/10631">Илькин Етирмишли</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/19153">Октай Магеррамов</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Рустам Рустамов</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/441">Эльдар Адильзаде</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/34875">Юрий Чернов</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/20963">Лала Мирзоева</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/24364">Мурад Пашазаде</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2362">Наиля Баннаева</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/7419">Ольга Голуб</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8608">Султан Гусейнов</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/1906">Эмин Бабаев</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-chgk"></div>
 
-
-### Турниры по годам<a name="years"></a>
-
-- [Спортивное «Что? Где? Когда?»](#chgk)
-- [Брейн-ринг](#brain)
-
-#### [Спортивное «Что? Где? Когда?»](#chgk_years)<a name="chgk"></a>
+<a id="game-chgk"></a>
 
 - [XVI чемпионат Азербайджана по спортивному ЧГК (2026)](#chgk_2026)
 - [XV чемпионат Азербайджана по спортивному ЧГК (2025)](#chgk_2025)
@@ -1617,15 +1677,6 @@ bookToC: false
 - [II чемпионат Азербайджана по спортивному ЧГК (2003)](#chgk_2003)
 - [I чемпионат Азербайджана по спортивному ЧГК (2002)](#chgk_2002)
 
-#### [Брейн-ринг](#brain_years)<a name="brain"></a>
-
-- [IV чемпионат Азербайджана по БР (2005)](#brain_2005)
-- [I чемпионат Азербайджана по БР (2001)](#brain_2001)
-
-<small>*[Наверх](#years)*</small>
-
-##### Чемпионаты Азербайджана по спортивному «Что? Где? Когда?»<a name="chgk_years"></a>
-
 
 **XVI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 26 апреля 2026 года в Баку. <a name="chgk_2026"></a>
 
@@ -1640,8 +1691,6 @@ bookToC: false
 Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [«Jazz»](https://rating.chgk.info/teams/45599) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12349). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/361) и [здесь](https://t.me/chgknews/1432).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1659,8 +1708,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11016), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6510). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/261) и [здесь](https://t.me/chgknews/1160).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XIV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 21 апреля 2024 года в Баку. <a name="chgk_2024"></a>
@@ -1676,8 +1723,6 @@ bookToC: false
 Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [«Jazz»](https://rating.chgk.info/teams/45599) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9897), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5927). Больше информации о турнире — [здесь](https://t.me/chgknews/802).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1695,8 +1740,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8560), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5597). Больше информации о турнире — [здесь](https://t.me/chgknews/428).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 14 апреля 2019 года в Баку. <a name="chgk_2019"></a>
@@ -1712,8 +1755,6 @@ bookToC: false
 Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Brainstorm»](https://rating.chgk.info/teams/6074) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5573), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/90).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1732,8 +1773,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4148), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1081).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **X чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 3 мая 2015 года в Баку. <a name="chgk_2015"></a>
@@ -1749,8 +1788,6 @@ bookToC: false
 Второе место заняла команда [«Слон в удаве»](https://rating.chgk.info/teams/6075) (Баку), третье — [«КиПЛ»](https://rating.chgk.info/teams/5842) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3350), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1816).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1769,8 +1806,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2266), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2729).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VIII чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 8 июня 2012 года в Баку. <a name="chgk_2012"></a>
@@ -1787,8 +1822,6 @@ bookToC: false
 Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку), третье — [«Слон в удаве»](https://rating.chgk.info/teams/6075) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2130), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3069). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/201206Baku.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1807,8 +1840,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/338). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200805Baku.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 мая 2007 года в Баку. <a name="chgk_2007"></a>
@@ -1824,8 +1855,6 @@ bookToC: false
 Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/242), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4635). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200705Baku.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1843,8 +1872,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/147), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4360). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200606Baku.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **IV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 июня 2005 года в Баку. <a name="chgk_2005"></a>
@@ -1860,8 +1887,6 @@ bookToC: false
 Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Мусаева»](https://rating.chgk.info/teams/543) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/107), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4007). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200506Baku.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1879,8 +1904,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/42), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3486). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200405Baku.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **II чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 10 мая 2003 года в Баку. <a name="chgk_2003"></a>
@@ -1896,8 +1919,6 @@ bookToC: false
 Второе место заняла команда [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), третье — [«Команда Алиева»](https://rating.chgk.info/teams/268) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1395). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200305Baku.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1917,11 +1938,15 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1304).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-##### Чемпионаты Азербайджана по брейн-рингу<a name="brain_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-brain"></div>
+
+<a id="game-brain"></a>
+
+- [IV чемпионат Азербайджана по БР (2005)](#brain_2005)
+- [I чемпионат Азербайджана по БР (2001)](#brain_2001)
 
 
 **IV чемпионат Азербайджана по брейн-рингу** прошёл 24–25 декабря 2005 года в Баку. <a name="brain_2005"></a>
@@ -1936,24 +1961,25 @@ bookToC: false
 
 Второе место заняла команда [«Команда Бабаева»](https://rating.chgk.info/teams/2271) (Баку), третье — [«Yo!J»](https://rating.chgk.info/teams/2723) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200512Baku.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **I чемпионат Азербайджана по брейн-рингу** прошёл 22–23 декабря 2001 года в Баку. <a name="brain_2001"></a>
 
 Победитель: **[«Команда Лятифова» (Баку)](https://rating.chgk.info/teams/32752)**
 
-*Состав победителей неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+*Состав команды [«Команда Лятифова»](https://rating.chgk.info/teams/32752) (Баку) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
 Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку). Третье место разделили команды [«Команда Зейналова»](https://rating.chgk.info/teams/33236) (Баку) и [«Команда Рагимова»](https://rating.chgk.info/teams/32841) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200112Baku.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
 
 Статистика неполна, поскольку на следующих турнирах пока нет составов:
 - Турнир с id 17
 - [Турнир с id 42](https://rating.chgk.info/tournament/42)
 - [Турнир с id 1395](https://rating.chgk.info/tournament/1395)
 - [Турнир с id 1304](https://rating.chgk.info/tournament/1304)
+</div>

@@ -6,14 +6,78 @@ bookToC: false
 
 # Россия 
 
-Чемпионаты России по спортивному ЧГК проводятся с 2001 года.
+Чемпионаты России по спортивному ЧГК проводятся с 2001 года. Чемпионаты России по эрудит-квартету проводятся с 2012 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Сейчас не хватает информации об итогах ЧРЭК 2013 и 2014 годов. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="game-ssi_f" aria-selected="false">Турниры по ССИ с фальстартами</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
@@ -262,9 +326,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -2339,17 +2404,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-chgk"></div>
 
-
-### Турниры по годам<a name="years"></a>
-
-- [Спортивное «Что? Где? Когда?»](#chgk)
-- [Эрудит-квартет](#ek)
-- [Спортивная «Своя игра»](#ssi)
-- [Спортивная «Своя игра» с фальстартами](#ssi_f)
-
-#### [Спортивное «Что? Где? Когда?»](#chgk_years)<a name="chgk"></a>
+<a id="game-chgk"></a>
 
 - [XIX чемпионат России по спортивному ЧГК (2019)](#chgk_2019)
 - [XVIII чемпионат России по спортивному ЧГК (2018)](#chgk_2018)
@@ -2371,22 +2429,6 @@ bookToC: false
 - [II чемпионат России по спортивному ЧГК (2002)](#chgk_2002)
 - [I чемпионат России по спортивному ЧГК (2001)](#chgk_2001)
 
-#### [Эрудит-квартет](#ek_years)<a name="ek"></a>
-
-- [I чемпионат России по ЭК (2012)](#ek_2012)
-
-#### [Спортивная «Своя игра»](#ssi_years)<a name="ssi"></a>
-
-- [I чемпионат России по ССИ (2007)](#ssi_2007)
-
-#### [Спортивная «Своя игра» с фальстартами](#ssi_f_years)<a name="ssi_f"></a>
-
-- [I чемпионат России по ССИ с фальстартами (2007)](#ssi_f_2007)
-
-<small>*[Наверх](#years)*</small>
-
-#### Чемпионаты России по спортивному «Что? Где? Когда?»<a name="chgk_years"></a>
-
 
 **XIX чемпионат России по спортивному «Что? Где? Когда?»** прошёл 18–19 мая 2019 года в Москве. <a name="chgk_2019"></a>
 
@@ -2400,9 +2442,7 @@ bookToC: false
 
 Второе место заняла команда [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург), третье — [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5465).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5465), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5276).
 
 ---
 
@@ -2418,9 +2458,7 @@ bookToC: false
 
 Второе место заняла команда [«Ксеп»](https://rating.chgk.info/teams/670) (Москва), третье — [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4936).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4936), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/856).
 
 ---
 
@@ -2436,9 +2474,7 @@ bookToC: false
 
 Второе место заняла команда [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург), третье — [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4247).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4247), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1184).
 
 ---
 
@@ -2454,9 +2490,7 @@ bookToC: false
 
 Второе место заняла команда [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург), третье — [«Мираж»](https://rating.chgk.info/teams/55) (Самара).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3825).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3825), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1525).
 
 ---
 
@@ -2472,9 +2506,7 @@ bookToC: false
 
 Второе место заняла команда [«Ксеп»](https://rating.chgk.info/teams/670) (Москва), третье — [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3099).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3099), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1918).
 
 ---
 
@@ -2491,9 +2523,7 @@ bookToC: false
 
 Второе место заняла команда [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург), третье — [«ЛКИ»](https://rating.chgk.info/teams/26) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2813).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2813), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2480).
 
 ---
 
@@ -2510,9 +2540,7 @@ bookToC: false
 
 Второе место заняла команда [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург), третье — [«Афина»](https://rating.chgk.info/teams/2) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2117).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2117), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2867).
 
 ---
 
@@ -2528,9 +2556,7 @@ bookToC: false
 
 Второе место заняла команда [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург), третье — [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1983).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1983), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3239).
 
 ---
 
@@ -2547,9 +2573,7 @@ bookToC: false
 
 Второе место заняла команда [«Мираж»](https://rating.chgk.info/teams/55) (Самара), третье — [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1710).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1710), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3889).
 
 ---
 
@@ -2565,9 +2589,7 @@ bookToC: false
 
 Второе место заняла команда [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург). Третье место разделили команды [«Афина»](https://rating.chgk.info/teams/2) (Москва) и [«Команда Кузьмина»](https://rating.chgk.info/teams/5) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/583).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/583), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4145).
 
 ---
 
@@ -2585,9 +2607,7 @@ bookToC: false
 
 Второе место разделили команды [«ЛКИ»](https://rating.chgk.info/teams/26) (Москва) и [«Катус»](https://rating.chgk.info/teams/1008) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/484).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/484), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4542).
 
 ---
 
@@ -2604,9 +2624,7 @@ bookToC: false
 
 Второе место заняла команда [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург). Третье место разделили команды [«Команда Кузьмина»](https://rating.chgk.info/teams/5) (Москва) и [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/315).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/315), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4858).
 
 ---
 
@@ -2622,9 +2640,7 @@ bookToC: false
 
 Второе место разделили команды [«Неспроста»](https://rating.chgk.info/teams/1) (Москва) и [«Сборная Кирибати»](https://rating.chgk.info/teams/168) (Санкт-Петербург).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/226).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/226), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4531).
 
 ---
 
@@ -2640,9 +2656,7 @@ bookToC: false
 
 Второе место разделили команды [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург) и [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/141).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/141), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4233).
 
 ---
 
@@ -2658,9 +2672,7 @@ bookToC: false
 
 Второе место заняла команда [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург), третье — [«Неспроста»](https://rating.chgk.info/teams/1) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/76).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/76), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3922).
 
 ---
 
@@ -2677,9 +2689,7 @@ bookToC: false
 
 Второе место разделили команды [«Афина»](https://rating.chgk.info/teams/2) (Москва) и [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/22).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/22), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3371).
 
 ---
 
@@ -2695,9 +2705,7 @@ bookToC: false
 
 Второе место заняла команда [«Афина»](https://rating.chgk.info/teams/2) (Москва). Третье место разделили команды [«Команда Ильи Иткина»](https://rating.chgk.info/teams/3) (Москва) и [«Ксеп»](https://rating.chgk.info/teams/670) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1369).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1369), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2771).
 
 ---
 
@@ -2713,9 +2721,7 @@ bookToC: false
 
 Второе место заняла команда [«Транссфера»](https://rating.chgk.info/teams/175) (Санкт-Петербург). Третье место разделили команды [«Неспроста»](https://rating.chgk.info/teams/1) (Москва) и [«Афина»](https://rating.chgk.info/teams/2) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1224).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1224), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2247).
 
 ---
 
@@ -2732,13 +2738,16 @@ bookToC: false
 
 Второе место заняла команда [«Транссфера»](https://rating.chgk.info/teams/175) (Санкт-Петербург), третье — [«Самсон»](https://rating.chgk.info/teams/27601) (Петергоф).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1082).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1082), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1630).
 
 ---
 
-#### Чемпионаты России по эрудит-квартету<a name="ek_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ek"></div>
+
+<a id="game-ek"></a>
+
+- [I чемпионат России по ЭК (2012)](#ek_2012)
 
 
 **I чемпионат России по эрудит-квартету** прошёл 18–19 мая 2012 года в Москве. <a name="ek_2012"></a>
@@ -2755,11 +2764,14 @@ bookToC: false
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1MLb11WySRRX6yP6rXSUXF4JAuO78VtB7_zkmTZPLzRM/edit?gid=8#gid=8).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-#### Чемпионаты России по спортивной «Своей игре»<a name="ssi_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ssi"></div>
+
+<a id="game-ssi"></a>
+
+- [I чемпионат России по ССИ (2007)](#ssi_2007)
 
 
 **I чемпионат России по спортивной «Своей игре»** прошёл 15–16 сентября 2007 года в Великих Луках. <a name="ssi_2007"></a>
@@ -2770,11 +2782,14 @@ bookToC: false
 
 Полные результаты можно найти [на этой странице](http://si-chross.chgk.info/index.php?page=results_wf), вопросы турнира можно почитать [здесь](https://db.chgk.info/tour/russv07). Больше информации о турнире — [на сайте чемпионата](http://si-chross.chgk.info/index.php).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-#### Чемпионаты России по спортивной «Своей игре» с фальстартами<a name="ssi_f_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ssi_f"></div>
+
+<a id="game-ssi_f"></a>
+
+- [I чемпионат России по ССИ с фальстартами (2007)](#ssi_f_2007)
 
 
 **I чемпионат России по спортивной «Своей игре» с фальстартами** прошёл 15–16 сентября 2007 года в Великих Луках. <a name="ssi_f_2007"></a>
@@ -2785,6 +2800,9 @@ bookToC: false
 
 Полные результаты можно найти [на этой странице](http://si-chross.chgk.info/index.php?page=result_falstart), вопросы турнира можно почитать [здесь](https://db.chgk.info/tour/russv07). Больше информации о турнире — [на сайте чемпионата](http://si-chross.chgk.info/index.php).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
+</div>

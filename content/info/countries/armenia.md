@@ -6,19 +6,82 @@ bookToC: false
 
 # Армения
 
-Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года.
+Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
-<tr><th rowspan="2">Команда</th><th rowspan="2">Город</th><th colspan="4" style="text-align:center">Все медали</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th></tr>
+<tr><th>Команда</th><th>Город</th><th>I</th><th>II</th><th>III</th><th>∑</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -184,9 +247,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -1432,15 +1496,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-chgk"></div>
 
-
-### Турниры по годам<a name="years"></a>
-
-- [Спортивное «Что? Где? Когда?»](#chgk)
-- [Спортивная «Своя игра»](#ssi)
-
-#### [Спортивное «Что? Где? Когда?»](#chgk_years)<a name="chgk"></a>
+<a id="game-chgk"></a>
 
 - [XXVII чемпионат Армении по спортивному ЧГК (2026)](#chgk_2026)
 - [XXVI чемпионат Армении по спортивному ЧГК (2025)](#chgk_2025)
@@ -1470,33 +1529,10 @@ bookToC: false
 - [II чемпионат Армении по спортивному ЧГК (1995)](#chgk_1995)
 - [I чемпионат Армении по спортивному ЧГК (1994)](#chgk_1994)
 
-#### [Спортивная «Своя игра»](#ssi_years)<a name="ssi"></a>
-
-- [XVII чемпионат Армении по ССИ (2019)](#ssi_2019)
-- [XVI чемпионат Армении по ССИ (2018)](#ssi_2018)
-- [XV чемпионат Армении по ССИ (2017)](#ssi_2017)
-- [XIV чемпионат Армении по ССИ (2016)](#ssi_2016)
-- [XIII чемпионат Армении по ССИ (2015)](#ssi_2015)
-- [IX чемпионат Армении по ССИ (2011)](#ssi_2011)
-- [VIII чемпионат Армении по ССИ (2010)](#ssi_2010)
-- [VII чемпионат Армении по ССИ (2009)](#ssi_2009)
-- [VI чемпионат Армении по ССИ (2008)](#ssi_2008)
-- [V чемпионат Армении по ССИ (2007)](#ssi_2007)
-- [IV чемпионат Армении по ССИ (2006)](#ssi_2006)
-- [III чемпионат Армении по ССИ (2005)](#ssi_2005)
-- [II чемпионат Армении по ССИ (2004)](#ssi_2004)
-- [I чемпионат Армении по ССИ (2003)](#ssi_2003)
-
-<small>*[Наверх](#years)*</small>
-
-#### Чемпионаты Армении по спортивному «Что? Где? Когда?»<a name="chgk_years"></a>
-
 
 **XXVII чемпионат Армении по спортивному «Что? Где? Когда?»** пройдёт 12 сентября 2026 года в Гюмри. <a name="chgk_2026"></a>
 
 Больше информации о турнире — [в анонсе](https://telegram.me/ChgkgamesArmenia/471).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1514,8 +1550,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12169).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXV чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 26 мая 2024 года в Ереване. <a name="chgk_2024"></a>
@@ -1530,8 +1564,6 @@ bookToC: false
 Второе место заняла команда [«Какие сладкие люди в Ереване»](https://rating.chgk.info/teams/95189) (Ереван), третье — [«Неловко»](https://rating.chgk.info/teams/52916) (сборная).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10763).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1549,8 +1581,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9379).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXIII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 17 июля 2022 года в Ереване. <a name="chgk_2022"></a>
@@ -1566,8 +1596,6 @@ bookToC: false
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван). Третье место разделили команды [«Двин»](https://rating.chgk.info/teams/1025) (Ереван) и [«НУИХ»](https://rating.chgk.info/teams/5141) (Ереван).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8211).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1585,8 +1613,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/7483).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXI чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 7–8 сентября 2019 года в Ереване. <a name="chgk_2019"></a>
@@ -1602,8 +1628,6 @@ bookToC: false
 Второе место заняла команда [«Двин»](https://rating.chgk.info/teams/1025) (Ереван), третье — [«НУИХ»](https://rating.chgk.info/teams/5141) (Ереван).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5911).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1623,8 +1647,6 @@ bookToC: false
 
 *Турнир не учитывается в общей медальной статистике.*
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XX чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 15 июля 2018 года в Гюмри. <a name="chgk_2018"></a>
@@ -1641,8 +1663,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5075).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XIX чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 9 июля 2017 года в Ереване. <a name="chgk_2017"></a>
@@ -1658,8 +1678,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4446).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XVIII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 31 июля 2016 года в Ереване. <a name="chgk_2016"></a>
@@ -1674,9 +1692,7 @@ bookToC: false
 
 Второе место заняла команда [«НУИХ»](https://rating.chgk.info/teams/5141) (Ереван), третье — [«Айастан»](https://rating.chgk.info/teams/245) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3914).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3914), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6422).
 
 ---
 
@@ -1692,9 +1708,7 @@ bookToC: false
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван), третье — [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3429).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3429), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/610).
 
 ---
 
@@ -1710,9 +1724,7 @@ bookToC: false
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван), третье — [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2903).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2903), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/615).
 
 ---
 
@@ -1728,9 +1740,7 @@ bookToC: false
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван), третье — [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2399).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2399), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2641).
 
 ---
 
@@ -1746,9 +1756,7 @@ bookToC: false
 
 Второе место заняла команда [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван), третье — [«Айастан»](https://rating.chgk.info/teams/245) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2134).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2134), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2622).
 
 ---
 
@@ -1764,9 +1772,7 @@ bookToC: false
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван), третье — [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1852).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1852), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3248).
 
 ---
 
@@ -1782,9 +1788,7 @@ bookToC: false
 
 Второе место заняла команда [«ДАФ»](https://rating.chgk.info/teams/1025) (Ереван), третье — [«Айастан»](https://rating.chgk.info/teams/245) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/675).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/675), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3249).
 
 ---
 
@@ -1800,9 +1804,7 @@ bookToC: false
 
 Второе место заняла команда [«Перезагрузка»](https://rating.chgk.info/teams/640) (Ереван), третье — [«Айастан»](https://rating.chgk.info/teams/245) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/487).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/487), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4303).
 
 ---
 
@@ -1818,9 +1820,7 @@ bookToC: false
 
 Второе место заняла команда [«Перезагрузка»](https://rating.chgk.info/teams/640) (Ереван), третье — [«Айастан»](https://rating.chgk.info/teams/245) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/360).
-
-<small>*[К списку турниров](#years)*</small>
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/360), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4717).
 
 ---
 
@@ -1832,8 +1832,6 @@ bookToC: false
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван). Третье место разделили команды [«Перезагрузка»](https://rating.chgk.info/teams/640) (Ереван) и [«АССА»](https://rating.chgk.info/teams/149) (Ереван). Больше информации о турнире — [здесь](https://chgk-am.livejournal.com/43906.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VIII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 4 июня 2006 года в Ереване. <a name="chgk_2006"></a>
@@ -1843,8 +1841,6 @@ bookToC: false
 *Состав команды [«DAF»](https://rating.chgk.info/teams/1025) (Ереван) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
 Второе место заняла команда [«Айастан»](https://rating.chgk.info/teams/245) (Ереван). Третье место разделили команды [«АССА»](https://rating.chgk.info/teams/149) (Ереван) и [«Перезагрузка-Орион»](https://rating.chgk.info/teams/640) (Ереван).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1862,8 +1858,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/108).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **V чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 8 марта 2003 года в Ереване. <a name="chgk_2003"></a>
@@ -1880,8 +1874,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1347).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **IV чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 22 декабря 2001 года в Ереване. <a name="chgk_2001"></a>
@@ -1893,13 +1885,11 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1223).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **III чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 23 октября 1998 года в Ереване. <a name="chgk_1998"></a>
 
-Первое место разделили команды [«ЕрГМУ»](https://rating.chgk.info/teams/29565) (Ереван) и [«Максфилд»](https://rating.chgk.info/teams/38741) (Гюмри). Состав [«ЕрГМУ»](https://rating.chgk.info/teams/29565) (Ереван):
+Первое место разделили команды [«ЕрГМУ»](https://rating.chgk.info/teams/29565) (Ереван) и [«Максфилд»](https://rating.chgk.info/teams/38741) (Гюмри). Состав команды [«ЕрГМУ»](https://rating.chgk.info/teams/29565):
 - Анна Арцруни
 - Эмиль Манукян
 - Левон Манукян
@@ -1913,8 +1903,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1740).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **II чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 4–5 октября 1995 года в Ереване. <a name="chgk_1995"></a>
@@ -1926,8 +1914,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11561). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/199511Erevan.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **I чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 24–25 декабря 1994 года в Ереване. <a name="chgk_1994"></a>
@@ -1937,11 +1923,27 @@ bookToC: false
 *Состав команды [«Факиры»](https://rating.chgk.info/teams/35735) (Гюмри) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
  Больше информации о турнире — [в Летописи](http://letopis.chgk.info/199412Yerevan.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-#### Чемпионаты Армении по спортивной «Своей игре»<a name="ssi_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ssi"></div>
+
+<a id="game-ssi"></a>
+
+- [XVII чемпионат Армении по ССИ (2019)](#ssi_2019)
+- [XVI чемпионат Армении по ССИ (2018)](#ssi_2018)
+- [XV чемпионат Армении по ССИ (2017)](#ssi_2017)
+- [XIV чемпионат Армении по ССИ (2016)](#ssi_2016)
+- [XIII чемпионат Армении по ССИ (2015)](#ssi_2015)
+- [IX чемпионат Армении по ССИ (2011)](#ssi_2011)
+- [VIII чемпионат Армении по ССИ (2010)](#ssi_2010)
+- [VII чемпионат Армении по ССИ (2009)](#ssi_2009)
+- [VI чемпионат Армении по ССИ (2008)](#ssi_2008)
+- [V чемпионат Армении по ССИ (2007)](#ssi_2007)
+- [IV чемпионат Армении по ССИ (2006)](#ssi_2006)
+- [III чемпионат Армении по ССИ (2005)](#ssi_2005)
+- [II чемпионат Армении по ССИ (2004)](#ssi_2004)
+- [I чемпионат Армении по ССИ (2003)](#ssi_2003)
 
 
 **XVII чемпионат Армении по спортивной «Своей игре»** прошёл 2 ноября 2019 года в Ереване. <a name="ssi_2019"></a>
@@ -1952,31 +1954,25 @@ bookToC: false
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1329653126#gid=1329653126).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XVI чемпионат Армении по спортивной «Своей игре»** прошёл 30 июня 2018 года в Ереване. <a name="ssi_2018"></a>
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
-Второе место занял [Ева Махмурян](https://rating.chgk.info/player/20345), третье — [Тигран Магакян](https://rating.chgk.info/player/19143).
+Второе место заняла [Ева Махмурян](https://rating.chgk.info/player/20345), третье — [Тигран Магакян](https://rating.chgk.info/player/19143).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=2043986205#gid=2043986205).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-**XV чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2017"></a>
+**XV чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a name="ssi_2017"></a>
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
 Второе место занял [Арам Арутюнян](https://rating.chgk.info/player/1562), третье — [Ева Махмурян](https://rating.chgk.info/player/20345).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1306338601#gid=1306338601).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1988,19 +1984,15 @@ bookToC: false
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=1103250116#gid=1103250116).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-**XIII чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2015"></a>
+**XIII чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a name="ssi_2015"></a>
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
-Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
+Второе место заняла [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1hnOi5X2Xx86EEyO6ABmkQzfouK5WSD6NKU2dF-yTRsc/edit?gid=398184109#gid=398184109).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -2008,11 +2000,9 @@ bookToC: false
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
-Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
+Второе место заняла [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Тигран Кочарян](https://rating.chgk.info/player/16154).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/u/0/d/1vBT7ZBCCtypSmzjfaMOJO4jomgdB7uSXGYJRAYkjSQs/pub?hl=en_US&pli=1&hl=en_US&hl=en_US&gid=4&pli=1). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/111792.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -2022,8 +2012,6 @@ bookToC: false
 
 Второе место занял [Араик Аветисян](https://rating.chgk.info/player/278), третье — [Арам Арутюнян](https://rating.chgk.info/player/1562). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/83932.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VII чемпионат Армении по спортивной «Своей игре»** прошёл 12 июля 2009 года в Ереване. <a name="ssi_2009"></a>
@@ -2031,8 +2019,6 @@ bookToC: false
 Победитель: **[Арам Арутюнян](https://rating.chgk.info/player/1562)**
 
 Второе место занял [Александр Степанян](https://rating.chgk.info/player/30530), третье — [Григор Топушян](https://rating.chgk.info/player/31998). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/54138.html).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -2042,31 +2028,25 @@ bookToC: false
 
 Второе место занял [Арам Арутюнян](https://rating.chgk.info/player/1562), третье — [Ева Махмурян](https://rating.chgk.info/player/20345). Больше информации о турнире — [здесь](https://svoja-igra-am.livejournal.com/19867.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **V чемпионат Армении по спортивной «Своей игре»** прошёл 15 июля 2007 года в Ереване. <a name="ssi_2007"></a>
 
 Победитель: **[Александр Степанян](https://rating.chgk.info/player/30530)**
 
-Второе место занял [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Ева Махмурян](https://rating.chgk.info/player/20345). Больше информации о турнире — [здесь](https://chgk-am.livejournal.com/52069.html).
-
-<small>*[К списку турниров](#years)*</small>
+Второе место заняла [Асмик Гаряка](https://rating.chgk.info/player/6708), третье — [Ева Махмурян](https://rating.chgk.info/player/20345). Больше информации о турнире — [здесь](https://chgk-am.livejournal.com/52069.html).
 
 ---
 
-**IV чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2006"></a>
+**IV чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a name="ssi_2006"></a>
 
 Победитель: **[Тигран Кочарян](https://rating.chgk.info/player/16154)**
 
 *На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-**III чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2005"></a>
+**III чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a name="ssi_2005"></a>
 
 Победитель: **[Аргишти Геворкян](https://rating.chgk.info/player/6796)**
 
@@ -2074,17 +2054,13 @@ bookToC: false
 
 *На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-**II чемпионат Армении по спортивной «Своей игре»** прошёл в Ереване. <a name="ssi_2004"></a>
+**II чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a name="ssi_2004"></a>
 
 Победитель: **[Асмик Гаряка](https://rating.chgk.info/player/6708)**
 
 *На этом турнире часть призёров неизвестна. Если вы что-то о них знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -2094,6 +2070,18 @@ bookToC: false
 
 Второе место занял [Аргишти Геворкян](https://rating.chgk.info/player/6796), третье — [Асмик Гаряка](https://rating.chgk.info/player/6708). Больше информации о турнире — [в Летописи](http://news.chgk.info/200302ErevanJeop.html).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
+
+Статистика неполна, поскольку на следующих турнирах пока нет составов:
+- Турнир с id 43
+- Турнир с id 44
+- [Турнир с id 1223](https://rating.chgk.info/tournament/1223)
+- [Турнир с id 1740](https://rating.chgk.info/tournament/1740)
+- Турнир с id 42
+- [Турнир с id 2399](https://rating.chgk.info/tournament/2399)
+- [Турнир с id 11561](https://rating.chgk.info/tournament/11561)
+</div>

@@ -6,14 +6,78 @@ bookToC: false
 
 # Чемпионаты России, проводящиеся по лицензии «Игра-ТВ»
 
-Чемпионаты России по спортивному «Что? Где? Когда?» по лицензии телекомпании «Игра-ТВ» проводятся с 2024 года.
+Чемпионаты России по спортивному «Что? Где? Когда?» по лицензии телекомпании «Игра-ТВ» проводятся с 2024 года. Нумерация начинается с XX номера, поскольку организаторы претендуют на преемственность к [чемпионатам России по спортивному ЧГК, проводившимся с 2001 по 2019 год](/info/countries/russia/russia_01_19/), но в текущей статистике эти турниры разделены. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти отдельную информацию о каждом чемпионате.
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
@@ -55,9 +119,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -242,22 +307,19 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-chgk"></div>
 
-
-### Турниры по годам<a name="years"></a>
+<a id="game-chgk"></a>
 
 - [XXII Чемпионат России по спортивному «Что? Где? Когда?» (2026)](#chgk_2026)
 - [XXI Чемпионат России по спортивному «Что? Где? Когда?» (2025)](#chgk_2025)
 - [XX Чемпионат России по спортивному «Что? Где? Когда?» (2024)](#chgk_2024)
 
-<small>*[Наверх](#atop)*</small>
 
 **XXII Чемпионат России по спортивному «Что? Где? Когда?»** пройдёт 12–13 сентября 2026 года в Москве. <a name="chgk_2026"></a>
 
 Больше информации о турнире — [в анонсе](https://t.me/sportchgk/202) и [в этом телеграм-канале](https://t.me/sportchgk).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -275,8 +337,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12459).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XX Чемпионат России по спортивному «Что? Где? Когда?»** прошёл 29–30 июня 2024 года в Москве. <a name="chgk_2024"></a>
@@ -293,6 +353,9 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10899), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6412).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
+</div>

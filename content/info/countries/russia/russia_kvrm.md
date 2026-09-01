@@ -6,14 +6,78 @@ bookToC: false
 
 # ЧР по интеллектуальным играм
 
-ЧР по интеллектуальным играм проводятся с 2025 года.
+ЧР по интеллектуальным играм проводятся с 2025 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Чуть больше информации об истории турнира можно найти в [этой гуглтаблице](https://docs.google.com/spreadsheets/d/1s6YqakSEDwkGOYQsDWwT4oKGeK-v-8U7WCTbeZ_i6dk/edit?gid=0#gid=0).
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ksi" aria-selected="false">Турниры по КСИ</button><button type="button" role="tab" data-tab="game-kvrm" aria-selected="false">Турниры по КВРМ</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
@@ -194,9 +258,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -1279,32 +1344,12 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ek"></div>
 
-
-### Турниры по годам<a name="years"></a>
-
-- [Эрудит-квартет](#ek)
-- [Командная «Своя игра»](#ksi)
-- [Командная викторина с раундами по минуте](#kvrm)
-
-#### [Эрудит-квартет](#ek_years)<a name="ek"></a>
+<a id="game-ek"></a>
 
 - [I ЧР по эрудит-квартету (2026)](#ek_2026)
-
-#### [Командная «Своя игра»](#ksi_years)<a name="ksi"></a>
-
-- [II ЧР по командной «Своей игре» (2026)](#ksi_2026)
-- [I ЧР по командной «Своей игре» (2025)](#ksi_2025)
-
-#### [Командная викторина с раундами по минуте](#kvrm_years)<a name="kvrm"></a>
-
-- [II ЧР по КВРМ (2026)](#kvrm_2026)
-- [I ЧР по КВРМ (2025)](#kvrm_2025)
-
-<small>*[Наверх](#years)*</small>
-
-#### Чемпионаты России по эрудит-квартету<a name="ek_years"></a>
 
 
 **I ЧР по эрудит-квартету** прошёл 13–14 июня 2026 года в Москве. <a name="ek_2026"></a>
@@ -1320,11 +1365,15 @@ bookToC: false
 
 Полные результаты можно найти [на этой странице](https://dope.pecheny.me/fest/chr2026/game/ek/). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-#### Чемпионаты России по командной «Своей игре»<a name="ksi_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ksi"></div>
+
+<a id="game-ksi"></a>
+
+- [II ЧР по командной «Своей игре» (2026)](#ksi_2026)
+- [I ЧР по командной «Своей игре» (2025)](#ksi_2025)
 
 
 **II ЧР по командной «Своей игре»** прошёл 13 июня 2026 года в Москве. <a name="ksi_2026"></a>
@@ -1339,8 +1388,6 @@ bookToC: false
 Второе место заняла команда [«Рабочее название»](https://rating.chgk.info/teams/45556) (Санкт-Петербург), третье — [«ff»](https://rating.chgk.info/teams/45470) (Москва).
 
 Полные результаты можно найти [на этой странице](https://dope.pecheny.me/fest/chr2026/game/ksi/#results). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1360,11 +1407,15 @@ bookToC: false
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1qs9hVN3FGheWolq96-6zixSnAP6bi53HLNDd-pPTC2Y/edit?gid=896277444#gid=896277444). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/108) и [здесь](https://t.me/chgknews/1487).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
-#### Чемпионаты России по командной викторине с раундами по минуте<a name="kvrm_years"></a>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-kvrm"></div>
+
+<a id="game-kvrm"></a>
+
+- [II ЧР по КВРМ (2026)](#kvrm_2026)
+- [I ЧР по КВРМ (2025)](#kvrm_2025)
 
 
 **II ЧР по КВРМ** прошёл 13–14 июня 2026 года в Москве. <a name="kvrm_2026"></a>
@@ -1380,8 +1431,6 @@ bookToC: false
 Второе место заняла команда [«Призраки Коши»](https://rating.chgk.info/teams/27177) (Санкт-Петербург), третье — [«Тихие Тигры»](https://rating.chgk.info/teams/75592) (Мытищи).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12826), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6900). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/251) и [здесь](https://t.me/chgknews/1176).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1399,6 +1448,9 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11749), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6369). Больше информации о турнире — [в этом телеграм-канале](https://t.me/ruchamp_intgames/108) и [здесь](https://t.me/chgknews/1487).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
+</div>

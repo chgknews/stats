@@ -6,14 +6,78 @@ bookToC: false
 
 # Израиль
 
-Чемпионаты Израиля проводятся с 1995 года.
+Чемпионаты Израиля проводятся с 1995 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны. Сейчас не хватает информации о самом первом чемпионате, а также некоторых иных. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
 
-## Зал славы<a name="atop"></a>
-- [Команды](#teams)
-- [Игроки](#players)
-- [Чемпионаты по годам](#years)
+<style>
+.country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.country-tab-bar button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:.45rem .85rem;cursor:pointer;font:inherit;color:inherit}
+.country-tab-bar button.is-active{border-bottom-color:currentColor;font-weight:600}
+.country-tab-hide-until-ready~*:not(.country-always-visible){display:none}
+</style>
+<script>
+(function(){
+function wrapTabs(){
+  var starts=document.querySelectorAll(".country-tab-start");
+  if(!starts.length)return;
+  starts.forEach(function(start){
+    var id=start.getAttribute("data-tab");
+    var panel=document.createElement("div");
+    panel.className="country-tab-panel";
+    panel.id="country-tab-"+id;
+    panel.setAttribute("role","tabpanel");
+    var node=start.nextSibling;
+    while(node){
+      var next=node.nextSibling;
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-end")){
+        node.remove();
+        break;
+      }
+      if(node.nodeType===1&&node.classList&&node.classList.contains("country-tab-start"))break;
+      panel.appendChild(node);
+      node=next;
+    }
+    start.parentNode.insertBefore(panel,start);
+    start.remove();
+  });
+  var hide=document.querySelector(".country-tab-hide-until-ready");
+  if(hide)hide.remove();
+  var buttons=document.querySelectorAll(".country-tab-bar [data-tab]");
+  function show(id){
+    document.querySelectorAll(".country-tab-panel").forEach(function(p){
+      p.hidden=p.id!=="country-tab-"+id;
+    });
+    buttons.forEach(function(b){
+      var on=b.getAttribute("data-tab")===id;
+      b.classList.toggle("is-active",on);
+      b.setAttribute("aria-selected",on?"true":"false");
+    });
+  }
+  buttons.forEach(function(b){
+    b.addEventListener("click",function(){show(b.getAttribute("data-tab"));});
+  });
+  function tabFromHash(){
+    var hash=(location.hash||"").replace(/^#/,"");
+    if(!hash)return buttons[0]&&buttons[0].getAttribute("data-tab");
+    if(document.getElementById("country-tab-"+hash))return hash;
+    var el=document.getElementById(hash);
+    if(el){
+      var panel=el.closest(".country-tab-panel");
+      if(panel&&panel.id.indexOf("country-tab-")===0)return panel.id.slice("country-tab-".length);
+    }
+    return buttons[0]&&buttons[0].getAttribute("data-tab");
+  }
+  show(tabFromHash());
+  window.addEventListener("hashchange",function(){show(tabFromHash());});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",wrapTabs);
+else wrapTabs();
+})();
+</script>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button></nav>
+<div class="country-tab-hide-until-ready"></div>
+<div class="country-tab-start" data-tab="teams"></div>
 
-### Команды<a name="teams"></a>
+<a id="teams"></a>
 
 <table>
 <thead>
@@ -191,9 +255,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="players"></div>
 
-### Игроки<a name="players"></a>
+<a id="players"></a>
 
 <table>
 <thead>
@@ -1050,10 +1115,10 @@ bookToC: false
 </tbody>
 </table>
 
-<small>*[Наверх](#atop)*</small>
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-chgk"></div>
 
-
-### Турниры по годам<a name="years"></a>
+<a id="game-chgk"></a>
 
 - [XXVIII чемпионат Израиля по спортивному ЧГК (2026)](#chgk_2026)
 - [XXVII чемпионат Израиля по спортивному ЧГК (2025)](#chgk_2025)
@@ -1084,13 +1149,10 @@ bookToC: false
 - [II чемпионат Израиля по спортивному ЧГК (1997)](#chgk_1997)
 - [I чемпионат Израиля по спортивному ЧГК (1995)](#chgk_1995)
 
-<small>*[Наверх](#atop)*</small>
 
 **XXVIII чемпионат Израиля по спортивному «Что? Где? Когда?»** пройдёт 10 октября 2026 года в Тель-Авиве. <a name="chgk_2026"></a>
 
 Больше информации о турнире — [в анонсе](https://www.facebook.com/groups/309438939151833/posts/27450496921286001).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1108,8 +1170,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12214).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXVI чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 18 мая 2024 года в Тель-Авиве. <a name="chgk_2024"></a>
@@ -1124,8 +1184,6 @@ bookToC: false
 Второе место разделили команды [«Братья»](https://rating.chgk.info/teams/641) (Тель-Авив) и [«Клеver»](https://rating.chgk.info/teams/43452) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10477).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1142,8 +1200,6 @@ bookToC: false
 Второе место заняла команда [«Неглинка»](https://rating.chgk.info/teams/91853) (сборная), третье — [«Fight Club»](https://rating.chgk.info/teams/50386) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/6353).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1162,8 +1218,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5674).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXIII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 5 мая 2018 года в Тель-Авиве. <a name="chgk_2018"></a>
@@ -1181,8 +1235,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4849).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XXII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 3 июня 2017 года в Тель-Авиве. <a name="chgk_2017"></a>
@@ -1198,8 +1250,6 @@ bookToC: false
 Второе место заняла команда [«Инфи. Ёжики»](https://rating.chgk.info/teams/1642) (Рамат-Ган). Третье место разделили команды [«Эволюция»](https://rating.chgk.info/teams/4075) (Тель-Авив) и [«Fight Club»](https://rating.chgk.info/teams/50386) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4348).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1218,8 +1268,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3767).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XX чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 28 марта 2015 года в Тель-Авиве. <a name="chgk_2015"></a>
@@ -1236,8 +1284,6 @@ bookToC: false
 Второе место заняла команда [«Fight Club»](https://rating.chgk.info/teams/50386) (Тель-Авив). Третье место разделили команды [«Инфи. Ёжики»](https://rating.chgk.info/teams/1642) (Рамат-Ган) и [«Птица-говорун»](https://rating.chgk.info/teams/4869) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3175).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1256,8 +1302,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2794).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XVIII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 19 апреля 2013 года в Тель-Авиве. <a name="chgk_2013"></a>
@@ -1275,8 +1319,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2364).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XVII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 4 мая 2012 года в Тель-Авиве. <a name="chgk_2012"></a>
@@ -1292,8 +1334,6 @@ bookToC: false
 Второе место заняла команда [«Эволюция»](https://rating.chgk.info/teams/4075) (Тель-Авив), третье — [«Инфи. Ёжики»](https://rating.chgk.info/teams/1642) (Рамат-Ган).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2053).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1312,8 +1352,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1796).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XV чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 23 апреля 2010 года в Тель-Авиве. <a name="chgk_2010"></a>
@@ -1329,8 +1367,6 @@ bookToC: false
 Второе место заняла команда [«Братья»](https://rating.chgk.info/teams/641) (Тель-Авив), третье — [«StartUp»](https://rating.chgk.info/teams/599) (Хайфа).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/630).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1349,8 +1385,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/471).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XIII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 1–2 мая 2008 года в Тель-Авиве. <a name="chgk_2008"></a>
@@ -1367,8 +1401,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/335).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **XII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 6 мая 2007 года в Тель-Авиве. <a name="chgk_2007"></a>
@@ -1384,8 +1416,6 @@ bookToC: false
 Второе место заняла команда [«StartUp»](https://rating.chgk.info/teams/599) (Хайфа), третье — [«Десятый вал»](https://rating.chgk.info/teams/194) (Хайфа).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/245).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1404,8 +1434,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/163).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **X чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 20 мая 2005 года в Тель-Авиве. <a name="chgk_2005"></a>
@@ -1422,8 +1450,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/102).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **IX чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 7 мая 2004 года в Тель-Авиве. <a name="chgk_2004"></a>
@@ -1436,8 +1462,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/21).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VIII чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 2 мая 2003 года в Тель-Авиве. <a name="chgk_2003"></a>
@@ -1449,8 +1473,6 @@ bookToC: false
 Второе место заняла команда [«Десятый вал»](https://rating.chgk.info/teams/194) (Хайфа), третье — [«Шалуны»](https://rating.chgk.info/teams/1014) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1381).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1468,8 +1490,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1270).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **VI чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 18 мая 2001 года в Хайфе. <a name="chgk_2001"></a>
@@ -1486,8 +1506,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1150).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **V чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 12 мая 2000 года в Хайфе. <a name="chgk_2000"></a>
@@ -1498,8 +1516,6 @@ bookToC: false
 Второе место заняла команда [«Cmon Сова»](https://rating.chgk.info/teams/35931) (Иерусалим), третье — [«Незнайка»](https://rating.chgk.info/teams/228) (Хайфа).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1056).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1512,8 +1528,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1166).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **III чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл 18 апреля 1998 года в Тель-Авиве. <a name="chgk_1998"></a>
@@ -1524,8 +1538,6 @@ bookToC: false
 Второе место заняла команда [«Паутина»](https://rating.chgk.info/teams/1215) (Иерусалим), третье — [«Незнайка»](https://rating.chgk.info/teams/228) (Хайфа).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/716).
-
-<small>*[К списку турниров](#years)*</small>
 
 ---
 
@@ -1538,8 +1550,6 @@ bookToC: false
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10870).
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
 
 **I чемпионат Израиля по спортивному «Что? Где? Когда?»** прошёл в 1995 году. Город проведения пока неизвестен. <a name="chgk_1995"></a>
@@ -1549,6 +1559,15 @@ bookToC: false
 *Состав команды [«Know How»](https://rating.chgk.info/teams/599) (Хайфа) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
 
-<small>*[К списку турниров](#years)*</small>
-
 ---
+
+<div class="country-tab-end"></div>
+<div class="country-always-visible">
+
+
+Статистика неполна, поскольку на следующих турнирах пока нет составов:
+- [Турнир с id 21](https://rating.chgk.info/tournament/21)
+- [Турнир с id 1381](https://rating.chgk.info/tournament/1381)
+- Турнир с id 112
+- [Турнир с id 1270](https://rating.chgk.info/tournament/1270)
+</div>
