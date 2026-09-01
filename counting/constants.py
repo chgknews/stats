@@ -11,7 +11,7 @@ MISSING_DATA_ANCHORS = "missing-data"
 # context
 TEAMS_CONTEXT = "Команды"
 PLAYERS_CONTEXT = "Игроки"
-MISSING_DATA_TAB = "Нет данных"
+MISSING_DATA_TAB = "Проблемы"
 CHAMPIONSHIPS_TAB = "Чемпионаты"
 TOURNAMENTS_TAB_PREFIX = "Турниры по "
 ALL_MEDALS_HEADER = "Все медали"
