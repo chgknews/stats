@@ -1,23 +1,6 @@
 {
-  "generated": "2026-08-28",
+  "generated": "2026-09-01",
   "events": [
-    {
-      "date": "30 августа",
-      "date_start": "2026-08-30",
-      "date_end": "2026-08-30",
-      "place": "[площадки](https://rating.chgk.info/tournament/13493/requests)",
-      "name": "[Friendship Games](https://rating.chgk.info/tournament/13493) (строгий синхрон)",
-      "place_html": "<a href=\"https://rating.chgk.info/tournament/13493/requests\">площадки</a>",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13493\">Friendship Games</a> (строгий синхрон)",
-      "geography": [
-        "synch"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
     {
       "date": "5–6 сентября",
       "date_start": "2026-09-05",
@@ -725,6 +708,23 @@
       "champ": false
     },
     {
+      "date": "26–27 ноября",
+      "date_start": "2026-11-26",
+      "date_end": "2026-11-27",
+      "place": "Самара",
+      "name": "[Самариум](https://t.me/chgknews/1545)",
+      "place_html": "Самара",
+      "name_html": "<a href=\"https://t.me/chgknews/1545\">Самариум</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
       "date": "8–10 января 2027 года",
       "date_start": "2027-01-08",
       "date_end": "2027-01-10",
@@ -738,6 +738,23 @@
       "age": [],
       "game": [
         "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "30–31 января 2027 года",
+      "date_start": "2027-01-30",
+      "date_end": "2027-01-31",
+      "place": "Минск",
+      "name": "[Олимпийский кубок Беларуси](https://rating.chgk.info/tournament/14182) ((даты могут измениться))",
+      "place_html": "Минск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14182\">Олимпийский кубок Беларуси</a> ((даты могут измениться))",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
       ],
       "champ": false
     },
