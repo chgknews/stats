@@ -167,16 +167,27 @@ class StatsGenerator:
         self,
         country: str,
         read_only_sheets: bool = False,
+        skip_doubles_check: bool = False,
+        spreadsheet_id: Optional[str] = None,
+        test: bool = False,
     ):
         self.country = country
         self.age = constants.DEFAULT_AGE
         self.read_only_sheets = read_only_sheets
+        self.skip_doubles_check = skip_doubles_check
+        self.spreadsheet_id = spreadsheet_id or constants.GOOGLE_SHEETS_SPREADSHEET_ID
+        self.test = test or (
+            self.spreadsheet_id == constants.GOOGLE_SHEETS_TEST_SPREADSHEET_ID
+        )
         self.processor = TournamentProcessor()
         self.allocator = EntityIdAllocator()
         self.registry = EntityRegistry(self.allocator)
-        exporter = GoogleSheetsExporter()
+        exporter = self._exporter()
         if exporter.is_available():
             self.allocator.load_from_exporter(exporter)
+
+    def _exporter(self) -> GoogleSheetsExporter:
+        return GoogleSheetsExporter(spreadsheet_id=self.spreadsheet_id)
 
     def generate_stats(
         self,
@@ -194,6 +205,8 @@ class StatsGenerator:
         if game in constants.INDIVIDUAL_GAMES:
             self._reject_individual_api(game)
             return
+
+        self._remember_global_entities()
 
         team_stats: Dict[int, Awardee] = {}
         player_stats: Dict[int, Awardee] = {}
@@ -352,13 +365,17 @@ class StatsGenerator:
             meta=meta, intro=intro,
         )
 
-        exporter = GoogleSheetsExporter()
+        exporter = self._exporter()
         if exporter.is_available():
             if not self.read_only_sheets:
                 print(f"Exporting to Google Sheets worksheet: {self.country}")
                 exporter.export_data(self.country, output_data)
                 self.allocator.persist_to_exporter(exporter)
-            exporter.write_public_json()
+            if self.test:
+                print("Skipping public JSON rewrite (--test).")
+            else:
+                exporter.write_public_json()
+            self._sync_doubles_sheet(exporter)
         else:
             print("Google Sheets is not available; public JSON not updated.")
 
@@ -367,14 +384,33 @@ class StatsGenerator:
         )
 
     def _load_from_sheets(self) -> Optional[Dict[str, Any]]:
-        exporter = GoogleSheetsExporter()
+        exporter = self._exporter()
         if not exporter.is_available():
             print("Google Sheets is not available.")
             return None
         data = exporter.load_data(self.country)
         if data:
             self._seed_registry_from_loaded(data)
+            self._remember_global_entities(exporter)
         return data
+
+    def _remember_global_entities(
+        self, exporter: Optional[GoogleSheetsExporter] = None
+    ) -> None:
+        """Index ts_id/uz_id/ua_id from every country so API imports reuse ids."""
+        from counting.doubles import collect_entity_sets
+
+        exporter = exporter or self._exporter()
+        if not exporter.is_available():
+            return
+        self.registry.remember_foreign_ids(collect_entity_sets(exporter))
+
+    def _sync_doubles_sheet(self, exporter: GoogleSheetsExporter) -> None:
+        if self.skip_doubles_check:
+            return
+        from counting.doubles import sync_doubles_sheet
+
+        sync_doubles_sheet(exporter, write=not self.read_only_sheets)
 
     def _seed_registry_from_loaded(self, data: Dict[str, Any]) -> None:
         for raw in (data.get("teams") or {}).values():
@@ -707,7 +743,10 @@ class StatsGenerator:
         for _, awardee in sorted(
             source.awardees.items(), key=lambda item: (item[1].place, item[0])
         ):
-            place = awardee.place
+            try:
+                place = int(awardee.place)
+            except (TypeError, ValueError):
+                continue
             if place >= constants.TOP_PLACES:
                 continue
             # Ensure internal ids when reprocessing sheet-loaded rows.
@@ -830,6 +869,9 @@ class StatsGenerator:
     def _needs_roster_error(awardee: TournamentAwardee) -> bool:
         if awardee.individual:
             return awardee.individual_player() is None
+        # Sheet flag no, or yes with no Rosters rows loaded — still missing.
+        if not awardee.team.players:
+            return True
         return not awardee.roster_complete
 
 
@@ -841,8 +883,10 @@ class StatsGenerator:
         errors: Dict[str, Any],
         intro: str = "",
     ) -> None:
-        dest = get_markdown_output_path(self.country)
+        dest = get_markdown_output_path(self.country, test=self.test)
         dest.parent.mkdir(parents=True, exist_ok=True)
+        if self.test:
+            print(f"Writing markdown to {dest}")
 
         country_title = get_country_title(self.country)
         country_header = get_country_header(self.country)
@@ -1241,7 +1285,9 @@ class StatsGenerator:
             for awardee in stats.values()
             for game in awardee.games_with_medals()
         }
-        multi_game = len(games) > 1
+        # chgk+kvrm+zakovat+od is one group, so «more than one game» follows
+        # visible columns, not raw game codes.
+        multi_game = len(medal_column_groups(games)) > 1
 
         def name_key(awardee: Awardee) -> str:
             return names.get(awardee.id, awardee.name).casefold()
@@ -1311,7 +1357,7 @@ class StatsGenerator:
             f"<td>{awardee.gold}</td>\n"
             f"<td>{awardee.silver}</td>\n"
             f"<td>{awardee.bronze}</td>\n"
-            f"<td>{awardee.sum}</td>\n"
+            f"<td>{awardee.gold + awardee.silver + awardee.bronze}</td>\n"
         )
         for _name, games in columns:
             gold, silver, bronze, _total = awardee.counts_for(games)

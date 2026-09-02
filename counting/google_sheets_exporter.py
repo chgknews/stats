@@ -129,7 +129,13 @@ class GoogleSheetsExporter:
         return snapshot
 
     def write_public_json(self, path: Optional[str] = None) -> bool:
-        """Rewrite ``data/countries.json`` from every public worksheet."""
+        """Rewrite ``content/info/data.json`` from every public worksheet.
+
+        The test spreadsheet must never overwrite the production dump.
+        """
+        if self.spreadsheet_id == constants.GOOGLE_SHEETS_TEST_SPREADSHEET_ID:
+            print("Skipping public JSON rewrite (test spreadsheet).")
+            return False
         if not self.is_available():
             print("Google Sheets is not available; public JSON not updated.")
             return False
@@ -259,7 +265,7 @@ class GoogleSheetsExporter:
             key, value = row[0], row[1]
             if key.startswith("number_champ_"):
                 game = key.replace("number_champ_", "")
-                meta["numbers_champ"][game] = int(value) if value else 0
+                meta["numbers_champ"][game] = parse_sheet_int(value, default=0) or 0
             elif key in ("country", "generated_at"):
                 meta[key] = value
             elif key == "intro":
@@ -269,7 +275,7 @@ class GoogleSheetsExporter:
             elif key == "cyrillic_name":
                 continue
             elif key in ("team_count", "player_count", "tournament_count"):
-                meta[key] = int(value) if value else 0
+                meta[key] = parse_sheet_int(value, default=0) or 0
         return meta
 
     def _find_section(self, all_values: List[List[str]], title: str) -> int:
@@ -295,9 +301,10 @@ class GoogleSheetsExporter:
         for row in all_values[start + 2 :]:
             if row and row[0] in self._SECTION_TITLES:
                 break
-            # Tournaments `id` may be blank; only a fully empty row ends the section.
+            # Blank padding between data rows (or before the next section)
+            # must not truncate the rest of the table.
             if not row or all(not str(cell).strip() for cell in row):
-                break
+                continue
             values = list(row)
             if drop_country:
                 header_used, values = self._drop_country_column(header, values, country)
@@ -399,7 +406,7 @@ class GoogleSheetsExporter:
             if row and str(row[0]).strip() in self._SECTION_TITLES:
                 break
             if not row or all(not str(cell).strip() for cell in row):
-                break
+                continue
             record = dict(zip(header, list(row) + [""] * (len(header) - len(row))))
             tid = parse_sheet_id(record.get("id", ""))
             text = str(record.get("description", "") or "").strip()
@@ -421,7 +428,9 @@ class GoogleSheetsExporter:
 
     @staticmethod
     def _row_tournament_id(row: Dict[str, Any]) -> int:
-        return parse_sheet_id(row.get("id") or row.get("tournament id") or "")
+        return parse_sheet_id(
+            row.get("id") or row.get("tournament id") or row.get("tournament_id") or ""
+        )
 
     def _find_tournament(
         self,
@@ -433,12 +442,16 @@ class GoogleSheetsExporter:
 
         Game and year live only on the Tournaments row. Child tables join by
         internal ``id``. Leftover ``number``/``game``/``year`` cells on an old
-        sheet are a fallback when ``id`` is blank.
+        sheet are a fallback when ``id`` is blank — but only if those cells
+        are actually present, so a v2 Rosters row with a blank id is not
+        attached to ``(0, chgk, 0)``.
         """
         tournament_id = self._row_tournament_id(row)
         if tournament_id:
             return by_id.get(tournament_id)
-        return by_key.get(self._v2_row_key(row))
+        if str(row.get("number") or "").strip() or str(row.get("year") or "").strip():
+            return by_key.get(self._v2_row_key(row))
+        return None
 
     @staticmethod
     def _load_team_registry(rows: List[Dict[str, Any]]) -> Dict[int, Team]:
@@ -486,9 +499,11 @@ class GoogleSheetsExporter:
         individual_rows: Optional[List[Dict[str, Any]]] = None,
     ) -> List[TournamentData]:
         by_key: Dict[Tuple[str, str, str], TournamentData] = {}
+        by_id: Dict[int, TournamentData] = {}
+        ordered: List[TournamentData] = []
 
         for row in tournaments:
-            game = row.get("game", constants.DEFAULT_GAME)
+            game = row.get("game") or constants.DEFAULT_GAME
             key = self._v2_row_key(row)
             # Leftover link columns on old Tournaments rows still load.
             links = merge_links({k: row.get(k, "") for k in LINK_KEYS})
@@ -497,12 +512,12 @@ class GoogleSheetsExporter:
                 row.get("end_date", ""),
                 row.get("date", ""),
             )
-            year = parse_sheet_int(row.get("year", ""))
+            year = parse_sheet_int(row.get("year", ""), default=0) or 0
             if not year:
                 year = iso_date_year(end_date or start_date)
             tournament = TournamentData(
                 id=parse_sheet_id(row.get("id", "")),
-                number=parse_sheet_int(row.get("number", "")),
+                number=parse_sheet_int(row.get("number", ""), default=0) or 0,
                 date=display_date,
                 start_date=start_date,
                 end_date=end_date,
@@ -514,9 +529,13 @@ class GoogleSheetsExporter:
                 countable=parse_bool_flag(row.get("countable"), default=False),
                 comment=str(row.get("comment", "") or "").strip(),
             )
+            # Index by id first so two editions that share number/game/year
+            # (or a repeated key) are not collapsed before podium/rosters join.
+            if tournament.id:
+                by_id[tournament.id] = tournament
             by_key[key] = tournament
+            ordered.append(tournament)
 
-        by_id = {t.id: t for t in by_key.values() if t.id}
         for row in link_rows or []:
             tournament = self._find_tournament(row, by_id, by_key)
             if not tournament:
@@ -552,13 +571,16 @@ class GoogleSheetsExporter:
 
         for row in podium_rows:
             tournament = self._find_tournament(row, by_id, by_key)
-            if not tournament or tournament.game in constants.INDIVIDUAL_GAMES:
+            if not tournament:
+                print(f"Skipping podium row with unknown tournament id: {row.get('id')!r}")
+                continue
+            if tournament.game in constants.INDIVIDUAL_GAMES:
                 continue
             place = parse_sheet_int(row.get("place"), default=None)
             if place is None:
                 print(f"Skipping podium row with unreadable place: {row.get('place')!r}")
                 continue
-            team_id = parse_sheet_id(row.get("team id", ""))
+            team_id = parse_sheet_id(row.get("team id", "") or row.get("team_id", ""))
             registered = team_registry.get(team_id)
             team = Team(
                 id=team_id,
@@ -570,28 +592,32 @@ class GoogleSheetsExporter:
             tournament.awardees[len(tournament.awardees)] = TournamentAwardee(
                 team=team,
                 place=place,
-                old_name=row.get("old name", ""),
+                old_name=row.get("old name", "") or row.get("old_name", ""),
                 roster_complete=parse_roster_complete(row.get("roster_complete", "")),
             )
 
         for row in roster_rows:
             tournament = self._find_tournament(row, by_id, by_key)
-            if not tournament or tournament.game in constants.INDIVIDUAL_GAMES:
+            if not tournament:
+                print(
+                    "Skipping roster row with unknown tournament id: "
+                    f"{row.get('id')!r}"
+                )
+                continue
+            if tournament.game in constants.INDIVIDUAL_GAMES:
                 continue
             place = parse_sheet_int(row.get("place"), default=None)
-            if place is None:
-                print(f"Skipping roster row with unreadable place: {row.get('place')!r}")
-                continue
-            team_id = parse_sheet_id(row.get("team id", ""))
-            candidates = [
-                a for _, a in sorted(tournament.awardees.items()) if a.place == place
-            ]
-            if team_id:
-                candidates = [a for a in candidates if a.team.id == team_id]
-            awardee = candidates[0] if candidates else None
+            team_id = parse_sheet_id(row.get("team id") or row.get("team_id", ""))
+            awardee = self._podium_awardee_for_roster(tournament, place, team_id)
             if not awardee:
+                print(
+                    "Skipping roster row with no matching podium: "
+                    f"tournament={row.get('id')!r} place={row.get('place')!r} "
+                    f"team_id={row.get('team id') or row.get('team_id')!r} "
+                    f"player={row.get('player name', '')} {row.get('player surname', '')}".strip()
+                )
                 continue
-            player_id = parse_sheet_id(row.get("player id", ""))
+            player_id = parse_sheet_id(row.get("player id") or row.get("player_id", ""))
             registered = player_registry.get(player_id)
             awardee.team.players.append(
                 Player(
@@ -616,8 +642,16 @@ class GoogleSheetsExporter:
         for row in individual_rows or []:
             tournament = self._find_tournament(row, by_id, by_key)
             if not tournament:
+                print(
+                    "Skipping individual row with unknown tournament id: "
+                    f"{row.get('id')!r}"
+                )
                 continue
             if tournament.game not in constants.INDIVIDUAL_GAMES:
+                print(
+                    "Skipping individual row for non-individual game "
+                    f"{tournament.game!r} (tournament {tournament.id})"
+                )
                 continue
             place = parse_sheet_int(row.get("place"), default=None)
             if place is None:
@@ -633,13 +667,41 @@ class GoogleSheetsExporter:
                 sex=normalize_sex(row.get("sex", "")),
             )
 
-        return list(by_key.values())
+        return list(ordered)
+
+    @staticmethod
+    def _podium_awardee_for_roster(
+        tournament: TournamentData,
+        place: Optional[int],
+        team_id: int,
+    ) -> Optional[TournamentAwardee]:
+        """Attach a Rosters row to a Podium medalist.
+
+        Prefer place + team id (ties share a place). If place is blank or
+        disagrees with the sheet, fall back to a unique team id on this podium.
+        """
+        awardees = [a for _, a in sorted(tournament.awardees.items())]
+        if place is not None:
+            at_place = [a for a in awardees if int(a.place) == int(place)]
+            if team_id:
+                matched = [a for a in at_place if a.team.id == team_id]
+                if matched:
+                    return matched[0]
+            elif at_place:
+                return at_place[0]
+        if team_id:
+            by_team = [a for a in awardees if a.team.id == team_id]
+            if len(by_team) == 1:
+                return by_team[0]
+            if place is None and by_team:
+                return by_team[0]
+        return None
 
     @staticmethod
     def _player_from_sheet_row(
         row: Dict[str, Any], player_registry: Dict[int, Player]
     ) -> Player:
-        player_id = parse_sheet_id(row.get("player id", ""))
+        player_id = parse_sheet_id(row.get("player id") or row.get("player_id", ""))
         registered = player_registry.get(player_id)
         return Player(
             id=player_id,

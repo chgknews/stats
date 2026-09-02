@@ -1,7 +1,7 @@
 """Internal entity IDs and external-id deduplication."""
 from __future__ import annotations
 
-from typing import Dict, List, Optional, TYPE_CHECKING
+from typing import Any, Dict, List, Optional, TYPE_CHECKING
 
 from counting import constants
 from counting.external_ids import merge_external_ids, normalize_external_ids
@@ -85,6 +85,41 @@ class EntityRegistry:
             s: {} for s in constants.EXTERNAL_ID_SOURCES
         }
         self.tournament_ids: Dict[int, Dict[str, str]] = {}
+
+    def remember_foreign_ids(self, sets: Any) -> None:
+        """Index other countries' external ids without adding them to local registries.
+
+        Existing local mappings win, so a country that already has its own internal
+        id for a ts_id/uz_id/ua_id keeps it; new API imports reuse a foreign id.
+        """
+        from counting.doubles import EntitySets
+
+        if not isinstance(sets, EntitySets):
+            return
+        for record in sets.teams.values():
+            if record.id in self.teams:
+                continue
+            self.allocator.observe("team", record.id)
+            self._index_entity(
+                self._team_by_external, record.id, record.external_ids(), overwrite=False
+            )
+        for record in sets.players.values():
+            if record.id in self.players:
+                continue
+            self.allocator.observe("player", record.id)
+            self._index_entity(
+                self._player_by_external, record.id, record.external_ids(), overwrite=False
+            )
+        for record in sets.tournaments.values():
+            if record.id in self.tournament_ids:
+                continue
+            self.allocator.observe("tournament", record.id)
+            ids = record.external_ids()
+            if record.id not in self.tournament_ids:
+                self.tournament_ids[record.id] = ids
+            self._index_entity(
+                self._tournament_by_external, record.id, ids, overwrite=False
+            )
 
     def observe_team(self, team: Team) -> Team:
         if not team.id:
@@ -170,12 +205,23 @@ class EntityRegistry:
         ids = normalize_external_ids(external_ids)
         matched = self._find_by_external(self._team_by_external, ids)
         if matched is not None:
-            team = self.teams[matched]
-            team.name = name or team.name
-            team.city = city or team.city
-            team.external_ids = merge_external_ids(team.external_ids, ids)
-            if players is not None:
-                team.players = players
+            team = self.teams.get(matched)
+            if team is None:
+                team = Team(
+                    id=matched,
+                    name=name,
+                    city=city,
+                    players=players or [],
+                    external_ids=ids,
+                )
+                self.teams[matched] = team
+                self.allocator.observe("team", matched)
+            else:
+                team.name = name or team.name
+                team.city = city or team.city
+                team.external_ids = merge_external_ids(team.external_ids, ids)
+                if players is not None:
+                    team.players = players
             self._index_entity(self._team_by_external, team.id, team.external_ids)
             return team
         team = Team(
@@ -199,10 +245,20 @@ class EntityRegistry:
         ids = normalize_external_ids(external_ids)
         matched = self._find_by_external(self._player_by_external, ids)
         if matched is not None:
-            player = self.players[matched]
-            player.name = name or player.name
-            player.surname = surname or player.surname
-            player.external_ids = merge_external_ids(player.external_ids, ids)
+            player = self.players.get(matched)
+            if player is None:
+                player = Player(
+                    id=matched,
+                    name=name,
+                    surname=surname,
+                    external_ids=ids,
+                )
+                self.players[matched] = player
+                self.allocator.observe("player", matched)
+            else:
+                player.name = name or player.name
+                player.surname = surname or player.surname
+                player.external_ids = merge_external_ids(player.external_ids, ids)
             self._index_entity(self._player_by_external, player.id, player.external_ids)
             return player
         player = Player(
@@ -242,7 +298,11 @@ class EntityRegistry:
 
     @staticmethod
     def _index_entity(
-        index: Dict[str, Dict[str, int]], entity_id: int, external_ids: Dict[str, str]
+        index: Dict[str, Dict[str, int]],
+        entity_id: int,
+        external_ids: Dict[str, str],
+        overwrite: bool = True,
     ) -> None:
         for source, value in normalize_external_ids(external_ids).items():
-            index[source][value] = entity_id
+            if overwrite or value not in index[source]:
+                index[source][value] = entity_id

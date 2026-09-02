@@ -94,10 +94,14 @@ def get_country_header(slug: str, override: Optional[str] = None) -> str:
     return COUNTRY_REGISTRY[slug]["header"]
 
 
-def get_markdown_output_path(slug: str) -> Path:
-    """Hugo markdown path for this country slug."""
+def get_markdown_output_path(slug: str, *, test: bool = False) -> Path:
+    """Hugo markdown path for this country slug.
+
+    ``--test`` writes under ``constants.OUTPUT_MD_TEST`` (``test/``) so
+    production pages in ``content/info/countries/`` are left alone.
+    """
     validate_country_slug(slug)
-    base = Path(constants.OUTPUT_MD)
+    base = Path(constants.OUTPUT_MD_TEST if test else constants.OUTPUT_MD)
     subdir = COUNTRY_REGISTRY[slug].get("output_subdir", "")
     if subdir:
         return base / subdir / f"{slug}.md"

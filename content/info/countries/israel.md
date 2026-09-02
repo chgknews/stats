@@ -1632,7 +1632,6 @@ else wrapTabs();
 
 *Состав команды [Know How](https://rating.chgk.info/teams/599) (Хайфа) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
-
 *[К оглавлению](#contents)*
 
 ---
