@@ -12478,7 +12478,7 @@
       },
       "intro": "Чемпионаты Казахстана проводятся с 2011 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.",
       "age": "adult",
-      "generated_at": "2026-09-01T17:19:06.897851",
+      "generated_at": "2026-09-02T14:54:03.212943",
       "team_count": 25,
       "player_count": 148,
       "tournament_count": 48
@@ -14603,7 +14603,7 @@
         "id": "64",
         "place": "2",
         "team id": "51",
-        "player id": "258",
+        "player id": "18",
         "player name": "Заур",
         "player surname": "Агаев",
         "old_name": "",
@@ -18803,7 +18803,7 @@
         "id": "127",
         "place": "0",
         "team id": "51",
-        "player id": "258",
+        "player id": "18",
         "player name": "Заур",
         "player surname": "Агаев",
         "old_name": "",
@@ -21884,6 +21884,16 @@
     ],
     "players": [
       {
+        "id": "18",
+        "name": "Заур",
+        "surname": "Агаев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "323",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
         "id": "201",
         "name": "Иван",
         "surname": "Киселёв",
@@ -22450,16 +22460,6 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "58995",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "258",
-        "name": "Заур",
-        "surname": "Агаев",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "323",
         "uz_id": "",
         "ua_id": ""
       },
@@ -23370,7 +23370,7 @@
         {
           "id": 116,
           "description": "неизвестен состав обладателей третьего места.",
-          "critical": "yes"
+          "critical": "no"
         }
       ]
     }
@@ -25539,7 +25539,7 @@
       },
       "intro": "Чемпионаты Израиля проводятся с 1995 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны. Сейчас не хватает информации о самом первом чемпионате, а также некоторых иных. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.",
       "age": "adult",
-      "generated_at": "2026-09-01T17:19:52.703030",
+      "generated_at": "2026-09-02T14:54:15.003525",
       "team_count": 21,
       "player_count": 119,
       "tournament_count": 28
@@ -31176,15 +31176,6 @@
         "ts_id": "99146",
         "uz_id": "",
         "ua_id": ""
-      },
-      {
-        "id": "89",
-        "name": "StartUp",
-        "non_russian_name": "",
-        "city": "Хайфа",
-        "ts_id": "599",
-        "uz_id": "",
-        "ua_id": ""
       }
     ],
     "players": [
@@ -32444,13 +32435,13 @@
     "metadata": {
       "country": "uzbekiston",
       "numbers_champ": {
-        "chgk": 20
+        "chgk": 25
       },
       "intro": "Чемпионаты Узбекистана проводятся с 2004 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. \\n\\nСейчас не хватает информации о самом первом чемпионате Узбекистана, а также о ряде других турниров. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.",
       "age": "adult",
-      "generated_at": "2026-09-02T11:09:57.008058",
+      "generated_at": "2026-09-02T17:22:08.065231",
       "team_count": 17,
-      "player_count": 57,
+      "player_count": 81,
       "tournament_count": 44
     },
     "tournaments": [
@@ -35306,6 +35297,966 @@
         "player id": "573",
         "player name": "Ян",
         "player surname": "Садковский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "525",
+        "player name": "Павел",
+        "player surname": "Корнилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "526",
+        "player name": "Илья",
+        "player surname": "Баженов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "527",
+        "player name": "Наринэ",
+        "player surname": "Багдасарян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "528",
+        "player name": "Сардор",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "529",
+        "player name": "Артём",
+        "player surname": "Семёнов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "0",
+        "team id": "97",
+        "player id": "530",
+        "player name": "Акрам",
+        "player surname": "Икрамов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "531",
+        "player name": "Азиз",
+        "player surname": "Ханназаров",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "532",
+        "player name": "Умархон",
+        "player surname": "Шариф",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "533",
+        "player name": "Абдулазиз",
+        "player surname": "Султонов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "534",
+        "player name": "Барно",
+        "player surname": "Джалилова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "535",
+        "player name": "Дмитрий",
+        "player surname": "Баранов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "1",
+        "team id": "98",
+        "player id": "536",
+        "player name": "Абдулазиз",
+        "player surname": "Джалилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "537",
+        "player name": "Игорь",
+        "player surname": "Музыкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "538",
+        "player name": "Ольга",
+        "player surname": "Киреева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "539",
+        "player name": "Дмитрий",
+        "player surname": "Филипский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "540",
+        "player name": "Валерий",
+        "player surname": "Ким",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "541",
+        "player name": "Александр",
+        "player surname": "Ли",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "142",
+        "place": "2",
+        "team id": "99",
+        "player id": "543",
+        "player name": "Егор",
+        "player surname": "Дружинин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "525",
+        "player name": "Павел",
+        "player surname": "Корнилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "527",
+        "player name": "Наринэ",
+        "player surname": "Багдасарян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "528",
+        "player name": "Сардор",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "529",
+        "player name": "Артём",
+        "player surname": "Семёнов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "544",
+        "player name": "Тимур",
+        "player surname": "Кафиатуллин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "0",
+        "team id": "97",
+        "player id": "530",
+        "player name": "Акрам",
+        "player surname": "Икрамов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "537",
+        "player name": "Игорь",
+        "player surname": "Музыкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "538",
+        "player name": "Ольга",
+        "player surname": "Киреева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "540",
+        "player name": "Валерий",
+        "player surname": "Ким",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "541",
+        "player name": "Александр",
+        "player surname": "Ли",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "1",
+        "team id": "99",
+        "player id": "543",
+        "player name": "Егор",
+        "player surname": "Дружинин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "531",
+        "player name": "Азиз",
+        "player surname": "Ханназаров",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "532",
+        "player name": "Умархон",
+        "player surname": "Шариф",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "533",
+        "player name": "Абдулазиз",
+        "player surname": "Султонов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "534",
+        "player name": "Барно",
+        "player surname": "Джалилова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "545",
+        "player name": "Эльбек",
+        "player surname": "Нурмухамедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "535",
+        "player name": "Дмитрий",
+        "player surname": "Баранов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "143",
+        "place": "2",
+        "team id": "98",
+        "player id": "536",
+        "player name": "Абдулазиз",
+        "player surname": "Джалилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "527",
+        "player name": "Наринэ",
+        "player surname": "Багдасарян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "528",
+        "player name": "Сардор",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "529",
+        "player name": "Артём",
+        "player surname": "Семёнов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "544",
+        "player name": "Тимур",
+        "player surname": "Кафиатуллин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "530",
+        "player name": "Акрам",
+        "player surname": "Икрамов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "0",
+        "team id": "97",
+        "player id": "546",
+        "player name": "Игорь",
+        "player surname": "Аипкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "537",
+        "player name": "Игорь",
+        "player surname": "Музыкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "538",
+        "player name": "Ольга",
+        "player surname": "Киреева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "526",
+        "player name": "Илья",
+        "player surname": "Баженов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "547",
+        "player name": "Джияна",
+        "player surname": "Ичигеева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "548",
+        "player name": "Наиль",
+        "player surname": "Фарукшин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "1",
+        "team id": "100",
+        "player id": "543",
+        "player name": "Егор",
+        "player surname": "Дружинин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "549",
+        "player name": "Александра",
+        "player surname": "Кондращенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "550",
+        "player name": "Алиса",
+        "player surname": "Плотникова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "551",
+        "player name": "Константин",
+        "player surname": "Шалькевич",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "552",
+        "player name": "Игорь",
+        "player surname": "Стугирёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "553",
+        "player name": "Константин",
+        "player surname": "Бабанский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "144",
+        "place": "2",
+        "team id": "101",
+        "player id": "554",
+        "player name": "Дарья",
+        "player surname": "Фирсова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "0",
+        "team id": "100",
+        "player id": "537",
+        "player name": "Игорь",
+        "player surname": "Музыкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "0",
+        "team id": "100",
+        "player id": "547",
+        "player name": "Джияна",
+        "player surname": "Ичигеева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "0",
+        "team id": "100",
+        "player id": "548",
+        "player name": "Наиль",
+        "player surname": "Фарукшин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "0",
+        "team id": "100",
+        "player id": "555",
+        "player name": "Дмитрий",
+        "player surname": "Плотников",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "0",
+        "team id": "100",
+        "player id": "543",
+        "player name": "Егор",
+        "player surname": "Дружинин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "527",
+        "player name": "Наринэ",
+        "player surname": "Багдасарян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "528",
+        "player name": "Сардор",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "556",
+        "player name": "Константин",
+        "player surname": "Тен",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "529",
+        "player name": "Артём",
+        "player surname": "Семёнов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "530",
+        "player name": "Акрам",
+        "player surname": "Икрамов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "1",
+        "team id": "97",
+        "player id": "546",
+        "player name": "Игорь",
+        "player surname": "Аипкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "557",
+        "player name": "Алексей",
+        "player surname": "Грачёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "558",
+        "player name": "Ирина",
+        "player surname": "Семёнова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "559",
+        "player name": "Галина",
+        "player surname": "Никитина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "560",
+        "player name": "Станислав",
+        "player surname": "Сычевский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "561",
+        "player name": "Динара",
+        "player surname": "Адылова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "562",
+        "player name": "Валерия",
+        "player surname": "Якимова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "145",
+        "place": "2",
+        "team id": "102",
+        "player id": "563",
+        "player name": "Александр",
+        "player surname": "Райков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "564",
+        "player name": "Алишер",
+        "player surname": "Исмаилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "527",
+        "player name": "Наринэ",
+        "player surname": "Багдасарян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "528",
+        "player name": "Сардор",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "556",
+        "player name": "Константин",
+        "player surname": "Тен",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "529",
+        "player name": "Артём",
+        "player surname": "Семёнов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "530",
+        "player name": "Акрам",
+        "player surname": "Икрамов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "0",
+        "team id": "97",
+        "player id": "546",
+        "player name": "Игорь",
+        "player surname": "Аипкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "565",
+        "player name": "Лилия",
+        "player surname": "Махмутова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "557",
+        "player name": "Алексей",
+        "player surname": "Грачёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "566",
+        "player name": "Олег",
+        "player surname": "Артёменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "559",
+        "player name": "Галина",
+        "player surname": "Никитина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "561",
+        "player name": "Динара",
+        "player surname": "Адылова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "562",
+        "player name": "Валерия",
+        "player surname": "Якимова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "1",
+        "team id": "102",
+        "player id": "563",
+        "player name": "Александр",
+        "player surname": "Райков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "567",
+        "player name": "Константин",
+        "player surname": "Григорьев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "568",
+        "player name": "Филипп",
+        "player surname": "Туркин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "569",
+        "player name": "Василий",
+        "player surname": "Щедрин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "540",
+        "player name": "Валерий",
+        "player surname": "Ким",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "570",
+        "player name": "Галина",
+        "player surname": "Прибыткова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "146",
+        "place": "2",
+        "team id": "103",
+        "player id": "571",
+        "player name": "Алексей",
+        "player surname": "Акименко",
         "old_name": "",
         "old_surname": ""
       }
