@@ -68,7 +68,7 @@ def main():
     )
     if args.test:
         print(f"Using test Google Spreadsheet: {spreadsheet_id}")
-
+        
     if args.cross_country_stats:
         from cross_country_stats import print_cross_country_summary
         print_cross_country_summary()

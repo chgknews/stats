@@ -167,6 +167,7 @@ OUTPUT_MD = str(REPO_ROOT / "content" / "info" / "countries") + "/"
 # Country pages written here when count_champions.py / replace_doubles.py run with --test.
 OUTPUT_MD_TEST = str(REPO_ROOT / "content" / "test") + "/"
 # One public dump of every country tab (sheet sections, not computed stats).
+# Production recounts rewrite this file; ``--test`` does not.
 OUTPUT_JSON = str(REPO_ROOT / "content" / "info" / "data.json")
 NATIONAL_TEAM_FLAG_ID = 50  # Flag ID for national teams ('ЧСт')
 TOP_PLACES = 3  # Number of top places to track (gold, silver, bronze)

@@ -369,7 +369,10 @@ class StatsGenerator:
                 print(f"Exporting to Google Sheets worksheet: {self.country}")
                 exporter.export_data(self.country, output_data)
                 self.allocator.persist_to_exporter(exporter)
-            exporter.write_public_json()
+            if self.test:
+                print("Skipping public JSON rewrite (--test).")
+            else:
+                exporter.write_public_json()
             self._sync_doubles_sheet(exporter)
         else:
             print("Google Sheets is not available; public JSON not updated.")
@@ -738,7 +741,10 @@ class StatsGenerator:
         for _, awardee in sorted(
             source.awardees.items(), key=lambda item: (item[1].place, item[0])
         ):
-            place = awardee.place
+            try:
+                place = int(awardee.place)
+            except (TypeError, ValueError):
+                continue
             if place >= constants.TOP_PLACES:
                 continue
             # Ensure internal ids when reprocessing sheet-loaded rows.
@@ -861,6 +867,9 @@ class StatsGenerator:
     def _needs_roster_error(awardee: TournamentAwardee) -> bool:
         if awardee.individual:
             return awardee.individual_player() is None
+        # Sheet flag no, or yes with no Rosters rows loaded — still missing.
+        if not awardee.team.players:
+            return True
         return not awardee.roster_complete
 
 

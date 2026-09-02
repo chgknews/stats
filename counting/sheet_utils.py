@@ -171,11 +171,18 @@ def parse_sheet_int(raw: Any, default: Optional[int] = 0) -> Optional[int]:
 
 
 def parse_sheet_id(raw: str | int | None) -> int:
-    """Parse id from sheet cell; 0 if blank or zero."""
+    """Parse id from sheet cell; 0 if blank or zero.
+
+    Accepts ints, ``147.0`` from Sheets number cells, and date-formatted
+    serials the same way ``parse_sheet_int`` does. ``int("147.0")`` would
+    raise and abort a country load.
+    """
     if raw is None or str(raw).strip() == "":
         return 0
-    value = int(raw)
-    return 0 if value == 0 else value
+    value = parse_sheet_int(raw, default=None)
+    if value is None or value == 0:
+        return 0
+    return int(value)
 
 
 def format_sheet_id(entity_id: int) -> str | int:
