@@ -166,7 +166,7 @@ Top-level keys are tab names (`uzbekiston`, `armenia`, …). Each value is the s
 | `names` | Names rows |
 | `teams` | Teams registry rows |
 | `players` | Players registry rows |
-| `errors` | `{description, items: [{id, description}, …]}` from the Errors section |
+| `errors` | `{description, items: [{id, description, critical}, …]}` from the Errors section |
 
 ---
 
@@ -273,7 +273,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `_save_results()` | Merge Errors from the sheet with auto-detected gaps, then export Sheets + JSON + markdown |
 | `_process_single_tournament()` | Unified path for API fetch OR sheet-loaded tournament (dedup by external id) |
 | `_generate_markdown_files()` | Write `content/info/countries/{country}.md` (Russia specials under `…/russia/`) using `meta.intro` (always visible) and tabbed sections |
-| `_finalize_errors()` | Keep editor Errors rows/description; add newly detected missing-data rows |
+| `_finalize_errors()` | Keep editor Errors rows/description/`critical`; add newly detected missing-data rows |
 | `_default_intro()` | First-time «Чемпионаты … проводятся с {year} года.» (age-aware plural) from earliest tournament year |
 | `_championships_heading()` | Plural title from `meta.age`: «Студенческие чемпионаты России» |
 | `_tournament_tab_label()` | One tab: «Чемпионаты»; `chgk`: «Турниры по ЧГК»; two or more of `chgk`/`kvrm`/`zakovat`/`od`: «Турниры по КВРМ»; other games: «Турниры по {GAMES_SHORT_NAMES}» |
@@ -326,7 +326,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 **Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` (recovers integers from date-formatted cells), profile URLs from `external_ids.ts_id`.
 
 #### `data_errors.py`
-**Role:** Missing-data phrases, auto-detection of incomplete rosters/medalists/date/city on past editions, merge with the Sheets Errors section. Future tournaments are never reported.
+**Role:** Missing-data phrases, auto-detection of incomplete rosters/medalists/date/city on past editions, merge with the Sheets Errors section (`critical` yes/no, default yes). Future tournaments are never reported.
 
 #### `country_registry.py`
 **Role:** Maps latin slug (`poland`) → Cyrillic nominative/genitive for markdown. Single source of truth for country names (`get_country_nominative()`, `get_country_genitive()`, `validate_country_slug()`). Optional `output_subdir` sends markdown to a nested Hugo folder (`russia_01_19` / `russia_igra_tv` / `russia_kvrm` → `content/info/countries/russia/{slug}.md`). `resolve_country_slug()` parses bulk input files. There is **no** runtime `register_country()` — names are not stored in Sheets metadata.
@@ -586,15 +586,17 @@ Always present on export, even when there are no rows.
 ```
 Errors
 description | Также не хватает данных о чемпионатах страны 1993 и 1995 годов
-id          | description
-12          | неизвестен состав победителя.
+id          | description                                      | critical
+12          | неизвестен состав победителя.                    | yes
+18          | неизвестна точная дата проведения.               | no
 ```
 
 - `description`: extra sentence for the **Нет данных** tab (after the fixed intro). Editors may change it; `-ug` keeps the cell
-- `id` | `description`: one row per edition (internal tournament id). Editors may add, edit, or delete rows. `-ug` keeps existing text and **adds** newly detected gaps
+- `id` | `description` | `critical`: one row per edition (internal tournament id). Editors may add, edit, or delete rows. `-ug` keeps existing text and **adds** newly detected gaps
+- `critical`: `yes` or `no`, set by hand in the sheet. Blank cells and newly detected rows default to `yes`. `yes` rows appear in the country markdown **Нет данных** table; `no` rows stay in the sheet (and in `data/countries.json`) but are omitted from markdown
 - Auto-detected (past editions only): incomplete/missing winner or 2nd/3rd rosters (team) or medalists (SSI), incomplete date (not a full day–month–year), missing city
 - Future editions (`пройдёт`, or a year still ahead with no date) are not written here
-- Markdown tab **Нет данных** is omitted when both the extra sentence and the item list are empty; the sheet section remains
+- Markdown tab **Нет данных** is omitted when both the extra sentence and the **critical** item list are empty; the sheet section remains
 
 ### Join logic
 

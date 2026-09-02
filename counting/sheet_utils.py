@@ -52,7 +52,7 @@ LANGUAGE_HEADERS = ["id", "language", "name"]
 NAME_HEADERS = ["id", "name"]
 
 # Missing-data rows in the Errors section; keyed by tournament internal id.
-ERROR_HEADERS = ["id", "description"]
+ERROR_HEADERS = ["id", "description", "critical"]
 
 
 def default_links() -> Dict[str, str]:

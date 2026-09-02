@@ -366,7 +366,7 @@ class GoogleSheetsExporter:
         }
 
     def _parse_errors_section(self, all_values: List[List[str]]) -> Dict[str, Any]:
-        """Errors: optional description row, then id | description rows."""
+        """Errors: optional description row, then id | description | critical rows."""
         start = self._find_section(all_values, self.SECTION_ERRORS)
         if start < 0:
             return empty_errors()
@@ -404,7 +404,11 @@ class GoogleSheetsExporter:
             tid = parse_sheet_id(record.get("id", ""))
             text = str(record.get("description", "") or "").strip()
             if tid or text:
-                items.append({"id": tid, "description": text})
+                items.append({
+                    "id": tid,
+                    "description": text,
+                    "critical": record.get("critical", ""),
+                })
         return normalize_errors({"description": description, "items": items})
 
     @staticmethod
@@ -853,5 +857,6 @@ class GoogleSheetsExporter:
             rows.append([
                 format_sheet_id(item.get("id") or 0),
                 item.get("description", ""),
+                item.get("critical", "yes"),
             ])
         return rows

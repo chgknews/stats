@@ -6,11 +6,24 @@ from typing import Any, Callable, Dict, Iterable, List, Optional
 
 from counting import constants
 from counting.models import TournamentAwardee, TournamentData
+from counting.sheet_utils import format_bool_flag, parse_bool_flag
 from counting.t_fashion import iso_date_is_past, parse_iso_date_parts
+
+CRITICAL_YES = "yes"
+CRITICAL_NO = "no"
 
 
 def empty_errors() -> Dict[str, Any]:
     return {"description": "", "items": []}
+
+
+def normalize_critical(value: Any) -> str:
+    """Errors.critical: yes or no; blank or unknown defaults to yes."""
+    return format_bool_flag(parse_bool_flag(value, default=True))
+
+
+def is_critical_error(item: Dict[str, Any]) -> bool:
+    return normalize_critical(item.get("critical")) == CRITICAL_YES
 
 
 def normalize_errors(errors_data: Optional[Dict[str, Any]]) -> Dict[str, Any]:
@@ -29,7 +42,11 @@ def normalize_errors(errors_data: Optional[Dict[str, Any]]) -> Dict[str, Any]:
             tid = 0
         description = str(raw.get("description") or "").strip()
         if tid or description:
-            items.append({"id": tid, "description": description})
+            items.append({
+                "id": tid,
+                "description": description,
+                "critical": normalize_critical(raw.get("critical")),
+            })
     return {
         "description": str(errors_data.get("description") or "").strip(),
         "items": items,
@@ -175,7 +192,11 @@ def collect_computed_errors(
                 date=date,
             )
             if description:
-                items.append({"id": tournament.id, "description": description})
+                items.append({
+                    "id": tournament.id,
+                    "description": description,
+                    "critical": CRITICAL_YES,
+                })
     items.sort(key=lambda item: item["id"])
     return {"description": "", "items": items}
 
@@ -185,10 +206,11 @@ def merge_data_errors(
     computed: Optional[Dict[str, Any]],
     tournaments_data: Optional[Dict[str, List[TournamentData]]] = None,
 ) -> Dict[str, Any]:
-    """Keep sheet description and edited row text; add newly detected ids.
+    """Keep sheet description, edited row text, and critical; add new ids.
 
     Rows for past editions that are now complete are dropped. Rows whose id
-    is not in the tournament list are kept (editor notes).
+    is not in the tournament list are kept (editor notes). Newly detected
+    rows default to critical=yes. An editor-set critical=no is preserved.
     """
     sheet = normalize_errors(existing)
     auto = normalize_errors(computed)
@@ -199,6 +221,7 @@ def merge_data_errors(
     for item in sheet["items"]:
         tid = int(item.get("id") or 0)
         description = str(item.get("description") or "").strip()
+        critical = normalize_critical(item.get("critical"))
         if tid:
             tournament = by_id.get(tid)
             if tournament and tournament_is_past(tournament) and tid not in auto_by_id:
@@ -206,13 +229,25 @@ def merge_data_errors(
             seen.add(tid)
             if not description and tid in auto_by_id:
                 description = auto_by_id[tid]["description"]
-            items.append({"id": tid, "description": description})
+            items.append({
+                "id": tid,
+                "description": description,
+                "critical": critical,
+            })
         elif description:
-            items.append({"id": 0, "description": description})
+            items.append({
+                "id": 0,
+                "description": description,
+                "critical": critical,
+            })
     for item in auto["items"]:
         tid = int(item.get("id") or 0)
         if tid and tid not in seen:
-            items.append({"id": tid, "description": item["description"]})
+            items.append({
+                "id": tid,
+                "description": item["description"],
+                "critical": normalize_critical(item.get("critical")),
+            })
     return {"description": sheet["description"], "items": items}
 
 

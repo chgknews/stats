@@ -27,6 +27,7 @@ from counting.data_errors import (
     collect_computed_errors,
     empty_errors,
     flatten_tournaments,
+    is_critical_error,
     merge_data_errors,
     normalize_errors,
     sort_error_items,
@@ -1045,6 +1046,8 @@ class StatsGenerator:
         by_id = flatten_tournaments(tournaments_data)
         rows: List[Tuple[TournamentData, str]] = []
         for item in sort_error_items(payload.get("items") or [], by_id):
+            if not is_critical_error(item):
+                continue
             description = str(item.get("description") or "").strip()
             if not description:
                 continue
