@@ -13,6 +13,7 @@ except ImportError:
 
 from counting import constants
 from counting.data_errors import empty_errors, normalize_errors
+from counting.sources import empty_sources, normalize_sources
 from counting.external_ids import external_id_row_values, external_ids_from_row, normalize_external_ids
 from counting.languages import language_name, normalize_language
 from counting.models import (
@@ -32,6 +33,7 @@ from counting.sheet_utils import (
     PLAYER_REGISTRY_HEADERS,
     PODIUM_HEADERS,
     ROSTER_HEADERS,
+    SOURCE_HEADERS,
     TEAM_REGISTRY_HEADERS,
     TOURNAMENT_HEADERS,
     format_bool_flag,
@@ -59,6 +61,7 @@ class GoogleSheetsExporter:
     SECTION_INDIVIDUALS = "Individuals"
     SECTION_LANGUAGES = "Languages"
     SECTION_NAMES = "Names"
+    SECTION_SOURCES = "Sources"
     SECTION_TEAMS = "Teams"
     SECTION_PLAYERS = "Players"
     SECTION_ERRORS = "Errors"
@@ -70,6 +73,7 @@ class GoogleSheetsExporter:
         SECTION_INDIVIDUALS,
         SECTION_LANGUAGES,
         SECTION_NAMES,
+        SECTION_SOURCES,
         SECTION_TEAMS,
         SECTION_PLAYERS,
         SECTION_ERRORS,
@@ -161,6 +165,7 @@ class GoogleSheetsExporter:
             "individuals": sections["individuals"],
             "languages": sections["languages"],
             "names": sections["names"],
+            "sources": self._parse_sources_section(all_values),
             "teams": sections["teams"],
             "players": sections["players"],
             "errors": self._parse_errors_section(all_values),
@@ -225,6 +230,7 @@ class GoogleSheetsExporter:
             "tournaments": tournament_objects,
             "meta": meta_obj,
             "errors": self._parse_errors_section(all_values),
+            "sources": self._parse_sources_section(all_values),
         }
 
     def export_data(
@@ -417,6 +423,53 @@ class GoogleSheetsExporter:
                     "critical": record.get("critical", ""),
                 })
         return normalize_errors({"description": description, "items": items})
+
+    def _parse_sources_section(self, all_values: List[List[str]]) -> Dict[str, Any]:
+        """Sources: optional description row, then id | year | link | link_name | comment."""
+        start = self._find_section(all_values, self.SECTION_SOURCES)
+        if start < 0:
+            return empty_sources()
+        index = start + 1
+        description = ""
+        while index < len(all_values):
+            row = all_values[index]
+            if row and str(row[0]).strip() in self._SECTION_TITLES:
+                return empty_sources()
+            if row and any(str(cell).strip() for cell in row):
+                break
+            index += 1
+        if index >= len(all_values):
+            return empty_sources()
+        first = [str(cell).strip() for cell in all_values[index]]
+        if first and first[0].casefold() != "id":
+            if first[0].casefold() == "description":
+                description = first[1] if len(first) > 1 else ""
+            else:
+                description = " ".join(part for part in first if part)
+            index += 1
+        if index >= len(all_values):
+            return {"description": description, "items": []}
+        header = [str(h).strip() for h in all_values[index]]
+        while header and not header[-1]:
+            header.pop()
+        index += 1
+        items: List[Dict[str, Any]] = []
+        for row in all_values[index:]:
+            if row and str(row[0]).strip() in self._SECTION_TITLES:
+                break
+            if not row or all(not str(cell).strip() for cell in row):
+                continue
+            record = dict(zip(header, list(row) + [""] * (len(header) - len(row))))
+            items.append({
+                "id": parse_sheet_id(record.get("id", "")),
+                "year": parse_sheet_int(record.get("year"), default=0) or 0,
+                "link": str(record.get("link") or "").strip(),
+                "link_name": str(
+                    record.get("link_name") or record.get("link name") or ""
+                ).strip(),
+                "comment": str(record.get("comment") or "").strip(),
+            })
+        return normalize_sources({"description": description, "items": items})
 
     @staticmethod
     def _v2_row_key(row: Dict[str, Any]) -> Tuple[str, str, str]:
@@ -893,6 +946,20 @@ class GoogleSheetsExporter:
         rows.extend(language_rows)
         rows.append([])
         rows.extend(name_rows)
+        rows.append([])
+        sources = normalize_sources(output_data.get("sources"))
+        rows.append([self.SECTION_SOURCES])
+        rows.append(["description", sources.get("description", "")])
+        rows.append(SOURCE_HEADERS)
+        for item in sources.get("items") or []:
+            year = item.get("year") or ""
+            rows.append([
+                format_sheet_id(item.get("id") or 0),
+                year if year else "",
+                item.get("link", ""),
+                item.get("link_name", ""),
+                item.get("comment", ""),
+            ])
         rows.append([])
         rows.append([self.SECTION_TEAMS])
         rows.append(TEAM_REGISTRY_HEADERS)

@@ -7,6 +7,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TEAMS_ANCHORS = "teams"
 PLAYERS_ANCHORS = "players"
 MISSING_DATA_ANCHORS = "missing-data"
+SOURCES_ANCHORS = "sources"
 CONTENTS_ANCHOR = "contents"
 BACK_TO_CONTENTS = "К оглавлению"
 
@@ -14,6 +15,7 @@ BACK_TO_CONTENTS = "К оглавлению"
 TEAMS_CONTEXT = "Команды"
 PLAYERS_CONTEXT = "Игроки"
 MISSING_DATA_TAB = "Проблемы"
+SOURCES_TAB = "Источники"
 CHAMPIONSHIPS_TAB = "Чемпионаты"
 TOURNAMENTS_TAB_PREFIX = "Турниры по "
 ALL_MEDALS_HEADER = "Все медали"
@@ -40,6 +42,14 @@ MISSING_DATA_INTRO = (
 MISSING_DATA_YEAR = "Год"
 MISSING_DATA_TOURNAMENT = "Турнир"
 MISSING_DATA_WHAT = "Чего не хватает"
+SOURCES_INTRO = (
+    "Здесь указан список источников, откуда взята та или иная информация "
+    "на этой странице. "
+)
+SOURCES_YEAR = "Год"
+SOURCES_TOURNAMENT = "Турнир"
+SOURCES_ONE = "Источник"
+SOURCES_MANY = "Источники"
 
 # games
 DEFAULT_GAME = "chgk"
