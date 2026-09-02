@@ -132,8 +132,9 @@ GAMES_COLUMN_NAMES = {
     "ssi": "ССИ",
     "ssi_f": "ССИ с фальстартами",
 }
-# Medal-table groups, in column order. If two or more members have medals,
-# they share one I/II/III block named by the first key.
+# Medal-table groups, in column order. Medals from every member are summed
+# into one I/II/III block. If two or more members have medals, the block is
+# named by the merge key (kvrm → «КВРМ», brain → «БР», …).
 GAME_MEDAL_GROUPS = (
     ("kvrm", ("chgk", "kvrm", "zakovat", "od")),
     ("brain", ("brain", "tables")),

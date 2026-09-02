@@ -7,10 +7,12 @@ from counting.external_ids import merge_external_ids, normalize_external_ids
 
 
 def medal_column_groups(games_with_medals: Iterable[str]) -> List[Tuple[str, Tuple[str, ...]]]:
-    """Visible I/II/III blocks: (column name key, source games).
+    """Visible I/II/III blocks: (column name key, games whose medals are summed).
 
     A group is omitted when none of its games have medals. Two or more members
-    with medals share one block named by the merge key (kvrm / brain / brain_wf / ssi).
+    with medals share one block: medals from **all** members are added together,
+    and the title is the merge key (``kvrm`` → «КВРМ», ``brain`` → «БР», …).
+    One member with medals keeps that game’s own name and is counted alone.
     """
     present: Set[str] = set(games_with_medals)
     columns: List[Tuple[str, Tuple[str, ...]]] = []
@@ -18,8 +20,10 @@ def medal_column_groups(games_with_medals: Iterable[str]) -> List[Tuple[str, Tup
         found = tuple(game for game in members if game in present)
         if not found:
             continue
-        name = merged_name if len(found) > 1 else found[0]
-        columns.append((name, found))
+        if len(found) > 1:
+            columns.append((merged_name, members))
+        else:
+            columns.append((found[0], found))
     return columns
 
 

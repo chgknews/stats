@@ -1274,7 +1274,9 @@ class StatsGenerator:
             for awardee in stats.values()
             for game in awardee.games_with_medals()
         }
-        multi_game = len(games) > 1
+        # chgk+kvrm+zakovat+od is one group, so «more than one game» follows
+        # visible columns, not raw game codes.
+        multi_game = len(medal_column_groups(games)) > 1
 
         def name_key(awardee: Awardee) -> str:
             return names.get(awardee.id, awardee.name).casefold()
@@ -1344,7 +1346,7 @@ class StatsGenerator:
             f"<td>{awardee.gold}</td>\n"
             f"<td>{awardee.silver}</td>\n"
             f"<td>{awardee.bronze}</td>\n"
-            f"<td>{awardee.sum}</td>\n"
+            f"<td>{awardee.gold + awardee.silver + awardee.bronze}</td>\n"
         )
         for _name, games in columns:
             gold, silver, bronze, _total = awardee.counts_for(games)

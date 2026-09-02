@@ -354,7 +354,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 **Role:** Russian date formatting, city name inflection, Russian date parsing for `-et` empty tournaments, `normalize_tournament_dates()`. Accepts incomplete ISO dates (`1995-00-00`, `1995-08-00`) and formats them as prepositional phrases («в 1995 году» / «в августе 1995 года»).
 
 #### `processors.py`
-**Role:** `count_champions()` — increments gold/silver/bronze/sum and per-game `by_game` on `Awardee` dicts keyed by **internal** id; merges `external_ids`. `medal_column_groups()` decides which I/II/III game blocks appear in the markdown tables.
+**Role:** `count_champions()` — increments gold/silver/bronze/sum and per-game `by_game` on `Awardee` dicts keyed by **internal** id; merges `external_ids`. `medal_column_groups()` decides which I/II/III game blocks appear in the markdown tables: `chgk`+`kvrm`+`zakovat`+`od` medals are **summed** into one block titled **КВРМ** when two or more of those games have medals (same pattern for `brain`+`tables` → **БР**, `ssi`+`ssi_f` → **ССИ**).
 
 ---
 
@@ -844,7 +844,7 @@ Championship titles take `game` from each tournament and `age` from metadata:
 - A `display_name` on the Names sheet replaces the whole title
 - Each tournament block keeps its **own** game in the year anchor: `#chgk_2024`, `#od_2023`
 
-Medal tables (Команды / Игроки): identity columns, then I / II / III / ∑. Extra I/II/III blocks appear only when **two or more** game groups have medals — a single game, or one merged group (only `chgk`+`od`), would duplicate the totals, and in that case there is no **Все медали** header row. With two or more visible groups the totals sit under a centered **Все медали** block; `chgk`+`kvrm`+`zakovat`+`od` share a **КВРМ** block when two or more of them have medals, `brain`+`tables` share **БР**, `kinsbf`+`brain_wf` share **БРБФ**, and `ssi`+`ssi_f` share **ССИ**. One game in the table: rows sort by total medals, then golds, then silvers, then the displayed name. Two or more games: total medals, then golds, then silvers, then bronzes, then golds / silvers / bronzes in ЧГК / ОД / Заковат / КВРМ (`PRIMARY_MEDAL_GAMES`), then name. Individual games (`constants.INDIVIDUAL_GAMES`: `ssi`, `ssi_f`) count only in the player table.
+Medal tables (Команды / Игроки): identity columns, then I / II / III / ∑. Extra I/II/III blocks appear only when **two or more** game groups have medals — a single game, or one merged group (only `chgk`+`od`), would duplicate the totals, and in that case there is no **Все медали** header row. With two or more visible groups the totals sit under a centered **Все медали** block. `chgk`+`kvrm`+`zakovat`+`od` medals are **added together**; if two or more of them have medals the block is titled **КВРМ** (otherwise the one game’s own name). `brain`+`tables` share **БР**, `kinsbf`+`brain_wf` share **БРБФ**, and `ssi`+`ssi_f` share **ССИ**. One game in the table: rows sort by total medals, then golds, then silvers, then the displayed name. Two or more **groups**: total medals, then golds, then silvers, then bronzes, then golds / silvers / bronzes in ЧГК / ОД / Заковат / КВРМ (`PRIMARY_MEDAL_GAMES`), then name. Individual games (`constants.INDIVIDUAL_GAMES`: `ssi`, `ssi_f`) count only in the player table.
 
 Player/team profile links use `player_profile_url()` / `team_profile_url()` on `external_ids`: a link appears only when `ts_id` is present; otherwise the name is plain text.
 
