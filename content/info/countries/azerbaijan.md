@@ -1722,7 +1722,7 @@ else wrapTabs();
 - Мурад Ахундов
 - Сеймур Агаев
 
-Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [«Jazz»](https://rating.chgk.info/teams/45599) (Баку).
+Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [Jazz](https://rating.chgk.info/teams/45599) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12349). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/361) и [здесь](https://t.me/chgknews/1432).
 
@@ -1740,7 +1740,7 @@ else wrapTabs();
 - Мурад Ахундов
 - Евгений Томашевский
 
-Второе место заняла команда [«Jazz»](https://rating.chgk.info/teams/45599) (Баку), третье — [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку).
+Второе место заняла команда [Jazz](https://rating.chgk.info/teams/45599) (Баку), третье — [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11016), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6510). Больше информации о турнире — [в этом телеграм-канале](https://t.me/default_playground/261) и [здесь](https://t.me/chgknews/1160).
 
@@ -1750,7 +1750,7 @@ else wrapTabs();
 
 **XIV чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 21 апреля 2024 года в Баку. <a id="chgk_2024"></a>
 
-Победитель: **[«Brainstorm» (Баку)](https://rating.chgk.info/teams/6074)**
+Победитель: **[Brainstorm (Баку)](https://rating.chgk.info/teams/6074)**
 - Яна Лялякина
 - Малик Рамазанзаде
 - Кёнуль Мамедова
@@ -1758,7 +1758,7 @@ else wrapTabs();
 - Акпер Дадашлы
 - Аббас Ахундов
 
-Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [«Jazz»](https://rating.chgk.info/teams/45599) (Баку).
+Второе место заняла команда [«Поминки по финикам»](https://rating.chgk.info/teams/67979) (Баку), третье — [Jazz](https://rating.chgk.info/teams/45599) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9897), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5927). Больше информации о турнире — [здесь](https://t.me/chgknews/802).
 
@@ -1776,7 +1776,7 @@ else wrapTabs();
 - Роман Оркодашвили
 - Азиз Муршудли
 
-Второе место заняла команда [«Brainstorm»](https://rating.chgk.info/teams/6074) (Баку), третье — [«Jazz»](https://rating.chgk.info/teams/45599) (Баку).
+Второе место заняла команда [Brainstorm](https://rating.chgk.info/teams/6074) (Баку), третье — [Jazz](https://rating.chgk.info/teams/45599) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/8560), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/5597). Больше информации о турнире — [здесь](https://t.me/chgknews/428).
 
@@ -1794,7 +1794,7 @@ else wrapTabs();
 - Теймур Гулиев
 - Джамиля Азизова
 
-Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Brainstorm»](https://rating.chgk.info/teams/6074) (Баку).
+Второе место заняла [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [Brainstorm](https://rating.chgk.info/teams/6074) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5573), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/90).
 
@@ -1804,7 +1804,7 @@ else wrapTabs();
 
 **XI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 11 декабря 2016 года в Баку. <a id="chgk_2016"></a>
 
-Победитель: **[«Brainstorm» (Баку)](https://rating.chgk.info/teams/6074)**
+Победитель: **[Brainstorm (Баку)](https://rating.chgk.info/teams/6074)**
 - Илья Мурзинов
 - Эмин Расулзаде
 - Яна Лялякина
@@ -1813,7 +1813,7 @@ else wrapTabs();
 - Хафиз Гайыб
 - Аббас Ахундов
 
-Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«КиПЛ»](https://rating.chgk.info/teams/5842) (Баку).
+Второе место заняла [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«КиПЛ»](https://rating.chgk.info/teams/5842) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4148), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1081).
 
@@ -1869,7 +1869,7 @@ else wrapTabs();
 - Аднан Ахундов
 - Анар Азимов
 
-Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку), третье — [«Слон в удаве»](https://rating.chgk.info/teams/6075) (Баку).
+Второе место заняла [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку), третье — [«Слон в удаве»](https://rating.chgk.info/teams/6075) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2130), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3069). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/201206Baku.html).
 
@@ -1888,7 +1888,7 @@ else wrapTabs();
 - Анар Азимов
 - Дмитрий Авдеенко
 
-Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку), третье — [«ТН»](https://rating.chgk.info/teams/1611) (Баку).
+Второе место заняла [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку), третье — [«ТН»](https://rating.chgk.info/teams/1611) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/338). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200805Baku.html).
 
@@ -1898,7 +1898,7 @@ else wrapTabs();
 
 **VI чемпионат Азербайджана по спортивному «Что? Где? Когда?»** прошёл 4 мая 2007 года в Баку. <a id="chgk_2007"></a>
 
-Победитель: **[«Yo!J» (Баку)](https://rating.chgk.info/teams/2723)**
+Победитель: **[Yo!J (Баку)](https://rating.chgk.info/teams/2723)**
 - Джахангир Фараджуллаев
 - Эльман Талыбов
 - Анар Наджафли
@@ -1906,7 +1906,7 @@ else wrapTabs();
 - Елена Захарова
 - Теймур Алиев
 
-Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
+Второе место заняла [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/242), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4635). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200705Baku.html).
 
@@ -1924,7 +1924,7 @@ else wrapTabs();
 - Назлы Ахмедова
 - Джамиля Азизова
 
-Второе место заняла команда [«Yo!J»](https://rating.chgk.info/teams/2723) (Баку), третье — [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку).
+Второе место заняла команда [Yo!J](https://rating.chgk.info/teams/2723) (Баку), третье — [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/147), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4360). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200606Baku.html).
 
@@ -1942,7 +1942,7 @@ else wrapTabs();
 - Анар Азимов
 - Джамиля Азизова
 
-Второе место заняла команда [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Мусаева»](https://rating.chgk.info/teams/543) (Баку).
+Второе место заняла [«Команда Касумова»](https://rating.chgk.info/teams/243) (Баку), третье — [«Команда Мусаева»](https://rating.chgk.info/teams/543) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/107), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4007). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200506Baku.html).
 
@@ -1960,7 +1960,7 @@ else wrapTabs();
 - Ровшан Аскеров
 - Дмитрий Авдеенко
 
-Второе место разделили команды [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), [«Команда Алиева»](https://rating.chgk.info/teams/268) (Баку) и [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
+Второе место разделили [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), [«Команда Алиева»](https://rating.chgk.info/teams/268) (Баку) и [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/42), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3486). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200405Baku.html).
 
@@ -1978,7 +1978,7 @@ else wrapTabs();
 - Фаик Гусейнов
 - Джамиля Азизова
 
-Второе место заняла команда [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), третье — [«Команда Алиева»](https://rating.chgk.info/teams/268) (Баку).
+Второе место заняла [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), третье — [«Команда Алиева»](https://rating.chgk.info/teams/268) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1395). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200305Baku.html).
 
@@ -1998,7 +1998,7 @@ else wrapTabs();
 - Джейхун Гейбатов
 - Эльнур Амикишиев
 
-Второе место заняла команда [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), третье — [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
+Второе место заняла [«Команда Азимова»](https://rating.chgk.info/teams/242) (Баку), третье — [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1304).
 
@@ -2025,7 +2025,7 @@ else wrapTabs();
 - Абдулазим Гусейнов
 - Илькин Етирмишли
 
-Второе место заняла команда [«Команда Бабаева»](https://rating.chgk.info/teams/2271) (Баку), третье — [«Yo!J»](https://rating.chgk.info/teams/2723) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200512Baku.html).
+Второе место заняла [«Команда Бабаева»](https://rating.chgk.info/teams/2271) (Баку), третье — [Yo!J](https://rating.chgk.info/teams/2723) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200512Baku.html).
 
 *[К оглавлению](#brain_contents)*
 
@@ -2035,9 +2035,9 @@ else wrapTabs();
 
 Победитель: **[«Команда Лятифова» (Баку)](https://rating.chgk.info/teams/32752)**
 
-*Состав команды [«Команда Лятифова»](https://rating.chgk.info/teams/32752) (Баку) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
+*Состав [«Команда Лятифова»](https://rating.chgk.info/teams/32752) (Баку) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
-Второе место заняла команда [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку). Третье место разделили команды [«Команда Зейналова»](https://rating.chgk.info/teams/33236) (Баку) и [«Команда Рагимова»](https://rating.chgk.info/teams/32841) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200112Baku.html).
+Второе место заняла [«Команда Гусейнова»](https://rating.chgk.info/teams/299) (Баку). Третье место разделили [«Команда Зейналова»](https://rating.chgk.info/teams/33236) (Баку) и [«Команда Рагимова»](https://rating.chgk.info/teams/32841) (Баку). Больше информации о турнире — [в Летописи](http://letopis.chgk.info/200112Baku.html).
 
 *[К оглавлению](#brain_contents)*
 
