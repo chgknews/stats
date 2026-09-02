@@ -407,13 +407,13 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a><a name="contents"></a>
+<a id="game-chgk"></a><a id="contents" name="contents"></a>
 
 - [II чемпионат Таджикистана по спортивному ЧГК (2019)](#chgk_2019)
 - [I чемпионат Таджикистана по спортивному ЧГК (2018)](#chgk_2018)
 
 
-**II чемпионат Таджикистана по спортивному «Что? Где? Когда?»** прошёл 23 июня 2019 года в Душанбе. <a name="chgk_2019"></a>
+**II чемпионат Таджикистана по спортивному «Что? Где? Когда?»** прошёл 23 июня 2019 года в Душанбе. <a id="chgk_2019"></a>
 
 Победитель: **[«Бонобо» (Душанбе)](https://rating.chgk.info/teams/47005)**
 - Абдурахим Абдумажитов
@@ -424,16 +424,15 @@ else wrapTabs();
 - Нигина Абдуллаева
 - Манучехр Салохудинов
 
-Второе место заняла команда [«Авесто»](https://rating.chgk.info/teams/47006) (Душанбе). Третье место разделили команды [«Root Kooroot»](https://rating.chgk.info/teams/61895) (Душанбе) и [«BDSM»](https://rating.chgk.info/teams/71650) (Душанбе).
+Второе место заняла команда [«Авесто»](https://rating.chgk.info/teams/47006) (Душанбе). Третье место разделили команды [Root Kooroot](https://rating.chgk.info/teams/61895) (Душанбе) и [BDSM](https://rating.chgk.info/teams/71650) (Душанбе).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5717).
-
 
 *[К оглавлению](#contents)*
 
 ---
 
-**I чемпионат Таджикистана по спортивному «Что? Где? Когда?»** прошёл 18 августа 2018 года в Душанбе. <a name="chgk_2018"></a>
+**I чемпионат Таджикистана по спортивному «Что? Где? Когда?»** прошёл 18 августа 2018 года в Душанбе. <a id="chgk_2018"></a>
 
 Победитель: **[«Бонобо» (Душанбе)](https://rating.chgk.info/teams/47005)**
 - Азамат Набиев
@@ -444,16 +443,12 @@ else wrapTabs();
 - Нигина Абдуллаева
 - Манучехр Салохудинов
 
-Второе место заняла команда [«Авесто»](https://rating.chgk.info/teams/47006) (Душанбе), третье — [«Root Kooroot»](https://rating.chgk.info/teams/61895) (Душанбе).
+Второе место заняла команда [«Авесто»](https://rating.chgk.info/teams/47006) (Душанбе), третье — [Root Kooroot](https://rating.chgk.info/teams/61895) (Душанбе).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5088).
-
 
 *[К оглавлению](#contents)*
 
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-always-visible">
-
-</div>
