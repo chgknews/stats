@@ -6,7 +6,7 @@ bookToC: false
 
 # Узбекистан
 
-Чемпионаты Узбекистана проводятся с 2004 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. \n\nСейчас не хватает информации о самом первом чемпионате Узбекистана, а также о ряде других турниров. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
+Чемпионаты Узбекистана проводятся с 2004 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Сейчас не хватает информации о самом первом чемпионате Узбекистана, а также о ряде других турниров. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
 
 <style>
 .country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-kvrm" aria-selected="false">Турниры по КВРМ</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-hamsa" aria-selected="false">Турниры по «Хамсе»</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-kvrm" aria-selected="false">Турниры по КВРМ</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -115,128 +115,56 @@ else wrapTabs();
 
 <table>
 <thead>
-<tr><th rowspan="2">Команда</th><th rowspan="2">Город</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">КВРМ</th><th colspan="3" style="text-align:center">БР</th><th colspan="3" style="text-align:center">«Хамса»</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
+<tr><th>Команда</th><th>Город</th><th>I</th><th>II</th><th>III</th><th>∑</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/teams/2462">Мы</a></td>
 <td>Ташкент</td>
 <td>3</td>
-<td>9</td>
-<td>3</td>
-<td>15</td>
-<td>3</td>
 <td>7</td>
 <td>2</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/4864">НМТТ (Никита Мобайл ТэТэ)</a></td>
-<td>Ташкент</td>
-<td>6</td>
-<td>3</td>
-<td>1</td>
-<td>10</td>
-<td>5</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/4156">7Hz</a></td>
-<td>Ташкент</td>
-<td>4</td>
-<td>2</td>
-<td>4</td>
-<td>10</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td>12</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/2909">Мистерия</a></td>
 <td>Ташкент</td>
-<td>7</td>
-<td>2</td>
-<td>0</td>
-<td>9</td>
 <td>6</td>
 <td>2</td>
 <td>0</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/4864">НМТТ</a></td>
+<td>Ташкент</td>
+<td>5</td>
+<td>2</td>
 <td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/4156">7Hz</a></td>
+<td>Ташкент</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/5858">DimTeam</a></td>
+<td>Ташкент</td>
+<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>2</td>
+<td>4</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/28587">Пахтакор</a></td>
 <td>Ташкент</td>
 <td>0</td>
-<td>2</td>
-<td>6</td>
-<td>8</td>
-<td>0</td>
 <td>1</td>
 <td>3</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/5858">Sonet (DimTeam)</a></td>
-<td>Ташкент</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
 <td>4</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/4749">ParadoX</a></td>
-<td>Навои</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/3449">Veni Vidi Vici</a></td>
@@ -245,15 +173,6 @@ else wrapTabs();
 <td>1</td>
 <td>2</td>
 <td>3</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/59318">КАД</a></td>
@@ -262,15 +181,6 @@ else wrapTabs();
 <td>1</td>
 <td>2</td>
 <td>3</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/62494">Котовского 26 кв 58</a></td>
@@ -279,32 +189,6 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>2</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/46377">НЗ</a></td>
-<td>сборная</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/815">Брюссельские</a></td>
@@ -313,15 +197,14 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>2</td>
-<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/4749">ParadoX</a></td>
+<td>Навои</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/98988">Комната</a></td>
@@ -330,15 +213,6 @@ else wrapTabs();
 <td>1</td>
 <td>1</td>
 <td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/3523">Заковат-1</a></td>
@@ -347,15 +221,14 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/46377">НЗ</a></td>
+<td>сборная</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/3687">Dream team</a></td>
@@ -364,15 +237,6 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/92163">Императив релоканта</a></td>
@@ -381,15 +245,6 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/62644">Ход конём</a></td>
@@ -398,15 +253,6 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 </tbody>
 </table>
@@ -418,181 +264,291 @@ else wrapTabs();
 
 <table>
 <thead>
-<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">БР</th><th colspan="3" style="text-align:center">ССИ</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
+<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">КВРМ</th><th colspan="3" style="text-align:center">ССИ</th></tr>
+<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/18316">Александр Ли</a></td>
-<td>3</td>
 <td>4</td>
-<td>2</td>
 <td>9</td>
-<td>2</td>
+<td>6</td>
+<td>19</td>
 <td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>8</td>
+<td>4</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/26586">Александр Райков</a></td>
-<td>2</td>
 <td>6</td>
-<td>1</td>
-<td>9</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>10</td>
+<td>2</td>
+<td>18</td>
+<td>5</td>
+<td>5</td>
+<td>2</td>
 <td>1</td>
 <td>5</td>
 <td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12482">Акрам Икрамов</a></td>
-<td>5</td>
-<td>2</td>
+<td>13</td>
+<td>4</td>
 <td>0</td>
-<td>7</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>17</td>
+<td>10</td>
+<td>3</td>
 <td>0</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/535">Алексей Акименко</a></td>
-<td>2</td>
-<td>3</td>
+<td><a href="https://rating.chgk.info/player/9240">Абдулазиз Джалилов</a></td>
+<td>7</td>
 <td>2</td>
 <td>7</td>
+<td>16</td>
+<td>7</td>
+<td>2</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/7215">Игорь Глущенко</a></td>
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>13</td>
+<td>7</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/535">Алексей Акименко</a></td>
+<td>6</td>
+<td>4</td>
 <td>3</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>13</td>
+<td>5</td>
+<td>4</td>
+<td>2</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/25981">Галина Прибыткова</a></td>
-<td>2</td>
-<td>4</td>
-<td>0</td>
-<td>6</td>
-<td>2</td>
 <td>3</td>
+<td>8</td>
+<td>2</td>
+<td>13</td>
+<td>3</td>
+<td>7</td>
+<td>2</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/487">Игорь Аипкин</a></td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>11</td>
+<td>7</td>
+<td>2</td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/28654">Артём Семёнов</a></td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>5</td>
+<td>8</td>
 <td>2</td>
-<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
+<td>10</td>
+<td>6</td>
+<td>2</td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/32901">Наиль Фарукшин</a></td>
-<td>3</td>
-<td>2</td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/35643">Усман Шарифходжаев</a></td>
 <td>5</td>
 <td>1</td>
+<td>4</td>
+<td>10</td>
+<td>5</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2673">Хаким Батыралиев</a></td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>10</td>
+<td>1</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27912">Рустамхужа Саид-Аминов</a></td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>9</td>
+<td>5</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/87499">Наринэ Багдасарян</a></td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>8</td>
+<td>6</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/4337">Антонина Бударина</a></td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>8</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8986">Наталья Дейнека</a></td>
 <td>2</td>
-<td>3</td>
+<td>6</td>
 <td>0</td>
-<td>5</td>
+<td>8</td>
 <td>2</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9240">Абдулазиз Джалилов</a></td>
+<td><a href="https://rating.chgk.info/player/32901">Наиль Фарукшин</a></td>
+<td>2</td>
+<td>5</td>
 <td>1</td>
+<td>8</td>
+<td>2</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/28281">Алексей Саркулов</a></td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>8</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/11220">Аскар Заитов</a></td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9801">Егор Дружинин</a></td>
+<td>1</td>
+<td>4</td>
+<td>3</td>
+<td>8</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/75099">Сардор Ахмедов</a></td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>7</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35753">Лейла Шахназарова</a></td>
+<td>3</td>
 <td>0</td>
 <td>4</td>
-<td>5</td>
-<td>1</td>
-<td>0</td>
+<td>7</td>
 <td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2673">Хаким Батыралиев</a></td>
-<td>0</td>
-<td>2</td>
-<td>3</td>
-<td>5</td>
-<td>0</td>
-<td>1</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/27852">Ян Садковский</a></td>
-<td>3</td>
-<td>1</td>
 <td>0</td>
 <td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27827">Дина Сагадиева</a></td>
 <td>2</td>
-<td>1</td>
+<td>5</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -601,112 +557,260 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/41902">Валерий Ким</a></td>
 <td>2</td>
+<td>3</td>
+<td>2</td>
+<td>7</td>
+<td>2</td>
+<td>3</td>
 <td>2</td>
 <td>0</td>
-<td>4</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/487">Игорь Аипкин</a></td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/7215">Игорь Глущенко</a></td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/37142">Азизбек Юсуфов</a></td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9801">Егор Дружинин</a></td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/28281">Алексей Саркулов</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/37252">Пётр Яковлев</a></td>
 <td>1</td>
-<td>3</td>
-<td>4</td>
-<td>0</td>
+<td>5</td>
 <td>1</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/87499">Наринэ Багдасарян</a></td>
+<td><a href="https://rating.chgk.info/player/14394">Владимир Клименко</a></td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>7</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35180">Алексей Чолоков</a></td>
+<td>3</td>
 <td>2</td>
 <td>1</td>
-<td>0</td>
+<td>6</td>
 <td>3</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35750">Георгий Шахназаров</a></td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19275">Никита Макаренко</a></td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/13782">Тимур Кафиатуллин</a></td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27852">Ян Садковский</a></td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/13674">Алексей Карцевич</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/4812">Дмитрий Вагапов</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/13196">Евгений Калюков</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/95596">Василий Щедрин</a></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/152701">Игорь Музыкин</a></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6754">Саидакбар Гафуров</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/3795">Максим Болонкин</a></td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30537">Игорь Степанян</a></td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/37222">Валерия Якимова</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/66802">Галина Никитина</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30579">Герман Стимбан</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -722,108 +826,100 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/11220">Аскар Заитов</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/174012">Павел Корнилов</a></td>
 <td>2</td>
+<td>1</td>
 <td>0</td>
 <td>3</td>
-<td>1</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/95596">Василий Щедрин</a></td>
+<td><a href="https://rating.chgk.info/player/862">Анна Алиева</a></td>
 <td>1</td>
-<td>2</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>3</td>
 <td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/13674">Алексей Карцевич</a></td>
+<td><a href="https://rating.chgk.info/player/32716">Руслан Усманов</a></td>
 <td>1</td>
-<td>0</td>
-<td>2</td>
+<td>1</td>
+<td>1</td>
 <td>3</td>
 <td>1</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/4812">Дмитрий Вагапов</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/22139">Рустам Надршин</a></td>
 <td>0</td>
-<td>2</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/4337">Антонина Бударина</a></td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
 <td>3</td>
 <td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/14394">Владимир Клименко</a></td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
 <td>3</td>
 <td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/19275">Никита Макаренко</a></td>
+<td><a href="https://rating.chgk.info/player/34642">Веслав Чеботарь</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19420">Владимир Максимов</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/111198">Ольга Киреева</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/171621">Алексей Грачёв</a></td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
@@ -834,78 +930,219 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/150487">Барно Джалилова</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/30579">Герман Стимбан</a></td>
+<td><a href="https://rating.chgk.info/player/26705">Ганишер Рахматуллаев</a></td>
+<td>0</td>
+<td>1</td>
 <td>2</td>
+<td>3</td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
 <td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/27827">Дина Сагадиева</a></td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/35643">Усман Шарифходжаев</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/54897">Динара Адылова</a></td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/13782">Тимур Кафиатуллин</a></td>
-<td>1</td>
+<td>3</td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/9299">Отабек Джураев</a></td>
 <td>0</td>
 <td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21877">Рустам Мурзаханов</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Наиль Фарукшин</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9808">Александр Друзь</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/32352">Анна Туниянц</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/97435">Джияна Ичигеева</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/110866">Илья Баженов</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/62658">Константин Тен</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8102">Анаит Григорян</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/29351">Мария Скляревская</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/1239">Михаил Аношкин</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/851">Роман Алиев</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/22886">Рустам Ниязов</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/160062">Абдулазиз Султонов</a></td>
+<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
@@ -914,89 +1151,136 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/37222">Валерия Якимова</a></td>
+<td><a href="https://rating.chgk.info/player/236592">Азиз Ханназаров</a></td>
 <td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/66802">Галина Никитина</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/13196">Евгений Калюков</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/35753">Лейла Шахназарова</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/75099">Сардор Ахмедов</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/52744">Асилбек Юсуфов</a></td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/39156">Дмитрий Баранов</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/1826">Жобир Ахмедов</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/22280">Милена Наринян</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/20326">Отабек Махкамов</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/71268">Светлана Корнеева</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/11447">Сослан Зарукаев</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/199137">Умархон Шариф</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/101500">Эльбек Нурмухамедов</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/36821">Сергей Щербаков</a></td>
@@ -1009,10 +1293,137 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/12021">Агзамходжа Ибрагимов</a></td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/47560">Александр Жудро</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/199770">Алишер Исмаилов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/24498">Анастасия Пересыпкина</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/1704">Гульнара Асямова</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6422">Джасурбек Гайбуллаев</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/25121">Дмитрий Плотников</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/25498">Евгений Полюдов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/22935">Илья Новиков</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/29834">Максим Соболевский</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/101499">Мурод Абдукамилов</a></td>
@@ -1026,6 +1437,55 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td>Рим Валеев</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/20956">Рустам Мирзаханов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/14092">Сергей Киргизов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/12445">Юрий Идрисов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1036,9 +1496,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1055,79 +1512,233 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/35750">Георгий Шахназаров</a></td>
+<td><a href="https://rating.chgk.info/player/32313">Алла Туктарова</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/37252">Пётр Яковлев</a></td>
+<td><a href="https://rating.chgk.info/player/15017">Бегзод Козоков</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/30537">Игорь Степанян</a></td>
+<td><a href="https://rating.chgk.info/player/10297">Бобур Ёкубов</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/174012">Павел Корнилов</a></td>
+<td><a href="https://rating.chgk.info/player/7340">Галина Головань</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/171621">Алексей Грачёв</a></td>
+<td><a href="https://rating.chgk.info/player/21517">Дмитрий Мордвинцев</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/103">Зайнап Абляева</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19555">Иван Малов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8985">Игорь Дейнека</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/36628">Камила Шукурова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/239256">Лилия Махмутова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/106588">Олег Артёменко</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/13321">Рената Канцерова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/4285">Станислав Брюханов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/52829">Татьяна Белякова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8988">Татьяна Дейнека</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/47565">Тимур Тураев</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/17382">Фуркат Курбанов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10602">Азиза Есенбаева</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1138,6 +1749,16 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/200140">Александра Кондращенко</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1154,12 +1775,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/143777">Алиса Плотникова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/150487">Барно Джалилова</a></td>
+<td><a href="https://rating.chgk.info/player/14693">Антон Коваленко</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1170,6 +1801,16 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30152">Артём Сорожкин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1186,6 +1827,29 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18691">Василий Ломакин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/7018">Владимир Гиль</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1202,12 +1866,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/33331">Дарья Фирсова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/54897">Динара Адылова</a></td>
+<td><a href="https://rating.chgk.info/player/19227">Дмитрий Майгатов</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1218,6 +1892,133 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/94616">Дмитрий Филипский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/879">Зафар Алимбаев</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/112520">Игорь Стугирёв</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/128044">Ирина Семёнова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/31447">Ирина Тен</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/68097">Константин Бабанский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/232449">Константин Григорьев</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/117747">Константин Шалькевич</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/48843">Муроджон Хамраев</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19478">Олег Малахов</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1234,9 +2035,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/169757">Роман Башлыков</a></td>
@@ -1250,12 +2048,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35461">Руфина Шакурова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/21877">Рустам Мурзаханов</a></td>
+<td><a href="https://rating.chgk.info/player/45763">Сергей Кельнер</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1263,15 +2071,12 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/101500">Эльбек Нурмухамедов</a></td>
+<td><a href="https://rating.chgk.info/player/54899">Станислав Сычевский</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1282,6 +2087,42 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19544">Татьяна Малкина</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/199896">Филипп Туркин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/36382">Юрий Шлёнский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1292,9 +2133,6 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1313,9 +2151,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 </tr>
 <tr>
@@ -1324,9 +2159,6 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1368,6 +2200,12 @@ else wrapTabs();
 **V чемпионат Узбекистана по «Заковату»** прошёл 30–31 мая 2026 года в Ташкенте. <a id="zakovat_2026"></a>
 
 Победитель: **[«Мистерия» (Ташкент)](https://rating.chgk.info/teams/2909)**
+- Павел Корнилов
+- Илья Баженов
+- Наринэ Багдасарян
+- Сардор Ахмедов
+- Артём Семёнов
+- Акрам Икрамов
 
 Второе место заняла команда [«КАД»](https://rating.chgk.info/teams/59318) (Ташкент), третье — [«Комната»](https://rating.chgk.info/teams/98988) (Ташкент).
 
@@ -1380,6 +2218,12 @@ else wrapTabs();
 **IV чемпионат Узбекистана по «Заковату»** прошёл 7–8 июня 2025 года в Ташкенте. <a id="zakovat_2025"></a>
 
 Победитель: **[«Мистерия» (Ташкент)](https://rating.chgk.info/teams/2909)**
+- Павел Корнилов
+- Наринэ Багдасарян
+- Сардор Ахмедов
+- Артём Семёнов
+- Тимур Кафиатуллин
+- Акрам Икрамов
 
 Второе место заняла команда [«Комната»](https://rating.chgk.info/teams/98988) (Ташкент), третье — [«КАД»](https://rating.chgk.info/teams/59318) (Ташкент).
 
@@ -1392,6 +2236,12 @@ else wrapTabs();
 **III чемпионат Узбекистана по «Заковату»** прошёл 25 мая 2024 года в Ташкенте. <a id="zakovat_2024"></a>
 
 Победитель: **[«Мистерия» (Ташкент)](https://rating.chgk.info/teams/2909)**
+- Наринэ Багдасарян
+- Сардор Ахмедов
+- Артём Семёнов
+- Тимур Кафиатуллин
+- Акрам Икрамов
+- Игорь Аипкин
 
 Второе место заняла команда [«Котовского 26 кв 58»](https://rating.chgk.info/teams/62494) (Ташкент), третье — [«Императив релоканта»](https://rating.chgk.info/teams/92163) (Ташкент).
 
@@ -1404,6 +2254,11 @@ else wrapTabs();
 **II чемпионат Узбекистана по «Заковату»** прошёл 14 мая 2023 года в Ташкенте. <a id="zakovat_2023"></a>
 
 Победитель: **[«Котовского 26 кв 58» (Ташкент)](https://rating.chgk.info/teams/62494)**
+- Игорь Музыкин
+- Джияна Ичигеева
+- Наиль Фарукшин
+- Дмитрий Плотников
+- Егор Дружинин
 
 Второе место заняла команда [«Мистерия»](https://rating.chgk.info/teams/2909) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
@@ -1416,6 +2271,13 @@ else wrapTabs();
 **I чемпионат Узбекистана по «Заковату»** прошёл 21 августа 2022 года в Ташкенте. <a id="zakovat_2022"></a>
 
 Победитель: **[«Мистерия» (Ташкент)](https://rating.chgk.info/teams/2909)**
+- Алишер Исмаилов
+- Наринэ Багдасарян
+- Сардор Ахмедов
+- Константин Тен
+- Артём Семёнов
+- Акрам Икрамов
+- Игорь Аипкин
 
 Второе место заняла команда [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент), третье — [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент).
 
@@ -1453,7 +2315,7 @@ else wrapTabs();
 - Акрам Икрамов
 - Игорь Аипкин
 
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент). Третье место разделили команды [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент) и [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
+Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент). Третье место разделили команды [7Hz](https://rating.chgk.info/teams/4156) (Ташкент) и [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4745).
 
@@ -1473,9 +2335,9 @@ else wrapTabs();
 - Наталья Дейнека
 - Алексей Акименко
 
-Второе место заняла команда [«Мистерия»](https://rating.chgk.info/teams/2909) (Ташкент), третье — [«DimTeam»](https://rating.chgk.info/teams/5858) (Ташкент).
+Второе место заняла команда [«Мистерия»](https://rating.chgk.info/teams/2909) (Ташкент), третье — [DimTeam](https://rating.chgk.info/teams/5858) (Ташкент).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4197).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4197), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/976).
 
 *[К оглавлению](#kvrm_contents)*
 
@@ -1493,9 +2355,9 @@ else wrapTabs();
 - Аскар Заитов
 - Наталья Дейнека
 
-Второе место заняла команда [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент), третье — [«DimTeam»](https://rating.chgk.info/teams/5858) (Ташкент).
+Второе место заняла команда [7Hz](https://rating.chgk.info/teams/4156) (Ташкент), третье — [DimTeam](https://rating.chgk.info/teams/5858) (Ташкент).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3613).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3613), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/1314).
 
 *[К оглавлению](#kvrm_contents)*
 
@@ -1503,7 +2365,7 @@ else wrapTabs();
 
 **XII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 28–29 марта 2015 года в Ташкенте. <a id="chgk_2015"></a>
 
-Победитель: **[«Sonet» (Ташкент)](https://rating.chgk.info/teams/5858)**
+Победитель: **[DimTeam (Ташкент)](https://rating.chgk.info/teams/5858)**
 - Азизбек Юсуфов
 - Усман Шарифходжаев
 - Алексей Карцевич
@@ -1511,7 +2373,7 @@ else wrapTabs();
 - Игорь Глущенко
 - Дмитрий Вагапов
 
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент).
+Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [7Hz](https://rating.chgk.info/teams/4156) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/3253).
 
@@ -1521,7 +2383,15 @@ else wrapTabs();
 
 **XI чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 22–23 марта 2014 года в Ташкенте. <a id="chgk_2014"></a>
 
-Победитель: **[«Sonet» (Ташкент)](https://rating.chgk.info/teams/5858)**
+Победитель: **[DimTeam (Ташкент)](https://rating.chgk.info/teams/5858)**
+- Александр Жудро
+- Азизбек Юсуфов
+- Усман Шарифходжаев
+- Анна Туниянц
+- Алексей Карцевич
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Дмитрий Вагапов
 
 Второе место заняла команда [«НЗ»](https://rating.chgk.info/teams/46377) (сборная), третье — [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент).
 
@@ -1534,8 +2404,15 @@ else wrapTabs();
 **X чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 20–21 апреля 2013 года в Ташкенте. <a id="chgk_2013"></a>
 
 Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+- Усман Шарифходжаев
+- Рустамхужа Саид-Аминов
+- Александр Ли
+- Акрам Икрамов
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Алексей Акименко
 
-Второе место заняла команда [«ParadoX»](https://rating.chgk.info/teams/4749) (Навои), третье — [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент).
+Второе место заняла команда [ParadoX](https://rating.chgk.info/teams/4749) (Навои), третье — [7Hz](https://rating.chgk.info/teams/4156) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2362).
 
@@ -1546,20 +2423,37 @@ else wrapTabs();
 **IX чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 5–6 мая 2012 года в Ташкенте. <a id="chgk_2012"></a>
 
 Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+- Усман Шарифходжаев
+- Алексей Чолоков
+- Рустамхужа Саид-Аминов
+- Евгений Калюков
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Хаким Батыралиев
+- Алексей Акименко
 
 Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2099).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2099), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3147).
 
 *[К оглавлению](#kvrm_contents)*
 
 ---
 
-**VIII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 6–7 мая 2011 года в Ташкенте. <a id="chgk_2011"></a>
+**VIII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 7–8 мая 2011 года в Ташкенте. <a id="chgk_2011"></a>
 
-Победитель: **[«Никита Мобайл ТэТэ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+- Усман Шарифходжаев
+- Рустамхужа Саид-Аминов
+- Александр Райков
+- Илья Новиков
+- Евгений Калюков
+- Акрам Икрамов
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Алексей Акименко
 
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент).
+Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [7Hz](https://rating.chgk.info/teams/4156) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/1775).
 
@@ -1570,8 +2464,16 @@ else wrapTabs();
 **VII чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 28–29 мая 2010 года в Ташкенте. <a id="chgk_2010"></a>
 
 Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+- Алексей Чолоков
+- Рустамхужа Саид-Аминов
+- Александр Райков
+- Акрам Икрамов
+- Александр Друзь
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Алексей Акименко
 
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«ParadoX»](https://rating.chgk.info/teams/4749) (Навои).
+Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [ParadoX](https://rating.chgk.info/teams/4749) (Навои).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/665).
 
@@ -1581,7 +2483,15 @@ else wrapTabs();
 
 **VI чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 9 мая 2009 года в Ташкенте. <a id="chgk_2009"></a>
 
-Победитель: **[«7Hz» (Ташкент)](https://rating.chgk.info/teams/4156)**
+Победитель: **[7Hz (Ташкент)](https://rating.chgk.info/teams/4156)**
+- Лейла Шахназарова
+- Георгий Шахназаров
+- Максим Соболевский
+- Алексей Саркулов
+- Никита Макаренко
+- Юрий Идрисов
+- Антонина Бударина
+- Игорь Аипкин
 
 Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [«Брюссельские»](https://rating.chgk.info/teams/815) (Ташкент).
 
@@ -1594,8 +2504,17 @@ else wrapTabs();
 **V чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 9–10 мая 2008 года в Ташкенте. <a id="chgk_2008"></a>
 
 Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
+- Алексей Чолоков
+- Руслан Усманов
+- Рустамхужа Саид-Аминов
+- Александр Райков
+- Акрам Икрамов
+- Абдулазиз Джалилов
+- Игорь Глущенко
+- Саидакбар Гафуров
+- Анна Алиева
 
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«Veni Vidi Vici»](https://rating.chgk.info/teams/3449) (Ташкент).
+Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [Veni Vidi Vici](https://rating.chgk.info/teams/3449) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/340).
 
@@ -1605,9 +2524,16 @@ else wrapTabs();
 
 **IV чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 5 мая 2007 года в Ташкенте. <a id="chgk_2007"></a>
 
-Победитель: **[«7Hz» (Ташкент)](https://rating.chgk.info/teams/4156)**
+Победитель: **[7Hz (Ташкент)](https://rating.chgk.info/teams/4156)**
+- Лейла Шахназарова
+- Георгий Шахназаров
+- Алексей Саркулов
+- Александр Райков
+- Агзамходжа Ибрагимов
+- Антонина Бударина
+- Игорь Аипкин
 
-Второе место заняла команда [«Veni Vidi Vici»](https://rating.chgk.info/teams/3449) (Ташкент), третье — [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент).
+Второе место заняла команда [Veni Vidi Vici](https://rating.chgk.info/teams/3449) (Ташкент), третье — [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/243).
 
@@ -1617,11 +2543,18 @@ else wrapTabs();
 
 **III чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 13 мая 2006 года в Ташкенте. <a id="chgk_2006"></a>
 
-Победитель: **[«7Hz» (Ташкент)](https://rating.chgk.info/teams/4156)**
+Победитель: **[7Hz (Ташкент)](https://rating.chgk.info/teams/4156)**
+- Лейла Шахназарова
+- Георгий Шахназаров
+- Герман Стимбан
+- Анастасия Пересыпкина
+- Сергей Киргизов
+- Антонина Бударина
+- Игорь Аипкин
 
-Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [«Dream team»](https://rating.chgk.info/teams/3687) (Ташкент).
+Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [Dream team](https://rating.chgk.info/teams/3687) (Ташкент).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/169).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/169), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/4674).
 
 *[К оглавлению](#kvrm_contents)*
 
@@ -1630,10 +2563,18 @@ else wrapTabs();
 **II чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл 23 апреля 2005 года в Ташкенте. <a id="chgk_2005"></a>
 
 Победитель: **[«Брюссельские» (Ташкент)](https://rating.chgk.info/teams/815)**
+- Мария Скляревская
+- Евгений Полюдов
+- Рустам Мирзаханов
+- Владимир Клименко
+- Джасурбек Гайбуллаев
+- Гульнара Асямова
+- Михаил Аношкин
+- Роман Алиев
 
-Второе место заняла команда [«Заковат-1»](https://rating.chgk.info/teams/3523) (Ташкент), третье — [«Veni Vidi Vici»](https://rating.chgk.info/teams/3449) (Ташкент).
+Второе место заняла команда [«Заковат-1»](https://rating.chgk.info/teams/3523) (Ташкент), третье — [Veni Vidi Vici](https://rating.chgk.info/teams/3449) (Ташкент).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/95).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/95), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/3990).
 
 *[К оглавлению](#kvrm_contents)*
 
@@ -1642,107 +2583,15 @@ else wrapTabs();
 **I чемпионат Узбекистана по спортивному «Что? Где? Когда?»** прошёл в 2004 году в Ташкенте. <a id="chgk_2004"></a>
 
 Победитель: **[«Мы» (Ташкент)](https://rating.chgk.info/teams/2462)**
+- Рим Валеев
+- Пётр Яковлев
+- Галина Прибыткова
+- Дина Сагадиева
+- Анаит Григорян
+- Рустам Ниязов
 
 
 *[К оглавлению](#kvrm_contents)*
-
----
-
-<div class="country-tab-end"></div>
-<div class="country-tab-start" data-tab="game-brain"></div>
-
-<a id="game-brain"></a><a id="brain_contents" name="brain_contents"></a>
-
-- [VII чемпионат Узбекистана по БР (2015)](#brain_2015)
-- [VI чемпионат Узбекистана по БР (2014)](#brain_2014)
-- [V чемпионат Узбекистана по БР (2013)](#brain_2013)
-- [IV чемпионат Узбекистана по БР (2012)](#brain_2012)
-- [III чемпионат Узбекистана по БР (2011)](#brain_2011)
-- [II чемпионат Узбекистана по БР (2009)](#brain_2009)
-
-
-**VII чемпионат Узбекистана по брейн-рингу** прошёл 28–29 марта 2015 года в Ташкенте. <a id="brain_2015"></a>
-
-Победитель: **[«Мистерия» (Ташкент)](https://rating.chgk.info/teams/2909)**
-- Ян Садковский
-
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
-
-*[К оглавлению](#brain_contents)*
-
----
-
-**VI чемпионат Узбекистана по брейн-рингу** прошёл 22–23 марта 2014 года в Ташкенте. <a id="brain_2014"></a>
-
-Победитель: **[«НЗ» (сборная)](https://rating.chgk.info/teams/46377)**
-
-Второе место заняла команда [«7Hz»](https://rating.chgk.info/teams/4156) (Ташкент), третье — [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент).
-
-*[К оглавлению](#brain_contents)*
-
----
-
-**V чемпионат Узбекистана по брейн-рингу** прошёл 20–21 апреля 2013 года в Ташкенте. <a id="brain_2013"></a>
-
-Победитель: **[«ParadoX» (Навои)](https://rating.chgk.info/teams/4749)**
-
-Второе место заняла команда [«НМТТ»](https://rating.chgk.info/teams/4864) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
-
-*[К оглавлению](#brain_contents)*
-
----
-
-**IV чемпионат Узбекистана по брейн-рингу** прошёл 5–6 мая 2012 года в Ташкенте. <a id="brain_2012"></a>
-
-Победитель: **[«НМТТ» (Ташкент)](https://rating.chgk.info/teams/4864)**
-
-Второе место заняла команда [«Мы»](https://rating.chgk.info/teams/2462) (Ташкент), третье — [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент).
-
-*[К оглавлению](#brain_contents)*
-
----
-
-**III чемпионат Узбекистана по брейн-рингу** прошёл 6–7 мая 2011 года в Ташкенте. Результаты пока не учтены в статистике. <a id="brain_2011"></a>
-
-*[К оглавлению](#brain_contents)*
-
----
-
-**II чемпионат Узбекистана по брейн-рингу** прошёл 8 мая 2009 года в Ташкенте. Результаты пока не учтены в статистике. <a id="brain_2009"></a>
-
-*[К оглавлению](#brain_contents)*
-
----
-
-<div class="country-tab-end"></div>
-<div class="country-tab-start" data-tab="game-ek"></div>
-
-<a id="game-ek"></a><a id="ek_contents" name="ek_contents"></a>
-
-- [I чемпионат Узбекистана по ЭК (2011)](#ek_2011)
-
-
-**I чемпионат Узбекистана по эрудит-квартету** прошёл 6–7 мая 2011 года в Ташкенте. Результаты пока не учтены в статистике. <a id="ek_2011"></a>
-
-*[К оглавлению](#ek_contents)*
-
----
-
-<div class="country-tab-end"></div>
-<div class="country-tab-start" data-tab="game-hamsa"></div>
-
-<a id="game-hamsa"></a><a id="hamsa_contents" name="hamsa_contents"></a>
-
-- [I чемпионат Узбекистана по «Хамсе» (2013)](#hamsa_2013)
-
-
-**I чемпионат Узбекистана по «Хамсе»** прошёл 20–21 апреля 2013 года в Ташкенте. <a id="hamsa_2013"></a>
-
-Победитель: **[«7Hz» (Ташкент)](https://rating.chgk.info/teams/4156)**
-
-Второе место заняла команда [«Пахтакор»](https://rating.chgk.info/teams/28587) (Ташкент), третье — [«ParadoX»](https://rating.chgk.info/teams/4749) (Навои).
-
-*[К оглавлению](#hamsa_contents)*
 
 ---
 
@@ -1858,7 +2707,7 @@ else wrapTabs();
 
 **VII чемпионат Узбекистана по спортивной «Своей игре»** прошёл 28–29 марта 2015 года в Ташкенте. <a id="ssi_2015"></a>
 
-Победитель: **[Наиль Фарукшин](https://rating.chgk.info/player/32901)**
+Победитель: **Наиль Фарукшин**
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Алексей Акименко](https://rating.chgk.info/player/535).
 
@@ -1868,7 +2717,7 @@ else wrapTabs();
 
 **VI чемпионат Узбекистана по спортивной «Своей игре»** прошёл 22–23 марта 2014 года в Ташкенте. <a id="ssi_2014"></a>
 
-Победитель: **[Наиль Фарукшин](https://rating.chgk.info/player/32901)**
+Победитель: **Наиль Фарукшин**
 
 Второе место занял [Александр Райков](https://rating.chgk.info/player/26586), третье — [Азизбек Юсуфов](https://rating.chgk.info/player/37142).
 
@@ -1941,11 +2790,24 @@ else wrapTabs();
 </thead>
 <tbody>
 <tr><td>2016</td><td>VIII чемпионат Узбекистана по ССИ</td><td>неизвестны обладатели второго и третьего мест.</td></tr>
-<tr><td>2011</td><td>III чемпионат Узбекистана по БР</td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
-<tr><td>2011</td><td>I чемпионат Узбекистана по ЭК</td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2010</td><td>III чемпионат Узбекистана по ССИ</td><td>неизвестен обладатель третьего места.</td></tr>
-<tr><td>2009</td><td>II чемпионат Узбекистана по БР</td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2004</td><td>I чемпионат Узбекистана по ЧГК</td><td>неизвестны составы обладателей второго и третьего мест, точная дата проведения турнира.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="sources"></div>
+
+<a id="sources"></a>
+
+Здесь указан список источников, откуда взята та или иная информация на этой странице.
+
+<table>
+<thead>
+<tr><th>Турнир</th><th>Год</th><th>Источник</th></tr>
+</thead>
+<tbody>
+<tr><td>I чемпионат Узбекистана по ЧГК</td><td>2004</td><td><a href="https://web.archive.org/web/20050111210608/http://www.novostiuzbekistana.st.uz/21_199/kultura.htm">Заметка Петра Яковлева в газете «Новости Узбекистана»</a> (архивированная копия)</td></tr>
 </tbody>
 </table>
 

@@ -1632,6 +1632,7 @@ else wrapTabs();
 
 *Состав команды [Know How](https://rating.chgk.info/teams/599) (Хайфа) неизвестен. Если вы что-то о нём знаете, напишите, пожалуйста, на <chgknews.info@gmail.com>.*
 
+
 *[К оглавлению](#contents)*
 
 ---
@@ -1648,7 +1649,9 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
+<tr><td>2024</td><td><a href="https://rating.chgk.info/tournament/10477">XXVI чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2019</td><td><a href="https://rating.chgk.info/tournament/5674">XXIV чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2018</td><td><a href="https://rating.chgk.info/tournament/4849">XXIII чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей второго места.</td></tr>
 <tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/21">IX чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2003</td><td><a href="https://rating.chgk.info/tournament/1381">VIII чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1270">VII чемпионат Израиля по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>

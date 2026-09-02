@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Нет данных</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -693,7 +693,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a><a name="contents"></a>
+<a id="game-chgk"></a><a id="contents" name="contents"></a>
 
 - [VII чемпионат Чехии по спортивному ЧГК (2025)](#chgk_2025)
 - [VI чемпионат Чехии по спортивному ЧГК (2024)](#chgk_2024)
@@ -704,7 +704,7 @@ else wrapTabs();
 - [I чемпионат Чехии по спортивному ЧГК (2017)](#chgk_2017)
 
 
-**VII чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 4–5 октября 2025 года в Праге. <a name="chgk_2025"></a>
+**VII чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 4–5 октября 2025 года в Праге. <a id="chgk_2025"></a>
 
 Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
 - Вера Разумов
@@ -719,12 +719,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12543).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**VI чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 12–13 октября 2024 года в Праге. <a name="chgk_2024"></a>
+**VI чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 12–13 октября 2024 года в Праге. <a id="chgk_2024"></a>
 
 Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
 - Айгуль Сембаева
@@ -738,12 +737,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11296).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**V чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 14–15 октября 2023 года в Праге. <a name="chgk_2023"></a>
+**V чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 14–15 октября 2023 года в Праге. <a id="chgk_2023"></a>
 
 Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
 - Айгуль Сембаева
@@ -757,12 +755,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/9685).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**IV чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 29–30 октября 2022 года в Праге. <a name="chgk_2022"></a>
+**IV чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 29–30 октября 2022 года в Праге. <a id="chgk_2022"></a>
 
 Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
 - Александр Шелёмин
@@ -776,12 +773,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/6636).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**III чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 5–6 октября 2019 года в Праге. <a name="chgk_2019"></a>
+**III чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 5–6 октября 2019 года в Праге. <a id="chgk_2019"></a>
 
 Победитель: **[«Как-то так» (Прага)](https://rating.chgk.info/teams/4130)**
 - Александр Шелёмин
@@ -796,12 +792,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5825).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**II чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 13–14 октября 2018 года в Праге. <a name="chgk_2018"></a>
+**II чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 13–14 октября 2018 года в Праге. <a id="chgk_2018"></a>
 
 Первое место разделили команды [«Как-то так»](https://rating.chgk.info/teams/4130) (Прага) и [«Номады»](https://rating.chgk.info/teams/61753) (Прага). Состав команды [«Как-то так»](https://rating.chgk.info/teams/4130):
 - Екатерина Кац
@@ -826,12 +821,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5066).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**I чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 3 июня 2017 года в Праге. <a name="chgk_2017"></a>
+**I чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 3 июня 2017 года в Праге. <a id="chgk_2017"></a>
 
 Победитель: **[«Как-то так» (Прага)](https://rating.chgk.info/teams/4130)**
 - Антон Ширяев
@@ -844,7 +838,6 @@ else wrapTabs();
 Второе место заняла команда [«Анахорет»](https://rating.chgk.info/teams/43515) (Прага). Третье место разделили команды [«Ведуны»](https://rating.chgk.info/teams/38682) (Прага) и [«Дубль В.»](https://rating.chgk.info/teams/58755) (Прага).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4358).
-
 
 *[К оглавлению](#contents)*
 
