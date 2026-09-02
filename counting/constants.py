@@ -183,4 +183,4 @@ SKIP_WORKSHEET_TITLES = frozenset({ENTITY_IDS_WORKSHEET, "backup"})
 
 # Google Sheets configuration
 GOOGLE_SHEETS_CREDENTIALS = str(REPO_ROOT / "credentials.json")
-GOOGLE_SHEETS_SPREADSHEET_ID = "1HKNi0YXYkvhcV76DsW25hzvvbJ190cLWTWcbYuO4yC4"  # e.g., "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms"
+GOOGLE_SHEETS_SPREADSHEET_ID = "1ejR6qsDeICtN-ILoVRknTibgQ-MFBv1YUNw6hK_R5fM" # for tests: "1HKNi0YXYkvhcV76DsW25hzvvbJ190cLWTWcbYuO4yC4"  
