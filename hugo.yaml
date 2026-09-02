@@ -42,7 +42,7 @@ menu:
   # before: []
   after:
     - name: "Связаться"
-      url: "http://telegram.me/perenoel"
+      url: "/contacts"
       weight: 10
     - name: "Поддержать"
       url: "/donate"
