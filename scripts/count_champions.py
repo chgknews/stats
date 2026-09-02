@@ -46,21 +46,57 @@ def main():
         "--cross-country-stats", action="store_true",
         help="Print cross-country player participation summary",
     )
+    parser.add_argument(
+        "--check-doubles", action="store_true",
+        help="Scan all country tabs for duplicate ts_id/uz_id/ua_id and write the doubles sheet",
+    )
+    parser.add_argument(
+        "--replace-doubles", action="store_true",
+        help="Merge entities marked replace?=yes on the doubles sheet (id2 → id1)",
+    )
+    parser.add_argument(
+        "--test", action="store_true",
+        help="Use the test Google Spreadsheet (GOOGLE_SHEETS_TEST_SPREADSHEET_ID)",
+    )
 
     args = parser.parse_args()
     read_only = args.read_only_sheets
+    spreadsheet_id = (
+        constants.GOOGLE_SHEETS_TEST_SPREADSHEET_ID
+        if args.test
+        else None
+    )
+    if args.test:
+        print(f"Using test Google Spreadsheet: {spreadsheet_id}")
 
     if args.cross_country_stats:
         from cross_country_stats import print_cross_country_summary
         print_cross_country_summary()
         return
 
+    if args.check_doubles:
+        from counting.doubles import check_doubles_cli
+        ok = check_doubles_cli(read_only=read_only, spreadsheet_id=spreadsheet_id)
+        sys.exit(0 if ok else 1)
+
+    if args.replace_doubles:
+        from counting.doubles import replace_doubles_cli
+        ok = replace_doubles_cli(
+            read_only=read_only, spreadsheet_id=spreadsheet_id, test=args.test
+        )
+        sys.exit(0 if ok else 1)
+
     if args.file:
         slug, tournament_ids = resolve_country_slug(args.file, args.country_name)
         if not tournament_ids:
             print("Error: no tournament ids found in file", file=sys.stderr)
             sys.exit(1)
-        generator = StatsGenerator(slug, read_only_sheets=read_only)
+        generator = StatsGenerator(
+            slug,
+            read_only_sheets=read_only,
+            spreadsheet_id=spreadsheet_id,
+            test=args.test,
+        )
         generator.generate_stats(
             tournament_ids=tournament_ids,
             number_champ=args.number,
@@ -68,7 +104,9 @@ def main():
         )
     elif args.update_from_google_sheets:
         slug = args.update_from_google_sheets
-        generator = StatsGenerator(slug, read_only_sheets=read_only)
+        generator = StatsGenerator(
+            slug, read_only_sheets=read_only, spreadsheet_id=spreadsheet_id, test=args.test
+        )
         ok = generator.update_from_google_sheets()
         print("Country stats updated successfully" if ok else "Failed to update country stats")
         sys.exit(0 if ok else 1)
@@ -76,7 +114,12 @@ def main():
         if not args.country_name:
             print("Error: -cn country slug required", file=sys.stderr)
             sys.exit(1)
-        generator = StatsGenerator(args.country_name, read_only_sheets=read_only)
+        generator = StatsGenerator(
+            args.country_name,
+            read_only_sheets=read_only,
+            spreadsheet_id=spreadsheet_id,
+            test=args.test,
+        )
         if args.add_tournament:
             ok = generator.add_tournament(
                 args.add_tournament, args.game or constants.DEFAULT_GAME

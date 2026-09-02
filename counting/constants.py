@@ -163,6 +163,8 @@ SEX_PLACE_VERB = {
 
 #other
 OUTPUT_MD = str(REPO_ROOT / "content" / "info" / "countries") + "/"
+# Country pages written here when count_champions.py / replace_doubles.py run with --test.
+OUTPUT_MD_TEST = str(REPO_ROOT / "content" / "test") + "/"
 # One public dump of every country tab (sheet sections, not computed stats).
 OUTPUT_JSON = str(REPO_ROOT / "content" / "info" / "data.json")
 NATIONAL_TEAM_FLAG_ID = 50  # Flag ID for national teams ('ЧСт')
@@ -178,9 +180,17 @@ EXTERNAL_ID_SOURCES = (EXTERNAL_ID_TS, EXTERNAL_ID_UZ, EXTERNAL_ID_UA)
 
 # Global internal-id counters live on this spreadsheet tab (name starts with _).
 ENTITY_IDS_WORKSHEET = "_entity_ids"
+# Cross-country duplicate pairs (ts_id / uz_id / ua_id). Not a country tab.
+DOUBLES_WORKSHEET = "doubles"
 # Country-data dump skips these tab titles (plus any title starting with _).
-SKIP_WORKSHEET_TITLES = frozenset({ENTITY_IDS_WORKSHEET, "backup"})
+SKIP_WORKSHEET_TITLES = frozenset({ENTITY_IDS_WORKSHEET, DOUBLES_WORKSHEET, "backup"})
+
+KIND_TOURNAMENT = "tournament"
+KIND_TEAM = "team"
+KIND_PLAYER = "player"
+ENTITY_KINDS = (KIND_TOURNAMENT, KIND_TEAM, KIND_PLAYER)
 
 # Google Sheets configuration
 GOOGLE_SHEETS_CREDENTIALS = str(REPO_ROOT / "credentials.json")
-GOOGLE_SHEETS_SPREADSHEET_ID = "1ejR6qsDeICtN-ILoVRknTibgQ-MFBv1YUNw6hK_R5fM" # for tests: "1HKNi0YXYkvhcV76DsW25hzvvbJ190cLWTWcbYuO4yC4"  
+GOOGLE_SHEETS_SPREADSHEET_ID = "1ejR6qsDeICtN-ILoVRknTibgQ-MFBv1YUNw6hK_R5fM"
+GOOGLE_SHEETS_TEST_SPREADSHEET_ID = "1HKNi0YXYkvhcV76DsW25hzvvbJ190cLWTWcbYuO4yC4"

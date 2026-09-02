@@ -148,7 +148,7 @@ sequenceDiagram
 | `content/countries/{country}.md` | Markdown | Older/alternate content tree (some countries still have copies here) |
 | `public/` | Static HTML | Hugo build output (gitignored locally) |
 
-**Hugo page:** `StatsGenerator` writes **`content/info/countries/{country}.md`** (`constants.OUTPUT_MD`). `russia_01_19`, `russia_igra_tv`, and `russia_kvrm` go to **`content/info/countries/russia/{country}.md`**.
+**Hugo page:** `StatsGenerator` writes **`content/info/countries/{country}.md`** (`constants.OUTPUT_MD`). `russia_01_19`, `russia_igra_tv`, and `russia_kvrm` go to **`content/info/countries/russia/{country}.md`**. `--test` writes the same filenames under **`test/`** (`constants.OUTPUT_MD_TEST`) instead.
 
 **Public JSON:** `GoogleSheetsExporter.write_public_json()` rewrites **`data/countries.json`** (`constants.OUTPUT_JSON`) after each save, by reading every public worksheet. Tabs `_entity_ids` and `backup` (and any other title starting with `_`) are omitted.
 
@@ -236,7 +236,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 
 **Imports:** `counting.country_registry`, `counting.stats_generator`
 
-**Key flags:** `-f`, `-cn`, `-ug`, `-at`, `-et`, `-u`, `--read-only-sheets`, `--cross-country-stats`
+**Key flags:** `-f`, `-cn`, `-ug`, `-at`, `-et`, `-u`, `--read-only-sheets`, `--test`, `--cross-country-stats`, `--check-doubles`, `--replace-doubles`
 
 **`-u` types:** `ts`, `results`, `place`, `announce`, `tg`, `fb`, `vk`, `site`, `recap`, `letopis`, `photos`, `questions`
 
@@ -245,6 +245,12 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 
 #### `scripts/cross_country_stats.py`
 **Role:** Optional analytics. Loads all country tabs; matches players across countries preferably by `ts_id`, falling back to internal id when no external id is present.
+
+#### `scripts/check_doubles.py`
+**Role:** Build tournament/team/player sets from every country tab and write pairs that share `ts_id` / `uz_id` / `ua_id` to the `doubles` sheet. Same check runs after `-at`, `-f`, `-ug`, `-et`, `-u`. `--read-only-sheets` prints pairs without writing.
+
+#### `scripts/replace_doubles.py`
+**Role:** Read `doubles`, and for rows with `replace?` = `yes` replace `id2` with `id1` in all country tabs, then move those rows to the bottom of `doubles`.
 
 #### `scripts/generate_calendar.py`
 **Role:** Builds `data/calendar.json` and `content/info/calendar.md` from the public Google Sheet.
@@ -298,7 +304,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | Class | Purpose |
 |-------|---------|
 | `EntityIdAllocator` | Global auto-increment; load/persist `_entity_ids` |
-| `EntityRegistry` | Resolve/observe teams, players, tournaments by external id; allocate when unknown |
+| `EntityRegistry` | Resolve/observe teams, players, tournaments by external id; allocate when unknown; `remember_foreign_ids()` indexes other countries so API imports reuse an existing id |
 
 ---
 
@@ -314,19 +320,22 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `load_data(country)` | Parse worksheet → `{tournaments, teams, players, meta, ...}` |
 | `export_data(country, output_data)` | `worksheet.clear(fields="*")` then write full v2 layout with `parse=False` |
 | `write_public_json()` | Read every public tab and rewrite `data/countries.json` |
-| `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `backup`, other `_…` tabs) |
+| `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `doubles`, `backup`, other `_…` tabs) |
 | `_join_tables()` | Join Tournaments + Links + Podium + Rosters + Languages + Names + registries → `TournamentData` |
 | `_build_v2_rows()` | Serialize metadata + sections including Errors |
 
 **Credentials:** `credentials.json` (`constants.GOOGLE_SHEETS_CREDENTIALS`)
 
-**Spreadsheet:** `constants.GOOGLE_SHEETS_SPREADSHEET_ID`
+**Spreadsheet:** `constants.GOOGLE_SHEETS_SPREADSHEET_ID`. `--test` on `count_champions.py` switches to `GOOGLE_SHEETS_TEST_SPREADSHEET_ID`.
 
 #### `sheet_utils.py`
 **Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` (recovers integers from date-formatted cells), profile URLs from `external_ids.ts_id`.
 
 #### `data_errors.py`
 **Role:** Missing-data phrases, auto-detection of incomplete rosters/medalists/date/city on past editions, merge with the Sheets Errors section (`critical` yes/no, default yes). Future tournaments are never reported.
+
+#### `doubles.py`
+**Role:** `EntitySets` of tournaments/teams/players across all country tabs; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
 
 #### `country_registry.py`
 **Role:** Maps latin slug (`poland`) → Cyrillic nominative/genitive for markdown. Single source of truth for country names (`get_country_nominative()`, `get_country_genitive()`, `validate_country_slug()`). Optional `output_subdir` sends markdown to a nested Hugo folder (`russia_01_19` / `russia_igra_tv` / `russia_kvrm` → `content/info/countries/russia/{slug}.md`). `resolve_country_slug()` parses bulk input files. There is **no** runtime `register_country()` — names are not stored in Sheets metadata.
@@ -372,7 +381,7 @@ All have `to_dict()` / `from_dict()` for Sheets round-trips.
 ### Configuration
 
 #### `constants.py`
-**Role:** UI strings, game name aliases, `OUTPUT_MD`, `TOP_PLACES = 3`, `NATIONAL_TEAM_FLAG_ID`, `EXTERNAL_ID_*` sources, `ENTITY_IDS_WORKSHEET`, Google Sheets IDs.
+**Role:** UI strings, game name aliases, `OUTPUT_MD` / `OUTPUT_MD_TEST`, `TOP_PLACES = 3`, `NATIONAL_TEAM_FLAG_ID`, `EXTERNAL_ID_*` sources, `ENTITY_IDS_WORKSHEET`, Google Sheets IDs.
 
 #### `requirements.txt`
 ```
@@ -598,6 +607,20 @@ id          | description                                      | critical
 - Future editions (`пройдёт`, or a year still ahead with no date) are not written here
 - Markdown tab **Нет данных** is omitted when both the extra sentence and the **critical** item list are empty; the sheet section remains
 
+### Tab: doubles
+
+Not a country worksheet. Skipped by the public JSON dump (`SKIP_WORKSHEET_TITLES`). Created on first duplicate scan.
+
+Header: `kind | ts_id | uz_id | ua_id | id1 | name1 | surname1 | id2 | name2 | surname2 | replace?`
+
+- One row per pair of **different internal ids** that share `ts_id`, `uz_id` or `ua_id` (any one is enough). The same person/team in two countries with the **same** internal id is not a double
+- `kind`: `tournament` / `team` / `player` (required because those id sequences are independent)
+- `id1` is the smaller internal id (kept on merge), `id2` is the larger (replaced)
+- `surname1` / `surname2` are filled for players; teams and tournaments leave them blank
+- `replace?` is blank on new rows and is **never** filled by the scripts — editors type `yes` by hand
+- `-at` / `-f` / `-ug` / `-et` / `-u` refresh this tab after a save (unless `--read-only-sheets`). Standalone: `python scripts/check_doubles.py`
+- `python scripts/replace_doubles.py` rewrites `id2` → `id1` in every country tab where `replace?` is `yes`, then sorts the tab so those `yes` rows sit at the bottom
+
 ### Join logic
 
 On load, `_join_tables()` builds `TournamentData` objects from Tournaments rows. Child tables join by tournament internal `id`. A leftover `country` column on an old sheet is ignored. 
@@ -737,6 +760,22 @@ Prints players who appear in more than one country's championship in the same ye
 
 ---
 
+### 7. Duplicate entities (`doubles` tab)
+
+```bash
+python scripts/check_doubles.py
+python scripts/count_champions.py --check-doubles
+python scripts/check_doubles.py --read-only-sheets
+
+# After setting replace?=yes on the doubles tab:
+python scripts/replace_doubles.py
+python scripts/count_champions.py --replace-doubles
+```
+
+The check also runs after `-at`, `-f`, `-ug`, `-et` and `-u`. It matches **only** `ts_id`, `uz_id` and `ua_id`. On merge, `id2` (larger internal id) is rewritten to `id1` everywhere, then `yes` rows are sorted to the bottom of `doubles`.
+
+---
+
 ## One-time operations
 
 Day-to-day editing uses `-ug` (see [README](../README.md)).
@@ -756,14 +795,17 @@ Not used by current GitHub Actions workflows.
 
 | Command | Reads Sheets | Writes Sheets | Writes local markdown |
 |---------|-------------|---------------|----------------------|
-| `-f` (bulk) | No* | **Yes** (default) + `_entity_ids` | Yes |
+| `-f` (bulk) | No* | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
 | `-f --read-only-sheets` | No | No | Yes |
-| `-ug` | Yes | **Yes** (default) + `_entity_ids` | Yes |
+| `-ug` | Yes | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
 | `-ug --read-only-sheets` | Yes | No | Yes |
-| `-at`, `-et`, `-u` | Yes | **Yes** (default) + `_entity_ids` | Yes |
+| `-at`, `-et`, `-u` | Yes | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
 | `--cross-country-stats` | Yes | No | No |
+| `--check-doubles` | Yes | **Yes** (`doubles` tab) | No |
+| `--check-doubles --read-only-sheets` | Yes | No | No |
+| `--replace-doubles` | Yes | **Yes** (country tabs + `doubles`) | Yes (affected countries) |
 
-\*Bulk `-f` does not read the country tab first but **does export** unless `--read-only-sheets` is set. It still loads `_entity_ids` when Sheets is available so new internal ids stay globally unique.
+\*Bulk `-f` does not read the country tab first but **does export** unless `--read-only-sheets` is set. It still loads `_entity_ids` when Sheets is available so new internal ids stay globally unique, and it indexes `ts_id`/`uz_id`/`ua_id` from other country tabs so new entities reuse an existing internal id.
 
 ### What “full tab rewrite” means
 
@@ -876,13 +918,13 @@ cp ~/Downloads/service-account.json credentials.json
 ### Recommended test sequence
 
 ```bash
-python scripts/count_champions.py -ug testing --read-only-sheets
+python scripts/count_champions.py --test -ug testing --read-only-sheets
 ls content/tournaments/countries/testing.md
 hugo server
 python scripts/sheets_watch.py
 ```
 
-Use the `testing` / `testing2` tab — not production country tabs — when experimenting with write modes.
+`--test` uses `GOOGLE_SHEETS_TEST_SPREADSHEET_ID` instead of the production spreadsheet. Use the `testing` / `testing2` tab — not production country tabs — when experimenting with write modes.
 
 ---
 
