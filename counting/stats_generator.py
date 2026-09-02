@@ -46,6 +46,13 @@ from counting.sheet_utils import (
     player_profile_url,
     team_profile_url,
 )
+from counting.sources import (
+    group_sources_by_id,
+    group_year,
+    join_source_phrases,
+    normalize_sources,
+    source_column_title,
+)
 from counting.t_fashion import (
     format_date_for_tournament,
     iso_date_is_past,
@@ -279,6 +286,7 @@ class StatsGenerator:
         errors: Dict[str, Any],
         meta: Optional[MetaData] = None,
         intro: Optional[str] = None,
+        sources: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         time_dump = datetime.now().isoformat()
         total_tournaments = sum(len(v) for v in tournaments_data.values())
@@ -312,6 +320,7 @@ class StatsGenerator:
             },
             "meta": meta_obj.to_dict(),
             "errors": errors,
+            "sources": normalize_sources(sources),
         }
 
     def _seed_registry_from_tournaments(
@@ -351,6 +360,7 @@ class StatsGenerator:
         errors: Dict[str, Any],
         meta: Optional[MetaData] = None,
         generate_intro: bool = False,
+        sources: Optional[Dict[str, Any]] = None,
     ) -> None:
         intro = ""
         if isinstance(meta, MetaData):
@@ -360,9 +370,10 @@ class StatsGenerator:
         if generate_intro and not intro.strip():
             intro = self._default_intro(tournaments_data)
         errors = self._finalize_errors(tournaments_data, errors)
+        sources = normalize_sources(sources)
         output_data = self.build_output_data(
             numbers_champ, team_stats, player_stats, tournaments_data, errors,
-            meta=meta, intro=intro,
+            meta=meta, intro=intro, sources=sources,
         )
 
         exporter = self._exporter()
@@ -381,6 +392,7 @@ class StatsGenerator:
 
         self._generate_markdown_files(
             team_stats, player_stats, tournaments_data, errors, intro=intro,
+            sources=sources,
         )
 
     def _load_from_sheets(self) -> Optional[Dict[str, Any]]:
@@ -454,6 +466,7 @@ class StatsGenerator:
             numbers_champ, team_stats, player_stats, tournaments_data,
             data.get("errors"),
             meta=meta, generate_intro=True,
+            sources=data.get("sources"),
         )
         return True
 
@@ -502,6 +515,7 @@ class StatsGenerator:
             numbers_champ, team_stats, player_stats, tournaments_data,
             data.get("errors"),
             meta=meta, generate_intro=True,
+            sources=data.get("sources"),
         )
         return True
 
@@ -572,6 +586,7 @@ class StatsGenerator:
             meta.numbers_champ, team_stats, player_stats, tournaments_data,
             data.get("errors"),
             meta=meta,
+            sources=data.get("sources"),
         )
         return True
 
@@ -640,6 +655,7 @@ class StatsGenerator:
             meta.numbers_champ, team_stats, player_stats, tournaments_data,
             data.get("errors"),
             meta=meta,
+            sources=data.get("sources"),
         )
         return True
 
@@ -882,6 +898,7 @@ class StatsGenerator:
         tournaments_data: Dict[str, List[TournamentData]],
         errors: Dict[str, Any],
         intro: str = "",
+        sources: Optional[Dict[str, Any]] = None,
     ) -> None:
         dest = get_markdown_output_path(self.country, test=self.test)
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -907,8 +924,12 @@ class StatsGenerator:
         extra_description, missing_rows = self._missing_data_content(
             errors, tournaments_data
         )
+        source_payload = normalize_sources(sources)
+        show_sources = bool(source_payload.get("items"))
         if extra_description or missing_rows:
             tabs.append((constants.MISSING_DATA_ANCHORS, constants.MISSING_DATA_TAB))
+        if show_sources:
+            tabs.append((constants.SOURCES_ANCHORS, constants.SOURCES_TAB))
 
         with open(dest, "w") as result_file:
             result_file.write(preamble)
@@ -936,6 +957,11 @@ class StatsGenerator:
             if extra_description or missing_rows:
                 self._write_tab_start(result_file, constants.MISSING_DATA_ANCHORS)
                 self._write_missing_data(result_file, extra_description, missing_rows)
+                self._write_tab_end(result_file)
+
+            if show_sources:
+                self._write_tab_start(result_file, constants.SOURCES_ANCHORS)
+                self._write_sources(result_file, source_payload, tournaments_data)
                 self._write_tab_end(result_file)
 
     @staticmethod
@@ -1136,6 +1162,57 @@ class StatsGenerator:
                 f"<td>{html.escape(str(tournament.year or ''))}</td>"
                 f"<td>{name_cell}</td>"
                 f"<td>{html.escape(description)}</td>"
+                "</tr>\n"
+            )
+        file.write("</tbody>\n</table>\n")
+
+    def _write_sources(
+        self,
+        file: TextIO,
+        sources: Dict[str, Any],
+        tournaments_data: Dict[str, List[TournamentData]],
+    ) -> None:
+        items = sources.get("items") or []
+        if not items:
+            return
+        file.write(f'<a id="{constants.SOURCES_ANCHORS}"></a>\n\n')
+        intro = constants.SOURCES_INTRO
+        extra = str(sources.get("description") or "").strip()
+        file.write(f"{intro}{extra}\n\n" if extra else f"{intro.strip()}\n\n")
+        groups = group_sources_by_id(items)
+        if not groups:
+            return
+        by_id = flatten_tournaments(tournaments_data)
+
+        def sort_key(group: Tuple[int, List[Dict[str, Any]]]) -> tuple:
+            tid, rows = group
+            tournament = by_id.get(tid)
+            year = group_year(rows, tournament.year if tournament else 0)
+            number = int(tournament.number or 0) if tournament else 0
+            return (0 if tournament else 1, -year, -number, tid)
+
+        groups = sorted(groups, key=sort_key)
+        third = source_column_title(groups)
+        file.write(
+            "<table>\n<thead>\n<tr>"
+            f"<th>{constants.SOURCES_TOURNAMENT}</th>"
+            f"<th>{constants.SOURCES_YEAR}</th>"
+            f"<th>{html.escape(third)}</th>"
+            "</tr>\n</thead>\n<tbody>\n"
+        )
+        for tid, rows in groups:
+            tournament = by_id.get(tid)
+            if tournament:
+                name = self.get_name_tournament(tournament, constants.GAMES_COLUMN_NAMES)
+            else:
+                name = ""
+                print(f"Sources row with unknown tournament id {tid}")
+            year = group_year(rows, tournament.year if tournament else 0)
+            file.write(
+                "<tr>"
+                f"<td>{html.escape(name)}</td>"
+                f"<td>{html.escape(str(year or ''))}</td>"
+                f"<td>{join_source_phrases(rows)}</td>"
                 "</tr>\n"
             )
         file.write("</tbody>\n</table>\n")

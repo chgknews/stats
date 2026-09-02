@@ -51,6 +51,9 @@ LANGUAGE_HEADERS = ["id", "language", "name"]
 # Title override for a single edition, keyed by tournament internal id.
 NAME_HEADERS = ["id", "name"]
 
+# Manual bibliography; several rows may share a tournament id.
+SOURCE_HEADERS = ["id", "year", "link", "link_name", "comment"]
+
 # Missing-data rows in the Errors section; keyed by tournament internal id.
 ERROR_HEADERS = ["id", "description", "critical"]
 

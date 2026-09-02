@@ -112,7 +112,7 @@ sequenceDiagram
     participant Hugo
 
     Note over Editor,Sheets: Day-to-day editing
-    Editor->>Sheets: Edit Tournaments/Links/Podium/Rosters/Languages/Names/Teams/Players
+    Editor->>Sheets: Edit Tournaments/Links/Podium/Rosters/Languages/Names/Sources/Teams/Players
     CLI->>Sheets: load_data(country)
     Sheets-->>CLI: v2 tables + registries
     CLI->>SG: recalculate_from_tournaments()
@@ -164,6 +164,7 @@ Top-level keys are tab names (`uzbekiston`, `armenia`, …). Each value is the s
 | `individuals` | Individuals rows |
 | `languages` | Languages rows |
 | `names` | Names rows |
+| `sources` | `{description, items: [{id, year, link, link_name, comment}, …]}` from the Sources section |
 | `teams` | Teams registry rows |
 | `players` | Players registry rows |
 | `errors` | `{description, items: [{id, description, critical}, …]}` from the Errors section |
@@ -276,7 +277,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `add_empty_tournament()` | Load tab, append placeholder with a new internal tournament id |
 | `update_tournament()` | Fill empty slot: `ts` (API), `results` (any URL), place, or link columns |
 | `build_output_data()` | Snapshot including Teams/Players registries for Sheets export |
-| `_save_results()` | Merge Errors from the sheet with auto-detected gaps, then export Sheets + JSON + markdown |
+| `_save_results()` | Merge Errors from the sheet with auto-detected gaps, round-trip Sources, then export Sheets + JSON + markdown |
 | `_process_single_tournament()` | Unified path for API fetch OR sheet-loaded tournament (dedup by external id) |
 | `_generate_markdown_files()` | Write `content/info/countries/{country}.md` (Russia specials under `…/russia/`) using `meta.intro` (always visible) and tabbed sections |
 | `_finalize_errors()` | Keep editor Errors rows/description/`critical`; add newly detected missing-data rows |
@@ -311,7 +312,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 ### Google Sheets
 
 #### `google_sheets_exporter.py`
-**Role:** Load/export country worksheets in the v2 schema (Tournaments, Links, Podium, Rosters, Languages, Names, Teams, Players, Errors). Also dumps all public tabs to `content/info/data.json` (not when `--test` / the test spreadsheet is in use).
+**Role:** Load/export country worksheets in the v2 schema (Tournaments, Links, Podium, Rosters, Languages, Names, Sources, Teams, Players, Errors). Also dumps all public tabs to `content/info/data.json` (not when `--test` / the test spreadsheet is in use).
 
 **Class:** `GoogleSheetsExporter`
 
@@ -322,17 +323,20 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `write_public_json()` | Read every public tab and rewrite `content/info/data.json` (skipped for the test spreadsheet) |
 | `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `doubles`, `backup`, other `_…` tabs) |
 | `_join_tables()` | Join Tournaments + Links + Podium + Rosters + Languages + Names + registries → `TournamentData` |
-| `_build_v2_rows()` | Serialize metadata + sections including Errors |
+| `_build_v2_rows()` | Serialize metadata + sections including Sources and Errors |
 
 **Credentials:** `credentials.json` (`constants.GOOGLE_SHEETS_CREDENTIALS`)
 
 **Spreadsheet:** `constants.GOOGLE_SHEETS_SPREADSHEET_ID`. `--test` on `count_champions.py` switches to `GOOGLE_SHEETS_TEST_SPREADSHEET_ID`.
 
 #### `sheet_utils.py`
-**Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` / `parse_sheet_id()` (integers from date-formatted cells and Sheets floats like `147.0`), profile URLs from `external_ids.ts_id`.
+**Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `SOURCE_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` / `parse_sheet_id()` (integers from date-formatted cells and Sheets floats like `147.0`), profile URLs from `external_ids.ts_id`.
 
 #### `data_errors.py`
 **Role:** Missing-data phrases, auto-detection of incomplete rosters/medalists/date/city on past editions, merge with the Sheets Errors section (`critical` yes/no, default yes). Future tournaments are never reported.
+
+#### `sources.py`
+**Role:** Normalize the manual Sources payload (`description` + items), group rows that share a tournament `id`, and format bibliography phrases for the **Источники** tab.
 
 #### `doubles.py`
 **Role:** `EntitySets` of tournaments/teams/players across all country tabs; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
@@ -572,7 +576,27 @@ Title override for a single edition, keyed by the tournament's internal `id`.
 - An edition with no row here keeps the usual numbered title. A name without a matching tournament id is ignored
 - Older `number | game | year | name` rows still load (joined by that key); the next export rewrites them as `id | name`
 
-### Section 9: Teams (registry)
+### Section 9: Sources
+
+Always present on export, even when there are no rows. **Editors fill this by hand** — CLI/API never add Sources rows; `-ug` / `-at` / `-et` / `-u` only round-trip what is already in the sheet.
+
+```
+Sources
+description | Часть сведений взята из архива новостей
+id          | year | link                                      | link_name   | comment
+12          | 2024 | https://example.com/recap                  | LiveJournal | обзор финала
+12          | 2024 | https://example.com/photo                  | Фото        |
+18          | 2019 |                                            | ежегодник   | печатный отчёт
+```
+
+- `description`: extra sentence for the **Источники** tab (after the fixed intro). Editors may change it; `-ug` keeps the cell
+- `id` | `year` | `link` | `link_name` | `comment`: one bibliography row. Several rows may share the same tournament `id`
+- `id`: internal tournament id (same as the Tournaments row)
+- `year`: shown in the markdown **Год** column (first non-empty value for that id; if blank, the tournament year is used)
+- Markdown tab **Источники** is omitted when there are no data rows; the sheet section remains
+- Table columns: **Турнир** (edition title from the tournament `id`), **Год**, then **Источник** if every listed tournament has one row or **Источники** if any tournament has more than one. Several rows for one id become one table row, joined with `, `. A row with a URL prints `[link_name](link)` (HTML `<a>`), plus ` (comment)` when the comment cell is set. No URL: `link_name (comment)` or only `link_name`
+
+### Section 10: Teams (registry)
 
 Header: `id | name | non_russian_name | city | ts_id | uz_id | ua_id`
 
@@ -580,7 +604,7 @@ Canonical team records. Podium rows reference `id`. External ids deduplicate API
 
 - `non_russian_name`: optional; markdown shows `ჯაგერჯაუტი («Джаггернаут»)` (non-Russian first, Cyrillic/`old name` in «») everywhere teams appear
 
-### Section 10: Players (registry)
+### Section 11: Players (registry)
 
 Header: `id | name | surname | non_russian_name | non_russian_surname | ts_id | uz_id | ua_id`
 
@@ -588,7 +612,7 @@ Same rules as Teams. Medal tables use internal ids and also keep `external_ids` 
 
 - `non_russian_name` / `non_russian_surname`: stored in Sheets only for now (not shown in markdown yet)
 
-### Section 11: Errors
+### Section 12: Errors
 
 Always present on export, even when there are no rows.
 
@@ -644,6 +668,7 @@ On load, `_join_tables()` builds `TournamentData` objects from Tournaments rows.
 - **SSI / individual results:** Tournaments (`game` = `ssi` or `ssi_f`) + Individuals rows → player medals only; the game tab lists people, not teams. **Links, Languages, Names, `comment`, dates, city and `ts_id`/`uz_id` are the same columns as for team games** and appear in the edition block the same way (`Полные результаты…`, `Больше информации…`, language sentence, title override)
 - **Results URL only:** add a Links row with `results` (turnirlar.uz / Google Sheets / any URL); optionally set `uz_id` / `ts_id` on Tournaments
 - **Tournament comment:** set `comment` on the Tournaments row; markdown shows it after the date/places sentence (team or SSI)
+- **Sources / bibliography:** Sources rows (`id`, `year`, `link`, `link_name`, `comment`) plus optional `description`; never filled from the API
 
 Ignored:
 
@@ -834,6 +859,7 @@ Page layout, top to bottom:
    - a standalone `chgk` tab is **Турниры по ЧГК** (`GAMES_COLUMN_NAMES`); other games keep `GAMES_SHORT_NAMES` («Турниры по ССИ», «Турниры по БР», …)
 3. Tab panels. Hugo Goldmark does not parse markdown inside a wrapping `<div>`, so the generator writes empty `.country-tab-start` / `.country-tab-end` markers around markdown; inline JS moves those sibling nodes into `.country-tab-panel`. A hash (`#players`, `#chgk_2024`, `#game-ssi`) opens the matching tab
 4. **Нет данных** tab (only when there is something to show): fixed intro «Ниже собрана информация о том, каких данных не хватает в том или ином турнире.» plus the Errors `description` cell, then a table Год / Турнир / Чего не хватает. Tournament names use `GAMES_COLUMN_NAMES` (по ЧГК). The name is a link to rating.chgk.info when `results` is that host or `ts_id` is set; otherwise `ua_id` (`rating.chgk.com.ua`); otherwise plain text
+5. **Источники** tab (only when Sources has at least one data row): fixed intro «Здесь указан список источников, откуда взята та или иная информация на этой странице. » plus the Sources `description` cell, then a table Турнир / Год / Источник(и)
 
 There is no contents list, no «Зал славы», and no «Наверх» / «К списку турниров» links.
 
