@@ -2,6 +2,8 @@
 from __future__ import annotations
 
 import html
+import re
+import unicodedata
 from datetime import datetime
 from typing import Any, Dict, List, Optional, TextIO, Tuple
 
@@ -1382,13 +1384,80 @@ class StatsGenerator:
         return f"{game}_{tournament.year}"
 
     @staticmethod
-    def _team_label_with_city(display_name: str, city: str) -> str:
-        """Wrap Cyrillic-only names in «»; non-Russian form already includes «»."""
-        if "«" in display_name:
-            core = display_name
-        else:
-            core = f"«{display_name}»"
+    def _is_cyrillic_letter(char: str) -> bool:
+        try:
+            return unicodedata.name(char).startswith("CYRILLIC")
+        except ValueError:
+            return False
+
+    @classmethod
+    def _team_name_needs_guillemets(cls, name: str) -> bool:
+        """Quote names that are Cyrillic, digits, and/or other non-letter symbols.
+
+        Any Latin/Georgian/etc. letter means the name is left without «».
+        """
+        letters = [char for char in name if char.isalpha()]
+        if not letters:
+            return bool(name.strip())
+        return all(cls._is_cyrillic_letter(char) for char in letters)
+
+    @staticmethod
+    def _team_name_starts_with_komanda(name: str) -> bool:
+        text = name.strip()
+        if text.startswith("«") and text.endswith("»"):
+            text = text[1:-1].strip()
+        elif text.startswith("«"):
+            text = text[1:].strip()
+        return bool(re.match(r"^команда(?:\s|$)", text, flags=re.IGNORECASE))
+
+    @classmethod
+    def _wrap_team_display_name(cls, display_name: str) -> str:
+        name = display_name.strip()
+        if not name or "«" in name or "»" in name:
+            return name
+        if cls._team_name_needs_guillemets(name):
+            return f"«{name}»"
+        return name
+
+    @classmethod
+    def _team_label_with_city(cls, display_name: str, city: str) -> str:
+        """Attach city; wrap the name in «» when the quoting rules say so."""
+        core = cls._wrap_team_display_name(display_name)
         return f"{core} ({city})" if city else core
+
+    def _format_teams_with_noun(
+        self,
+        awardees: List[TournamentAwardee],
+        *,
+        with_city: bool,
+        case: str,
+    ) -> str:
+        """«команда Name» / «команды A и B», omitting the noun when every name starts with Команда."""
+        formatted = [
+            self._format_team_markdown_inline(
+                awardee.get_display_name(),
+                awardee.team.external_ids,
+                awardee.team.city if with_city else "",
+            )
+            for awardee in awardees
+        ]
+        names = (
+            formatted[0]
+            if len(formatted) == 1
+            else self._join_russian_list(formatted)
+        )
+        skip_noun = bool(awardees) and all(
+            self._team_name_starts_with_komanda(awardee.get_display_name())
+            for awardee in awardees
+        )
+        if skip_noun:
+            return names
+        plural = len(awardees) > 1
+        if case == "gen":
+            noun = "команд" if plural else "команды"
+        else:
+            noun = "команды" if plural else "команда"
+        return f"{noun} {names}"
 
     @classmethod
     def _format_team_markdown_link(
@@ -1453,20 +1522,12 @@ class StatsGenerator:
         return bool(awardee.team.players)
 
     def _unknown_winner_roster_note(self, awardees: List[TournamentAwardee]) -> str:
-        labels = [
-            self._format_team_markdown_inline(
-                a.get_display_name(), a.team.external_ids, a.team.city
-            )
-            for a in awardees
-        ]
-        teams = self._join_russian_list(labels)
+        teams = self._format_teams_with_noun(awardees, with_city=True, case="gen")
         ask = (
             "Если вы что-то о нём знаете, напишите, пожалуйста, "
             f"на <{constants.CONTACT_EMAIL}>."
         )
-        if len(labels) == 1:
-            return f"Состав команды {teams} неизвестен. {ask}"
-        return f"Состав команд {teams} неизвестен. {ask}"
+        return f"Состав {teams} неизвестен. {ask}"
 
     @classmethod
     def _format_player_markdown_link(cls, player: Player) -> str:
@@ -1533,27 +1594,25 @@ class StatsGenerator:
     ) -> None:
         if len(winners) > 1:
             ordered = self._sort_awardees_by_name(winners)
-            names = self._format_team_enumeration(ordered)
+            names = self._format_teams_with_noun(ordered, with_city=True, case="nom")
             known = [a for a in ordered if self._has_known_winner_roster(a)]
             unknown = [
                 a for a in ordered
                 if self._needs_roster_error(a) and not self._has_known_winner_roster(a)
             ]
-            file.write(f"\nПервое место разделили команды {names}.")
+            file.write(f"\nПервое место разделили {names}.")
             if known:
                 first = known[0]
-                first_label = self._format_team_markdown_inline(
-                    first.get_display_name(), first.team.external_ids, ""
+                first_label = self._format_teams_with_noun(
+                    [first], with_city=False, case="gen"
                 )
-                file.write(f" Состав команды {first_label}:\n")
+                file.write(f" Состав {first_label}:\n")
                 self._write_team_roster(file, first)
                 for awardee in known[1:]:
-                    label = self._format_team_markdown_inline(
-                        awardee.get_display_name(),
-                        awardee.team.external_ids,
-                        "",
+                    label = self._format_teams_with_noun(
+                        [awardee], with_city=False, case="gen"
                     )
-                    file.write(f"\nСостав команды {label}:\n")
+                    file.write(f"\nСостав {label}:\n")
                     self._write_team_roster(file, awardee)
             if unknown:
                 file.write(f"\n*{self._unknown_winner_roster_note(unknown)}*\n")
@@ -1572,18 +1631,29 @@ class StatsGenerator:
         if len(seconds) == 1 and len(thirds) == 1:
             second = seconds[0]
             third = thirds[0]
+            second_phrase = self._format_teams_with_noun(
+                [second], with_city=True, case="nom"
+            )
+            third_label = self._format_team_markdown_inline(
+                third.get_display_name(), third.team.external_ids, third.team.city
+            )
             file.write(
-                f'\nВторое место заняла команда {self._format_team_markdown_inline(second.get_display_name(), second.team.external_ids, second.team.city)}, '
-                f'третье — {self._format_team_markdown_inline(third.get_display_name(), third.team.external_ids, third.team.city)}.'
+                f'\nВторое место заняла {second_phrase}, третье — {third_label}.'
             )
         elif seconds or thirds:
             sentences = []
             if seconds:
-                verb = "разделили команды" if len(seconds) > 1 else "заняла команда"
-                sentences.append(f'Второе место {verb} {self._format_team_enumeration(seconds)}.')
+                verb = "разделили" if len(seconds) > 1 else "заняла"
+                phrase = self._format_teams_with_noun(
+                    seconds, with_city=True, case="nom"
+                )
+                sentences.append(f'Второе место {verb} {phrase}.')
             if thirds:
-                verb = "разделили команды" if len(thirds) > 1 else "заняла команда"
-                sentences.append(f'Третье место {verb} {self._format_team_enumeration(thirds)}.')
+                verb = "разделили" if len(thirds) > 1 else "заняла"
+                phrase = self._format_teams_with_noun(
+                    thirds, with_city=True, case="nom"
+                )
+                sentences.append(f'Третье место {verb} {phrase}.')
             file.write("\n" + " ".join(sentences))
 
     def _write_individual_places(
