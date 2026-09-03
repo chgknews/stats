@@ -410,12 +410,12 @@ class StatsGenerator:
         self, exporter: Optional[GoogleSheetsExporter] = None
     ) -> None:
         """Index ts_id/uz_id/ua_id from every country so API imports reuse ids."""
-        from counting.doubles import collect_entity_sets
+        from counting.doubles import load_entity_sets
 
         exporter = exporter or self._exporter()
         if not exporter.is_available():
             return
-        self.registry.remember_foreign_ids(collect_entity_sets(exporter))
+        self.registry.remember_foreign_ids(load_entity_sets(exporter))
 
     def _sync_doubles_sheet(self, exporter: GoogleSheetsExporter) -> None:
         if self.skip_doubles_check:

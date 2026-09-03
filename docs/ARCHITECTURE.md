@@ -150,7 +150,7 @@ sequenceDiagram
 
 **Hugo page:** `StatsGenerator` writes **`content/info/countries/{country}.md`** (`constants.OUTPUT_MD`). `russia_01_19`, `russia_igra_tv`, and `russia_kvrm` go to **`content/info/countries/russia/{country}.md`**. `--test` writes the same filenames under **`test/`** (`constants.OUTPUT_MD_TEST`) instead.
 
-**Public JSON:** `GoogleSheetsExporter.write_public_json()` rewrites **`content/info/data.json`** (`constants.OUTPUT_JSON`) after each production save, by reading every public worksheet. `--test` writes markdown under `test/` and may write the test spreadsheet, but **does not** rewrite this file (the test workbook must not replace the production dump). Tabs `_entity_ids` and `backup` (and any other title starting with `_`) are omitted.
+**Public JSON:** `GoogleSheetsExporter.write_public_json()` rewrites **`content/info/data.json`** (`constants.OUTPUT_JSON`) after each production save, by reading every public worksheet. `--test` writes markdown under `test/` and may write the test spreadsheet, but **does not** rewrite this file (the test workbook must not replace the production dump). Tabs `_entity_ids`, `doubles`, `tournament`, `team`, `player`, `backup` (and any other title starting with `_`) are omitted.
 
 Top-level keys are tab names (`uzbekiston`, `armenia`, …). Each value is the sheet layout:
 
@@ -248,7 +248,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 **Role:** Optional analytics. Loads all country tabs; matches players across countries preferably by `ts_id`, falling back to internal id when no external id is present.
 
 #### `scripts/check_doubles.py`
-**Role:** Build tournament/team/player sets from every country tab and write pairs that share `ts_id` / `uz_id` / `ua_id` to the `doubles` sheet. Same check runs after `-at`, `-f`, `-ug`, `-et`, `-u`. `--read-only-sheets` prints pairs without writing.
+**Role:** Build tournament/team/player sets from every country tab, write them to the `tournament` / `team` / `player` sheets, and write pairs that share `ts_id` / `uz_id` / `ua_id` to the `doubles` sheet. Same check runs after `-at`, `-f`, `-ug`, `-et`, `-u`. `--read-only-sheets` prints pairs without writing.
 
 #### `scripts/replace_doubles.py`
 **Role:** Read `doubles`, and for rows with `replace?` = `yes` replace `id2` with `id1` in all country tabs, then move those rows to the bottom of `doubles`.
@@ -321,7 +321,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `load_data(country)` | Parse worksheet → `{tournaments, teams, players, meta, ...}` |
 | `export_data(country, output_data)` | `worksheet.clear(fields="*")` then write full v2 layout with `parse=False` |
 | `write_public_json()` | Read every public tab and rewrite `content/info/data.json` (skipped for the test spreadsheet) |
-| `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `doubles`, `backup`, other `_…` tabs) |
+| `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `doubles`, `tournament`, `team`, `player`, `backup`, other `_…` tabs) |
 | `_join_tables()` | Join Tournaments + Links + Podium + Rosters + Languages + Names + registries → `TournamentData` |
 | `_build_v2_rows()` | Serialize metadata + sections including Sources and Errors |
 
@@ -339,7 +339,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 **Role:** Normalize the manual Sources payload (`description` + items), group rows that share a tournament `id`, and format bibliography phrases for the **Источники** tab.
 
 #### `doubles.py`
-**Role:** `EntitySets` of tournaments/teams/players across all country tabs; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
+**Role:** `EntitySets` of tournaments/teams/players across all country tabs, persisted on the `tournament` / `team` / `player` worksheets; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
 
 #### `country_registry.py`
 **Role:** Maps latin slug (`poland`) → Cyrillic nominative/genitive for markdown. Single source of truth for country names (`get_country_nominative()`, `get_country_genitive()`, `validate_country_slug()`). Optional `output_subdir` sends markdown to a nested Hugo folder (`russia_01_19` / `russia_igra_tv` / `russia_kvrm` → `content/info/countries/russia/{slug}.md`). `resolve_country_slug()` parses bulk input files. There is **no** runtime `register_country()` — names are not stored in Sheets metadata.
@@ -464,7 +464,7 @@ scripts/cross_country_stats.py → counting.google_sheets_exporter, counting.ext
 
 One **worksheet tab per country**. Tab name = latin slug (`poland`, `azerbaijan`, `testing`).
 
-Tabs starting with `_` are ignored when listing country worksheets. The special tab `_entity_ids` holds global internal-id counters. A tab named `backup` is also omitted from the public JSON dump.
+Tabs starting with `_` are ignored when listing country worksheets. The special tab `_entity_ids` holds global internal-id counters. Tabs named `backup`, `doubles`, `tournament`, `team` and `player` are also omitted from the public JSON dump.
 
 ### Section 1: Metadata (top rows)
 
@@ -630,6 +630,16 @@ id          | description                                      | critical
 - Auto-detected (past editions only): incomplete/missing winner or 2nd/3rd rosters (team) or medalists (SSI), incomplete date (not a full day–month–year), missing city
 - Future editions (`пройдёт`, or a year still ahead with no date) are not written here
 - Markdown tab **Нет данных** is omitted when both the extra sentence and the **critical** item list are empty; the sheet section remains
+
+### Tabs: tournament, team, player
+
+Not country worksheets. Skipped by the public JSON dump (`SKIP_WORKSHEET_TITLES`). Created on first duplicate scan.
+
+These three tabs are the global catalogs used by doubles search and by ID reuse across countries (`remember_foreign_ids`). Tournament and team: `id | name | ts_id | uz_id | ua_id`. Player: `id | name | surname | ts_id | uz_id | ua_id`.
+
+- On `--check-doubles` / `-ug` / `-at` / `-et` / `-u` / `-f` (unless `--read-only-sheets`): load the three tabs, rescan every country worksheet, merge (country rows win; stored rows fill missing names/ids), write the tabs back, then refresh `doubles`
+- Country load (`-ug`, `-at`, …) indexes foreign `ts_id`/`uz_id`/`ua_id` from these tabs when they already have rows, instead of re-reading every country tab
+- `--replace-doubles` rewrites `id2` → `id1` in the catalogs as well as in country tabs
 
 ### Tab: doubles
 
@@ -797,7 +807,7 @@ python scripts/replace_doubles.py
 python scripts/count_champions.py --replace-doubles
 ```
 
-The check also runs after `-at`, `-f`, `-ug`, `-et` and `-u`. It matches **only** `ts_id`, `uz_id` and `ua_id`. On merge, `id2` (larger internal id) is rewritten to `id1` everywhere, then `yes` rows are sorted to the bottom of `doubles`.
+The check also runs after `-at`, `-f`, `-ug`, `-et` and `-u`. It matches **only** `ts_id`, `uz_id` and `ua_id`. Catalogs of every tournament / team / player are stored on the `tournament`, `team` and `player` tabs and rewritten on each check. On merge, `id2` (larger internal id) is rewritten to `id1` everywhere (country tabs and those catalogs), then `yes` rows are sorted to the bottom of `doubles`.
 
 ---
 
@@ -820,15 +830,15 @@ Not used by current GitHub Actions workflows.
 
 | Command | Reads Sheets | Writes Sheets | Writes local markdown |
 |---------|-------------|---------------|----------------------|
-| `-f` (bulk) | No* | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
+| `-f` (bulk) | No* | **Yes** (default) + `_entity_ids` + `doubles` + catalogs | Yes |
 | `-f --read-only-sheets` | No | No | Yes |
-| `-ug` | Yes | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
+| `-ug` | Yes | **Yes** (default) + `_entity_ids` + `doubles` + catalogs | Yes |
 | `-ug --read-only-sheets` | Yes | No | Yes |
-| `-at`, `-et`, `-u` | Yes | **Yes** (default) + `_entity_ids` + `doubles` | Yes |
+| `-at`, `-et`, `-u` | Yes | **Yes** (default) + `_entity_ids` + `doubles` + catalogs | Yes |
 | `--cross-country-stats` | Yes | No | No |
-| `--check-doubles` | Yes | **Yes** (`doubles` tab) | No |
+| `--check-doubles` | Yes | **Yes** (`doubles` + `tournament` / `team` / `player`) | No |
 | `--check-doubles --read-only-sheets` | Yes | No | No |
-| `--replace-doubles` | Yes | **Yes** (country tabs + `doubles`) | Yes (affected countries) |
+| `--replace-doubles` | Yes | **Yes** (country tabs + `doubles` + catalogs) | Yes (affected countries) |
 
 \*Bulk `-f` does not read the country tab first but **does export** unless `--read-only-sheets` is set. It still loads `_entity_ids` when Sheets is available so new internal ids stay globally unique, and it indexes `ts_id`/`uz_id`/`ua_id` from other country tabs so new entities reuse an existing internal id.
 

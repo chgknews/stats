@@ -72,6 +72,17 @@ DOUBLES_HEADERS = [
     "replace?",
 ]
 
+# Global catalogs on the tournament / team / player tabs.
+ENTITY_SET_HEADERS = ["id", "name", *constants.EXTERNAL_ID_SOURCES]
+PLAYER_SET_HEADERS = ["id", "name", "surname", *constants.EXTERNAL_ID_SOURCES]
+
+
+def entity_set_headers(kind: str) -> List[str]:
+    """Column headers for a catalog tab; only players have ``surname``."""
+    if kind == constants.KIND_PLAYER:
+        return list(PLAYER_SET_HEADERS)
+    return list(ENTITY_SET_HEADERS)
+
 
 def default_links() -> Dict[str, str]:
     """Return empty links dict with all expected keys."""

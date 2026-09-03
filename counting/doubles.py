@@ -16,6 +16,7 @@ from counting.google_sheets_exporter import GoogleSheetsExporter
 from counting.models import Player, Team, TournamentData
 from counting.sheet_utils import (
     DOUBLES_HEADERS,
+    entity_set_headers,
     format_sheet_id,
     parse_bool_flag,
     parse_sheet_id,
@@ -54,6 +55,13 @@ class EntityRecord:
         self.uz_id = self.uz_id or other.uz_id
         self.ua_id = self.ua_id or other.ua_id
         self.countries = sorted(set(self.countries) | set(other.countries))
+
+    def to_set_row(self) -> List[Any]:
+        row = [format_sheet_id(self.id), self.name]
+        if self.kind == KIND_PLAYER:
+            row.append(self.surname)
+        row.extend([self.ts_id, self.uz_id, self.ua_id])
+        return row
 
 
 @dataclass
@@ -170,6 +178,105 @@ def collect_entity_sets(
             record = _record_from_row(KIND_PLAYER, row, country)
             if record:
                 _put(sets.players, record)
+    return sets
+
+
+def _records_from_sheet_values(
+    kind: str, values: List[List[Any]]
+) -> Dict[int, EntityRecord]:
+    bucket: Dict[int, EntityRecord] = {}
+    if not values:
+        return bucket
+    header = [str(cell).strip() for cell in values[0]]
+    for raw in values[1:]:
+        if not raw or all(not str(cell).strip() for cell in raw):
+            continue
+        record_row = dict(zip(header, list(raw) + [""] * (len(header) - len(raw))))
+        parsed = _record_from_row(kind, record_row, "")
+        if not parsed:
+            continue
+        parsed.countries = []
+        _put(bucket, parsed)
+    return bucket
+
+
+def read_entity_sets(exporter: GoogleSheetsExporter) -> EntitySets:
+    """Load the tournament / team / player catalog tabs."""
+    sets = EntitySets()
+    if not exporter.is_available():
+        return sets
+    for kind, title in constants.ENTITY_SET_WORKSHEETS.items():
+        try:
+            worksheet = exporter.spreadsheet.worksheet_by_title(title)
+        except Exception:
+            continue
+        try:
+            values = worksheet.get_all_values()
+        except Exception as exc:
+            print(f"Warning: failed to read '{title}': {exc}")
+            continue
+        for entity_id, record in _records_from_sheet_values(kind, values).items():
+            sets.bucket(kind)[entity_id] = record
+    return sets
+
+
+def write_entity_sets(exporter: GoogleSheetsExporter, sets: EntitySets) -> bool:
+    """Rewrite the tournament / team / player catalog tabs from ``sets``."""
+    if not exporter.is_available():
+        return False
+    ok = True
+    for kind, title in constants.ENTITY_SET_WORKSHEETS.items():
+        records = sorted(sets.bucket(kind).values(), key=lambda item: item.id)
+        payload: List[List[Any]] = [entity_set_headers(kind)]
+        payload.extend(record.to_set_row() for record in records)
+        try:
+            try:
+                worksheet = exporter.spreadsheet.worksheet_by_title(title)
+            except Exception:
+                worksheet = exporter.spreadsheet.add_worksheet(title)
+            worksheet.clear(fields="*")
+            worksheet.update_values("A1", payload, parse=False)
+            print(f"Wrote {len(records)} row(s) to '{title}'")
+        except Exception as exc:
+            print(f"Warning: failed to write '{title}': {exc}")
+            ok = False
+    return ok
+
+
+def merge_entity_sets(primary: EntitySets, extra: EntitySets) -> EntitySets:
+    """Keep ``primary`` rows; fill missing names/ids from ``extra``."""
+    merged = EntitySets()
+    for kind in constants.ENTITY_KINDS:
+        bucket = merged.bucket(kind)
+        for record in primary.bucket(kind).values():
+            bucket[record.id] = record
+        for record in extra.bucket(kind).values():
+            _put(bucket, record)
+    return merged
+
+
+def load_entity_sets(exporter: GoogleSheetsExporter) -> EntitySets:
+    """Prefer catalog tabs; scan country tabs when those sheets are empty."""
+    stored = read_entity_sets(exporter)
+    if stored.tournaments or stored.teams or stored.players:
+        return stored
+    return collect_entity_sets(exporter)
+
+
+def refresh_entity_sets(
+    exporter: GoogleSheetsExporter,
+    *,
+    write: bool = True,
+    id_maps: Optional[Dict[str, Dict[int, int]]] = None,
+) -> EntitySets:
+    """Scan country tabs, merge with stored catalogs, optionally write them back."""
+    stored = read_entity_sets(exporter)
+    if id_maps:
+        apply_id_maps_to_sets(stored, id_maps)
+    scanned = collect_entity_sets(exporter)
+    sets = merge_entity_sets(scanned, stored)
+    if write:
+        write_entity_sets(exporter, sets)
     return sets
 
 
@@ -316,9 +423,13 @@ def sync_doubles_sheet(
     *,
     write: bool = True,
 ) -> List[DoubleRow]:
-    """Scan country tabs and refresh the doubles sheet (preserving replace?)."""
+    """Scan country tabs and refresh the doubles sheet (preserving replace?).
+
+    Tournament / team / player catalogs are loaded from their own tabs, rebuilt
+    from country worksheets, and written back when ``write`` is true.
+    """
     exporter = exporter or GoogleSheetsExporter()
-    sets = collect_entity_sets(exporter)
+    sets = refresh_entity_sets(exporter, write=write)
     detected = find_duplicate_pairs(sets)
     existing = read_doubles_sheet(exporter) if exporter.is_available() else []
     rows = merge_double_rows(detected, existing)
@@ -477,6 +588,26 @@ def apply_id_maps(data: Dict[str, Any], maps: Dict[str, Dict[int, int]]) -> bool
     return changed
 
 
+def apply_id_maps_to_sets(
+    sets: EntitySets, maps: Dict[str, Dict[int, int]]
+) -> bool:
+    """Rewrite id2 → id1 on the in-memory tournament / team / player catalogs."""
+    changed = False
+    for kind in constants.ENTITY_KINDS:
+        mapping = _transitive_map(maps.get(kind) or {})
+        if not mapping:
+            continue
+        bucket = sets.bucket(kind)
+        for old_id, new_id in mapping.items():
+            incoming = bucket.pop(old_id, None)
+            if incoming is None:
+                continue
+            incoming.id = new_id
+            _put(bucket, incoming)
+            changed = True
+    return changed
+
+
 def _replacement_maps(rows: List[DoubleRow]) -> Dict[str, Dict[int, int]]:
     maps: Dict[str, Dict[int, int]] = {
         KIND_TOURNAMENT: {},
@@ -549,5 +680,7 @@ def replace_doubles_cli(
         print("No country tabs contained the marked duplicate ids.")
     else:
         print("Updated countries: " + ", ".join(affected))
+    if not read_only:
+        refresh_entity_sets(exporter, write=True, id_maps=maps)
     write_doubles_sheet(exporter, rows)
     return True

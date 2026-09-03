@@ -194,13 +194,29 @@ EXTERNAL_ID_SOURCES = (EXTERNAL_ID_TS, EXTERNAL_ID_UZ, EXTERNAL_ID_UA)
 ENTITY_IDS_WORKSHEET = "_entity_ids"
 # Cross-country duplicate pairs (ts_id / uz_id / ua_id). Not a country tab.
 DOUBLES_WORKSHEET = "doubles"
+# Global entity catalogs used by doubles search (one tab per kind).
+TOURNAMENT_SET_WORKSHEET = "tournament"
+TEAM_SET_WORKSHEET = "team"
+PLAYER_SET_WORKSHEET = "player"
 # Country-data dump skips these tab titles (plus any title starting with _).
-SKIP_WORKSHEET_TITLES = frozenset({ENTITY_IDS_WORKSHEET, DOUBLES_WORKSHEET, "backup"})
+SKIP_WORKSHEET_TITLES = frozenset({
+    ENTITY_IDS_WORKSHEET,
+    DOUBLES_WORKSHEET,
+    TOURNAMENT_SET_WORKSHEET,
+    TEAM_SET_WORKSHEET,
+    PLAYER_SET_WORKSHEET,
+    "backup",
+})
 
 KIND_TOURNAMENT = "tournament"
 KIND_TEAM = "team"
 KIND_PLAYER = "player"
 ENTITY_KINDS = (KIND_TOURNAMENT, KIND_TEAM, KIND_PLAYER)
+ENTITY_SET_WORKSHEETS = {
+    KIND_TOURNAMENT: TOURNAMENT_SET_WORKSHEET,
+    KIND_TEAM: TEAM_SET_WORKSHEET,
+    KIND_PLAYER: PLAYER_SET_WORKSHEET,
+}
 
 # Google Sheets configuration
 GOOGLE_SHEETS_CREDENTIALS = str(REPO_ROOT / "credentials.json")
