@@ -6,7 +6,7 @@ bookToC: false
 
 # Россия (2001–2019)
 
-Чемпионаты России по спортивному ЧГК проводятся с 2001 года. Чемпионаты России по эрудит-квартету проводятся с 2012 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Сейчас не хватает информации об итогах ЧРЭК 2013 и 2014 годов. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.
+Чемпионаты России по спортивному ЧГК проводятся с 2001 года. Чемпионаты России по эрудит-квартету проводятся с 2012 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.
 
 <style>
 .country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="game-ssi_f" aria-selected="false">Турниры по ССИ с фальстартами</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ek" aria-selected="false">Турниры по ЭК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="game-ssi_f" aria-selected="false">Турниры по ССИ с фальстартами</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники и благодарности</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -232,6 +232,20 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/55">Мираж</a></td>
+<td>Самара</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/175">Транссфера</a></td>
 <td>Санкт-Петербург</td>
 <td>0</td>
@@ -246,22 +260,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/26">ЛКИ</a></td>
-<td>Москва</td>
+<td><a href="https://rating.chgk.info/teams/3951">Eclipse</a></td>
+<td>Санкт-Петербург</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/55">Мираж</a></td>
-<td>Самара</td>
+<td><a href="https://rating.chgk.info/teams/26">ЛКИ</a></td>
+<td>Москва</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -302,20 +316,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/3951">Eclipse</a></td>
-<td>Санкт-Петербург</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/3">Команда Ильи Иткина</a></td>
 <td>Москва</td>
 <td>0</td>
@@ -346,6 +346,20 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/teams/264">Джокер</a></td>
 <td>Саратов</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/38722">Хайвмайнд</a></td>
+<td>Томск</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -596,6 +610,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/4063">Дмитрий Борок</a></td>
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>7</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/13551">Вадим Карлинский</a></td>
 <td>3</td>
 <td>1</td>
@@ -721,22 +751,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/4063">Дмитрий Борок</a></td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>6</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 </tr>
 <tr>
@@ -932,6 +946,22 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/15727">Александр Коробейников</a></td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/26089">Ирина Прокофьева</a></td>
 <td>0</td>
 <td>3</td>
@@ -1060,22 +1090,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/15727">Александр Коробейников</a></td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/3671">Алексей Богословский</a></td>
 <td>0</td>
 <td>4</td>
@@ -1140,6 +1154,54 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/27009">Александр Рождествин</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8777">Анастасия Данелянц</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/24127">Денис Паншин</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/1560">Евгений Арутюнов</a></td>
 <td>1</td>
 <td>0</td>
@@ -1172,7 +1234,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/8082">Сергей Григ</a></td>
+<td><a href="https://rating.chgk.info/player/8082">Сергей Григ (Григорьев)</a></td>
 <td>0</td>
 <td>3</td>
 <td>0</td>
@@ -1300,6 +1362,38 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/23737">Андрей Островский</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27622">Николай Рябых</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/9808">Александр Друзь</a></td>
 <td>0</td>
 <td>2</td>
@@ -1380,32 +1474,48 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/27009">Александр Рождествин</a></td>
+<td><a href="https://rating.chgk.info/player/4121">Антон Бочкарёв</a></td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/8777">Анастасия Данелянц</a></td>
+<td><a href="https://rating.chgk.info/player/15811">Владислав Король</a></td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/23020">Наталия Новыш</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1461,22 +1571,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/932">Григорий Алхазов</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/24127">Денис Паншин</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -1988,6 +2082,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/19060">Александр Людикайнен</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/26798">Анна Резникова</a></td>
 <td>0</td>
 <td>1</td>
@@ -2004,23 +2114,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/4121">Антон Бочкарёв</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/15811">Владислав Король</a></td>
+<td><a href="https://rating.chgk.info/player/1145">Екатерина Андрющенко</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2037,22 +2131,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/3096">Иван Беляев</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/23020">Наталия Новыш</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2101,22 +2179,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21698">Александр Мосягин</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/23737">Андрей Островский</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2276,22 +2338,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/27622">Николай Рябых</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/49168">Олег Виноградов</a></td>
 <td>0</td>
 <td>0</td>
@@ -2340,6 +2386,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/47488">Александр Образовский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/32728">Александр Успанов</a></td>
 <td>0</td>
 <td>0</td>
@@ -2357,6 +2419,54 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21418">Виктория Моключенко</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9801">Егор Дружинин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/31655">Егор Тимошенко</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/64436">Кирилл Берёзкин</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2570,7 +2680,7 @@ else wrapTabs();
 
 Второе место заняла [«Команда Губанова»](https://rating.chgk.info/teams/188) (Санкт-Петербург), третье — [«Афина»](https://rating.chgk.info/teams/2) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2117), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2867).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/2117), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/2867). Больше информации о турнире — [на сайте чемпионата](https://chr2013.blogspot.com/).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -2803,8 +2913,29 @@ else wrapTabs();
 
 <a id="game-ek"></a><a id="ek_contents" name="ek_contents"></a>
 
+- [II чемпионат России по ЭК (2014)](#ek_2014)
 - [I чемпионат России по ЭК (2012)](#ek_2012)
 
+
+**II чемпионат России по эрудит-квартету** прошёл 7–8 марта 2014 года в Санкт-Петербурге. <a id="ek_2014"></a>
+
+Победитель: **[«Мираж» (Самара)](https://rating.chgk.info/teams/55)**
+- Николай Рябых
+- Александр Рождествин
+- Денис Паншин
+- Андрей Островский
+- Анастасия Данелянц
+- Дмитрий Борок
+
+Второе место заняла команда [Eclipse](https://rating.chgk.info/teams/3951) (Санкт-Петербург), третье — [«Хайвмайнд»](https://rating.chgk.info/teams/38722) (Томск).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1_9KqJeqdo4Gv-GGAGAZ4vdQPjgrbr146P_WnNIgf0UA/edit?usp=sharing).
+
+Также доступно связанное с турниром видео: [запись финала](https://www.youtube.com/watch?v=dpoaPQdysMw) (Youtube).
+
+*[К оглавлению](#ek_contents)*
+
+---
 
 **I чемпионат России по эрудит-квартету** прошёл 18–19 мая 2012 года в Москве. <a id="ek_2012"></a>
 
@@ -2880,6 +3011,22 @@ else wrapTabs();
 <tr><td>2007</td><td><a href="https://rating.chgk.info/tournament/226">VII чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2006</td><td><a href="https://rating.chgk.info/tournament/141">VI чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/22">IV чемпионат России по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="sources"></div>
+
+<a id="sources"></a>
+
+Здесь указан список источников, откуда взята та или иная информация на этой странице. За ссылку на видео финала ЧР по ЭК 2014 года спасибо Александру Рождествину.
+
+<table>
+<thead>
+<tr><th>Турнир</th><th>Год</th><th>Источники</th></tr>
+</thead>
+<tbody>
+<tr><td>II чемпионат России по ЭК</td><td>2014</td><td><a href="https://www.youtube.com/watch?v=dpoaPQdysMw">Запись финала турнира в Youtube</a>, <a href="https://igra1.livejournal.com/1250363.html">Результаты жеребьёвки в ЖЖ ru_chgk</a> (вся схема пока не найдена)</td></tr>
 </tbody>
 </table>
 
