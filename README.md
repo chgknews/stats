@@ -57,7 +57,7 @@ python scripts/count_champions.py -cn poland -u tg -ui "https://t.me/..."
 python scripts/count_champions.py -cn poland -u ts -ui 11708
 ```
 
-**`-u`** — поле (`ts`, `place`, `announce`, `tg`, `fb`, `vk`, `site`, `recap`, `letopis`), **`-ui`** — значение.
+**`-u`** — поле (`ts`, `place`, `announce`, `tg`, `fb`, `vk`, `lj`, `site`, `recap`, `letopis`), **`-ui`** — значение.
 
 ### 4. Локальный предпросмотр в Hugo
 

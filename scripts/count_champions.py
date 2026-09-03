@@ -31,7 +31,7 @@ def main():
     parser.add_argument("-p", "--place", type=str, help="City in prepositional case, e.g. «Варшаве»")
     parser.add_argument(
         "-u", "--update",
-        help="Update tournament: ts, results, place, announce, tg, fb, vk, site, recap, letopis, photos, questions",
+        help="Update tournament: ts, results, place, announce, tg, fb, vk, lj, site, recap, letopis, photos, questions",
     )
     parser.add_argument("-ui", "--update_info", help="Value for -u depending on type")
     parser.add_argument(

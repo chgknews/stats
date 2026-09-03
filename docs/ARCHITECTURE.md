@@ -239,7 +239,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 
 **Key flags:** `-f`, `-cn`, `-ug`, `-at`, `-et`, `-u`, `--read-only-sheets`, `--test`, `--cross-country-stats`, `--check-doubles`, `--replace-doubles`
 
-**`-u` types:** `ts`, `results`, `place`, `announce`, `tg`, `fb`, `vk`, `site`, `recap`, `letopis`, `photos`, `questions`
+**`-u` types:** `ts`, `results`, `place`, `announce`, `tg`, `fb`, `vk`, `lj`, `site`, `recap`, `letopis`, `photos`, `questions`
 
 #### `scripts/sheets_watch.py`
 **Role:** CI helper. Compares spreadsheet `modifiedTime` and per-tab content hashes against `.github/sheets_state.json`. Prints `CHANGED:poland,testing` or `UNCHANGED`.
@@ -500,7 +500,7 @@ One row per championship edition. Country is **not** repeated here — it lives 
 
 ### Section 3: Links
 
-Header: `id | results | announce | site | tg | fb | vk | recap | letopis | photos | questions`
+Header: `id | results | announce | site | tg | fb | vk | lj | recap | letopis | photos | questions`
 
 One row per tournament that has at least one URL, keyed by the tournament's internal `id`.
 
@@ -508,7 +508,7 @@ One row per tournament that has at least one URL, keyed by the tournament's inte
 - `results`: optional URL to full results — any host. Markdown shows a results line when this cell is set **or** a `ts_id`/`uz_id` can derive a default page URL. Google Sheets links must be entered here. CLI: `-u results -ui <url>` also fills `ts_id`/`uz_id` when the URL is a known tournament page
 - `questions`: appended to the results sentence — «Полные результаты можно найти [на турнирном сайте](…), вопросы турнира можно почитать [здесь](…).»
 - `photos`: a following sentence — «Фотографии с турнира можно посмотреть по [этой ссылке](…).»
-- Other columns: optional announcement / site / social / recap / chronicle URLs
+- Other columns: optional announcement / site / social (`tg`, `fb`, `vk`, `lj`) / recap / chronicle URLs. Social links print as «в этом телеграм-канале» / «в Facebook» / «в группе ВКонтакте» / «в Живом Журнале»
 - A tournament with no URLs has no Links row. Older Tournaments rows that still contain these columns still load; the next export moves them here
 
 ### Section 4: Podium

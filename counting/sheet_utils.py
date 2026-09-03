@@ -6,7 +6,7 @@ from counting import constants
 from counting.external_ids import get_external_id
 
 LINK_KEYS = (
-    "results", "announce", "site", "tg", "fb", "vk", "recap", "letopis",
+    "results", "announce", "site", "tg", "fb", "vk", "lj", "recap", "letopis",
     "photos", "questions",
 )
 

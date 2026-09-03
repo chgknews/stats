@@ -571,7 +571,7 @@ class StatsGenerator:
             )
             updated = True
         elif update_type in (
-            "tg", "fb", "vk", "site", "recap", "letopis", "announce",
+            "tg", "fb", "vk", "lj", "site", "recap", "letopis", "announce",
             "photos", "questions",
         ):
             target.links[update_type] = update_info
@@ -604,7 +604,7 @@ class StatsGenerator:
         requires an empty edition so a refetch does not wipe podium rows.
         """
         link_or_place = update_type in (
-            "results", "tg", "fb", "vk", "site", "recap", "letopis",
+            "results", "tg", "fb", "vk", "lj", "site", "recap", "letopis",
             "announce", "photos", "questions", "place",
         )
 
@@ -1955,29 +1955,29 @@ class StatsGenerator:
         tg = links.get("tg", "").strip()
         vk = links.get("vk", "").strip()
         fb = links.get("fb", "").strip()
+        lj = links.get("lj", "").strip()
         recap = links.get("recap", "").strip()
         letopis = links.get("letopis", "").strip()
 
+        social: List[str] = []
+        if tg:
+            social.append(f"[в этом телеграм-канале]({tg})")
+        if fb:
+            social.append(f"[в Facebook]({fb})")
+        if vk:
+            social.append(f"[в группе ВКонтакте]({vk})")
+        if lj:
+            social.append(f"[в Живом Журнале]({lj})")
+
         if announce and is_in_future:
-            parts = [f"[в анонсе]({announce})"]
-            if tg:
-                parts.append(f"[в этом телеграм-канале]({tg})")
-            if fb:
-                parts.append(f"[в Facebook]({fb})")
-            if vk:
-                parts.append(f"[в группе ВКонтакте]({vk})")
+            parts = [f"[в анонсе]({announce})"] + social
             file.write(f"\n\n{constants.MORE_INFO_LABEL}{self._join_russian_list(parts)}.")
             return
 
         parts: List[str] = []
         if site:
             parts.append(f"[на сайте чемпионата]({site})")
-        if tg:
-            parts.append(f"[в этом телеграм-канале]({tg})")
-        if fb:
-            parts.append(f"[в Facebook]({fb})")
-        if vk:
-            parts.append(f"[в группе ВКонтакте]({vk})")
+        parts.extend(social)
         if recap:
             parts.append(f"[здесь]({recap})")
         if letopis:
