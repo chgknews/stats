@@ -585,6 +585,12 @@ def apply_id_maps(data: Dict[str, Any], maps: Dict[str, Dict[int, int]]) -> bool
         if new != old:
             item["id"] = new
             changed = True
+    for item in data.get("videos") or []:
+        old = int(item.get("id") or 0)
+        new = tournament_map.get(old, old)
+        if new != old:
+            item["id"] = new
+            changed = True
     return changed
 
 
@@ -675,6 +681,7 @@ def replace_doubles_cli(
             data.get("errors"),
             meta=meta,
             sources=data.get("sources"),
+            videos=data.get("videos"),
         )
     if not affected:
         print("No country tabs contained the marked duplicate ids.")

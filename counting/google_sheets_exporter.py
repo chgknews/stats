@@ -14,6 +14,7 @@ except ImportError:
 from counting import constants
 from counting.data_errors import empty_errors, normalize_errors
 from counting.sources import empty_sources, normalize_sources
+from counting.videos import empty_videos, normalize_videos
 from counting.external_ids import external_id_row_values, external_ids_from_row, normalize_external_ids
 from counting.languages import language_name, normalize_language
 from counting.models import (
@@ -36,6 +37,7 @@ from counting.sheet_utils import (
     SOURCE_HEADERS,
     TEAM_REGISTRY_HEADERS,
     TOURNAMENT_HEADERS,
+    VIDEO_HEADERS,
     format_bool_flag,
     format_roster_complete,
     format_sheet_id,
@@ -62,6 +64,7 @@ class GoogleSheetsExporter:
     SECTION_LANGUAGES = "Languages"
     SECTION_NAMES = "Names"
     SECTION_SOURCES = "Sources"
+    SECTION_VIDEO = "Video"
     SECTION_TEAMS = "Teams"
     SECTION_PLAYERS = "Players"
     SECTION_ERRORS = "Errors"
@@ -74,6 +77,7 @@ class GoogleSheetsExporter:
         SECTION_LANGUAGES,
         SECTION_NAMES,
         SECTION_SOURCES,
+        SECTION_VIDEO,
         SECTION_TEAMS,
         SECTION_PLAYERS,
         SECTION_ERRORS,
@@ -166,6 +170,7 @@ class GoogleSheetsExporter:
             "languages": sections["languages"],
             "names": sections["names"],
             "sources": self._parse_sources_section(all_values),
+            "videos": self._parse_video_section(all_values),
             "teams": sections["teams"],
             "players": sections["players"],
             "errors": self._parse_errors_section(all_values),
@@ -231,6 +236,7 @@ class GoogleSheetsExporter:
             "meta": meta_obj,
             "errors": self._parse_errors_section(all_values),
             "sources": self._parse_sources_section(all_values),
+            "videos": self._parse_video_section(all_values),
         }
 
     def export_data(
@@ -470,6 +476,51 @@ class GoogleSheetsExporter:
                 "comment": str(record.get("comment") or "").strip(),
             })
         return normalize_sources({"description": description, "items": items})
+
+    def _parse_video_section(self, all_values: List[List[str]]) -> List[Dict[str, Any]]:
+        """Video: id | name | year | link | link_name | description."""
+        start = self._find_section(all_values, self.SECTION_VIDEO)
+        if start < 0:
+            return empty_videos()
+        index = start + 1
+        while index < len(all_values):
+            row = all_values[index]
+            if row and str(row[0]).strip() in self._SECTION_TITLES:
+                return empty_videos()
+            if row and any(str(cell).strip() for cell in row):
+                break
+            index += 1
+        if index >= len(all_values):
+            return empty_videos()
+        first = [str(cell).strip() for cell in all_values[index]]
+        if first and first[0].casefold() != "id":
+            index += 1
+        if index >= len(all_values):
+            return empty_videos()
+        header = [str(h).strip() for h in all_values[index]]
+        while header and not header[-1]:
+            header.pop()
+        index += 1
+        items: List[Dict[str, Any]] = []
+        for row in all_values[index:]:
+            if row and str(row[0]).strip() in self._SECTION_TITLES:
+                break
+            if not row or all(not str(cell).strip() for cell in row):
+                continue
+            record = dict(zip(header, list(row) + [""] * (len(header) - len(row))))
+            items.append({
+                "id": parse_sheet_id(record.get("id", "")),
+                "name": str(record.get("name") or "").strip(),
+                "year": parse_sheet_int(record.get("year"), default=0) or 0,
+                "link": str(record.get("link") or "").strip(),
+                "link_name": str(
+                    record.get("link_name") or record.get("link name") or ""
+                ).strip(),
+                "description": str(
+                    record.get("description") or record.get("decription") or ""
+                ).strip(),
+            })
+        return normalize_videos(items)
 
     @staticmethod
     def _v2_row_key(row: Dict[str, Any]) -> Tuple[str, str, str]:
@@ -959,6 +1010,20 @@ class GoogleSheetsExporter:
                 item.get("link", ""),
                 item.get("link_name", ""),
                 item.get("comment", ""),
+            ])
+        rows.append([])
+        videos = normalize_videos(output_data.get("videos"))
+        rows.append([self.SECTION_VIDEO])
+        rows.append(VIDEO_HEADERS)
+        for item in videos:
+            year = item.get("year") or ""
+            rows.append([
+                format_sheet_id(item.get("id") or 0),
+                item.get("name", ""),
+                year if year else "",
+                item.get("link", ""),
+                item.get("link_name", ""),
+                item.get("description", ""),
             ])
         rows.append([])
         rows.append([self.SECTION_TEAMS])

@@ -112,7 +112,7 @@ sequenceDiagram
     participant Hugo
 
     Note over Editor,Sheets: Day-to-day editing
-    Editor->>Sheets: Edit Tournaments/Links/Podium/Rosters/Languages/Names/Sources/Teams/Players
+    Editor->>Sheets: Edit Tournaments/Links/Podium/Rosters/Languages/Names/Sources/Video/Teams/Players
     CLI->>Sheets: load_data(country)
     Sheets-->>CLI: v2 tables + registries
     CLI->>SG: recalculate_from_tournaments()
@@ -165,6 +165,7 @@ Top-level keys are tab names (`uzbekiston`, `armenia`, …). Each value is the s
 | `languages` | Languages rows |
 | `names` | Names rows |
 | `sources` | `{description, items: [{id, year, link, link_name, comment}, …]}` from the Sources section |
+| `videos` | `[{id, name, year, link, link_name, description}, …]` from the Video section |
 | `teams` | Teams registry rows |
 | `players` | Players registry rows |
 | `errors` | `{description, items: [{id, description, critical}, …]}` from the Errors section |
@@ -277,7 +278,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `add_empty_tournament()` | Load tab, append placeholder with a new internal tournament id |
 | `update_tournament()` | Fill empty slot: `ts` (API), `results` (any URL), place, or link columns |
 | `build_output_data()` | Snapshot including Teams/Players registries for Sheets export |
-| `_save_results()` | Merge Errors from the sheet with auto-detected gaps, round-trip Sources, then export Sheets + JSON + markdown |
+| `_save_results()` | Merge Errors from the sheet with auto-detected gaps, round-trip Sources and Video, then export Sheets + JSON + markdown |
 | `_process_single_tournament()` | Unified path for API fetch OR sheet-loaded tournament (dedup by external id) |
 | `_generate_markdown_files()` | Write `content/info/countries/{country}.md` (Russia specials under `…/russia/`) using `meta.intro` (always visible) and tabbed sections |
 | `_finalize_errors()` | Keep editor Errors rows/description/`critical`; add newly detected missing-data rows |
@@ -312,7 +313,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 ### Google Sheets
 
 #### `google_sheets_exporter.py`
-**Role:** Load/export country worksheets in the v2 schema (Tournaments, Links, Podium, Rosters, Languages, Names, Sources, Teams, Players, Errors). Also dumps all public tabs to `content/info/data.json` (not when `--test` / the test spreadsheet is in use).
+**Role:** Load/export country worksheets in the v2 schema (Tournaments, Links, Podium, Rosters, Languages, Names, Sources, Video, Teams, Players, Errors). Also dumps all public tabs to `content/info/data.json` (not when `--test` / the test spreadsheet is in use).
 
 **Class:** `GoogleSheetsExporter`
 
@@ -323,20 +324,23 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 | `write_public_json()` | Read every public tab and rewrite `content/info/data.json` (skipped for the test spreadsheet) |
 | `list_country_worksheets()` | Country tab titles (skips `_entity_ids`, `doubles`, `tournament`, `team`, `player`, `backup`, other `_…` tabs) |
 | `_join_tables()` | Join Tournaments + Links + Podium + Rosters + Languages + Names + registries → `TournamentData` |
-| `_build_v2_rows()` | Serialize metadata + sections including Sources and Errors |
+| `_build_v2_rows()` | Serialize metadata + sections including Sources, Video, and Errors |
 
 **Credentials:** `credentials.json` (`constants.GOOGLE_SHEETS_CREDENTIALS`)
 
 **Spreadsheet:** `constants.GOOGLE_SHEETS_SPREADSHEET_ID`. `--test` on `count_champions.py` switches to `GOOGLE_SHEETS_TEST_SPREADSHEET_ID`.
 
 #### `sheet_utils.py`
-**Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `SOURCE_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` / `parse_sheet_id()` (integers from date-formatted cells and Sheets floats like `147.0`), profile URLs from `external_ids.ts_id`.
+**Role:** Link keys, table headers (`TOURNAMENT_HEADERS`, `LINK_HEADERS`, `PODIUM_HEADERS`, `ROSTER_HEADERS`, `SOURCE_HEADERS`, `VIDEO_HEADERS`, `TEAM_REGISTRY_HEADERS`, `PLAYER_REGISTRY_HEADERS`, `ERROR_HEADERS`), `roster_complete` parsing, sheet id formatting, `parse_sheet_int()` / `parse_sheet_id()` (integers from date-formatted cells and Sheets floats like `147.0`), profile URLs from `external_ids.ts_id`.
 
 #### `data_errors.py`
 **Role:** Missing-data phrases, auto-detection of incomplete rosters/medalists/date/city on past editions, merge with the Sheets Errors section (`critical` yes/no, default yes). Future tournaments are never reported.
 
 #### `sources.py`
 **Role:** Normalize the manual Sources payload (`description` + items), group rows that share a tournament `id`, and format bibliography phrases for the **Источники** tab.
+
+#### `videos.py`
+**Role:** Normalize the manual Video payload, keep several rows per tournament `id`, and format the tournament-block video paragraph.
 
 #### `doubles.py`
 **Role:** `EntitySets` of tournaments/teams/players across all country tabs, persisted on the `tournament` / `team` / `player` worksheets; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
@@ -596,7 +600,26 @@ id          | year | link                                      | link_name   | c
 - Markdown tab **Источники** is omitted when there are no data rows; the sheet section remains
 - Table columns: **Турнир** (edition title from the tournament `id`), **Год**, then **Источник** if every listed tournament has one row or **Источники** if any tournament has more than one. Several rows for one id become one table row, joined with `, `. A row with a URL prints `[link_name](link)` (HTML `<a>`), plus ` (comment)` when the comment cell is set. No URL: `link_name (comment)` or only `link_name`
 
-### Section 10: Teams (registry)
+### Section 10: Video
+
+Always present on export, even when there are no rows. **Editors fill this by hand** — CLI/API never add Video rows; `-ug` / `-at` / `-et` / `-u` only round-trip what is already in the sheet.
+
+```
+Video
+id | name              | year | link                         | link_name | description
+12 | V чемпионат …     | 2024 | https://youtu.be/example     | Финал     | запись с места
+12 | V чемпионат …     | 2024 | https://youtu.be/example2    | Награждение |
+```
+
+- `id`: internal tournament id (same as the Tournaments row). Several rows may share the same `id`
+- `name`: tournament title for editors (round-tripped as written; not used in markdown)
+- `year`: tournament year (round-tripped as written; not used in markdown)
+- `link`: URL of the video. Rows without a URL are kept on the sheet but not printed
+- `link_name`: markdown link text (`[link_name](link)`). If blank, the URL is used as the label
+- `description`: optional note printed in brackets after that link: `[link_name](link) (description)`
+- Markdown, tournament block, **new paragraph after** results / photos / «Больше информации…»: one row → «Также доступно связанное с турниром видео: [link_name](link).»; several rows for that id → «Также доступны связанные с турниром видео: [a](url1), [b](url2).»
+
+### Section 11: Teams (registry)
 
 Header: `id | name | non_russian_name | city | ts_id | uz_id | ua_id`
 
@@ -604,7 +627,7 @@ Canonical team records. Podium rows reference `id`. External ids deduplicate API
 
 - `non_russian_name`: optional; markdown shows `ჯაგერჯაუტი («Джаггернаут»)` (non-Russian first, Cyrillic/`old name` in «») everywhere teams appear
 
-### Section 11: Players (registry)
+### Section 12: Players (registry)
 
 Header: `id | name | surname | non_russian_name | non_russian_surname | ts_id | uz_id | ua_id`
 
@@ -612,7 +635,7 @@ Same rules as Teams. Medal tables use internal ids and also keep `external_ids` 
 
 - `non_russian_name` / `non_russian_surname`: stored in Sheets only for now (not shown in markdown yet)
 
-### Section 12: Errors
+### Section 13: Errors
 
 Always present on export, even when there are no rows.
 
@@ -675,10 +698,11 @@ On load, `_join_tables()` builds `TournamentData` objects from Tournaments rows.
 - **Future championship (no results):** Tournaments row only → upcoming/empty edition in that game’s tab
 - **Results without rosters:** Tournaments + Podium → team medals update; player stats incomplete
 - **Full results:** Tournaments + Podium + Rosters (+ registry rows on next export) → team and player stats
-- **SSI / individual results:** Tournaments (`game` = `ssi` or `ssi_f`) + Individuals rows → player medals only; the game tab lists people, not teams. **Links, Languages, Names, `comment`, dates, city and `ts_id`/`uz_id` are the same columns as for team games** and appear in the edition block the same way (`Полные результаты…`, `Больше информации…`, language sentence, title override)
+- **SSI / individual results:** Tournaments (`game` = `ssi` or `ssi_f`) + Individuals rows → player medals only; the game tab lists people, not teams. **Links, Languages, Names, Video, `comment`, dates, city and `ts_id`/`uz_id` are the same columns as for team games** and appear in the edition block the same way (`Полные результаты…`, `Больше информации…`, video paragraph, language sentence, title override)
 - **Results URL only:** add a Links row with `results` (turnirlar.uz / Google Sheets / any URL); optionally set `uz_id` / `ts_id` on Tournaments
 - **Tournament comment:** set `comment` on the Tournaments row; markdown shows it after the date/places sentence (team or SSI)
 - **Sources / bibliography:** Sources rows (`id`, `year`, `link`, `link_name`, `comment`) plus optional `description`; never filled from the API
+- **Video:** Video rows (`id`, `name`, `year`, `link`, `link_name`, `description`); never filled from the API
 
 Ignored:
 
@@ -884,7 +908,7 @@ Medal tables (Команды / Игроки): identity columns, then I / II / II
 
 Player/team profile links use `player_profile_url()` / `team_profile_url()` on `external_ids`: a link appears only when `ts_id` is present; otherwise the name is plain text.
 
-Results sentence appears only when `resolve_results_url(links.results, external_ids)` is non-empty. If `questions` is set, it is appended to that sentence; `photos` is printed as the next sentence.
+Results sentence appears only when `resolve_results_url(links.results, external_ids)` is non-empty. If `questions` is set, it is appended to that sentence; `photos` is printed as the next sentence. Video rows for that tournament `id` become a following paragraph: one link «Также доступно связанное с турниром видео: …»; several links «Также доступны связанные с турниром видео: …», joined with `, `. A filled `description` cell is appended as ` (description)` after that link.
 
 A single first-place team is still `Победитель: **«Name» (City)**` plus the roster list. Team names in tournament prose use «» when they are Cyrillic, digits, and/or punctuation (`«Мираж»`, `«6 из 45»`); Latin/mixed-script names are left unquoted (`Brainstorm`, `Yo!J`). The word `команда`/`команды`/`команд` is omitted when every team in that clause starts with `Команда` (`заняла «Команда Гусейнова»`, not `заняла команда «Команда Гусейнова»`). Two or more teams sharing first place become `Первое место разделили команды A и B.` (three or more: `A, B и C`). Known rosters follow as `Состав команды «Name»:` (name only, no city); teams without a roster are named together afterwards: `Состав команды A неизвестен…` / `Состав команд A и B неизвестен…` (contact `CONTACT_EMAIL`). Tied winners are listed alphabetically by display name (then city). Known rosters are printed before the unknown-roster note.
 

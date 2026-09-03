@@ -54,6 +54,9 @@ NAME_HEADERS = ["id", "name"]
 # Manual bibliography; several rows may share a tournament id.
 SOURCE_HEADERS = ["id", "year", "link", "link_name", "comment"]
 
+# Tournament videos; several rows may share a tournament id.
+VIDEO_HEADERS = ["id", "name", "year", "link", "link_name", "description"]
+
 # Missing-data rows in the Errors section; keyed by tournament internal id.
 ERROR_HEADERS = ["id", "description", "critical"]
 

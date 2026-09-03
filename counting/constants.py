@@ -21,6 +21,8 @@ TOURNAMENTS_TAB_PREFIX = "Турниры по "
 ALL_MEDALS_HEADER = "Все медали"
 CONTACT_EMAIL = "chgknews.info@gmail.com"
 MORE_INFO_LABEL = "Больше информации о турнире — "
+VIDEO_ONE_LABEL = "Также доступно связанное с турниром видео: "
+VIDEO_MANY_LABEL = "Также доступны связанные с турниром видео: "
 PLAYERS_ERROR = (
     "Состав победителей неизвестен. Если вы что-то о нём знаете, "
     f"напишите, пожалуйста, на <{CONTACT_EMAIL}>."

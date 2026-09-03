@@ -53,6 +53,11 @@ from counting.sources import (
     normalize_sources,
     source_column_title,
 )
+from counting.videos import (
+    normalize_videos,
+    video_paragraph,
+    videos_for_tournament,
+)
 from counting.t_fashion import (
     format_date_for_tournament,
     iso_date_is_past,
@@ -287,6 +292,7 @@ class StatsGenerator:
         meta: Optional[MetaData] = None,
         intro: Optional[str] = None,
         sources: Optional[Dict[str, Any]] = None,
+        videos: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         time_dump = datetime.now().isoformat()
         total_tournaments = sum(len(v) for v in tournaments_data.values())
@@ -321,6 +327,7 @@ class StatsGenerator:
             "meta": meta_obj.to_dict(),
             "errors": errors,
             "sources": normalize_sources(sources),
+            "videos": normalize_videos(videos),
         }
 
     def _seed_registry_from_tournaments(
@@ -361,6 +368,7 @@ class StatsGenerator:
         meta: Optional[MetaData] = None,
         generate_intro: bool = False,
         sources: Optional[Dict[str, Any]] = None,
+        videos: Optional[List[Dict[str, Any]]] = None,
     ) -> None:
         intro = ""
         if isinstance(meta, MetaData):
@@ -371,9 +379,10 @@ class StatsGenerator:
             intro = self._default_intro(tournaments_data)
         errors = self._finalize_errors(tournaments_data, errors)
         sources = normalize_sources(sources)
+        videos = normalize_videos(videos)
         output_data = self.build_output_data(
             numbers_champ, team_stats, player_stats, tournaments_data, errors,
-            meta=meta, intro=intro, sources=sources,
+            meta=meta, intro=intro, sources=sources, videos=videos,
         )
 
         exporter = self._exporter()
@@ -392,7 +401,7 @@ class StatsGenerator:
 
         self._generate_markdown_files(
             team_stats, player_stats, tournaments_data, errors, intro=intro,
-            sources=sources,
+            sources=sources, videos=videos,
         )
 
     def _load_from_sheets(self) -> Optional[Dict[str, Any]]:
@@ -467,6 +476,7 @@ class StatsGenerator:
             data.get("errors"),
             meta=meta, generate_intro=True,
             sources=data.get("sources"),
+            videos=data.get("videos"),
         )
         return True
 
@@ -516,6 +526,7 @@ class StatsGenerator:
             data.get("errors"),
             meta=meta, generate_intro=True,
             sources=data.get("sources"),
+            videos=data.get("videos"),
         )
         return True
 
@@ -587,6 +598,7 @@ class StatsGenerator:
             data.get("errors"),
             meta=meta,
             sources=data.get("sources"),
+            videos=data.get("videos"),
         )
         return True
 
@@ -656,6 +668,7 @@ class StatsGenerator:
             data.get("errors"),
             meta=meta,
             sources=data.get("sources"),
+            videos=data.get("videos"),
         )
         return True
 
@@ -899,6 +912,7 @@ class StatsGenerator:
         errors: Dict[str, Any],
         intro: str = "",
         sources: Optional[Dict[str, Any]] = None,
+        videos: Optional[List[Dict[str, Any]]] = None,
     ) -> None:
         dest = get_markdown_output_path(self.country, test=self.test)
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -925,6 +939,7 @@ class StatsGenerator:
             errors, tournaments_data
         )
         source_payload = normalize_sources(sources)
+        self._videos = normalize_videos(videos)
         show_sources = bool(source_payload.get("items"))
         if extra_description or missing_rows:
             tabs.append((constants.MISSING_DATA_ANCHORS, constants.MISSING_DATA_TAB))
@@ -1915,6 +1930,7 @@ class StatsGenerator:
                 self._write_team_places(file, winners, seconds, thirds)
         self._write_tournament_sheet_info(file, tournament)
         self._write_tournament_links(file, tournament.links, is_in_future)
+        self._write_tournament_videos(file, tournament.id)
         if not tournament.countable and self._has_finished(tournament):
             file.write(f"\n\n*{constants.UNCOUNTABLE_NOTE}*")
         file.write(
@@ -1946,6 +1962,12 @@ class StatsGenerator:
             file.write(
                 f"{prefix}Фотографии с турнира можно посмотреть по [этой ссылке]({photos})."
             )
+
+    def _write_tournament_videos(self, file: TextIO, tournament_id: int) -> None:
+        items = videos_for_tournament(getattr(self, "_videos", None) or [], tournament_id)
+        paragraph = video_paragraph(items)
+        if paragraph:
+            file.write(f"\n\n{paragraph}")
 
     def _write_tournament_links(
         self, file: TextIO, links: Dict[str, str], is_in_future: bool
