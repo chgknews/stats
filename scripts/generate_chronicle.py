@@ -177,305 +177,30 @@ def get_html_from_cell(cell, content):
 # ----------------------------------------------------------------------
 # Генерация HTML‑таблицы (аналогично предыдущему шаблону)
 # ----------------------------------------------------------------------
-HTML_TEMPLATE = '''<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Expandable text · date & details table</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 2rem 1.5rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      table-layout: fixed;
-      border-style: hidden;
-      overflow: hidden;
-    }
-
-    th {
-      text-align: left;
-      padding: 1rem 1.2rem;
-      background: white;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    td {
-      padding: 0.9rem 1.2rem;
-      background-color: white;
-      vertical-align: middle;
-      transition: background 0.2s;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    /* fixed column widths: date column narrower, text column expands */
-    th:first-child, td:first-child {
-      width: 130px;
-      white-space: nowrap;
-      font-weight: 500;
-    }
-
-    th:last-child, td:last-child {
-      width: auto;
-    }
-
-    .date-cell {
-      font-variant-numeric: tabular-nums;
-      background: white;
-      font-weight: 100;
-      letter-spacing: 0.2px;
-    }
-
-    /* ----- expandable row styles ----- */
-    .summary-line {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .summary-text {
-      font-weight: 500;
-      flex: 1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      min-width: 0;
-      transition: all 0.2s;
-    }
-
-    /* when expanded we allow wrapping */
-    .summary-text.expanded {
-      white-space: normal;
-      overflow: visible;
-      text-overflow: unset;
-      word-break: break-word;
-    }
-
-    .toggle-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: black;
-      background: white;
-      padding: 0.3rem 0.9rem;
-      border-radius: 2rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      white-space: nowrap;
-      letter-spacing: 0.2px;
-      border: 1px solid transparent;
-    }
-
-    .toggle-btn:hover {
-      background: white;
-      color: #083358;
-      border-color: #b6cef0;
-    }
-
-    .toggle-btn:focus-visible {
-      outline: 2px solid white;
-      outline-offset: 2px;
-    }
-
-    .arrow-icon {
-      display: inline-block;
-      transition: transform 0.25s ease;
-      font-size: 0.85rem;
-      line-height: 1;
-    }
-
-    .arrow-icon.rotated {
-      transform: rotate(90deg);
-    }
-
-    .extra-details {
-      margin-top: 0.7rem;
-      padding: 0.8rem 1rem;
-      background: white;
-      color: #1f3a57;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      border-left: 4px solid white;
-      word-break: break-word;
-      display: none;
-      animation: fadeSlide 0.2s ease;
-    }
-
-    .extra-details.visible {
-      display: block;
-    }
-
-    @keyframes fadeSlide {
-      0% {
-        opacity: 0.6;
-        transform: translateY(-4px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .text-wrapper {
-      width: 100%;
-    }
-
-    /* small screens adaptation */
-    @media (max-width: 550px) {
-      body {
-        padding: 1rem;
-      }
-      .table-container {
-        padding: 1.2rem 1rem;
-      }
-      th:first-child, td:first-child {
-        width: 95px;
-      }
-      .toggle-btn {
-        padding: 0.3rem 0.7rem;
-        font-size: 0.8rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="table-container">
-    <table aria-label="Expandable details table">
-      <thead>
-         <tr>
-            <th scope="col">Дата</th>
-            <th scope="col">Событие</th>
-         </tr>
-      </thead>
-      <tbody>
-        {table_rows}
-      </tbody>
-    </table>
-    <p style="margin-top: 1.2rem; font-size: 0.8rem; color: #4a627a; padding-left: 0.2rem;">
-      Чтобы узнать о турнире больше, нажмите на стрелку справа.
-    </p>
+HTML_TEMPLATE = '''<div class="table-container" id="chronicle-expand">
+  <div class="chronicle-toolbar">
+    <button type="button" class="bulk-btn" data-expand-all>Показать всё</button>
+    <button type="button" class="bulk-btn" data-collapse-all>Скрыть всё</button>
   </div>
-  
-  <script>
-    (function() {
-      // All toggle buttons in the table
-      const toggleButtons = document.querySelectorAll('.toggle-btn');
+  <table aria-label="Expandable details table">
+    <colgroup>
+      <col class="chronicle-col-date">
+      <col class="chronicle-col-event">
+    </colgroup>
+    <thead>
+       <tr>
+          <th scope="col">Дата</th>
+          <th scope="col">Событие</th>
+       </tr>
+    </thead>
+    <tbody>
+      {table_rows}
+    </tbody>
+  </table>
+  <p class="chronicle-hint">Чтобы узнать о турнире больше, нажмите на стрелку справа у нужной строки. Кнопки «Показать всё» и «Скрыть всё» открывают или закрывают все блоки сразу.</p>
+</div>
 
-      // helper to reset all other expanded states? (optional – we keep independent expand/collapse)
-      // but we also want each button to control its own target.
-
-      function setExpandedState(button, detailsDiv, arrowSpan, expand) {
-        if (expand) {
-          detailsDiv.classList.add('visible');
-          button.setAttribute('aria-expanded', 'true');
-          if (arrowSpan) {
-            arrowSpan.classList.add('rotated');
-          }
-          // Also allow the summary text to wrap for better readability while expanded
-          const summarySpan = button.closest('.summary-line')?.querySelector('.summary-text');
-          if (summarySpan) {
-            summarySpan.classList.add('expanded');
-          }
-        } else {
-          detailsDiv.classList.remove('visible');
-          button.setAttribute('aria-expanded', 'false');
-          if (arrowSpan) {
-            arrowSpan.classList.remove('rotated');
-          }
-          const summarySpan = button.closest('.summary-line')?.querySelector('.summary-text');
-          if (summarySpan) {
-            summarySpan.classList.remove('expanded');
-          }
-        }
-      }
-
-      // Initialize: ensure all details hidden and aria correct (they start hidden via CSS, but sync buttons)
-      function syncAllInitialState() {
-        toggleButtons.forEach(btn => {
-          const targetId = btn.getAttribute('data-target');
-          if (!targetId) return;
-          const detailsDiv = document.getElementById(targetId);
-          const arrowSpan = btn.querySelector('.arrow-icon');
-          // default collapsed
-          if (detailsDiv) {
-            // ensure hidden state
-            detailsDiv.classList.remove('visible');
-            btn.setAttribute('aria-expanded', 'false');
-            if (arrowSpan) {
-              arrowSpan.classList.remove('rotated');
-            }
-            const summarySpan = btn.closest('.summary-line')?.querySelector('.summary-text');
-            if (summarySpan) {
-              summarySpan.classList.remove('expanded');
-            }
-          }
-        });
-      }
-
-      // Attach click event to each button
-      function attachEvents() {
-        toggleButtons.forEach(btn => {
-          // remove previous listener to avoid duplicates if needed (safe)
-          btn.removeEventListener('click', handleToggle);
-          btn.addEventListener('click', handleToggle);
-        });
-      }
-
-      function handleToggle(e) {
-        const button = e.currentTarget;
-        const targetId = button.getAttribute('data-target');
-        if (!targetId) return;
-
-        const detailsDiv = document.getElementById(targetId);
-        if (!detailsDiv) return;
-
-        const arrowSpan = button.querySelector('.arrow-icon');
-        // determine current state based on class presence
-        const isCurrentlyVisible = detailsDiv.classList.contains('visible');
-
-        // Toggle: if visible -> collapse, else expand
-        setExpandedState(button, detailsDiv, arrowSpan, !isCurrentlyVisible);
-      }
-
-      // Optional: allow clicking on summary text? Not required, but we keep button only.
-      // Also support keyboard activation (button already works with Enter/Space).
-
-      // start everything
-      syncAllInitialState();
-      attachEvents();
-
-      // In case dynamic rows added later, we could re-run attachEvents, but static here.
-    })();
-  </script>
-</body>
-</html>'''
+{{< chronicle-expand >}}'''
 
 # ----------------------------------------------------------------------
 # 3. Helper functions
@@ -556,7 +281,7 @@ def generate_table_rows(rows):
             <div class="text-wrapper">
               <div class="summary-line">
                 <span class="summary-text" id="{summary_id}">{event_html}</span>
-                <button class="toggle-btn" data-target="{details_id}" aria-expanded="false" aria-controls="{details_id}">
+                <button type="button" class="toggle-btn" data-target="{details_id}" aria-expanded="false" aria-controls="{details_id}" aria-label="Показать">
                   <span class="arrow-icon" id="{arrow_id}">▶</span>
                 </button>
               </div>
@@ -573,6 +298,7 @@ def write_markdown(year, output_path, table_rows_html):
     frontmatter = f"""---
 title: {year}
 weight: 1
+bookToC: false
 ---
 
 # {year}

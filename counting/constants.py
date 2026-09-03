@@ -195,9 +195,9 @@ ENTITY_IDS_WORKSHEET = "_entity_ids"
 # Cross-country duplicate pairs (ts_id / uz_id / ua_id). Not a country tab.
 DOUBLES_WORKSHEET = "doubles"
 # Global entity catalogs used by doubles search (one tab per kind).
-TOURNAMENT_SET_WORKSHEET = "tournament"
-TEAM_SET_WORKSHEET = "team"
-PLAYER_SET_WORKSHEET = "player"
+TOURNAMENT_SET_WORKSHEET = "tournaments"
+TEAM_SET_WORKSHEET = "teams"
+PLAYER_SET_WORKSHEET = "players"
 # Country-data dump skips these tab titles (plus any title starting with _).
 SKIP_WORKSHEET_TITLES = frozenset({
     ENTITY_IDS_WORKSHEET,

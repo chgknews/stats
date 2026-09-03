@@ -74,5 +74,196 @@
   margin-top: 1rem;
 }
 
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.table-container *,
+.table-container *::before,
+.table-container *::after {
+  box-sizing: border-box;
+}
+
+.chronicle-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.8rem;
+}
+
+.table-container table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-style: hidden;
+}
+
+.table-container th {
+  text-align: left;
+  padding: 1rem 1.2rem;
+  background: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.table-container td {
+  padding: 0.9rem 1.2rem;
+  background-color: white;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.table-container tr:last-child td {
+  border-bottom: none;
+}
+
+.table-container col.chronicle-col-date,
+.table-container th:first-child,
+.table-container td:first-child {
+  width: 22%;
+  font-weight: 500;
+}
+
+.table-container col.chronicle-col-event,
+.table-container th:last-child,
+.table-container td:last-child {
+  width: 78%;
+}
+
+.table-container .date-cell {
+  font-variant-numeric: tabular-nums;
+  background: white;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+}
+
+.table-container .summary-line {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+  min-width: 0;
+  width: 100%;
+}
+
+.table-container .summary-text {
+  font-weight: 500;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-container .summary-text.expanded {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: unset;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.table-container .toggle-btn,
+.table-container .bulk-btn {
+  background: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: black;
+  padding: 0.3rem 0.9rem;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  flex: 0 0 auto;
+  user-select: none;
+}
+
+.table-container .bulk-btn {
+  border-color: #d0d7e2;
+}
+
+.table-container .toggle-btn:hover,
+.table-container .bulk-btn:hover {
+  background: white;
+  color: #083358;
+  border-color: #b6cef0;
+}
+
+.table-container .toggle-btn:focus-visible,
+.table-container .bulk-btn:focus-visible {
+  outline: 2px solid #083358;
+  outline-offset: 2px;
+}
+
+.table-container .arrow-icon {
+  display: inline-block;
+  font-size: 0.85rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.table-container .extra-details {
+  margin-top: 0.7rem;
+  padding: 0.8rem 1rem;
+  max-width: 100%;
+  background: white;
+  color: #1f3a57;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-left: 4px solid white;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  display: none;
+}
+
+.table-container .extra-details.visible {
+  display: block;
+}
+
+.table-container .text-wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.table-container .chronicle-hint {
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  color: #4a627a;
+  padding-left: 0.2rem;
+}
+
+@media (max-width: 550px) {
+  .table-container col.chronicle-col-date,
+  .table-container th:first-child,
+  .table-container td:first-child {
+    width: 30%;
+  }
+  .table-container col.chronicle-col-event,
+  .table-container th:last-child,
+  .table-container td:last-child {
+    width: 70%;
+  }
+  .table-container .toggle-btn,
+  .table-container .bulk-btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
 // @import "plugins/numbered";
 // @import "plugins/scrollbars";
