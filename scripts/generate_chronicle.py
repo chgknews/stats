@@ -178,7 +178,7 @@ def get_html_from_cell(cell, content):
 # Генерация HTML‑таблицы (аналогично предыдущему шаблону)
 # ----------------------------------------------------------------------
 HTML_TEMPLATE = '''<div class="table-container" id="chronicle-expand">
-  <p class="chronicle-hint">Чтобы узнать о турнире больше, нажмите на стрелку справа у нужной строки. Кнопки «Показать всё» и «Скрыть всё» открывают или закрывают все блоки сразу.</p>
+  <p class="chronicle-hint">Чтобы узнать о событии больше, нажмите на стрелку справа у нужной строки. Кнопки «Показать всё» и «Скрыть всё» открывают или закрывают все блоки сразу.</p>
   <div class="chronicle-toolbar">
     <button type="button" class="bulk-btn" data-expand-all>Показать всё</button>
     <button type="button" class="bulk-btn" data-collapse-all>Скрыть всё</button>
