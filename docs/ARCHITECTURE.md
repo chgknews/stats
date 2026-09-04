@@ -342,6 +342,9 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 #### `videos.py`
 **Role:** Normalize the manual Video payload, keep several rows per tournament `id`, and format the tournament-block video paragraph.
 
+#### `phases.py`
+**Role:** Group Tournaments rows that share `game` + `number` + `year` and have two or more `subnumber` values; the highest `subnumber` is the combined result. Medal counts and the year-list/edition block use that grouping. Playing stages still report a missing date or city in Errors; the sum row does not (those cells are meant to be empty).
+
 #### `doubles.py`
 **Role:** `EntitySets` of tournaments/teams/players across all country tabs, persisted on the `tournament` / `team` / `player` worksheets; detect pairs that share `ts_id`/`uz_id`/`ua_id`; read/write the `doubles` worksheet; replace `id2` with `id1` when `replace?` is `yes`.
 
@@ -491,16 +494,25 @@ Cyrillic country names are resolved from `COUNTRY_REGISTRY` by slug (`get_countr
 
 ### Section 2: Tournaments
 
-Header: `id | number | game | start_date | end_date | city | year | countable | ts_id | uz_id | ua_id | comment`
+Header: `id | number | subnumber | game | start_date | end_date | city | year | countable | ts_id | uz_id | ua_id | comment`
 
-One row per championship edition. Country is **not** repeated here — it lives in metadata and in the worksheet tab name. URLs live in the **Links** table, not on this row.
+One row per championship edition, or per **stage** of a multi-stage edition. Country is **not** repeated here — it lives in metadata and in the worksheet tab name. URLs live in the **Links** table, not on this row.
 
 - `id`: **internal** auto-increment id (global via `_entity_ids`)
-- `countable`: `yes` / `no`. **Only `yes` counts** — a blank cell, a missing column or an unrecognized value all mean `no`, so manually entered editions must be marked explicitly. Podium fetched from rating.chgk.info (`-f`, `-at`, `-u ts`) is written as `yes`. Affects the podium medal tables (Команды / Игроки) only: an uncountable edition still appears in that game’s tournament tab with its podium and roster, still contributes to `tournament_count` and still reports incomplete rosters
+- `subnumber`: blank = a one-stage championship (counted as before). A positive integer (`1`, `2`, `3`, …) marks a stage. Rows that share `game` + `number` + `year` and have at least two filled `subnumber` values are one championship: the **highest** `subnumber` is the combined (sum) result; the earlier rows are playing stages. Medal tables and `tournament_count` use only the sum (or the one-stage row). A lone filled `subnumber` with no sibling is treated as one-stage
+- Combined (sum) row: fill `id`, `number`, `subnumber`, `game`, `year`, `countable`, `comment`. Leave `start_date`, `end_date`, and `city` empty. Podium / Rosters / «Полные результаты» attach to this `id`
+- Playing-stage rows: each has its own `id`, dates, city, Links row, and results URL. Their podium is ignored for medals
+- `countable`: `yes` / `no`. **Only `yes` counts** — a blank cell, a missing column or an unrecognized value all mean `no`, so manually entered editions must be marked explicitly. Podium fetched from rating.chgk.info (`-f`, `-at`, `-u ts`) is written as `yes`. Affects the podium medal tables (Команды / Игроки) only: an uncountable edition still appears in that game’s tournament tab with its podium and roster, still contributes to `tournament_count` and still reports incomplete rosters. For a multi-stage event this flag is read from the **sum** row
 - `ts_id` / `uz_id` / `ua_id`: optional external ids; at most one value per source; extensible via `constants.EXTERNAL_ID_SOURCES`
 - `start_date`, `end_date`: **ISO `YYYY-MM-DD`**. Single-day events set both equal. Unknown month or day may be `00`: `1995-00-00` (year only) or `1995-08-00` (year and month). These stay as written in the sheet (they are not normalized to a real calendar day). Markdown uses the same order as a full date: «прошёл **в 1995 году** в Тель-Авиве» / «прошёл **в августе 1995 года** в Тель-Авиве». A full date reads «прошёл 21 августа 1995 года в Тель-Авиве». Year-only is treated as finished after that calendar year; month-only after the last day of that month
-- `city`: city name in **prepositional case** (“прошёл … **в** {city}”, e.g. `Будве`). Empty city: «{title} прошёл/пройдёт {date}. Город проведения пока неизвестен.»
+- `city`: city name in **prepositional case** (“прошёл … **в** {city}”, e.g. `Будве`). Empty city: «{title} прошёл/пройдёт {date}. Город проведения пока неизвестен.» On a combined (sum) row the empty city is expected and is not an Errors item
 - `comment`: optional free-text note, filled **only in the sheet** (CLI/API never set it). Markdown prints it after the second- and third-place sentence, before «Полные результаты…». Recalculate round-trips the cell as-is
+
+Multi-stage markdown (two or more playing stages plus a sum row) is one year-list line and one edition block:
+
+- Intro: «{title} проходил в два этапа. Первый этап проходил {date_1} в {place_1}, второй этап — {date_2} в {place_2}.» (`пройдёт` while every stage is still ahead). The stage count is a Russian word (`два`, `три`, `пять`), not a digit
+- Podium, comment, «Полные результаты…» and the sum’s own extra links come from the **last** `subnumber`
+- Then one paragraph for the stages, in rising `subnumber` order, excluding the sum: «Результаты первого этапа можно найти […].» plus that stage’s questions / photos / tg / other Links, then the same for the second stage, and so on
 
 ### Section 3: Links
 
@@ -900,7 +912,7 @@ There is no contents list, no «Зал славы», and no «Наверх» / �
 Championship titles take `game` from each tournament and `age` from metadata:
 
 - Year list at the top of each game tab uses `GAMES_SHORT_NAMES`: `X чемпионат России по спортивному ЧГК` (plus age: `молодёжный` / `студенческий` / `школьный` / `детский чемпионат`, or `чемпионат России среди ювеналов (8–9 классы)`)
-- Tournament blocks use `GAMES_FULL_NAMES_CASE`: `X чемпионат России по спортивному «Что? Где? Когда?» прошёл…` when `end_date` is past, `пройдёт…` when it is ahead (`is_in_future`). Date always sits before the city: `прошёл 21 августа 1995 года в Тель-Авиве`, `прошёл в 1995 году в Тель-Авиве`, `прошёл в августе 1995 года в Тель-Авиве`. No city: `{title} прошёл/пройдёт {date}. Город проведения пока неизвестен.` A past edition without a podium still uses `прошёл` and adds `Результаты пока не учтены в статистике.`
+- Tournament blocks use `GAMES_FULL_NAMES_CASE`: `X чемпионат России по спортивному «Что? Где? Когда?» прошёл…` when `end_date` is past, `пройдёт…` when it is ahead (`is_in_future`). Date always sits before the city: `прошёл 21 августа 1995 года в Тель-Авиве`, `прошёл в 1995 году в Тель-Авиве`, `прошёл в августе 1995 года в Тель-Авиве`. No city: `{title} прошёл/пройдёт {date}. Город проведения пока неизвестен.` A past edition without a podium still uses `прошёл` and adds `Результаты пока не учтены в статистике.` A multi-stage edition uses `проходил` / `пройдёт в два этапа` (the count is a word) and lists each playing stage’s date and city; the sum row has no date or city of its own
 - A `display_name` on the Names sheet replaces the whole title
 - Each tournament block keeps its **own** game in the year anchor: `#chgk_2024`, `#od_2023`
 

@@ -619,9 +619,11 @@ class GoogleSheetsExporter:
             year = parse_sheet_int(row.get("year", ""), default=0) or 0
             if not year:
                 year = iso_date_year(end_date or start_date)
+            subnumber = parse_sheet_int(row.get("subnumber", ""), default=0) or 0
             tournament = TournamentData(
                 id=parse_sheet_id(row.get("id", "")),
                 number=parse_sheet_int(row.get("number", ""), default=0) or 0,
+                subnumber=subnumber if subnumber > 0 else 0,
                 date=display_date,
                 start_date=start_date,
                 end_date=end_date,
@@ -941,6 +943,7 @@ class GoogleSheetsExporter:
                     rows.append([
                         format_sheet_id(t.id),
                         t.number,
+                        t.subnumber if t.subnumber else "",
                         t.game,
                         start_date,
                         end_date,

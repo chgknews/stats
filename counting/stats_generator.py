@@ -27,13 +27,26 @@ from counting.external_ids import (
 )
 from counting.data_errors import (
     collect_computed_errors,
+    edition_is_reportable,
     empty_errors,
     flatten_tournaments,
     is_critical_error,
     merge_data_errors,
     normalize_errors,
     sort_error_items,
-    tournament_is_past,
+)
+from counting.phases import (
+    edition_count,
+    edition_is_finished,
+    group_editions,
+    non_summary_phase_ids,
+    parse_subnumber,
+    phase_count_phrase,
+    phase_ordinal_genitive,
+    phase_ordinal_nominative,
+    representative,
+    sort_tournament_rows,
+    split_edition_group,
 )
 from counting.google_sheets_exporter import GoogleSheetsExporter
 from counting.languages import language_phrase, normalize_languages
@@ -194,6 +207,7 @@ class StatsGenerator:
         self.processor = TournamentProcessor()
         self.allocator = EntityIdAllocator()
         self.registry = EntityRegistry(self.allocator)
+        self._skip_medal_ids: set[int] = set()
         exporter = self._exporter()
         if exporter.is_available():
             self.allocator.load_from_exporter(exporter)
@@ -255,6 +269,7 @@ class StatsGenerator:
         player_stats: Dict[int, Awardee] = {}
         errors = empty_errors()
         result: Dict[str, List[TournamentData]] = {}
+        self._skip_medal_ids = non_summary_phase_ids(tournaments_data)
 
         for game_type, tournament_list in tournaments_data.items():
             result[game_type] = []
@@ -279,7 +294,7 @@ class StatsGenerator:
                     result[game_type].append(tournament)
 
         for game_type in result:
-            result[game_type] = sorted(result[game_type], key=lambda t: t.number, reverse=True)
+            result[game_type] = sort_tournament_rows(result[game_type])
         return team_stats, player_stats, result, errors
 
     def build_output_data(
@@ -295,7 +310,7 @@ class StatsGenerator:
         videos: Optional[List[Dict[str, Any]]] = None,
     ) -> Dict[str, Any]:
         time_dump = datetime.now().isoformat()
-        total_tournaments = sum(len(v) for v in tournaments_data.values())
+        total_tournaments = edition_count(tournaments_data)
         if intro is not None:
             intro_text = intro.strip()
         elif isinstance(meta, MetaData):
@@ -468,8 +483,8 @@ class StatsGenerator:
         team_stats, player_stats, errors, new_tournament = tournament_result
         tournaments_data.setdefault(new_tournament.game, []).append(new_tournament)
         for game_type in tournaments_data:
-            tournaments_data[game_type] = sorted(
-                tournaments_data[game_type], key=lambda t: t.number, reverse=True
+            tournaments_data[game_type] = sort_tournament_rows(
+                tournaments_data[game_type]
             )
         self._save_results(
             numbers_champ, team_stats, player_stats, tournaments_data,
@@ -518,8 +533,8 @@ class StatsGenerator:
         )
         tournaments_data.setdefault(game, []).append(empty_tournament)
         for game_type in tournaments_data:
-            tournaments_data[game_type] = sorted(
-                tournaments_data[game_type], key=lambda t: t.number, reverse=True
+            tournaments_data[game_type] = sort_tournament_rows(
+                tournaments_data[game_type]
             )
         self._save_results(
             numbers_champ, team_stats, player_stats, tournaments_data,
@@ -619,12 +634,16 @@ class StatsGenerator:
             "results", "tg", "fb", "vk", "lj", "site", "recap", "letopis",
             "announce", "photos", "questions", "place",
         )
+        skip = non_summary_phase_ids(tournaments_data) if update_type == "ts" else set()
 
         def newest_empty(game_key: str) -> Optional[TournamentData]:
-            empty = [t for t in tournaments_data.get(game_key, []) if not t.awardees]
+            empty = [
+                t for t in tournaments_data.get(game_key, [])
+                if not t.awardees and t.id not in skip
+            ]
             if not empty:
                 return None
-            return sorted(empty, key=lambda t: t.number, reverse=True)[0]
+            return sort_tournament_rows(empty)[0]
 
         def newest(game_key: str) -> Optional[TournamentData]:
             lst = tournaments_data.get(game_key, [])
@@ -650,6 +669,8 @@ class StatsGenerator:
                         update_type == "ts"
                         and tournament.game in constants.INDIVIDUAL_GAMES
                     ):
+                        continue
+                    if tournament.id in skip:
                         continue
                     return tournament
         print("No empty tournament found to update.")
@@ -754,6 +775,7 @@ class StatsGenerator:
         processed = TournamentData(
             id=source.id,
             number=number_champ,
+            subnumber=parse_subnumber(getattr(source, "subnumber", 0)),
             date=source.date,
             start_date=source.start_date,
             end_date=source.end_date,
@@ -869,7 +891,8 @@ class StatsGenerator:
         team = awardee.team
         # Only countable tournaments award medals. Missing rosters still appear
         # in the Errors section / Нет данных tab.
-        if processed_tournament.countable:
+        skip_medals = processed_tournament.id in getattr(self, "_skip_medal_ids", set())
+        if processed_tournament.countable and not skip_medals:
             if game not in constants.INDIVIDUAL_GAMES:
                 team_stats = count_champions(
                     team_stats,
@@ -1139,7 +1162,8 @@ class StatsGenerator:
             if not description:
                 continue
             tournament = by_id.get(int(item.get("id") or 0))
-            if not tournament or not tournament_is_past(tournament):
+            all_rows = list(by_id.values())
+            if not tournament or not edition_is_reportable(tournament, all_rows):
                 continue
             rows.append((tournament, description))
         return payload.get("description", ""), rows
@@ -1298,8 +1322,11 @@ class StatsGenerator:
         """Unique historical names per player id, in first-seen order."""
         by_player: Dict[int, List[str]] = {}
         seen: Dict[int, set] = {}
+        skip = non_summary_phase_ids(tournaments_data)
         for tournament_list in tournaments_data.values():
             for tournament in sorted(tournament_list, key=lambda t: (t.year, t.number)):
+                if tournament.id in skip:
+                    continue
                 for awardee in tournament.awardees.values():
                     for player in awardee.team.players:
                         old = f"{player.old_name.strip()} {player.old_surname.strip()}".strip()
@@ -1323,8 +1350,11 @@ class StatsGenerator:
     ) -> Dict[int, List[str]]:
         aliases_by_team: Dict[int, List[str]] = {}
         seen: Dict[int, set] = {}
+        skip = non_summary_phase_ids(tournaments_data)
         for tournament_list in tournaments_data.values():
             for tournament in sorted(tournament_list, key=lambda t: (t.year, t.number)):
+                if tournament.id in skip:
+                    continue
                 for awardee in tournament.awardees.values():
                     if awardee.individual:
                         continue
@@ -1875,14 +1905,22 @@ class StatsGenerator:
             f'<a id="{self._game_tab_id(game_type)}"></a>'
             f'<a id="{contents}" name="{contents}"></a>\n\n'
         )
-        for tournament in tournament_list:
+        groups = group_editions(tournament_list)
+        for group in groups:
+            tournament = representative(group)
             file.write(
                 f"- [{self._years_entry_label(tournament)}]"
                 f"(#{self._year_anchor(tournament, game_type)})\n"
             )
         file.write("\n")
-        for tournament in tournament_list:
-            self._write_tournament_details(file, tournament, game_type, contents)
+        for group in groups:
+            phases, summary = split_edition_group(group)
+            if summary and phases:
+                self._write_tournament_details(
+                    file, summary, game_type, contents, phases=phases
+                )
+            else:
+                self._write_tournament_details(file, group[0], game_type, contents)
 
     def _write_tournament_details(
         self,
@@ -1890,31 +1928,37 @@ class StatsGenerator:
         tournament: TournamentData,
         game_type: str,
         contents_anchor: str = "",
+        phases: Optional[List[TournamentData]] = None,
     ) -> None:
         name_tournament = self.get_name_tournament(
             tournament, constants.GAMES_FULL_NAMES_CASE
         )
         anchor = self._year_anchor(tournament, game_type)
-        raw_date = tournament_display_date(
-            tournament.start_date, tournament.end_date, tournament.date
-        ).strip()
-        date_part = f" {raw_date}" if raw_date else ""
-        is_in_future = not self._has_finished(tournament)
-        verb = "пройдёт" if is_in_future else "прошёл"
+        phases = phases or []
+        if phases:
+            is_in_future = not edition_is_finished(phases, tournament)
+            self._write_multi_phase_intro(file, name_tournament, phases, is_in_future)
+        else:
+            raw_date = tournament_display_date(
+                tournament.start_date, tournament.end_date, tournament.date
+            ).strip()
+            date_part = f" {raw_date}" if raw_date else ""
+            is_in_future = not self._has_finished(tournament)
+            verb = "пройдёт" if is_in_future else "прошёл"
+            if tournament.city:
+                file.write(
+                    f'\n**{name_tournament}** {verb}{date_part} в {tournament.city}. '
+                )
+            else:
+                file.write(
+                    f'\n**{name_tournament}** {verb}{date_part}. {constants.CITY_UNKNOWN} '
+                )
         # «Вопросы задавались на армянском языке.» — nothing for Russian alone.
         phrase = language_phrase(tournament.languages)
         language_note = ""
         if phrase:
             lang_verb = "задавались" if not is_in_future else "будут задаваться"
             language_note = f"Вопросы {lang_verb} {phrase}. "
-        if tournament.city:
-            file.write(
-                f'\n**{name_tournament}** {verb}{date_part} в {tournament.city}. '
-            )
-        else:
-            file.write(
-                f'\n**{name_tournament}** {verb}{date_part}. {constants.CITY_UNKNOWN} '
-            )
         file.write(language_note)
         if not is_in_future and not tournament.awardees:
             file.write(f"{constants.RESULTS_NOT_COUNTED} ")
@@ -1931,11 +1975,46 @@ class StatsGenerator:
         self._write_tournament_sheet_info(file, tournament)
         self._write_tournament_links(file, tournament.links, is_in_future)
         self._write_tournament_videos(file, tournament.id)
-        if not tournament.countable and self._has_finished(tournament):
+        if phases:
+            self._write_phase_results_paragraph(file, phases)
+        finished = (
+            edition_is_finished(phases, tournament)
+            if phases
+            else self._has_finished(tournament)
+        )
+        if not tournament.countable and finished:
             file.write(f"\n\n*{constants.UNCOUNTABLE_NOTE}*")
         file.write(
             f"\n\n*[{constants.BACK_TO_CONTENTS}]"
             f"(#{contents_anchor or constants.CONTENTS_ANCHOR})*\n\n---\n"
+        )
+
+    def _write_multi_phase_intro(
+        self,
+        file: TextIO,
+        name_tournament: str,
+        phases: List[TournamentData],
+        is_in_future: bool,
+    ) -> None:
+        count = len(phases)
+        verb = "пройдёт" if is_in_future else "проходил"
+        clauses: List[str] = []
+        for index, phase in enumerate(phases, start=1):
+            raw_date = tournament_display_date(
+                phase.start_date, phase.end_date, phase.date
+            ).strip()
+            city = (phase.city or "").strip()
+            where_parts = [part for part in (raw_date, f"в {city}" if city else "") if part]
+            where = " ".join(where_parts)
+            label = phase_ordinal_nominative(index, capitalize=(index == 1))
+            if index == 1:
+                clause = f"{label} этап {verb} {where}".rstrip()
+            else:
+                clause = f"{label} этап — {where}".rstrip() if where else f"{label} этап"
+            clauses.append(clause)
+        file.write(
+            f"\n**{name_tournament}** {verb} в {phase_count_phrase(count)}. "
+            f"{', '.join(clauses)}. "
         )
 
     def _write_tournament_sheet_info(
@@ -1944,24 +2023,36 @@ class StatsGenerator:
         """Comment, results, questions, photos — same for team and SSI editions."""
         if tournament.comment:
             file.write(f" {tournament.comment}")
+        body = self._format_results_and_media(tournament, constants.FULL_RESULTS_LEAD)
+        if body:
+            file.write(f"\n\n{body}")
+
+    def _format_results_and_media(
+        self, tournament: TournamentData, results_lead: str
+    ) -> str:
         results_link = resolve_results_url(
             tournament.links.get("results", ""), tournament.external_ids
         )
         questions = tournament.links.get("questions", "").strip()
         photos = tournament.links.get("photos", "").strip()
+        parts: List[str] = []
         if results_link:
             label = results_markdown_label(results_link)
-            file.write(f"\n\nПолные результаты можно найти [{label}]({results_link})")
+            sentence = f"{results_lead} [{label}]({results_link})"
             if questions:
-                file.write(f", вопросы турнира можно почитать [здесь]({questions})")
-            file.write(".")
+                sentence += f", вопросы турнира можно почитать [здесь]({questions})"
+            parts.append(sentence + ".")
         elif questions:
-            file.write(f"\n\nВопросы турнира можно почитать [здесь]({questions}).")
+            parts.append(f"Вопросы турнира можно почитать [здесь]({questions}).")
         if photos:
-            prefix = " " if (results_link or questions) else "\n\n"
-            file.write(
-                f"{prefix}Фотографии с турнира можно посмотреть по [этой ссылке]({photos})."
+            photo = (
+                f"Фотографии с турнира можно посмотреть по [этой ссылке]({photos})."
             )
+            if parts:
+                parts[-1] = parts[-1] + " " + photo
+            else:
+                parts.append(photo)
+        return " ".join(parts)
 
     def _write_tournament_videos(self, file: TextIO, tournament_id: int) -> None:
         items = videos_for_tournament(getattr(self, "_videos", None) or [], tournament_id)
@@ -1969,9 +2060,25 @@ class StatsGenerator:
         if paragraph:
             file.write(f"\n\n{paragraph}")
 
-    def _write_tournament_links(
-        self, file: TextIO, links: Dict[str, str], is_in_future: bool
+    def _write_phase_results_paragraph(
+        self, file: TextIO, phases: List[TournamentData]
     ) -> None:
+        chunks: List[str] = []
+        for index, phase in enumerate(phases, start=1):
+            lead = constants.PHASE_RESULTS_LEAD.format(
+                ordinal=phase_ordinal_genitive(index)
+            )
+            text = self._format_results_and_media(phase, lead)
+            more = self._format_more_info(
+                phase.links, is_in_future=not self._has_finished(phase)
+            )
+            chunk = " ".join(part for part in (text, more) if part).strip()
+            if chunk:
+                chunks.append(chunk)
+        if chunks:
+            file.write("\n\n" + " ".join(chunks))
+
+    def _format_more_info(self, links: Dict[str, str], is_in_future: bool) -> str:
         announce = links.get("announce", "").strip()
         site = links.get("site", "").strip()
         tg = links.get("tg", "").strip()
@@ -1993,8 +2100,7 @@ class StatsGenerator:
 
         if announce and is_in_future:
             parts = [f"[в анонсе]({announce})"] + social
-            file.write(f"\n\n{constants.MORE_INFO_LABEL}{self._join_russian_list(parts)}.")
-            return
+            return f"{constants.MORE_INFO_LABEL}{self._join_russian_list(parts)}."
 
         parts: List[str] = []
         if site:
@@ -2005,8 +2111,20 @@ class StatsGenerator:
         if letopis:
             parts.append(f"[в Летописи]({letopis})")
         if not parts:
+            return ""
+        return f"{constants.MORE_INFO_LABEL}{self._join_russian_list(parts)}."
+
+    def _write_tournament_links(
+        self, file: TextIO, links: Dict[str, str], is_in_future: bool
+    ) -> None:
+        text = self._format_more_info(links, is_in_future)
+        if not text:
             return
-        file.write(f" {constants.MORE_INFO_LABEL}{self._join_russian_list(parts)}.")
+        announce = links.get("announce", "").strip()
+        if announce and is_in_future:
+            file.write(f"\n\n{text}")
+            return
+        file.write(f" {text}")
 
     @staticmethod
     def _join_russian_list(parts: List[str]) -> str:
