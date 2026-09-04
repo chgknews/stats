@@ -1,5 +1,5 @@
 ---
-title: От «Игры-ТВ
+title: От «Игры-ТВ»
 weight: 1
 bookToC: false
 ---
