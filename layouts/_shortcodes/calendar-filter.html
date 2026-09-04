@@ -1,5 +1,5 @@
 {{ $events := slice }}
-{{ with site.Data.calendar }}
+{{ with hugo.Data.calendar }}
   {{ with .events }}{{ $events = . }}{{ end }}
 {{ end }}
 
