@@ -21,7 +21,7 @@ COUNTRY_REGISTRY: dict[str, dict[str, str]] = {
     "russia_igra_tv": {
         "nominative": "Россия",
         "genitive": "России",
-        "title": "От «Игры-ТВ",
+        "title": "От «Игры-ТВ»",
         "header": "Чемпионаты России, проводящиеся по лицензии «Игра-ТВ»",
         "output_subdir": "russia",
     },
