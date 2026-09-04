@@ -2,10 +2,17 @@
 from __future__ import annotations
 
 from datetime import date
-from typing import Any, Callable, Dict, Iterable, List, Optional
+from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence
 
 from counting import constants
 from counting.models import TournamentAwardee, TournamentData
+from counting.phases import (
+    edition_is_finished,
+    flatten_edition_rows,
+    is_multi_phase_summary,
+    is_non_summary_phase,
+    playing_phases,
+)
 from counting.sheet_utils import format_bool_flag, parse_bool_flag
 from counting.t_fashion import iso_date_is_past, parse_iso_date_parts
 
@@ -51,6 +58,27 @@ def normalize_errors(errors_data: Optional[Dict[str, Any]]) -> Dict[str, Any]:
         "description": str(errors_data.get("description") or "").strip(),
         "items": items,
     }
+
+
+def edition_is_reportable(
+    tournament: TournamentData,
+    rows: Sequence[TournamentData],
+    *,
+    today: Optional[date] = None,
+) -> bool:
+    """Whether this row can produce an Errors line.
+
+    Playing stages are included so a missing date or city is reported.
+    Combined (sum) rows use the stages' dates: empty date/city on the sum
+    is expected and is not an error.
+    """
+    if is_non_summary_phase(tournament, rows):
+        return True
+    if is_multi_phase_summary(tournament, rows):
+        return edition_is_finished(
+            playing_phases(tournament, rows), tournament, today=today
+        )
+    return tournament_is_past(tournament, today)
 
 
 def tournament_is_past(tournament: TournamentData, today: Optional[date] = None) -> bool:
@@ -173,24 +201,32 @@ def collect_computed_errors(
     needs_roster_error: Callable[[TournamentAwardee], bool],
 ) -> Dict[str, Any]:
     items: List[Dict[str, Any]] = []
+    all_rows = flatten_edition_rows(tournaments_data)
     for tournament_list in tournaments_data.values():
         for tournament in tournament_list:
-            if not tournament.id or not tournament_is_past(tournament):
+            if not tournament.id:
                 continue
-            individual = tournament.game in constants.INDIVIDUAL_GAMES
-            winner = _place_incomplete(tournament, 0, needs_roster_error)
-            second = _place_incomplete(tournament, 1, needs_roster_error)
-            third = _place_incomplete(tournament, 2, needs_roster_error)
-            city = not (tournament.city or "").strip()
-            date = tournament_date_is_incomplete(tournament)
-            description = format_missing_description(
-                winner=winner,
-                second=second,
-                third=third,
-                individual=individual,
-                city=city,
-                date=date,
-            )
+            if not edition_is_reportable(tournament, all_rows):
+                continue
+            if is_non_summary_phase(tournament, all_rows):
+                description = format_missing_description(
+                    city=not (tournament.city or "").strip(),
+                    date=tournament_date_is_incomplete(tournament),
+                )
+            else:
+                individual = tournament.game in constants.INDIVIDUAL_GAMES
+                winner = _place_incomplete(tournament, 0, needs_roster_error)
+                second = _place_incomplete(tournament, 1, needs_roster_error)
+                third = _place_incomplete(tournament, 2, needs_roster_error)
+                summary = is_multi_phase_summary(tournament, all_rows)
+                description = format_missing_description(
+                    winner=winner,
+                    second=second,
+                    third=third,
+                    individual=individual,
+                    city=(not (tournament.city or "").strip()) and not summary,
+                    date=tournament_date_is_incomplete(tournament) and not summary,
+                )
             if description:
                 items.append({
                     "id": tournament.id,

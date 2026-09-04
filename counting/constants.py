@@ -23,6 +23,8 @@ CONTACT_EMAIL = "chgknews.info@gmail.com"
 MORE_INFO_LABEL = "Больше информации о турнире — "
 VIDEO_ONE_LABEL = "Также доступно связанное с турниром видео: "
 VIDEO_MANY_LABEL = "Также доступны связанные с турниром видео: "
+FULL_RESULTS_LEAD = "Полные результаты можно найти"
+PHASE_RESULTS_LEAD = "Результаты {ordinal} этапа можно найти"
 PLAYERS_ERROR = (
     "Состав победителей неизвестен. Если вы что-то о нём знаете, "
     f"напишите, пожалуйста, на <{CONTACT_EMAIL}>."

@@ -11,7 +11,7 @@ LINK_KEYS = (
 )
 
 TOURNAMENT_HEADERS = [
-    "id", "number", "game", "start_date", "end_date", "city", "year",
+    "id", "number", "subnumber", "game", "start_date", "end_date", "city", "year",
     "countable",
     *constants.EXTERNAL_ID_SOURCES,
     "comment",

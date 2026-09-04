@@ -278,11 +278,15 @@ class TournamentData:
     display_name: str = ""
     # Free-text note from the Tournaments sheet; not set by the API or CLI.
     comment: str = ""
+    # Playing stage (1, 2, …). 0 / blank = a one-stage championship.
+    # The highest subnumber in a (game, number, year) group is the combined result.
+    subnumber: int = 0
 
     def to_dict(self) -> Dict[str, Any]:
         return {
             "id": self.id,
             "number": self.number,
+            "subnumber": self.subnumber,
             "date": self.date,
             "start_date": self.start_date,
             "end_date": self.end_date,
@@ -325,9 +329,11 @@ class TournamentData:
         year = parse_sheet_int(data.get("year", 0), default=0) or 0
         if not year:
             year = iso_date_year(end_date or start_date)
+        subnumber = parse_sheet_int(data.get("subnumber", 0), default=0) or 0
         return cls(
             id=parse_sheet_id(data.get("id")),
             number=parse_sheet_int(data.get("number", 0), default=0) or 0,
+            subnumber=subnumber if subnumber > 0 else 0,
             date=display_date,
             start_date=start_date,
             end_date=end_date,
