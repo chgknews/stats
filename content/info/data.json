@@ -22460,15 +22460,31 @@
       },
       "intro": "Чемпионаты Чехии проводятся с 2017 года.",
       "age": "adult",
-      "generated_at": "2026-09-02T19:41:08.576584",
+      "generated_at": "2026-09-04T16:51:42.463895",
       "team_count": 10,
       "player_count": 68,
-      "tournament_count": 7
+      "tournament_count": 8
     },
     "tournaments": [
       {
+        "id": "315",
+        "number": "8",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2026-10-03",
+        "end_date": "2026-10-04",
+        "city": "Праге",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
         "id": "209",
         "number": "7",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2025-10-04",
         "end_date": "2025-10-05",
@@ -22483,6 +22499,7 @@
       {
         "id": "210",
         "number": "6",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2024-10-12",
         "end_date": "2024-10-13",
@@ -22497,6 +22514,7 @@
       {
         "id": "211",
         "number": "5",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2023-10-14",
         "end_date": "2023-10-15",
@@ -22511,6 +22529,7 @@
       {
         "id": "212",
         "number": "4",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2022-10-29",
         "end_date": "2022-10-30",
@@ -22525,6 +22544,7 @@
       {
         "id": "213",
         "number": "3",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2019-10-05",
         "end_date": "2019-10-06",
@@ -22539,6 +22559,7 @@
       {
         "id": "214",
         "number": "2",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2018-10-13",
         "end_date": "2018-10-14",
@@ -22553,6 +22574,7 @@
       {
         "id": "215",
         "number": "1",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2017-06-03",
         "end_date": "2017-06-03",
@@ -22567,6 +22589,20 @@
     ],
     "links": [
       {
+        "id": "315",
+        "results": "",
+        "announce": "https://telegram.me/o44praha/248",
+        "site": "",
+        "tg": "https://telegram.me/o44praha/",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
         "id": "209",
         "results": "https://rating.chgk.info/tournament/12543",
         "announce": "",
@@ -22574,6 +22610,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22587,6 +22624,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22600,6 +22638,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22613,6 +22652,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22626,6 +22666,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22639,6 +22680,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -22652,6 +22694,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
