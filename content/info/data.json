@@ -1,4 +1,2225 @@
 {
+  "ukraine": {
+    "metadata": {
+      "country": "ukraine",
+      "numbers_champ": {
+        "chgk": 9
+      },
+      "intro": "Чемпионаты Украины проводятся с 1996 года.",
+      "age": "adult",
+      "generated_at": "2026-09-04T22:18:51.002771",
+      "team_count": 12,
+      "player_count": 55,
+      "tournament_count": 12
+    },
+    "tournaments": [
+      {
+        "id": "316",
+        "number": "27",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2025-09-27",
+        "end_date": "2025-09-28",
+        "city": "онлайне",
+        "year": "2025",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "317",
+        "number": "26",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2021-12-04",
+        "end_date": "2021-12-05",
+        "city": "Киеве",
+        "year": "2022",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": "В сезоне 2021/2022 удалось провести только первый этап. Его результаты в августе 2022 года были признаны итогами всего чемпионата"
+      },
+      {
+        "id": "304",
+        "number": "10",
+        "subnumber": "1",
+        "game": "chgk",
+        "start_date": "2003-11-15",
+        "end_date": "2003-11-15",
+        "city": "",
+        "year": "2004",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "305",
+        "number": "10",
+        "subnumber": "2",
+        "game": "chgk",
+        "start_date": "2004-01-17",
+        "end_date": "2004-01-17",
+        "city": "",
+        "year": "2004",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "306",
+        "number": "10",
+        "subnumber": "3",
+        "game": "chgk",
+        "start_date": "2004-03-13",
+        "end_date": "2004-03-13",
+        "city": "Симферополе",
+        "year": "2004",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "307",
+        "number": "10",
+        "subnumber": "4",
+        "game": "chgk",
+        "start_date": "",
+        "end_date": "",
+        "city": "",
+        "year": "2004",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "299",
+        "number": "9",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2002-10-18",
+        "end_date": "2002-10-19",
+        "city": "Ровно",
+        "year": "2002",
+        "countable": "yes",
+        "ts_id": "1316",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "300",
+        "number": "7",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2000-10-05",
+        "end_date": "2000-10-07",
+        "city": "Харькове",
+        "year": "2000",
+        "countable": "yes",
+        "ts_id": "1044",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "301",
+        "number": "6",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "1999-09-09",
+        "end_date": "1999-09-11",
+        "city": "Виннице",
+        "year": "1999",
+        "countable": "yes",
+        "ts_id": "1062",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "302",
+        "number": "4",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "1997-09-20",
+        "end_date": "1997-09-20",
+        "city": "Днепропетровске",
+        "year": "1997",
+        "countable": "yes",
+        "ts_id": "1576",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "303",
+        "number": "3",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "1996-09-12",
+        "end_date": "1996-09-14",
+        "city": "Днепропетровске",
+        "year": "1996",
+        "countable": "yes",
+        "ts_id": "1552",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "321",
+        "number": "23",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2026-05-07",
+        "end_date": "2026-06-16",
+        "city": "онлайне",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "320",
+        "number": "22",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2025-04-28",
+        "end_date": "2025-06-08",
+        "city": "онлайне",
+        "year": "2025",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "319",
+        "number": "21",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2024-05-06",
+        "end_date": "2024-06-15",
+        "city": "онлайне",
+        "year": "2024",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "318",
+        "number": "20",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2021-12-04",
+        "end_date": "2021-12-05",
+        "city": "Киеве",
+        "year": "2021",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      }
+    ],
+    "links": [
+      {
+        "id": "316",
+        "results": "https://docs.google.com/spreadsheets/d/1Qcht6JL0mbzF7QyNT5BTcM_9alPasXWK3hIjn71grhM/edit?gid=583114730#gid=583114730",
+        "announce": "",
+        "site": "",
+        "tg": "https://t.me/LigaUK/831",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1253",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "317",
+        "results": "https://docs.google.com/spreadsheets/d/13EiLBHZgttOm8rGm1xMGetezcV_x-v9z691KpjaAh3k/edit?gid=583114730#gid=583114730",
+        "announce": "",
+        "site": "https://docs.google.com/spreadsheets/d/13EiLBHZgttOm8rGm1xMGetezcV_x-v9z691KpjaAh3k/edit?gid=1271955621#gid=1271955621",
+        "tg": "https://t.me/LigaUK/358",
+        "fb": "https://www.facebook.com/events/979057086285582",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/353",
+        "letopis": "",
+        "photos": "https://www.facebook.com/events/979057086285582?post_id=1017113002479990&view=permalink",
+        "questions": ""
+      },
+      {
+        "id": "304",
+        "results": "http://letopis.chgk.info/200311Ukraine-1scores.html",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "305",
+        "results": "http://letopis.chgk.info/200311Ukraine-2scores.html",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "306",
+        "results": "http://letopis.chgk.info/200311Ukraine-3scores.html",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "307",
+        "results": "http://letopis.chgk.info/200311Ukraine-res.html",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "299",
+        "results": "https://rating.chgk.info/tournament/1316",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "300",
+        "results": "https://rating.chgk.info/tournament/1044",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "301",
+        "results": "https://rating.chgk.info/tournament/1062",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "302",
+        "results": "https://rating.chgk.info/tournament/1576",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "303",
+        "results": "https://rating.chgk.info/tournament/1552",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "321",
+        "results": "https://docs.google.com/spreadsheets/d/10fwViAY_8ckXuNXn6GhzuQYt2KcSX1moNOMHepyNFg4/edit?gid=1028935314#gid=1028935314",
+        "announce": "",
+        "site": "",
+        "tg": "https://t.me/c/2088760967/178",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1488",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "320",
+        "results": "https://docs.google.com/spreadsheets/d/1cubdzIkVBgsRm--ZNEVYeSZDNLFAxFdua5gEmwfDd40/edit?gid=1915504037#gid=1915504037",
+        "announce": "",
+        "site": "",
+        "tg": "https://t.me/LigaUK/772",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1166",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "319",
+        "results": "https://docs.google.com/spreadsheets/d/1-0CTHL8G__Z89NyMnEoWKZCXCyCc_9Pt6eJakt23fD0/edit?gid=671782412#gid=671782412",
+        "announce": "",
+        "site": "",
+        "tg": "https://t.me/vt_luk/34",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/870",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "318",
+        "results": "",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/photo/?fbid=1902130196640897&set=a.1902122199975030",
+        "questions": ""
+      }
+    ],
+    "podium": [
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "team name": "Минус один",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "team name": "senes",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "team name": "Смажені цвяхи",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "team name": "Номер 6",
+        "old name": "",
+        "team city": "Донецк",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "team name": "Приматы",
+        "old name": "",
+        "team city": "Днепр",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "team name": "Минус один",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "299",
+        "place": "0",
+        "team id": "223",
+        "team name": "От Винта - Братья по фазе",
+        "old name": "",
+        "team city": "Харьков",
+        "roster_complete": "no"
+      },
+      {
+        "id": "299",
+        "place": "1",
+        "team id": "224",
+        "team name": "ОНУ им. Мечникова",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "team name": "Команда Евгении Канищевой",
+        "old name": "",
+        "team city": "Симферополь",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "team name": "Команда Мороховского",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "team name": "Стирол",
+        "old name": "",
+        "team city": "Горловка",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "300",
+        "place": "2",
+        "team id": "228",
+        "team name": "Порт Южный",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "team name": "Стирол",
+        "old name": "",
+        "team city": "Горловка",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "301",
+        "place": "1",
+        "team id": "226",
+        "team name": "Команда Мороховского",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "301",
+        "place": "2",
+        "team id": "228",
+        "team name": "Порт Южный",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "302",
+        "place": "0",
+        "team id": "227",
+        "team name": "Стирол",
+        "old name": "",
+        "team city": "Горловка",
+        "roster_complete": "no"
+      },
+      {
+        "id": "302",
+        "place": "1",
+        "team id": "229",
+        "team name": "От Винта",
+        "old name": "",
+        "team city": "Харьков",
+        "roster_complete": "no"
+      },
+      {
+        "id": "302",
+        "place": "2",
+        "team id": "226",
+        "team name": "Команда Мороховского",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "303",
+        "place": "0",
+        "team id": "227",
+        "team name": "Стирол",
+        "old name": "",
+        "team city": "Горловка",
+        "roster_complete": "no"
+      },
+      {
+        "id": "303",
+        "place": "1",
+        "team id": "226",
+        "team name": "Команда Мороховского",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      },
+      {
+        "id": "303",
+        "place": "2",
+        "team id": "228",
+        "team name": "Порт Южный",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "no"
+      }
+    ],
+    "rosters": [
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1517",
+        "player name": "Владимир",
+        "player surname": "Островский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1518",
+        "player name": "Евгений",
+        "player surname": "Спектор",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1519",
+        "player name": "Антон",
+        "player surname": "Саввин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1520",
+        "player name": "Александр",
+        "player surname": "Мудрый",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1521",
+        "player name": "Кирилл",
+        "player surname": "Михайлов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "0",
+        "team id": "242",
+        "player id": "1522",
+        "player name": "Владимир",
+        "player surname": "Шевчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "616",
+        "player name": "Илья",
+        "player surname": "Новиков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1523",
+        "player name": "Егор",
+        "player surname": "Кузьменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1524",
+        "player name": "Дмитрий",
+        "player surname": "Антоненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1525",
+        "player name": "Владимир",
+        "player surname": "Дудчак",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1526",
+        "player name": "Виктория",
+        "player surname": "Евтушенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1527",
+        "player name": "Оксана",
+        "player surname": "Касянчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "1",
+        "team id": "243",
+        "player id": "1476",
+        "player name": "Катерина",
+        "player surname": "Коциевская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1529",
+        "player name": "Евгений",
+        "player surname": "Гурт",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1530",
+        "player name": "Елизавета",
+        "player surname": "Болотова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1531",
+        "player name": "Алексей",
+        "player surname": "Востриков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1532",
+        "player name": "Александр",
+        "player surname": "Мерзликин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1533",
+        "player name": "Никита",
+        "player surname": "Тищенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1534",
+        "player name": "Андрей",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "316",
+        "place": "2",
+        "team id": "244",
+        "player id": "1535",
+        "player name": "Андрей",
+        "player surname": "Темников",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1536",
+        "player name": "Алексей",
+        "player surname": "Чирков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1489",
+        "player name": "Павел",
+        "player surname": "Муха",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1538",
+        "player name": "Эдуард",
+        "player surname": "Голуб",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1539",
+        "player name": "Виктория",
+        "player surname": "Маландина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1540",
+        "player name": "Мария",
+        "player surname": "Докучаева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "0",
+        "team id": "245",
+        "player id": "1541",
+        "player name": "Михаил",
+        "player surname": "Осадчий",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "616",
+        "player name": "Илья",
+        "player surname": "Новиков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "156",
+        "player name": "Владимир",
+        "player surname": "Итыгин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "1542",
+        "player name": "Александр",
+        "player surname": "Чижов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "1543",
+        "player name": "Алексей",
+        "player surname": "Филановский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "1544",
+        "player name": "Дмитрий",
+        "player surname": "Литвинов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "1545",
+        "player name": "Олег",
+        "player surname": "Соловьёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "246",
+        "player id": "1546",
+        "player name": "Арсен",
+        "player surname": "Малиновский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1517",
+        "player name": "Владимир",
+        "player surname": "Островский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1518",
+        "player name": "Евгений",
+        "player surname": "Спектор",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1519",
+        "player name": "Антон",
+        "player surname": "Саввин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1547",
+        "player name": "Ольга",
+        "player surname": "Дубинская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1548",
+        "player name": "Константин",
+        "player surname": "Науменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "317",
+        "place": "1",
+        "team id": "242",
+        "player id": "1521",
+        "player name": "Кирилл",
+        "player surname": "Михайлов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "1436",
+        "player name": "Юлия",
+        "player surname": "Москалёва",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "1437",
+        "player name": "Ян",
+        "player surname": "Шапиро",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "745",
+        "player name": "Виталий",
+        "player surname": "Фёдоров",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "1438",
+        "player name": "Евгения",
+        "player surname": "Канищева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "1439",
+        "player name": "Сергей",
+        "player surname": "Канищев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "299",
+        "place": "2",
+        "team id": "225",
+        "player id": "1440",
+        "player name": "Павел",
+        "player surname": "Гольдин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "1441",
+        "player name": "Борис",
+        "player surname": "Бурда",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "1442",
+        "player name": "Татьяна",
+        "player surname": "Богатырёва",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "411",
+        "player name": "Роман",
+        "player surname": "Морозовский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "1443",
+        "player name": "Ирина",
+        "player surname": "Морозовская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "1444",
+        "player name": "Татьяна",
+        "player surname": "Луговская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "0",
+        "team id": "226",
+        "player id": "799",
+        "player name": "Анатолий",
+        "player surname": "Вассерман",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1445",
+        "player name": "Илья",
+        "player surname": "Сименко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1446",
+        "player name": "Александр",
+        "player surname": "Кондарев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1447",
+        "player name": "Владислав",
+        "player surname": "Пристинский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1448",
+        "player name": "Борис",
+        "player surname": "Левин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1449",
+        "player name": "Игорь",
+        "player surname": "Кузьмин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "300",
+        "place": "1",
+        "team id": "227",
+        "player id": "1450",
+        "player name": "Николай",
+        "player surname": "Жовнер",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1445",
+        "player name": "Илья",
+        "player surname": "Сименко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1446",
+        "player name": "Александр",
+        "player surname": "Кондарев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1447",
+        "player name": "Владислав",
+        "player surname": "Пристинский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1448",
+        "player name": "Борис",
+        "player surname": "Левин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1449",
+        "player name": "Игорь",
+        "player surname": "Кузьмин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "301",
+        "place": "0",
+        "team id": "227",
+        "player id": "1450",
+        "player name": "Николай",
+        "player surname": "Жовнер",
+        "old_name": "",
+        "old_surname": ""
+      }
+    ],
+    "individuals": [
+      {
+        "id": "321",
+        "place": "0",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "321",
+        "place": "1",
+        "player id": "1529",
+        "player name": "Евгений",
+        "player surname": "Гурт",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "321",
+        "place": "2",
+        "player id": "1551",
+        "player name": "Андрей",
+        "player surname": "Данченко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "320",
+        "place": "0",
+        "player id": "1536",
+        "player name": "Алексей",
+        "player surname": "Чирков",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "320",
+        "place": "1",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "320",
+        "place": "2",
+        "player id": "1550",
+        "player name": "Игорь",
+        "player surname": "Цвяк",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "319",
+        "place": "0",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "319",
+        "place": "1",
+        "player id": "1534",
+        "player name": "Андрей",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "319",
+        "place": "2",
+        "player id": "1536",
+        "player name": "Алексей",
+        "player surname": "Чирков",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "318",
+        "place": "0",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "318",
+        "place": "1",
+        "player id": "616",
+        "player name": "Илья",
+        "player surname": "Новиков",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "318",
+        "place": "2",
+        "player id": "1534",
+        "player name": "Андрей",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      }
+    ],
+    "languages": [
+      {
+        "id": "316",
+        "language": "uk",
+        "name": "Украинский"
+      },
+      {
+        "id": "299",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "300",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "301",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "302",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "303",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "321",
+        "language": "uk",
+        "name": "Украинский"
+      },
+      {
+        "id": "320",
+        "language": "uk",
+        "name": "Украинский"
+      },
+      {
+        "id": "319",
+        "language": "uk",
+        "name": "Украинский"
+      }
+    ],
+    "names": [
+      {
+        "id": "300",
+        "name": "VIII Открытый чемпионат Украины по спортивному ЧГК"
+      }
+    ],
+    "sources": {
+      "description": "",
+      "items": [
+        {
+          "id": 317,
+          "year": 2021,
+          "link": "https://www.facebook.com/photo/?fbid=1902129776640939&set=a.1902122199975030",
+          "link_name": "фото в мероприятии чемпионата в Фейсбуке",
+          "comment": "состав «Приматов»"
+        },
+        {
+          "id": 317,
+          "year": 2021,
+          "link": "https://www.facebook.com/photo/?fbid=1902128633307720&set=a.1902122199975030",
+          "link_name": "фото в мероприятии чемпионата в Фейсбуке",
+          "comment": "Итыгин был в составе «Приматов»"
+        },
+        {
+          "id": 317,
+          "year": 2021,
+          "link": "https://www.facebook.com/photo/?fbid=1902129206640996&set=a.1902122199975030",
+          "link_name": "фото в мероприятии чемпионата в Фейсбуке",
+          "comment": "Малиновский был в составе «Приматов»"
+        },
+        {
+          "id": 317,
+          "year": 2021,
+          "link": "https://www.facebook.com/photo/?fbid=1901389066715010&set=a.1901397673380816",
+          "link_name": "фото в мероприятии чемпионата в Фейсбуке",
+          "comment": "состав «Минус один»"
+        },
+        {
+          "id": 317,
+          "year": 2021,
+          "link": "https://www.facebook.com/photo/?fbid=1902135033307080&set=a.1902122199975030",
+          "link_name": "фото в мероприятии чемпионата в Фейсбуке",
+          "comment": "состав «Номер 6»"
+        }
+      ]
+    },
+    "videos": [
+      {
+        "id": 320,
+        "name": "XXII ЧУСИ",
+        "year": 2025,
+        "link": "https://www.youtube.com/watch?v=GY8nu87C8o4",
+        "link_name": "финал чемпионата",
+        "description": "Youtube"
+      },
+      {
+        "id": 321,
+        "name": "XXIII ЧУСИ",
+        "year": 2026,
+        "link": "https://www.youtube.com/watch?v=Q-_IrmnQNIM",
+        "link_name": "финал чемпионата",
+        "description": "Youtube"
+      }
+    ],
+    "teams": [
+      {
+        "id": "223",
+        "name": "От Винта - Братья по фазе",
+        "non_russian_name": "",
+        "city": "Харьков",
+        "ts_id": "210",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "224",
+        "name": "ОНУ им. Мечникова",
+        "non_russian_name": "",
+        "city": "Одесса",
+        "ts_id": "200",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "225",
+        "name": "Команда Евгении Канищевой",
+        "non_russian_name": "",
+        "city": "Симферополь",
+        "ts_id": "230",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "226",
+        "name": "Команда Мороховского",
+        "non_russian_name": "",
+        "city": "Одесса",
+        "ts_id": "28673",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "227",
+        "name": "Стирол",
+        "non_russian_name": "",
+        "city": "Горловка",
+        "ts_id": "540",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "228",
+        "name": "Порт Южный",
+        "non_russian_name": "",
+        "city": "Одесса",
+        "ts_id": "29247",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "229",
+        "name": "От Винта",
+        "non_russian_name": "",
+        "city": "Харьков",
+        "ts_id": "45704",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "242",
+        "name": "Минус один",
+        "non_russian_name": "Мінус один",
+        "city": "Киев",
+        "ts_id": "316",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "243",
+        "name": "senes",
+        "non_russian_name": "seꏢes",
+        "city": "Киев",
+        "ts_id": "85771",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "244",
+        "name": "Смажені цвяхи",
+        "non_russian_name": "",
+        "city": "Киев",
+        "ts_id": "27522",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "245",
+        "name": "Номер 6",
+        "non_russian_name": "",
+        "city": "Донецк",
+        "ts_id": "308",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "246",
+        "name": "Приматы",
+        "non_russian_name": "",
+        "city": "Днепр",
+        "ts_id": "26956",
+        "uz_id": "",
+        "ua_id": ""
+      }
+    ],
+    "players": [
+      {
+        "id": "156",
+        "name": "Владимир",
+        "surname": "Итыгин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "12773",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "411",
+        "name": "Роман",
+        "surname": "Морозовский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "21632",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "616",
+        "name": "Илья",
+        "surname": "Новиков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "22935",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "745",
+        "name": "Виталий",
+        "surname": "Фёдоров",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "32979",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "799",
+        "name": "Анатолий",
+        "surname": "Вассерман",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "5195",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1436",
+        "name": "Юлия",
+        "surname": "Москалёва",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "52202",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1437",
+        "name": "Ян",
+        "surname": "Шапиро",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "35563",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1438",
+        "name": "Евгения",
+        "surname": "Канищева",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "13305",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1439",
+        "name": "Сергей",
+        "surname": "Канищев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "13304",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1440",
+        "name": "Павел",
+        "surname": "Гольдин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "7478",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1441",
+        "name": "Борис",
+        "surname": "Бурда",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "55074",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1442",
+        "name": "Татьяна",
+        "surname": "Богатырёва",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "49162",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1443",
+        "name": "Ирина",
+        "surname": "Морозовская",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "21631",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1444",
+        "name": "Татьяна",
+        "surname": "Луговская",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "18809",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1445",
+        "name": "Илья",
+        "surname": "Сименко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "49174",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1446",
+        "name": "Александр",
+        "surname": "Кондарев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "49173",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1447",
+        "name": "Владислав",
+        "surname": "Пристинский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "26016",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1448",
+        "name": "Борис",
+        "surname": "Левин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "18053",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1449",
+        "name": "Игорь",
+        "surname": "Кузьмин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "17064",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1450",
+        "name": "Николай",
+        "surname": "Жовнер",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "10946",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1476",
+        "name": "Катерина",
+        "surname": "Коциевская",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "7496",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1489",
+        "name": "Павел",
+        "surname": "Муха",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "21952",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1517",
+        "name": "Владимир",
+        "surname": "Островский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "23740",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1518",
+        "name": "Евгений",
+        "surname": "Спектор",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "30260",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1519",
+        "name": "Антон",
+        "surname": "Саввин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "27701",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1520",
+        "name": "Александр",
+        "surname": "Мудрый",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "66309",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1521",
+        "name": "Кирилл",
+        "surname": "Михайлов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "21137",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1522",
+        "name": "Владимир",
+        "surname": "Шевчук",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "79185",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1523",
+        "name": "Егор",
+        "surname": "Кузьменко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "17034",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1524",
+        "name": "Дмитрий",
+        "surname": "Антоненко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "130038",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1525",
+        "name": "Владимир",
+        "surname": "Дудчак",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "9925",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1526",
+        "name": "Виктория",
+        "surname": "Евтушенко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "10176",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1527",
+        "name": "Оксана",
+        "surname": "Касянчук",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "130019",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1529",
+        "name": "Евгений",
+        "surname": "Гурт",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "8532",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1530",
+        "name": "Елизавета",
+        "surname": "Болотова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "128239",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1531",
+        "name": "Алексей",
+        "surname": "Востриков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "44650",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1532",
+        "name": "Александр",
+        "surname": "Мерзликин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "46788",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1533",
+        "name": "Никита",
+        "surname": "Тищенко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "109352",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1534",
+        "name": "Андрей",
+        "surname": "Мартыненко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "19992",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1535",
+        "name": "Андрей",
+        "surname": "Темников",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "58842",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1536",
+        "name": "Алексей",
+        "surname": "Чирков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "35124",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1538",
+        "name": "Эдуард",
+        "surname": "Голуб",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "7420",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1539",
+        "name": "Виктория",
+        "surname": "Маландина",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "19468",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1540",
+        "name": "Мария",
+        "surname": "Докучаева",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "64681",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1541",
+        "name": "Михаил",
+        "surname": "Осадчий",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "46459",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1542",
+        "name": "Александр",
+        "surname": "Чижов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "35077",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1543",
+        "name": "Алексей",
+        "surname": "Филановский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "33197",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1544",
+        "name": "Дмитрий",
+        "surname": "Литвинов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "18490",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1545",
+        "name": "Олег",
+        "surname": "Соловьёв",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "30030",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1546",
+        "name": "Арсен",
+        "surname": "Малиновский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "19533",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1547",
+        "name": "Ольга",
+        "surname": "Дубинская",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "9834",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1548",
+        "name": "Константин",
+        "surname": "Науменко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "22331",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1549",
+        "name": "Антон",
+        "surname": "Мартыненко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "19990",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1550",
+        "name": "Игорь",
+        "surname": "Цвяк",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "155200",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1551",
+        "name": "Андрей",
+        "surname": "Данченко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "8850",
+        "uz_id": "",
+        "ua_id": ""
+      }
+    ],
+    "errors": {
+      "description": "",
+      "items": [
+        {
+          "id": 299,
+          "description": "неизвестны составы победителя и обладателей второго места.",
+          "critical": "yes"
+        },
+        {
+          "id": 300,
+          "description": "неизвестен состав обладателей третьего места.",
+          "critical": "yes"
+        },
+        {
+          "id": 301,
+          "description": "неизвестны составы обладателей второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 302,
+          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 303,
+          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 304,
+          "description": "неизвестно место проведения.",
+          "critical": "yes"
+        },
+        {
+          "id": 305,
+          "description": "неизвестно место проведения.",
+          "critical": "yes"
+        },
+        {
+          "id": 307,
+          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 317,
+          "description": "неизвестны составы обладателей второго и третьего мест.",
+          "critical": "yes"
+        }
+      ]
+    }
+  },
   "armenia": {
     "metadata": {
       "country": "armenia",
@@ -24297,6 +26518,11 @@
       },
       {
         "id": "215",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "315",
         "language": "ru",
         "name": "Русский"
       }
@@ -65648,10 +67874,10 @@
       },
       "intro": "Чемпионаты Узбекистана проводятся с 2004 года. До 2019 года они проводились по спортивному «Что? Где? Когда?», с 2022-го — уже по «Заковату». Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. Сейчас не хватает информации о самом первом чемпионате Узбекистана, а также о ряде других турниров, часть списка — на вкладке «Проблемы». Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, по любому из [контактов](https://chgknews.github.io/stats/contacts/).",
       "age": "adult",
-      "generated_at": "2026-09-04T13:40:35.927443",
-      "team_count": 17,
-      "player_count": 144,
-      "tournament_count": 37
+      "generated_at": "2026-09-05T13:25:12.863614",
+      "team_count": 18,
+      "player_count": 151,
+      "tournament_count": 39
     },
     "tournaments": [
       {
@@ -65888,6 +68114,36 @@
         "end_date": "2004-00-00",
         "city": "Ташкенте",
         "year": "2004",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "323",
+        "number": "3",
+        "subnumber": "",
+        "game": "hamsa",
+        "start_date": "2015-03-28",
+        "end_date": "2015-03-29",
+        "city": "Ташкенте",
+        "year": "2015",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "322",
+        "number": "2",
+        "subnumber": "",
+        "game": "hamsa",
+        "start_date": "2014-03-22",
+        "end_date": "2014-03-23",
+        "city": "Ташкенте",
+        "year": "2014",
         "countable": "yes",
         "ts_id": "",
         "uz_id": "",
@@ -66700,7 +68956,7 @@
         "place": "2",
         "team id": "106",
         "team name": "DimTeam",
-        "old name": "",
+        "old name": "Sonet",
         "team city": "Ташкент",
         "roster_complete": "yes"
       },
@@ -66727,7 +68983,7 @@
         "place": "2",
         "team id": "106",
         "team name": "DimTeam",
-        "old name": "",
+        "old name": "Sonet",
         "team city": "Ташкент",
         "roster_complete": "yes"
       },
@@ -66736,7 +68992,7 @@
         "place": "0",
         "team id": "106",
         "team name": "DimTeam",
-        "old name": "",
+        "old name": "Sonet",
         "team city": "Ташкент",
         "roster_complete": "yes"
       },
@@ -66763,7 +69019,7 @@
         "place": "0",
         "team id": "106",
         "team name": "DimTeam",
-        "old name": "",
+        "old name": "Sonet",
         "team city": "Ташкент",
         "roster_complete": "yes"
       },
@@ -67031,6 +69287,60 @@
       {
         "id": "162",
         "place": "0",
+        "team id": "103",
+        "team name": "Мы",
+        "old name": "",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "team name": "Мы",
+        "old name": "",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "team name": "DimTeam",
+        "old name": "Sonet",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "team name": "БИС",
+        "old name": "",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "team name": "Пахтакор",
+        "old name": "",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "team name": "DimTeam",
+        "old name": "Sonet",
+        "team city": "Ташкент",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "322",
+        "place": "2",
         "team id": "103",
         "team name": "Мы",
         "old name": "",
@@ -70702,6 +73012,396 @@
         "old_surname": ""
       },
       {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "598",
+        "player name": "Пётр",
+        "player surname": "Яковлев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "129",
+        "player name": "Наиль",
+        "player surname": "Фарукшин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "570",
+        "player name": "Галина",
+        "player surname": "Прибыткова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "541",
+        "player name": "Александр",
+        "player surname": "Ли",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "0",
+        "team id": "103",
+        "player id": "577",
+        "player name": "Хаким",
+        "player surname": "Батыралиев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "590",
+        "player name": "Азизбек",
+        "player surname": "Юсуфов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "597",
+        "player name": "Усман",
+        "player surname": "Шарифходжаев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "591",
+        "player name": "Алексей",
+        "player surname": "Карцевич",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "536",
+        "player name": "Абдулазиз",
+        "player surname": "Джалилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "593",
+        "player name": "Игорь",
+        "player surname": "Глущенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "1",
+        "team id": "106",
+        "player id": "594",
+        "player name": "Дмитрий",
+        "player surname": "Вагапов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "609",
+        "player name": "Алексей",
+        "player surname": "Чолоков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "1554",
+        "player name": "Шавкат",
+        "player surname": "Абдрашитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "1555",
+        "player name": "Ирина",
+        "player surname": "Керимова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "1556",
+        "player name": "Вячеслав",
+        "player surname": "Пачурин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "1557",
+        "player name": "Бекзод",
+        "player surname": "Ахмедов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "323",
+        "place": "2",
+        "team id": "247",
+        "player id": "1558",
+        "player name": "Игорь",
+        "player surname": "Ганкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "563",
+        "player name": "Александр",
+        "player surname": "Райков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "638",
+        "player name": "Рустам",
+        "player surname": "Ниязов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "576",
+        "player name": "Алексей",
+        "player surname": "Иванов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "588",
+        "player name": "Отабек",
+        "player surname": "Джураев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "595",
+        "player name": "Герман",
+        "player surname": "Стимбан",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "1552",
+        "player name": "Нурана",
+        "player surname": "Велиева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "0",
+        "team id": "102",
+        "player id": "1553",
+        "player name": "Кристина",
+        "player surname": "Рябова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "600",
+        "player name": "Александр",
+        "player surname": "Жудро",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "590",
+        "player name": "Азизбек",
+        "player surname": "Юсуфов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "597",
+        "player name": "Усман",
+        "player surname": "Шарифходжаев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "601",
+        "player name": "Анна",
+        "player surname": "Туниянц",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "591",
+        "player name": "Алексей",
+        "player surname": "Карцевич",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "536",
+        "player name": "Абдулазиз",
+        "player surname": "Джалилов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "593",
+        "player name": "Игорь",
+        "player surname": "Глущенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "1",
+        "team id": "106",
+        "player id": "594",
+        "player name": "Дмитрий",
+        "player surname": "Вагапов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "607",
+        "player name": "Светлана",
+        "player surname": "Корнеева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "598",
+        "player name": "Пётр",
+        "player surname": "Яковлев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "570",
+        "player name": "Галина",
+        "player surname": "Прибыткова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "541",
+        "player name": "Александр",
+        "player surname": "Ли",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "542",
+        "player name": "Аскар",
+        "player surname": "Заитов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "322",
+        "place": "2",
+        "team id": "103",
+        "player id": "577",
+        "player name": "Хаким",
+        "player surname": "Батыралиев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
         "id": "247",
         "place": "0",
         "team id": "105",
@@ -72261,7 +74961,7 @@
         "player surname": "Прибыткова",
         "old_name": "",
         "old_surname": "",
-        "sex": "male"
+        "sex": "female"
       },
       {
         "id": "163",
@@ -72352,6 +75052,11 @@
       },
       {
         "id": "162",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "322",
         "language": "ru",
         "name": "Русский"
       },
@@ -72654,6 +75359,15 @@
         "non_russian_name": "",
         "city": "Ташкент",
         "ts_id": "3523",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "247",
+        "name": "БИС",
+        "non_russian_name": "",
+        "city": "Ташкент",
+        "ts_id": "45419",
         "uz_id": "",
         "ua_id": ""
       }
@@ -74096,6 +76810,76 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "131786",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1552",
+        "name": "Нурана",
+        "surname": "Велиева",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "5313",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1553",
+        "name": "Кристина",
+        "surname": "Рябова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "71257",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1554",
+        "name": "Шавкат",
+        "surname": "Абдрашитов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "95593",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1555",
+        "name": "Ирина",
+        "surname": "Керимова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "90694",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1556",
+        "name": "Вячеслав",
+        "surname": "Пачурин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "90695",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1557",
+        "name": "Бекзод",
+        "surname": "Ахмедов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "90693",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1558",
+        "name": "Игорь",
+        "surname": "Ганкин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "65142",
         "uz_id": "",
         "ua_id": ""
       }
@@ -79924,995 +82708,6 @@
         {
           "id": 262,
           "description": "неизвестен состав обладателей третьего места.",
-          "critical": "yes"
-        }
-      ]
-    }
-  },
-  "ukraine": {
-    "metadata": {
-      "country": "ukraine",
-      "numbers_champ": {
-        "chgk": 9
-      },
-      "intro": "Чемпионаты Украины проводятся с 1996 года.",
-      "age": "adult",
-      "generated_at": "2026-09-04T13:17:01.784987",
-      "team_count": 7,
-      "player_count": 18,
-      "tournament_count": 6
-    },
-    "tournaments": [
-      {
-        "id": "304",
-        "number": "10",
-        "subnumber": "1",
-        "game": "chgk",
-        "start_date": "2003-11-15",
-        "end_date": "2003-11-15",
-        "city": "",
-        "year": "2004",
-        "countable": "yes",
-        "ts_id": "",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "305",
-        "number": "10",
-        "subnumber": "2",
-        "game": "chgk",
-        "start_date": "2004-01-17",
-        "end_date": "2004-01-17",
-        "city": "",
-        "year": "2004",
-        "countable": "yes",
-        "ts_id": "",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "306",
-        "number": "10",
-        "subnumber": "3",
-        "game": "chgk",
-        "start_date": "2004-03-13",
-        "end_date": "2004-03-13",
-        "city": "Симферополе",
-        "year": "2004",
-        "countable": "yes",
-        "ts_id": "",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "307",
-        "number": "10",
-        "subnumber": "4",
-        "game": "chgk",
-        "start_date": "",
-        "end_date": "",
-        "city": "",
-        "year": "2004",
-        "countable": "yes",
-        "ts_id": "",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "299",
-        "number": "9",
-        "subnumber": "",
-        "game": "chgk",
-        "start_date": "2002-10-18",
-        "end_date": "2002-10-19",
-        "city": "Ровно",
-        "year": "2002",
-        "countable": "yes",
-        "ts_id": "1316",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "300",
-        "number": "7",
-        "subnumber": "",
-        "game": "chgk",
-        "start_date": "2000-10-05",
-        "end_date": "2000-10-07",
-        "city": "Харькове",
-        "year": "2000",
-        "countable": "yes",
-        "ts_id": "1044",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "301",
-        "number": "6",
-        "subnumber": "",
-        "game": "chgk",
-        "start_date": "1999-09-09",
-        "end_date": "1999-09-11",
-        "city": "Виннице",
-        "year": "1999",
-        "countable": "yes",
-        "ts_id": "1062",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "302",
-        "number": "4",
-        "subnumber": "",
-        "game": "chgk",
-        "start_date": "1997-09-20",
-        "end_date": "1997-09-20",
-        "city": "Днепропетровске",
-        "year": "1997",
-        "countable": "yes",
-        "ts_id": "1576",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "303",
-        "number": "3",
-        "subnumber": "",
-        "game": "chgk",
-        "start_date": "1996-09-12",
-        "end_date": "1996-09-14",
-        "city": "Днепропетровске",
-        "year": "1996",
-        "countable": "yes",
-        "ts_id": "1552",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      }
-    ],
-    "links": [
-      {
-        "id": "304",
-        "results": "http://letopis.chgk.info/200311Ukraine-1scores.html",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "305",
-        "results": "http://letopis.chgk.info/200311Ukraine-2scores.html",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "306",
-        "results": "http://letopis.chgk.info/200311Ukraine-3scores.html",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "307",
-        "results": "http://letopis.chgk.info/200311Ukraine-res.html",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "299",
-        "results": "https://rating.chgk.info/tournament/1316",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "300",
-        "results": "https://rating.chgk.info/tournament/1044",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "301",
-        "results": "https://rating.chgk.info/tournament/1062",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "302",
-        "results": "https://rating.chgk.info/tournament/1576",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "303",
-        "results": "https://rating.chgk.info/tournament/1552",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      }
-    ],
-    "podium": [
-      {
-        "id": "299",
-        "place": "0",
-        "team id": "223",
-        "team name": "От Винта - Братья по фазе",
-        "old name": "",
-        "team city": "Харьков",
-        "roster_complete": "no"
-      },
-      {
-        "id": "299",
-        "place": "1",
-        "team id": "224",
-        "team name": "ОНУ им. Мечникова",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "team name": "Команда Евгении Канищевой",
-        "old name": "",
-        "team city": "Симферополь",
-        "roster_complete": "yes"
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "team name": "Команда Мороховского",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "yes"
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "team name": "Стирол",
-        "old name": "",
-        "team city": "Горловка",
-        "roster_complete": "yes"
-      },
-      {
-        "id": "300",
-        "place": "2",
-        "team id": "228",
-        "team name": "Порт Южный",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "team name": "Стирол",
-        "old name": "",
-        "team city": "Горловка",
-        "roster_complete": "yes"
-      },
-      {
-        "id": "301",
-        "place": "1",
-        "team id": "226",
-        "team name": "Команда Мороховского",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "301",
-        "place": "2",
-        "team id": "228",
-        "team name": "Порт Южный",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "302",
-        "place": "0",
-        "team id": "227",
-        "team name": "Стирол",
-        "old name": "",
-        "team city": "Горловка",
-        "roster_complete": "no"
-      },
-      {
-        "id": "302",
-        "place": "1",
-        "team id": "229",
-        "team name": "От Винта",
-        "old name": "",
-        "team city": "Харьков",
-        "roster_complete": "no"
-      },
-      {
-        "id": "302",
-        "place": "2",
-        "team id": "226",
-        "team name": "Команда Мороховского",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "303",
-        "place": "0",
-        "team id": "227",
-        "team name": "Стирол",
-        "old name": "",
-        "team city": "Горловка",
-        "roster_complete": "no"
-      },
-      {
-        "id": "303",
-        "place": "1",
-        "team id": "226",
-        "team name": "Команда Мороховского",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      },
-      {
-        "id": "303",
-        "place": "2",
-        "team id": "228",
-        "team name": "Порт Южный",
-        "old name": "",
-        "team city": "Одесса",
-        "roster_complete": "no"
-      }
-    ],
-    "rosters": [
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "1436",
-        "player name": "Юлия",
-        "player surname": "Москалёва",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "1437",
-        "player name": "Ян",
-        "player surname": "Шапиро",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "745",
-        "player name": "Виталий",
-        "player surname": "Фёдоров",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "1438",
-        "player name": "Евгения",
-        "player surname": "Канищева",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "1439",
-        "player name": "Сергей",
-        "player surname": "Канищев",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "299",
-        "place": "2",
-        "team id": "225",
-        "player id": "1440",
-        "player name": "Павел",
-        "player surname": "Гольдин",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "1441",
-        "player name": "Борис",
-        "player surname": "Бурда",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "1442",
-        "player name": "Татьяна",
-        "player surname": "Богатырёва",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "411",
-        "player name": "Роман",
-        "player surname": "Морозовский",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "1443",
-        "player name": "Ирина",
-        "player surname": "Морозовская",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "1444",
-        "player name": "Татьяна",
-        "player surname": "Луговская",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "0",
-        "team id": "226",
-        "player id": "799",
-        "player name": "Анатолий",
-        "player surname": "Вассерман",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1445",
-        "player name": "Илья",
-        "player surname": "Сименко",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1446",
-        "player name": "Александр",
-        "player surname": "Кондарев",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1447",
-        "player name": "Владислав",
-        "player surname": "Пристинский",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1448",
-        "player name": "Борис",
-        "player surname": "Левин",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1449",
-        "player name": "Игорь",
-        "player surname": "Кузьмин",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "300",
-        "place": "1",
-        "team id": "227",
-        "player id": "1450",
-        "player name": "Николай",
-        "player surname": "Жовнер",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1445",
-        "player name": "Илья",
-        "player surname": "Сименко",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1446",
-        "player name": "Александр",
-        "player surname": "Кондарев",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1447",
-        "player name": "Владислав",
-        "player surname": "Пристинский",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1448",
-        "player name": "Борис",
-        "player surname": "Левин",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1449",
-        "player name": "Игорь",
-        "player surname": "Кузьмин",
-        "old_name": "",
-        "old_surname": ""
-      },
-      {
-        "id": "301",
-        "place": "0",
-        "team id": "227",
-        "player id": "1450",
-        "player name": "Николай",
-        "player surname": "Жовнер",
-        "old_name": "",
-        "old_surname": ""
-      }
-    ],
-    "individuals": [],
-    "languages": [
-      {
-        "id": "299",
-        "language": "ru",
-        "name": "Русский"
-      },
-      {
-        "id": "300",
-        "language": "ru",
-        "name": "Русский"
-      },
-      {
-        "id": "301",
-        "language": "ru",
-        "name": "Русский"
-      },
-      {
-        "id": "302",
-        "language": "ru",
-        "name": "Русский"
-      },
-      {
-        "id": "303",
-        "language": "ru",
-        "name": "Русский"
-      }
-    ],
-    "names": [
-      {
-        "id": "300",
-        "name": "VIII Открытый чемпионат Украины по спортивному ЧГК"
-      }
-    ],
-    "sources": {
-      "description": "",
-      "items": []
-    },
-    "videos": [],
-    "teams": [
-      {
-        "id": "223",
-        "name": "От Винта - Братья по фазе",
-        "non_russian_name": "",
-        "city": "Харьков",
-        "ts_id": "210",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "224",
-        "name": "ОНУ им. Мечникова",
-        "non_russian_name": "",
-        "city": "Одесса",
-        "ts_id": "200",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "225",
-        "name": "Команда Евгении Канищевой",
-        "non_russian_name": "",
-        "city": "Симферополь",
-        "ts_id": "230",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "226",
-        "name": "Команда Мороховского",
-        "non_russian_name": "",
-        "city": "Одесса",
-        "ts_id": "28673",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "227",
-        "name": "Стирол",
-        "non_russian_name": "",
-        "city": "Горловка",
-        "ts_id": "540",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "228",
-        "name": "Порт Южный",
-        "non_russian_name": "",
-        "city": "Одесса",
-        "ts_id": "29247",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "229",
-        "name": "От Винта",
-        "non_russian_name": "",
-        "city": "Харьков",
-        "ts_id": "45704",
-        "uz_id": "",
-        "ua_id": ""
-      }
-    ],
-    "players": [
-      {
-        "id": "411",
-        "name": "Роман",
-        "surname": "Морозовский",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "21632",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "745",
-        "name": "Виталий",
-        "surname": "Фёдоров",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "32979",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "799",
-        "name": "Анатолий",
-        "surname": "Вассерман",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "5195",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1436",
-        "name": "Юлия",
-        "surname": "Москалёва",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "52202",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1437",
-        "name": "Ян",
-        "surname": "Шапиро",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "35563",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1438",
-        "name": "Евгения",
-        "surname": "Канищева",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "13305",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1439",
-        "name": "Сергей",
-        "surname": "Канищев",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "13304",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1440",
-        "name": "Павел",
-        "surname": "Гольдин",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "7478",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1441",
-        "name": "Борис",
-        "surname": "Бурда",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "55074",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1442",
-        "name": "Татьяна",
-        "surname": "Богатырёва",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "49162",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1443",
-        "name": "Ирина",
-        "surname": "Морозовская",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "21631",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1444",
-        "name": "Татьяна",
-        "surname": "Луговская",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "18809",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1445",
-        "name": "Илья",
-        "surname": "Сименко",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "49174",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1446",
-        "name": "Александр",
-        "surname": "Кондарев",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "49173",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1447",
-        "name": "Владислав",
-        "surname": "Пристинский",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "26016",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1448",
-        "name": "Борис",
-        "surname": "Левин",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "18053",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1449",
-        "name": "Игорь",
-        "surname": "Кузьмин",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "17064",
-        "uz_id": "",
-        "ua_id": ""
-      },
-      {
-        "id": "1450",
-        "name": "Николай",
-        "surname": "Жовнер",
-        "non_russian_name": "",
-        "non_russian_surname": "",
-        "ts_id": "10946",
-        "uz_id": "",
-        "ua_id": ""
-      }
-    ],
-    "errors": {
-      "description": "",
-      "items": [
-        {
-          "id": 299,
-          "description": "неизвестны составы победителя и обладателей второго места.",
-          "critical": "yes"
-        },
-        {
-          "id": 300,
-          "description": "неизвестен состав обладателей третьего места.",
-          "critical": "yes"
-        },
-        {
-          "id": 301,
-          "description": "неизвестны составы обладателей второго и третьего мест.",
-          "critical": "yes"
-        },
-        {
-          "id": 302,
-          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
-          "critical": "yes"
-        },
-        {
-          "id": 303,
-          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
-          "critical": "yes"
-        },
-        {
-          "id": 304,
-          "description": "неизвестно место проведения.",
-          "critical": "yes"
-        },
-        {
-          "id": 305,
-          "description": "неизвестно место проведения.",
-          "critical": "yes"
-        },
-        {
-          "id": 307,
-          "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
           "critical": "yes"
         }
       ]
