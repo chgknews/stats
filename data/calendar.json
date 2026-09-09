@@ -1,23 +1,6 @@
 {
-  "generated": "2026-09-01",
+  "generated": "2026-09-09",
   "events": [
-    {
-      "date": "5–6 сентября",
-      "date_start": "2026-09-05",
-      "date_end": "2026-09-06",
-      "place": "Сопот",
-      "name": "[Dziki Sopot](https://rating.chgk.info/tournament/13780)",
-      "place_html": "Сопот",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13780\">Dziki Sopot</a>",
-      "geography": [
-        "europe"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
     {
       "date": "12 сентября",
       "date_start": "2026-09-12",
@@ -655,6 +638,25 @@
       "champ": false
     },
     {
+      "date": "7–8 ноября",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-08",
+      "place": "Гомель",
+      "name": "[Кубок Сухого](https://t.me/sukhoi_cup/110)",
+      "place_html": "Гомель",
+      "name_html": "<a href=\"https://t.me/sukhoi_cup/110\">Кубок Сухого</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student"
+      ],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
       "date": "13–15 ноября",
       "date_start": "2026-11-13",
       "date_end": "2026-11-15",
@@ -667,6 +669,25 @@
       ],
       "age": [
         "student"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "13–15 ноября",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-15",
+      "place": "Челябинская область",
+      "name": "[УМКА XVIII](https://t.me/chelchgk/3)",
+      "place_html": "Челябинская область",
+      "name_html": "<a href=\"https://t.me/chelchgk/3\">УМКА XVIII</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school"
       ],
       "game": [
         "kvrm"
@@ -687,6 +708,23 @@
       "age": [],
       "game": [
         "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "21–22 ноября",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-22",
+      "place": "Жодино",
+      "name": "[Zhodino Major](https://rating.chgk.info/tournament/14183)",
+      "place_html": "Жодино",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14183\">Zhodino Major</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
       ],
       "champ": false
     },
@@ -725,6 +763,23 @@
       "champ": false
     },
     {
+      "date": "5 декабря",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-05",
+      "place": "Пермь",
+      "name": "[Чемпионат Перми и Пермского края](https://rating.chgk.info/tournament/14187)",
+      "place_html": "Пермь",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14187\">Чемпионат Перми и Пермского края</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
       "date": "8–10 января 2027 года",
       "date_start": "2027-01-08",
       "date_end": "2027-01-10",
@@ -746,9 +801,9 @@
       "date_start": "2027-01-30",
       "date_end": "2027-01-31",
       "place": "Минск",
-      "name": "[Олимпийский кубок Беларуси](https://rating.chgk.info/tournament/14182) ((даты могут измениться))",
+      "name": "[Олимпийский кубок Беларуси](https://rating.chgk.info/tournament/14182) (даты могут измениться)",
       "place_html": "Минск",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14182\">Олимпийский кубок Беларуси</a> ((даты могут измениться))",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14182\">Олимпийский кубок Беларуси</a> (даты могут измениться)",
       "geography": [
         "russia_belarus"
       ],
@@ -757,6 +812,40 @@
         "chgk"
       ],
       "champ": false
+    },
+    {
+      "date": "13–14 марта 2027 года",
+      "date_start": "2027-03-13",
+      "date_end": "2027-03-14",
+      "place": "Астана",
+      "name": "[Зерде](https://t.me/chgknews/1552)",
+      "place_html": "Астана",
+      "name_html": "<a href=\"https://t.me/chgknews/1552\">Зерде</a>",
+      "geography": [
+        "asia"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3–4 апреля 2027 года",
+      "date_start": "2027-04-03",
+      "date_end": "2027-04-04",
+      "place": "Минск",
+      "name": "[Чемпионат Беларуси](https://rating.chgk.info/tournament/14185)",
+      "place_html": "Минск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14185\">Чемпионат Беларуси</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": true
     },
     {
       "date": "15 мая 2027 года",
