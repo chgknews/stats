@@ -2224,19 +2224,20 @@
     "metadata": {
       "country": "armenia",
       "numbers_champ": {
-        "chgk": 27
+        "chgk": 28
       },
-      "intro": "Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.",
+      "intro": "Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. На данный момент статистика неполна. Чуть подробнее об этом можно посмотреть на вкладке «Проблемы».",
       "age": "adult",
-      "generated_at": "2026-09-03T11:32:49.185836",
-      "team_count": 20,
-      "player_count": 95,
+      "generated_at": "2026-09-14T10:14:18.051483",
+      "team_count": 21,
+      "player_count": 102,
       "tournament_count": 41
     },
     "tournaments": [
       {
         "id": "24",
         "number": "99",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2018-09-21",
         "end_date": "2018-09-21",
@@ -2251,13 +2252,14 @@
       {
         "id": "41",
         "number": "27",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2026-09-12",
         "end_date": "2026-09-12",
         "city": "Гюмри",
         "year": "2026",
         "countable": "yes",
-        "ts_id": "",
+        "ts_id": "13878",
         "uz_id": "",
         "ua_id": "",
         "comment": ""
@@ -2265,6 +2267,7 @@
       {
         "id": "18",
         "number": "26",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2025-06-15",
         "end_date": "2025-06-15",
@@ -2279,6 +2282,7 @@
       {
         "id": "19",
         "number": "25",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2024-05-26",
         "end_date": "2024-05-26",
@@ -2293,6 +2297,7 @@
       {
         "id": "20",
         "number": "24",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2023-05-28",
         "end_date": "2023-05-28",
@@ -2307,6 +2312,7 @@
       {
         "id": "21",
         "number": "23",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2022-07-17",
         "end_date": "2022-07-17",
@@ -2321,6 +2327,7 @@
       {
         "id": "22",
         "number": "22",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2021-09-26",
         "end_date": "2021-09-26",
@@ -2335,6 +2342,7 @@
       {
         "id": "23",
         "number": "21",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2019-09-07",
         "end_date": "2019-09-08",
@@ -2349,6 +2357,7 @@
       {
         "id": "25",
         "number": "20",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2018-07-15",
         "end_date": "2018-07-15",
@@ -2363,6 +2372,7 @@
       {
         "id": "26",
         "number": "19",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2017-07-09",
         "end_date": "2017-07-09",
@@ -2377,6 +2387,7 @@
       {
         "id": "27",
         "number": "18",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2016-07-31",
         "end_date": "2016-07-31",
@@ -2391,6 +2402,7 @@
       {
         "id": "28",
         "number": "17",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2015-07-12",
         "end_date": "2015-07-12",
@@ -2405,6 +2417,7 @@
       {
         "id": "29",
         "number": "16",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2014-06-21",
         "end_date": "2014-06-21",
@@ -2419,6 +2432,7 @@
       {
         "id": "30",
         "number": "15",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2013-07-20",
         "end_date": "2013-07-20",
@@ -2433,6 +2447,7 @@
       {
         "id": "31",
         "number": "14",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2012-06-30",
         "end_date": "2012-06-30",
@@ -2447,6 +2462,7 @@
       {
         "id": "32",
         "number": "13",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2011-06-11",
         "end_date": "2011-06-11",
@@ -2461,6 +2477,7 @@
       {
         "id": "33",
         "number": "12",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2010-05-29",
         "end_date": "2010-05-29",
@@ -2475,6 +2492,7 @@
       {
         "id": "34",
         "number": "11",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2009-05-29",
         "end_date": "2009-05-29",
@@ -2489,6 +2507,7 @@
       {
         "id": "35",
         "number": "10",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2008-05-29",
         "end_date": "2008-05-30",
@@ -2503,6 +2522,7 @@
       {
         "id": "43",
         "number": "9",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2007-06-09",
         "end_date": "2007-06-09",
@@ -2517,6 +2537,7 @@
       {
         "id": "44",
         "number": "8",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2006-06-04",
         "end_date": "2006-06-04",
@@ -2531,6 +2552,7 @@
       {
         "id": "36",
         "number": "7",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2005-06-18",
         "end_date": "2005-06-18",
@@ -2545,6 +2567,7 @@
       {
         "id": "37",
         "number": "5",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2003-03-08",
         "end_date": "2003-03-08",
@@ -2559,6 +2582,7 @@
       {
         "id": "38",
         "number": "4",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2001-12-22",
         "end_date": "2001-12-22",
@@ -2573,6 +2597,7 @@
       {
         "id": "39",
         "number": "3",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1998-10-23",
         "end_date": "1998-10-23",
@@ -2587,6 +2612,7 @@
       {
         "id": "40",
         "number": "2",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1995-10-04",
         "end_date": "1995-10-05",
@@ -2601,6 +2627,7 @@
       {
         "id": "42",
         "number": "1",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1994-12-24",
         "end_date": "1994-12-25",
@@ -2615,6 +2642,7 @@
       {
         "id": "58",
         "number": "17",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2019-11-02",
         "end_date": "2019-11-02",
@@ -2629,6 +2657,7 @@
       {
         "id": "57",
         "number": "16",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2018-06-30",
         "end_date": "2018-06-30",
@@ -2643,6 +2672,7 @@
       {
         "id": "56",
         "number": "15",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2017-00-00",
         "end_date": "2017-00-00",
@@ -2657,6 +2687,7 @@
       {
         "id": "55",
         "number": "14",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2016-06-11",
         "end_date": "2016-06-11",
@@ -2671,6 +2702,7 @@
       {
         "id": "54",
         "number": "13",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2015-00-00",
         "end_date": "2015-00-00",
@@ -2685,6 +2717,7 @@
       {
         "id": "46",
         "number": "9",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2011-07-23",
         "end_date": "2011-07-24",
@@ -2699,6 +2732,7 @@
       {
         "id": "47",
         "number": "8",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2010-07-18",
         "end_date": "2010-07-18",
@@ -2713,6 +2747,7 @@
       {
         "id": "48",
         "number": "7",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2009-07-12",
         "end_date": "2009-07-12",
@@ -2727,6 +2762,7 @@
       {
         "id": "49",
         "number": "6",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2008-07-06",
         "end_date": "2008-07-06",
@@ -2741,6 +2777,7 @@
       {
         "id": "45",
         "number": "5",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2007-07-15",
         "end_date": "2007-07-15",
@@ -2755,6 +2792,7 @@
       {
         "id": "50",
         "number": "4",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2006-00-00",
         "end_date": "2006-00-00",
@@ -2769,6 +2807,7 @@
       {
         "id": "51",
         "number": "3",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2005-00-00",
         "end_date": "2005-00-00",
@@ -2783,6 +2822,7 @@
       {
         "id": "52",
         "number": "2",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2004-00-00",
         "end_date": "2004-00-00",
@@ -2797,6 +2837,7 @@
       {
         "id": "53",
         "number": "1",
+        "subnumber": "",
         "game": "ssi",
         "start_date": "2003-02-23",
         "end_date": "2003-02-23",
@@ -2818,6 +2859,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2825,13 +2867,14 @@
       },
       {
         "id": "41",
-        "results": "",
+        "results": "https://rating.chgk.info/tournament/13878",
         "announce": "https://telegram.me/ChgkgamesArmenia/471",
         "site": "",
         "tg": "",
         "fb": "",
         "vk": "",
-        "recap": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1556",
         "letopis": "",
         "photos": "",
         "questions": ""
@@ -2844,6 +2887,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2857,6 +2901,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2870,6 +2915,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2883,6 +2929,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2896,6 +2943,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2909,6 +2957,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2922,6 +2971,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2935,6 +2985,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2948,6 +2999,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2961,6 +3013,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2974,6 +3027,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -2987,6 +3041,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3000,6 +3055,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3013,6 +3069,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3026,6 +3083,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3039,6 +3097,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3052,6 +3111,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3065,6 +3125,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://chgk-am.livejournal.com/43906.html",
         "letopis": "",
         "photos": "",
@@ -3078,6 +3139,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3091,6 +3153,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3104,6 +3167,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3117,6 +3181,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3130,6 +3195,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/199511Erevan.html",
         "photos": "",
@@ -3143,6 +3209,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/199412Yerevan.html",
         "photos": "",
@@ -3156,6 +3223,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3169,6 +3237,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3182,6 +3251,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3195,6 +3265,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3208,6 +3279,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -3221,6 +3293,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://svoja-igra-am.livejournal.com/111792.html",
         "letopis": "",
         "photos": "",
@@ -3234,6 +3307,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://svoja-igra-am.livejournal.com/83932.html",
         "letopis": "",
         "photos": "",
@@ -3247,6 +3321,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://svoja-igra-am.livejournal.com/54138.html",
         "letopis": "",
         "photos": "",
@@ -3260,6 +3335,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://svoja-igra-am.livejournal.com/19867.html",
         "letopis": "",
         "photos": "",
@@ -3273,6 +3349,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://chgk-am.livejournal.com/52069.html",
         "letopis": "",
         "photos": "",
@@ -3286,6 +3363,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://news.chgk.info/200302ErevanJeop.html",
         "photos": "",
@@ -3316,6 +3394,33 @@
         "place": "2",
         "team id": "27",
         "team name": "Anfield",
+        "old name": "",
+        "team city": "Ереван",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "team name": "Неловко",
+        "old name": "",
+        "team city": "сборная",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "team name": "Арагаст",
+        "old name": "",
+        "team city": "Ереван",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "team name": "54 Рыб",
         "old name": "",
         "team city": "Ереван",
         "roster_complete": "yes"
@@ -4192,6 +4297,186 @@
         "player id": "167",
         "player name": "Норайр",
         "player surname": "Геворгян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "1559",
+        "player name": "Сона",
+        "player surname": "Мирзоян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "112",
+        "player name": "Мери",
+        "player surname": "Арутюнян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "114",
+        "player name": "Райганат",
+        "player surname": "Каримулаева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "1560",
+        "player name": "Николай",
+        "player surname": "Некрылов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "116",
+        "player name": "Роман",
+        "player surname": "Цуркан",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "0",
+        "team id": "22",
+        "player id": "126",
+        "player name": "Арам",
+        "player surname": "Арутюнян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "118",
+        "player name": "Михаил",
+        "player surname": "Московченко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "150",
+        "player name": "Артём",
+        "player surname": "Гукасян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "108",
+        "player name": "Павел",
+        "player surname": "Солахян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "169",
+        "player name": "Айк",
+        "player surname": "Казазян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "110",
+        "player name": "Евгения",
+        "player surname": "Иванова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "1",
+        "team id": "21",
+        "player id": "111",
+        "player name": "Сергей",
+        "player surname": "Абрамян",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "1561",
+        "player name": "Елена",
+        "player surname": "Булатова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "1562",
+        "player name": "Надежда",
+        "player surname": "Валеева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "1563",
+        "player name": "Алексей",
+        "player surname": "Дворянчиков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "1564",
+        "player name": "Андрей",
+        "player surname": "Яблонских",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "1565",
+        "player name": "Ярослав",
+        "player surname": "Косарев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "41",
+        "place": "2",
+        "team id": "248",
+        "player id": "107",
+        "player name": "Игорь",
+        "player surname": "Шевченко",
         "old_name": "",
         "old_surname": ""
       },
@@ -8540,6 +8825,15 @@
         "ts_id": "149",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "248",
+        "name": "54 Рыб",
+        "non_russian_name": "",
+        "city": "Ереван",
+        "ts_id": "105600",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "players": [
@@ -9550,6 +9844,76 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "31998",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1559",
+        "name": "Сона",
+        "surname": "Мирзоян",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "276678",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1560",
+        "name": "Николай",
+        "surname": "Некрылов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "42511",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1561",
+        "name": "Елена",
+        "surname": "Булатова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "172947",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1562",
+        "name": "Надежда",
+        "surname": "Валеева",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "115539",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1563",
+        "name": "Алексей",
+        "surname": "Дворянчиков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "110920",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1564",
+        "name": "Андрей",
+        "surname": "Яблонских",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "56018",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1565",
+        "name": "Ярослав",
+        "surname": "Косарев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "40447",
         "uz_id": "",
         "ua_id": ""
       }

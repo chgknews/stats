@@ -6,7 +6,7 @@ bookToC: false
 
 # Армения
 
-Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.
+Чемпионаты Армении по спортивному ЧГК проводятся с 1994 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине. На данный момент статистика неполна. Чуть подробнее об этом можно посмотреть на вкладке «Проблемы».
 
 <style>
 .country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
@@ -146,9 +146,9 @@ else wrapTabs();
 <td><a href="https://rating.chgk.info/teams/56664">Арагаст</a></td>
 <td>Ереван</td>
 <td>6</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/5141">НУИХ</a></td>
@@ -159,19 +159,19 @@ else wrapTabs();
 <td>6</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/52916">Неловко</a></td>
+<td>сборная</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/86520">Жуки-акробаты и паук-канатоходец</a></td>
 <td>сборная</td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/52916">Неловко</a></td>
-<td>сборная</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
 <td>3</td>
 </tr>
 <tr>
@@ -239,6 +239,14 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/105600">54 Рыб</a></td>
+<td>Ереван</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/30688">Армения-эрудит</a></td>
 <td>Ереван</td>
 <td>0</td>
@@ -295,11 +303,11 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/29973">Павел Солахян</a></td>
 <td>21</td>
-<td>5</td>
+<td>6</td>
 <td>1</td>
-<td>27</td>
+<td>28</td>
 <td>13</td>
-<td>4</td>
+<td>5</td>
 <td>1</td>
 <td>8</td>
 <td>1</td>
@@ -307,11 +315,11 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1562">Арам Арутюнян</a></td>
-<td>10</td>
+<td>11</td>
 <td>8</td>
 <td>2</td>
-<td>20</td>
-<td>9</td>
+<td>21</td>
+<td>10</td>
 <td>5</td>
 <td>1</td>
 <td>1</td>
@@ -397,6 +405,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/176">Сергей Абрамян</a></td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>11</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/22734">Левон Никогосян</a></td>
 <td>3</td>
 <td>4</td>
@@ -423,7 +444,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/176">Сергей Абрамян</a></td>
+<td><a href="https://rating.chgk.info/player/12219">Евгения Иванова</a></td>
 <td>8</td>
 <td>2</td>
 <td>0</td>
@@ -475,14 +496,14 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/12219">Евгения Иванова</a></td>
-<td>8</td>
+<td><a href="https://rating.chgk.info/player/12915">Айк Казазян</a></td>
+<td>6</td>
 <td>1</td>
-<td>0</td>
-<td>9</td>
-<td>8</td>
 <td>1</td>
-<td>0</td>
+<td>8</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -514,19 +535,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/12915">Айк Казазян</a></td>
-<td>6</td>
-<td>0</td>
-<td>1</td>
-<td>7</td>
-<td>6</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/28255">Ваган Сардарян</a></td>
 <td>3</td>
 <td>3</td>
@@ -548,6 +556,19 @@ else wrapTabs();
 <td>3</td>
 <td>3</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/61120">Артём Гукасян</a></td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>7</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -587,19 +608,6 @@ else wrapTabs();
 <td>1</td>
 <td>3</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/61120">Артём Гукасян</a></td>
-<td>0</td>
-<td>2</td>
-<td>4</td>
-<td>6</td>
-<td>0</td>
-<td>2</td>
-<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -696,6 +704,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/34476">Роман Цуркан</a></td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/109746">Виген Ананян</a></td>
 <td>0</td>
 <td>3</td>
@@ -730,6 +751,19 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/56486">Райганат Каримулаева</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -774,20 +808,20 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/46976">Мансур Зиятдинов</a></td>
+<td><a href="https://rating.chgk.info/player/35889">Игорь Шевченко</a></td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
+<td>2</td>
 <td>3</td>
-<td>3</td>
 <td>0</td>
-<td>0</td>
-<td>3</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/34476">Роман Цуркан</a></td>
+<td><a href="https://rating.chgk.info/player/46976">Мансур Зиятдинов</a></td>
 <td>0</td>
 <td>0</td>
 <td>3</td>
@@ -904,6 +938,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/131934">Мери Арутюнян</a></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/8121">Марк Григорян</a></td>
 <td>0</td>
 <td>2</td>
@@ -917,20 +964,20 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/64623">Гурген Есаян</a></td>
+<td><a href="https://rating.chgk.info/player/136830">Михаил Московченко</a></td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
-<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/35889">Игорь Шевченко</a></td>
+<td><a href="https://rating.chgk.info/player/64623">Гурген Есаян</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -957,19 +1004,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/28275">Карен Саркисян</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/56486">Райганат Каримулаева</a></td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
@@ -1061,6 +1095,32 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/11853">Микаэл Золян</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/42511">Николай Некрылов</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/276678">Сона Мирзоян</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1203,19 +1263,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/136830">Михаил Московченко</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/32901">Наиль Фарукшин</a></td>
 <td>0</td>
 <td>1</td>
@@ -1282,6 +1329,32 @@ else wrapTabs();
 </tr>
 <tr>
 <td>Авет Керопян</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/110920">Алексей Дворянчиков</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/56018">Андрей Яблонских</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1424,6 +1497,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/172947">Елена Булатова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/50761">Ирина Вопян</a></td>
 <td>0</td>
 <td>0</td>
@@ -1438,19 +1524,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/9235">Маргарита Джагацпанян</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/131934">Мери Арутюнян</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1489,6 +1562,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/115539">Надежда Валеева</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/50763">Ованес Ованесян</a></td>
 <td>0</td>
 <td>0</td>
@@ -1503,6 +1589,19 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/186">Хачатур Аброян</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/40447">Ярослав Косарев</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1564,9 +1663,19 @@ else wrapTabs();
 - [I чемпионат Армении по спортивному ЧГК (1994)](#chgk_1994)
 
 
-**XXVII чемпионат Армении по спортивному «Что? Где? Когда?»** пройдёт 12 сентября 2026 года в Гюмри. <a id="chgk_2026"></a>
+**XXVII чемпионат Армении по спортивному «Что? Где? Когда?»** прошёл 12 сентября 2026 года в Гюмри. <a id="chgk_2026"></a>
 
-Больше информации о турнире — [в анонсе](https://telegram.me/ChgkgamesArmenia/471).
+Победитель: **[«Неловко» (сборная)](https://rating.chgk.info/teams/52916)**
+- Сона Мирзоян
+- Мери Арутюнян
+- Райганат Каримулаева
+- Николай Некрылов
+- Роман Цуркан
+- Арам Арутюнян
+
+Второе место заняла команда [«Арагаст»](https://rating.chgk.info/teams/56664) (Ереван), третье — [«54 Рыб»](https://rating.chgk.info/teams/105600) (Ереван).
+
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13878). Больше информации о турнире — [здесь](https://t.me/chgknews/1556).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -2058,7 +2167,7 @@ else wrapTabs();
 
 ---
 
-**XV чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a id="ssi_2017"></a>
+**XV чемпионат Армении по спортивной «Своей игре»** прошёл в 2017 году в Ереване. <a id="ssi_2017"></a>
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
@@ -2082,7 +2191,7 @@ else wrapTabs();
 
 ---
 
-**XIII чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a id="ssi_2015"></a>
+**XIII чемпионат Армении по спортивной «Своей игре»** прошёл в 2015 году в Ереване. <a id="ssi_2015"></a>
 
 Победитель: **[Павел Солахян](https://rating.chgk.info/player/29973)**
 
@@ -2146,7 +2255,7 @@ else wrapTabs();
 
 ---
 
-**IV чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a id="ssi_2006"></a>
+**IV чемпионат Армении по спортивной «Своей игре»** прошёл в 2006 году в Ереване. <a id="ssi_2006"></a>
 
 Победитель: **[Тигран Кочарян](https://rating.chgk.info/player/16154)**
 
@@ -2156,7 +2265,7 @@ else wrapTabs();
 
 ---
 
-**III чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a id="ssi_2005"></a>
+**III чемпионат Армении по спортивной «Своей игре»** прошёл в 2005 году в Ереване. <a id="ssi_2005"></a>
 
 Победитель: **[Аргишти Геворкян](https://rating.chgk.info/player/6796)**
 
@@ -2168,7 +2277,7 @@ else wrapTabs();
 
 ---
 
-**II чемпионат Армении по спортивной «Своей игре»** пройдёт в Ереване. <a id="ssi_2004"></a>
+**II чемпионат Армении по спортивной «Своей игре»** прошёл в 2004 году в Ереване. <a id="ssi_2004"></a>
 
 Победитель: **[Асмик Гаряка](https://rating.chgk.info/player/6708)**
 
