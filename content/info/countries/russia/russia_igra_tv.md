@@ -121,18 +121,26 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/teams/99249">Заячий тулупчик</a></td>
 <td>Санкт-Петербург</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/98160">810</a></td>
 <td>Москва</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/43521">Барышни и хулиганы</a></td>
+<td>Москва</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/82209">БиВНИ ИА</a></td>
@@ -165,17 +173,80 @@ else wrapTabs();
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/18332">Александр Либер</a></td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/278065">Ангелина Ларичева</a></td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/135968">Денис Потехин</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18036">Михаил Левандовский</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/14786">Николай Коврижных</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21698">Александр Мосягин</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/36754">Анастасия Шутова</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30475">Владимир Степанов</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/25882">Максим Поташев</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/56587">Олег Овчинников</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/33271">Юрий Филиппов</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/106851">Владлена Гритчина</a></td>
@@ -185,72 +256,16 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/135968">Денис Потехин</a></td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/18036">Михаил Левандовский</a></td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/14786">Николай Коврижных</a></td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/21698">Александр Мосягин</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/36754">Анастасия Шутова</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30475">Владимир Степанов</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/25882">Максим Поташев</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/56587">Олег Овчинников</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/33271">Юрий Филиппов</a></td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/6482">Ким Галачян</a></td>
-<td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10586">Павел Ершов</a></td>
+<td>1</td>
+<td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
@@ -290,6 +305,34 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/15811">Владислав Король</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/280414">Дарья Долгих</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/53711">Денис Беликов</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/89344">Денис Самсонов</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/278083">Евгений Подчасов</a></td>
 <td>0</td>
 <td>0</td>
@@ -318,7 +361,21 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/103638">Людмила Ерохина</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/123562">Марат Фотченков</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/66828">Никита Баринов</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -351,9 +408,20 @@ else wrapTabs();
 - [XX Чемпионат России по спортивному «Что? Где? Когда?» (2024)](#chgk_2024)
 
 
-**XXII Чемпионат России по спортивному «Что? Где? Когда?»** пройдёт 12–13 сентября 2026 года в Москве. <a id="chgk_2026"></a>
+**XXII Чемпионат России по спортивному «Что? Где? Когда?»** прошёл 12–13 сентября 2026 года в Москве. <a id="chgk_2026"></a>
 
-Больше информации о турнире — [в анонсе](https://t.me/sportchgk/202) и [в этом телеграм-канале](https://t.me/sportchgk).
+Победитель: **[«Заячий тулупчик» (Санкт-Петербург)](https://rating.chgk.info/teams/99249)**
+- Ангелина Ларичева
+- Денис Потехин
+- Александр Либер
+- Михаил Левандовский
+- Николай Коврижных
+- Павел Ершов
+- Ким Галачян
+
+Второе место заняла команда [«810»](https://rating.chgk.info/teams/98160) (Москва), третье — [«Барышни и хулиганы»](https://rating.chgk.info/teams/43521) (Москва).
+
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14160), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/7084). Больше информации о турнире — [в этом телеграм-канале](https://t.me/sportchgk).
 
 *[К оглавлению](#contents)*
 
@@ -371,7 +439,7 @@ else wrapTabs();
 
 Второе место заняла команда [«810»](https://rating.chgk.info/teams/98160) (Москва), третье — [«Немчиновка»](https://rating.chgk.info/teams/2865) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12459).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12459), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6412).
 
 *[К оглавлению](#contents)*
 
@@ -389,7 +457,7 @@ else wrapTabs();
 
 Второе место заняла команда [«810»](https://rating.chgk.info/teams/98160) (Москва), третье — [«БиВНИ ИА»](https://rating.chgk.info/teams/82209) (Москва).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10899), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6412).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/10899).
 
 *[К оглавлению](#contents)*
 
