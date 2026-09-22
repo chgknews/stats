@@ -122,16 +122,24 @@ else wrapTabs();
 <td><a href="https://rating.chgk.info/teams/53052">Эрликон</a></td>
 <td>Цюрих</td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/59920">Клуб 512</a></td>
 <td>Берн</td>
 <td>1</td>
 <td>2</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/93212">Я - Сергей</a></td>
+<td>Цюрих</td>
+<td>1</td>
 <td>0</td>
+<td>2</td>
 <td>3</td>
 </tr>
 <tr>
@@ -141,14 +149,6 @@ else wrapTabs();
 <td>0</td>
 <td>3</td>
 <td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/93212">Я - Сергей</a></td>
-<td>Цюрих</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/79286">В поисках мема</a></td>
@@ -206,50 +206,64 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/9535">Анна Долгая</a></td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/13682">Дмитрий Карягин</a></td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/75645">Екатерина Наливко</a></td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/23956">Ирина Пак</a></td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/17177">Лина Кулакова</a></td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>0</td>
-<td>5</td>
+<td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/20005">Андрей Мартынов</a></td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/25165">Илья Побелов</a></td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/56736">Арсений Савин</a></td>
 <td>1</td>
 <td>3</td>
 <td>0</td>
 <td>4</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/25165">Илья Побелов</a></td>
+<td><a href="https://rating.chgk.info/player/117733">Александра Шенкер</a></td>
 <td>1</td>
-<td>3</td>
-<td>0</td>
+<td>2</td>
+<td>1</td>
 <td>4</td>
 </tr>
 <tr>
@@ -260,24 +274,52 @@ else wrapTabs();
 <td>4</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/117733">Александра Шенкер</a></td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/56736">Арсений Савин</a></td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/111958">Сергей Гришин</a></td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/171960">Лили Бауэр</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/26513">Александр Радионов</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/62314">Любовь Беляева</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/183106">Марина Булах</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/130041">Павел Пономарёв</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/154056">Татьяна Киняпина</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
 <td>3</td>
 </tr>
 <tr>
@@ -316,10 +358,10 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/171960">Лили Бауэр</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/76452">Александр Косенков</a></td>
 <td>1</td>
 <td>0</td>
+<td>1</td>
 <td>2</td>
 </tr>
 <tr>
@@ -330,13 +372,6 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/26513">Александр Радионов</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/117426">Антон Кулинич</a></td>
 <td>0</td>
 <td>0</td>
@@ -344,35 +379,7 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/62314">Любовь Беляева</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/183106">Марина Булах</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/132034">Михаил Лебедев</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/130041">Павел Пономарёв</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/154056">Татьяна Киняпина</a></td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
@@ -526,7 +533,7 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/76452">Александр Косенков</a></td>
+<td><a href="https://rating.chgk.info/player/104471">Александр Руднев</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -555,6 +562,13 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/164955">Дмитрий Доброхотов</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/326011">Евген Гнитецкий</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -608,7 +622,7 @@ else wrapTabs();
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-chgk"></div>
 
-<a id="game-chgk"></a><a name="contents"></a>
+<a id="game-chgk"></a><a id="contents" name="contents"></a>
 
 - [VII чемпионат Швейцарии по спортивному ЧГК (2026)](#chgk_2026)
 - [VI чемпионат Швейцарии по спортивному ЧГК (2025)](#chgk_2025)
@@ -619,16 +633,25 @@ else wrapTabs();
 - [I чемпионат Швейцарии по спортивному ЧГК (2017)](#chgk_2017)
 
 
-**VII чемпионат Швейцарии по спортивному «Что? Где? Когда?»** пройдёт 19–20 сентября 2026 года в Цюрихе. <a name="chgk_2026"></a>
+**VII чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 19–20 сентября 2026 года в Цюрихе. <a id="chgk_2026"></a>
 
-Больше информации о турнире — [в анонсе](https://telegram.me/chgknews/1459) и [в этом телеграм-канале](https://t.me/helvetiacup).
+Победитель: **[«Я - Сергей» (Цюрих)](https://rating.chgk.info/teams/93212)**
+- Марина Булах
+- Татьяна Киняпина
+- Павел Пономарёв
+- Александр Косенков
+- Любовь Беляева
+- Александр Радионов
 
+Второе место заняла команда [«Эрликон»](https://rating.chgk.info/teams/53052) (Цюрих), третье — [«Клуб 512»](https://rating.chgk.info/teams/59920) (Берн).
+
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14149).
 
 *[К оглавлению](#contents)*
 
 ---
 
-**VI чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 18–19 октября 2025 года в Цюрихе. <a name="chgk_2025"></a>
+**VI чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 18–19 октября 2025 года в Цюрихе. <a id="chgk_2025"></a>
 
 Победитель: **[«Сборная Ирландии» (Дублин)](https://rating.chgk.info/teams/46809)**
 - Виолетта Кулакова
@@ -642,12 +665,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11987).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**V чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 5–6 октября 2024 года в Цюрихе. <a name="chgk_2024"></a>
+**V чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 5–6 октября 2024 года в Цюрихе. <a id="chgk_2024"></a>
 
 Победитель: **[«Эрликон» (Цюрих)](https://rating.chgk.info/teams/53052)**
 - Екатерина Наливко
@@ -661,12 +683,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/11212).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**IV чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 12 сентября 2020 года в Монтрё. <a name="chgk_2020"></a>
+**IV чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 12 сентября 2020 года в Монтрё. <a id="chgk_2020"></a>
 
 Победитель: **[«В поисках мема» (Цюрих)](https://rating.chgk.info/teams/79286)**
 - Иван Ульянов
@@ -679,12 +700,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/6705).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**III чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 15 июня 2019 года в Лозанне. <a name="chgk_2019"></a>
+**III чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 15 июня 2019 года в Лозанне. <a id="chgk_2019"></a>
 
 Победитель: **[«Клуб 512» (Берн)](https://rating.chgk.info/teams/59920)**
 - Лили Бауэр
@@ -698,12 +718,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5723).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**II чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 24 июня 2018 года в Лозанне. <a name="chgk_2018"></a>
+**II чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 24 июня 2018 года в Лозанне. <a id="chgk_2018"></a>
 
 Победитель: **[«Эрликон» (Цюрих)](https://rating.chgk.info/teams/53052)**
 - Алексей Можаров
@@ -717,12 +736,11 @@ else wrapTabs();
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5051).
 
-
 *[К оглавлению](#contents)*
 
 ---
 
-**I чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 10 июня 2017 года в Женеве. <a name="chgk_2017"></a>
+**I чемпионат Швейцарии по спортивному «Что? Где? Когда?»** прошёл 10 июня 2017 года в Женеве. <a id="chgk_2017"></a>
 
 Победитель: **[«Эрликон» (Цюрих)](https://rating.chgk.info/teams/53052)**
 - Алексей Можаров
@@ -735,7 +753,6 @@ else wrapTabs();
 Второе место заняла команда [«Матадор»](https://rating.chgk.info/teams/58816) (Женева), третье — [«Одинокий рейнджер»](https://rating.chgk.info/teams/54827) (Женева).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4381).
-
 
 *[К оглавлению](#contents)*
 

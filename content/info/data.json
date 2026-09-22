@@ -59893,26 +59893,27 @@
     "metadata": {
       "country": "swiss",
       "numbers_champ": {
-        "chgk": 6
+        "chgk": 7
       },
       "intro": "Чемпионаты Швейцарии проводятся с 2017 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны.",
       "age": "adult",
-      "generated_at": "2026-09-01T17:19:34.093377",
+      "generated_at": "2026-09-22T14:58:48.982021",
       "team_count": 9,
-      "player_count": 57,
+      "player_count": 59,
       "tournament_count": 7
     },
     "tournaments": [
       {
-        "id": "85",
+        "id": "325",
         "number": "7",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2026-09-19",
         "end_date": "2026-09-20",
         "city": "Цюрихе",
         "year": "2026",
         "countable": "yes",
-        "ts_id": "",
+        "ts_id": "14149",
         "uz_id": "",
         "ua_id": "",
         "comment": ""
@@ -59920,6 +59921,7 @@
       {
         "id": "79",
         "number": "6",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2025-10-18",
         "end_date": "2025-10-19",
@@ -59934,6 +59936,7 @@
       {
         "id": "80",
         "number": "5",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2024-10-05",
         "end_date": "2024-10-06",
@@ -59948,6 +59951,7 @@
       {
         "id": "81",
         "number": "4",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2020-09-12",
         "end_date": "2020-09-12",
@@ -59962,6 +59966,7 @@
       {
         "id": "82",
         "number": "3",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2019-06-15",
         "end_date": "2019-06-15",
@@ -59976,6 +59981,7 @@
       {
         "id": "83",
         "number": "2",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2018-06-24",
         "end_date": "2018-06-24",
@@ -59990,6 +59996,7 @@
       {
         "id": "84",
         "number": "1",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2017-06-10",
         "end_date": "2017-06-10",
@@ -60004,13 +60011,14 @@
     ],
     "links": [
       {
-        "id": "85",
-        "results": "",
-        "announce": "https://telegram.me/chgknews/1459",
+        "id": "325",
+        "results": "https://rating.chgk.info/tournament/14149",
+        "announce": "",
         "site": "",
-        "tg": "https://t.me/helvetiacup",
+        "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60024,6 +60032,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60037,6 +60046,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60050,6 +60060,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60063,6 +60074,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60076,6 +60088,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60089,6 +60102,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -60096,6 +60110,33 @@
       }
     ],
     "podium": [
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "team name": "Я - Сергей",
+        "old name": "",
+        "team city": "Цюрих",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "team name": "Эрликон",
+        "old name": "",
+        "team city": "Цюрих",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "team name": "Клуб 512",
+        "old name": "",
+        "team city": "Берн",
+        "roster_complete": "yes"
+      },
       {
         "id": "79",
         "place": "0",
@@ -60260,6 +60301,186 @@
       }
     ],
     "rosters": [
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "314",
+        "player name": "Марина",
+        "player surname": "Булах",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "315",
+        "player name": "Татьяна",
+        "player surname": "Киняпина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "316",
+        "player name": "Павел",
+        "player surname": "Пономарёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "317",
+        "player name": "Александр",
+        "player surname": "Косенков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "318",
+        "player name": "Любовь",
+        "player surname": "Беляева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "0",
+        "team id": "61",
+        "player id": "319",
+        "player name": "Александр",
+        "player surname": "Радионов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "308",
+        "player name": "Екатерина",
+        "player surname": "Наливко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "309",
+        "player name": "Арсений",
+        "player surname": "Савин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "310",
+        "player name": "Ирина",
+        "player surname": "Пак",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "311",
+        "player name": "Лина",
+        "player surname": "Кулакова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "312",
+        "player name": "Дмитрий",
+        "player surname": "Карягин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "1",
+        "team id": "60",
+        "player id": "313",
+        "player name": "Анна",
+        "player surname": "Долгая",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "1572",
+        "player name": "Евген",
+        "player surname": "Гнитецкий",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "322",
+        "player name": "Лили",
+        "player surname": "Бауэр",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "323",
+        "player name": "Александра",
+        "player surname": "Шенкер",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "1573",
+        "player name": "Александр",
+        "player surname": "Руднев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "324",
+        "player name": "Илья",
+        "player surname": "Побелов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "325",
+        "place": "2",
+        "team id": "62",
+        "player id": "325",
+        "player name": "Андрей",
+        "player surname": "Мартынов",
+        "old_name": "",
+        "old_surname": ""
+      },
       {
         "id": "79",
         "place": "0",
@@ -61354,6 +61575,11 @@
     "individuals": [],
     "languages": [
       {
+        "id": "325",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
         "id": "79",
         "language": "ru",
         "name": "Русский"
@@ -62041,6 +62267,26 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "148916",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1572",
+        "name": "Евген",
+        "surname": "Гнитецкий",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "326011",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1573",
+        "name": "Александр",
+        "surname": "Руднев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "104471",
         "uz_id": "",
         "ua_id": ""
       }
