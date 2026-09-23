@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21",
+  "generated": "2026-09-23",
   "events": [
     {
       "date": "26–27 сентября",
@@ -695,6 +695,40 @@
         "chgk"
       ],
       "champ": false
+    },
+    {
+      "date": "6–7 марта 2027 года",
+      "date_start": "2027-03-06",
+      "date_end": "2027-03-07",
+      "place": "Иваново",
+      "name": "[Гран-при текстильной столицы](https://rating.chgk.info/tournament/14243)",
+      "place_html": "Иваново",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14243\">Гран-при текстильной столицы</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "6–7 марта 2027 года",
+      "date_start": "2027-03-06",
+      "date_end": "2027-03-07",
+      "place": "Лимасол",
+      "name": "[Открытый чемпионат Кипра](https://rating.chgk.info/tournament/14252)",
+      "place_html": "Лимасол",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14252\">Открытый чемпионат Кипра</a>",
+      "geography": [
+        "near_east"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
     },
     {
       "date": "13–14 марта 2027 года",
