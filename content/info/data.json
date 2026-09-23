@@ -9992,15 +9992,16 @@
       },
       "intro": "Чемпионаты Азербайджана по брейн-рингу проводятся с 2001 года, по спортивному ЧГК — с 2002 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельных вкладках можно найти информацию о чемпионатах страны по той или иной дисциплине.",
       "age": "adult",
-      "generated_at": "2026-09-02T11:45:50.575254",
+      "generated_at": "2026-09-23T13:28:00.155544",
       "team_count": 19,
       "player_count": 99,
-      "tournament_count": 18
+      "tournament_count": 19
     },
     "tournaments": [
       {
         "id": "1",
         "number": "16",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2026-04-26",
         "end_date": "2026-04-26",
@@ -10015,6 +10016,7 @@
       {
         "id": "2",
         "number": "15",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2025-05-25",
         "end_date": "2025-05-25",
@@ -10029,6 +10031,7 @@
       {
         "id": "3",
         "number": "14",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2024-04-21",
         "end_date": "2024-04-21",
@@ -10043,6 +10046,7 @@
       {
         "id": "4",
         "number": "13",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2023-02-05",
         "end_date": "2023-02-05",
@@ -10057,6 +10061,7 @@
       {
         "id": "5",
         "number": "12",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2019-04-14",
         "end_date": "2019-04-14",
@@ -10071,6 +10076,7 @@
       {
         "id": "6",
         "number": "11",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2016-12-11",
         "end_date": "2016-12-11",
@@ -10085,6 +10091,7 @@
       {
         "id": "7",
         "number": "10",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2015-05-03",
         "end_date": "2015-05-03",
@@ -10099,6 +10106,7 @@
       {
         "id": "8",
         "number": "9",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2013-05-18",
         "end_date": "2013-05-18",
@@ -10113,6 +10121,7 @@
       {
         "id": "9",
         "number": "8",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2012-06-08",
         "end_date": "2012-06-08",
@@ -10127,6 +10136,7 @@
       {
         "id": "10",
         "number": "7",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2008-05-09",
         "end_date": "2008-05-10",
@@ -10141,6 +10151,7 @@
       {
         "id": "11",
         "number": "6",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2007-05-04",
         "end_date": "2007-05-04",
@@ -10155,6 +10166,7 @@
       {
         "id": "12",
         "number": "5",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2006-06-17",
         "end_date": "2006-06-17",
@@ -10169,6 +10181,7 @@
       {
         "id": "13",
         "number": "4",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2005-06-04",
         "end_date": "2005-06-04",
@@ -10183,6 +10196,7 @@
       {
         "id": "14",
         "number": "3",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2004-05-08",
         "end_date": "2004-05-08",
@@ -10197,6 +10211,7 @@
       {
         "id": "15",
         "number": "2",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2003-05-10",
         "end_date": "2003-05-10",
@@ -10211,6 +10226,7 @@
       {
         "id": "16",
         "number": "1",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2002-05-03",
         "end_date": "2002-05-04",
@@ -10225,6 +10241,7 @@
       {
         "id": "18",
         "number": "4",
+        "subnumber": "",
         "game": "brain",
         "start_date": "2005-12-24",
         "end_date": "2005-12-25",
@@ -10239,11 +10256,27 @@
       {
         "id": "17",
         "number": "1",
+        "subnumber": "",
         "game": "brain",
         "start_date": "2001-12-22",
         "end_date": "2001-12-23",
         "city": "Баку",
         "year": "2001",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "326",
+        "number": "1",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2014-03-08",
+        "end_date": "2014-03-08",
+        "city": "Баку",
+        "year": "2014",
         "countable": "yes",
         "ts_id": "",
         "uz_id": "",
@@ -10260,6 +10293,7 @@
         "tg": "https://t.me/default_playground/361",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://t.me/chgknews/1432",
         "letopis": "",
         "photos": "",
@@ -10273,6 +10307,7 @@
         "tg": "https://t.me/default_playground/261",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://t.me/chgknews/1160",
         "letopis": "",
         "photos": "",
@@ -10286,6 +10321,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://t.me/chgknews/802",
         "letopis": "",
         "photos": "",
@@ -10299,6 +10335,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "https://t.me/chgknews/428",
         "letopis": "",
         "photos": "",
@@ -10312,6 +10349,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -10325,6 +10363,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -10338,6 +10377,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -10351,6 +10391,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -10364,6 +10405,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/201206Baku.html",
         "photos": "",
@@ -10377,6 +10419,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200805Baku.html",
         "photos": "",
@@ -10390,6 +10433,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200705Baku.html",
         "photos": "",
@@ -10403,6 +10447,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200606Baku.html",
         "photos": "",
@@ -10416,6 +10461,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200506Baku.html",
         "photos": "",
@@ -10429,6 +10475,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200405Baku.html",
         "photos": "",
@@ -10442,6 +10489,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200305Baku.html",
         "photos": "",
@@ -10455,6 +10503,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -10468,6 +10517,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200512Baku.html",
         "photos": "",
@@ -10481,9 +10531,24 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "http://letopis.chgk.info/200112Baku.html",
         "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "326",
+        "results": "",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "https://www.facebook.com/groups/azchampsi/",
+        "vk": "",
+        "lj": "https://znatokiada.livejournal.com/120645.html",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/media/set?set=oa.404045293072635&type=3",
         "questions": ""
       }
     ],
@@ -13785,7 +13850,38 @@
         "old_surname": ""
       }
     ],
-    "individuals": [],
+    "individuals": [
+      {
+        "id": "326",
+        "place": "0",
+        "player id": "9",
+        "player name": "Роман",
+        "player surname": "Оркодашвили",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "326",
+        "place": "1",
+        "player id": "34",
+        "player name": "Рауф",
+        "player surname": "Наджафли",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "326",
+        "place": "2",
+        "player id": "31",
+        "player name": "Азиз",
+        "player surname": "Муршудли",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      }
+    ],
     "languages": [
       {
         "id": "1",
@@ -13866,12 +13962,25 @@
         "id": "16",
         "language": "ru",
         "name": "Русский"
+      },
+      {
+        "id": "326",
+        "language": "ru",
+        "name": "Русский"
       }
     ],
     "names": [],
     "sources": {
       "description": "",
-      "items": []
+      "items": [
+        {
+          "id": 326,
+          "year": 2014,
+          "link": "https://znatokiada.livejournal.com/120645.html",
+          "link_name": "пост в ЖЖ Знатокиады",
+          "comment": ""
+        }
+      ]
     },
     "videos": [],
     "teams": [

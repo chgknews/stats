@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-brain" aria-selected="false">Турниры по БР</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники и благодарности</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -395,31 +395,53 @@ else wrapTabs();
 
 <table>
 <thead>
-<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">БР</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
+<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">БР</th><th colspan="3" style="text-align:center">ССИ</th></tr>
+<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/23537">Роман Оркодашвили</a></td>
-<td>4</td>
+<td>5</td>
 <td>6</td>
 <td>3</td>
-<td>13</td>
+<td>14</td>
 <td>4</td>
 <td>6</td>
 <td>3</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/22133">Рауф Наджафли (Наджафов)</a></td>
 <td>5</td>
-<td>4</td>
+<td>5</td>
 <td>2</td>
-<td>11</td>
+<td>12</td>
 <td>5</td>
 <td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21889">Азиз Муршудли</a></td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>10</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -437,6 +459,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/475">Джамиля Азизова</a></td>
@@ -447,6 +472,9 @@ else wrapTabs();
 <td>5</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -463,6 +491,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19170">Эмиль Мадатов</a></td>
@@ -476,19 +507,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/21889">Азиз Муршудли</a></td>
-<td>4</td>
-<td>4</td>
-<td>1</td>
-<td>9</td>
-<td>4</td>
-<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/323">Заур Агаев</a></td>
@@ -499,6 +520,9 @@ else wrapTabs();
 <td>0</td>
 <td>3</td>
 <td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -515,6 +539,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1872">Аднан Ахундов</a></td>
@@ -528,6 +555,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31184">Эльман Талыбов</a></td>
@@ -537,6 +567,9 @@ else wrapTabs();
 <td>6</td>
 <td>4</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -554,6 +587,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27998">Джамиль Салманов</a></td>
@@ -567,6 +603,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/476">Анар Азимов</a></td>
@@ -576,6 +615,9 @@ else wrapTabs();
 <td>5</td>
 <td>4</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -593,6 +635,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27879">Саид Садыхов</a></td>
@@ -602,6 +647,9 @@ else wrapTabs();
 <td>5</td>
 <td>1</td>
 <td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -619,6 +667,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/9265">Орхан Джафаров</a></td>
@@ -632,6 +683,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/32579">Алексей Уланов</a></td>
@@ -641,6 +695,9 @@ else wrapTabs();
 <td>4</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -658,6 +715,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8747">Акпер Дадашлы</a></td>
@@ -668,6 +728,9 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -684,6 +747,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1646">Ровшан Аскеров</a></td>
@@ -694,6 +760,9 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -710,6 +779,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/47536">Эльнур Гасымзаде</a></td>
@@ -720,6 +792,9 @@ else wrapTabs();
 <td>1</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -736,6 +811,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/59481">Расул Бабазаде</a></td>
@@ -746,6 +824,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -762,6 +843,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/36925">Фуад Эминов</a></td>
@@ -775,6 +859,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/39926">Малик Рамазанзаде</a></td>
@@ -784,6 +871,9 @@ else wrapTabs();
 <td>3</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -801,6 +891,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/856">Теймур Алиев</a></td>
@@ -814,6 +907,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/6418">Хафиз Гайыб</a></td>
@@ -824,6 +920,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -840,6 +939,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/72279">Денис Шабанов</a></td>
@@ -850,6 +952,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -866,6 +971,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/878">Фариз Аликишибеков</a></td>
@@ -879,6 +987,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/100822">Джамиль Ализаде</a></td>
@@ -887,6 +998,9 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -905,6 +1019,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/66638">Мурад Ахундов</a></td>
@@ -913,6 +1030,9 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -931,6 +1051,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/39933">Борис Царицын</a></td>
@@ -940,6 +1063,9 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -957,6 +1083,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19724">Кёнуль Мамедова</a></td>
@@ -966,6 +1095,9 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -983,6 +1115,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1907">Гюнель Бабаева</a></td>
@@ -992,6 +1127,9 @@ else wrapTabs();
 <td>2</td>
 <td>0</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1009,6 +1147,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/31140">Эргюн Тагиев</a></td>
@@ -1022,6 +1163,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8743">Вюгар Дадашев</a></td>
@@ -1032,6 +1176,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1048,6 +1195,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/107872">Анна Гаузер</a></td>
@@ -1056,6 +1206,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1074,6 +1227,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/112460">Гейдар Гамзаев</a></td>
@@ -1082,6 +1238,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1100,6 +1259,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/11522">Елена Захарова</a></td>
@@ -1108,6 +1270,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1126,6 +1291,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/223827">Ильхам Гумбатов</a></td>
@@ -1134,6 +1302,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1152,6 +1323,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1833">Назлы Ахмедова</a></td>
@@ -1160,6 +1334,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1178,6 +1355,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/56294">Сеймур Агаев</a></td>
@@ -1186,6 +1366,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1204,6 +1387,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/49159">Фариз Рзаев</a></td>
@@ -1212,6 +1398,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1230,6 +1419,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21865">Шахин Мургузов</a></td>
@@ -1238,6 +1430,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1256,6 +1451,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12731">Эмиль Исмаилов</a></td>
@@ -1264,6 +1462,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1282,6 +1483,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/10631">Илькин Етирмишли</a></td>
@@ -1293,6 +1497,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -1308,6 +1515,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Рустам Рустамов</td>
@@ -1319,6 +1529,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -1334,6 +1547,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/34875">Юрий Чернов</a></td>
@@ -1347,6 +1563,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/2054">Джавид Бадалбейли</a></td>
@@ -1356,6 +1575,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1373,6 +1595,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/33672">Илькин Халилов</a></td>
@@ -1382,6 +1607,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1399,6 +1627,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19699">Мамедшакир Мамедзаде</a></td>
@@ -1408,6 +1639,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1425,6 +1659,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/860">Эмин Алиев</a></td>
@@ -1434,6 +1671,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1451,6 +1691,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/24364">Мурад Пашазаде</a></td>
@@ -1463,6 +1706,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -1477,6 +1723,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/7419">Ольга Голуб</a></td>
@@ -1489,6 +1738,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -1503,6 +1755,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/1906">Эмин Бабаев</a></td>
@@ -1516,6 +1771,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/6719">Айнур Гасанова</a></td>
@@ -1526,6 +1784,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1542,6 +1803,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19794">Анар Мансуров</a></td>
@@ -1552,6 +1816,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1568,6 +1835,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19703">Джавид Мамедов</a></td>
@@ -1578,6 +1848,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1594,6 +1867,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/17658">Кямран Захид</a></td>
@@ -1604,6 +1880,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1620,6 +1899,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/47496">Пярвиз Мамедов</a></td>
@@ -1630,6 +1912,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1646,6 +1931,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21893">Таир Мусаев</a></td>
@@ -1656,6 +1944,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1672,6 +1963,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/30851">Турал Султанов</a></td>
@@ -1682,6 +1976,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2044,6 +2341,26 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-ssi"></div>
+
+<a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
+
+- [I чемпионат Азербайджана по ССИ (2014)](#ssi_2014)
+
+
+**I чемпионат Азербайджана по спортивной «Своей игре»** прошёл 8 марта 2014 года в Баку. <a id="ssi_2014"></a>
+
+Победитель: **[Роман Оркодашвили](https://rating.chgk.info/player/23537)**
+
+Второе место занял [Рауф Наджафли](https://rating.chgk.info/player/22133), третье — [Азиз Муршудли](https://rating.chgk.info/player/21889).
+
+Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/media/set?set=oa.404045293072635&type=3). Больше информации о турнире — [в Facebook](https://www.facebook.com/groups/azchampsi/) и [в Живом Журнале](https://znatokiada.livejournal.com/120645.html).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+<div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="missing-data"></div>
 
 <a id="missing-data"></a>
@@ -2059,6 +2376,22 @@ else wrapTabs();
 <tr><td>2003</td><td><a href="https://rating.chgk.info/tournament/1395">II чемпионат Азербайджана по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
 <tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1304">I чемпионат Азербайджана по ЧГК</a></td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
 <tr><td>2001</td><td>I чемпионат Азербайджана по БР</td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
+</tbody>
+</table>
+
+<div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="sources"></div>
+
+<a id="sources"></a>
+
+Здесь указан список источников, откуда взята та или иная информация на этой странице.
+
+<table>
+<thead>
+<tr><th>Турнир</th><th>Год</th><th>Источник</th></tr>
+</thead>
+<tbody>
+<tr><td>I чемпионат Азербайджана по ССИ</td><td>2014</td><td><a href="https://znatokiada.livejournal.com/120645.html">пост в ЖЖ Знатокиады</a></td></tr>
 </tbody>
 </table>
 
