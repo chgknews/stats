@@ -7,10 +7,10 @@
       },
       "intro": "Чемпионаты Украины проводятся с 1996 года. Статистика ещё в процессе сбора.",
       "age": "adult",
-      "generated_at": "2026-09-14T18:41:29.200953",
-      "team_count": 12,
-      "player_count": 55,
-      "tournament_count": 12
+      "generated_at": "2026-09-26T14:40:20.947939",
+      "team_count": 13,
+      "player_count": 68,
+      "tournament_count": 14
     },
     "tournaments": [
       {
@@ -42,6 +42,51 @@
         "uz_id": "",
         "ua_id": "",
         "comment": "В сезоне 2021/2022 удалось провести только первый этап. Его результаты в августе 2022 года были признаны итогами всего чемпионата"
+      },
+      {
+        "id": "327",
+        "number": "25",
+        "subnumber": "1",
+        "game": "chgk",
+        "start_date": "2018-12-08",
+        "end_date": "2018-12-09",
+        "city": "Харькове",
+        "year": "2019",
+        "countable": "yes",
+        "ts_id": "5344",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "328",
+        "number": "25",
+        "subnumber": "2",
+        "game": "chgk",
+        "start_date": "2019-04-13",
+        "end_date": "2019-04-14",
+        "city": "Киеве",
+        "year": "2019",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "330",
+        "number": "25",
+        "subnumber": "3",
+        "game": "chgk",
+        "start_date": "",
+        "end_date": "",
+        "city": "",
+        "year": "2019",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
       },
       {
         "id": "304",
@@ -237,6 +282,21 @@
         "uz_id": "",
         "ua_id": "",
         "comment": ""
+      },
+      {
+        "id": "329",
+        "number": "19",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2019-10-13",
+        "end_date": "2019-10-14",
+        "city": "Киеве",
+        "year": "2020",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
       }
     ],
     "links": [
@@ -266,6 +326,48 @@
         "recap": "https://t.me/chgknews/353",
         "letopis": "",
         "photos": "https://www.facebook.com/events/979057086285582?post_id=1017113002479990&view=permalink",
+        "questions": ""
+      },
+      {
+        "id": "327",
+        "results": "https://rating.chgk.info/tournament/5344",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "https://www.facebook.com/events/1053568614816442/",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/groups/1571471789754881/posts/2273463126222407/?__cft__[0]=AZgp9M64mZ5qY9p1h9MifY3zXwBAzqKJNi5shaPCYswSXCYmDiydI8aq4bM7hDS1BHN_xnwbq37yVamrNUmlJjObeKGA9wDPslLZYQnx410WnV0B4YFOhEQdn8NNEo7-kVc_u9L5RsigPG_M-QlF_3aXNZ56-l1iE3P6D4fyNL7hhKamAHv3iawGAQu7k90WqeymUHIkzdSoKxlI4TEtGidzlKBmK2xvzbY20oZnlQjXKX-6Kzc0DmtU6tDbkgwlobI&__tn__=%2CO%2CP-R",
+        "questions": ""
+      },
+      {
+        "id": "328",
+        "results": "https://docs.google.com/spreadsheets/d/1iY4-xG9QSnLPVHob3PMUjuhu--nQBfadKMRsDdKgE1w/edit?fbclid=IwY2xjawUkeEdleHRuA2FlbQIxMQBwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeeLBFDP5ac3s6k_ZMheKN5LlQlxmWoENHYKAR3I8z-ThGQSNDh2gj7VS3Ihw_aem_wHYVM8e1FIJR1X_IIYY0fQ&gid=970420865#gid=970420865",
+        "announce": "",
+        "site": "https://docs.google.com/spreadsheets/d/1cjnLTWZhfBV1HgSmfF7vPF9feXSceO3OCYNScD1_tTg/edit?fbclid=IwY2xjawUkfIxleHRuA2FlbQIxMABwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEejA1wUFq8YX2oV_QjxAHq9dCFRnuh60rgaaT15xsy13-AWHfP1NVxC1KltI0_aem_w6b-UaHHBW38wJY8lsjURg&gid=614694312#gid=614694312",
+        "tg": "",
+        "fb": "https://www.facebook.com/events/351499475437794",
+        "vk": "",
+        "lj": "",
+        "recap": "https://www.facebook.com/LUCshchdkofficial/posts/pfbid034DHBXNTpEa3VnKxTEJoyPFVmTQWm8oCvpa9u5PSvy6dEi6FPkeYWuqExwJSTZdDhl?__cft__[0]=AZgPXLAChJMzKKNYXP1Wa4kfxushItsnN4K-SF47XVZDYHgALWVGOl9SXKVSMI60bqRQ3wvvf9c6gx_ndCTKmCGaHYKRq5bw8WXAaSetn21JK5NweWptDJRukZY69XNZLko9GYbraTUAVXFUrtEFeYYU_w&__tn__=%2CO%2CP-R",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "330",
+        "results": "https://docs.google.com/spreadsheets/d/1AFoaaUcMyFaw0CmFsbYS1J042otAczLCpnxb099QeUo/edit?gid=1299839863#gid=1299839863",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
         "questions": ""
       },
       {
@@ -449,6 +551,20 @@
         "letopis": "",
         "photos": "https://www.facebook.com/photo/?fbid=1902130196640897&set=a.1902122199975030",
         "questions": ""
+      },
+      {
+        "id": "329",
+        "results": "https://docs.google.com/spreadsheets/d/1jmOqeB3uclt4mc6wZ259Zn_eCFakcinBcMdFkRLQfPs/edit?fbclid=IwY2xjawUkcHhleHRuA2FlbQIxMABwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeeYIZBkewccrIr9l_ZYTAo3WZQUm5MnuLDgzypNRl50DyjDatWj0Z4cx7u3w_aem_-ihH8iOYJULyE9ql5wEdag&gid=1045047531#gid=1045047531",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "https://www.facebook.com/events/673565669777449/",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/media/set?vanity=LUCshchdkofficial&set=a.1256451341208789",
+        "questions": ""
       }
     ],
     "podium": [
@@ -504,6 +620,33 @@
         "team name": "Минус один",
         "old name": "",
         "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "team name": "Минус один",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "team name": "Keisecker",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "team name": "Номер 6",
+        "old name": "",
+        "team city": "Донецк",
         "roster_complete": "yes"
       },
       {
@@ -1034,6 +1177,226 @@
         "old_surname": ""
       },
       {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1517",
+        "player name": "Владимир",
+        "player surname": "Островский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1518",
+        "player name": "Евгений",
+        "player surname": "Спектор",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1519",
+        "player name": "Антон",
+        "player surname": "Саввин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1520",
+        "player name": "Александр",
+        "player surname": "Мудрый",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1547",
+        "player name": "Ольга",
+        "player surname": "Дубинская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "0",
+        "team id": "242",
+        "player id": "1548",
+        "player name": "Константин",
+        "player surname": "Науменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1579",
+        "player name": "Иделия",
+        "player surname": "Айзятулова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1580",
+        "player name": "Александр",
+        "player surname": "Демяненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1581",
+        "player name": "Олег",
+        "player surname": "Беседин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1582",
+        "player name": "Ксения",
+        "player surname": "Кучерова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1583",
+        "player name": "Богдан",
+        "player surname": "Шевченко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "1",
+        "team id": "251",
+        "player id": "1584",
+        "player name": "Дмитрий",
+        "player surname": "Стрильчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1538",
+        "player name": "Эдуард",
+        "player surname": "Голуб",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1539",
+        "player name": "Виктория",
+        "player surname": "Маландина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1536",
+        "player name": "Алексей",
+        "player surname": "Чирков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1489",
+        "player name": "Павел",
+        "player surname": "Муха",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1452",
+        "player name": "Дмитрий",
+        "player surname": "Слободянюк",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1321",
+        "player name": "Дмитрий",
+        "player surname": "Великов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1576",
+        "player name": "Ярослав",
+        "player surname": "Смолянинов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1577",
+        "player name": "Денис",
+        "player surname": "Михалёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "330",
+        "place": "2",
+        "team id": "245",
+        "player id": "1578",
+        "player name": "Александра",
+        "player surname": "Малыныч",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
         "id": "299",
         "place": "2",
         "team id": "225",
@@ -1394,6 +1757,36 @@
         "old_name": "",
         "old_surname": "",
         "sex": "male"
+      },
+      {
+        "id": "329",
+        "place": "0",
+        "player id": "1544",
+        "player name": "Дмитрий",
+        "player surname": "Литвинов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "329",
+        "place": "1",
+        "player id": "1574",
+        "player name": "Евгений",
+        "player surname": "Шляхов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "329",
+        "place": "2",
+        "player id": "1575",
+        "player name": "Тарас",
+        "player surname": "Вахрив",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
       }
     ],
     "languages": [
@@ -1486,6 +1879,13 @@
           "link": "https://www.facebook.com/photo/?fbid=1902135033307080&set=a.1902122199975030",
           "link_name": "фото в мероприятии чемпионата в Фейсбуке",
           "comment": "состав «Номер 6»"
+        },
+        {
+          "id": 328,
+          "year": 2019,
+          "link": "https://www.facebook.com/groups/1571471789754881/posts/2336588419909877/?__cft__[0]=AZgVcQLnz-ExBun4cjFXYmQDbv4uM6uJbJT3qNCBZdc13nSQzdTc57-SIXD9ZYhbrDZ35_ZqAyKSnTx20kKIG7MrjlJHi4_7oB19luYefJj_I_BgV_4v586k0hAvqWNck-_94PKtQSISPL_IpRAyISRrYCQi5LvQTRauoErEUhSSK-Ryl8EUPvfiFb4l-A&__tn__=%2CO%2CP-R",
+          "link_name": "",
+          "comment": ""
         }
       ]
     },
@@ -1615,6 +2015,15 @@
         "ts_id": "26956",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "251",
+        "name": "Keisecker",
+        "non_russian_name": "",
+        "city": "Киев",
+        "ts_id": "27448",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "players": [
@@ -1665,6 +2074,16 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "5195",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1321",
+        "name": "Дмитрий",
+        "surname": "Великов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "5328",
         "uz_id": "",
         "ua_id": ""
       },
@@ -1815,6 +2234,16 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "10946",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1452",
+        "name": "Дмитрий",
+        "surname": "Слободянюк",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "29516",
         "uz_id": "",
         "ua_id": ""
       },
@@ -2165,6 +2594,116 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "8850",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1574",
+        "name": "Евгений",
+        "surname": "Шляхов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "36398",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1575",
+        "name": "Тарас",
+        "surname": "Вахрив",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "5224",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1576",
+        "name": "Ярослав",
+        "surname": "Смолянинов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "29751",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1577",
+        "name": "Денис",
+        "surname": "Михалёв",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "21176",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1578",
+        "name": "Александра",
+        "surname": "Малыныч",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "80025",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1579",
+        "name": "Иделия",
+        "surname": "Айзятулова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "505",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1580",
+        "name": "Александр",
+        "surname": "Демяненко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "9094",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1581",
+        "name": "Олег",
+        "surname": "Беседин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "3278",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1582",
+        "name": "Ксения",
+        "surname": "Кучерова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "40201",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1583",
+        "name": "Богдан",
+        "surname": "Шевченко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "35877",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1584",
+        "name": "Дмитрий",
+        "surname": "Стрильчук",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "30678",
         "uz_id": "",
         "ua_id": ""
       }
