@@ -7,12 +7,27 @@
       },
       "intro": "Чемпионаты Украины проводятся с 1996 года. Статистика ещё в процессе сбора.",
       "age": "adult",
-      "generated_at": "2026-09-26T14:40:20.947939",
-      "team_count": 13,
-      "player_count": 68,
-      "tournament_count": 14
+      "generated_at": "2026-09-28T00:16:33.332772",
+      "team_count": 14,
+      "player_count": 84,
+      "tournament_count": 26
     },
     "tournaments": [
+      {
+        "id": "331",
+        "number": "28",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2026-09-26",
+        "end_date": "2026-09-27",
+        "city": "онлайне",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
       {
         "id": "316",
         "number": "27",
@@ -82,6 +97,96 @@
         "end_date": "",
         "city": "",
         "year": "2019",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "333",
+        "number": "24",
+        "subnumber": "1",
+        "game": "chgk",
+        "start_date": "2017-12-02",
+        "end_date": "2017-12-03",
+        "city": "Днепре",
+        "year": "2018",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "334",
+        "number": "24",
+        "subnumber": "2",
+        "game": "chgk",
+        "start_date": "2018-04-21",
+        "end_date": "2018-04-22",
+        "city": "Николаеве",
+        "year": "2018",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "335",
+        "number": "24",
+        "subnumber": "3",
+        "game": "chgk",
+        "start_date": "",
+        "end_date": "",
+        "city": "",
+        "year": "2018",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "344",
+        "number": "23",
+        "subnumber": "1",
+        "game": "chgk",
+        "start_date": "2016-12-11",
+        "end_date": "2016-12-12",
+        "city": "Ровно",
+        "year": "2017",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "345",
+        "number": "23",
+        "subnumber": "2",
+        "game": "chgk",
+        "start_date": "2017-04-08",
+        "end_date": "2017-04-09",
+        "city": "Харькове",
+        "year": "2017",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "346",
+        "number": "23",
+        "subnumber": "3",
+        "game": "chgk",
+        "start_date": "",
+        "end_date": "",
+        "city": "",
+        "year": "2017",
         "countable": "yes",
         "ts_id": "",
         "uz_id": "",
@@ -296,10 +401,159 @@
         "ts_id": "",
         "uz_id": "",
         "ua_id": "",
+        "comment": "Больше информации о ходе сезона можно найти в [этой гуглтаблице](https://docs.google.com/spreadsheets/d/1tp51SAn2b6VCb8WP-BQ851i0rGCXXacvdqvqCOdqRoA/edit?gid=1083674975#gid=1083674975)."
+      },
+      {
+        "id": "336",
+        "number": "18",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2018-10-13",
+        "end_date": "2018-10-15",
+        "city": "Киеве",
+        "year": "2019",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "332",
+        "number": "17",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2017-10-14",
+        "end_date": "2017-10-17",
+        "city": "Львове",
+        "year": "2018",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "337",
+        "number": "16",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2016-10-14",
+        "end_date": "2016-10-16",
+        "city": "Запорожье",
+        "year": "2017",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "338",
+        "number": "15",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2015-11-28",
+        "end_date": "2015-11-29",
+        "city": "Николаеве",
+        "year": "2016",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "339",
+        "number": "14",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2014-11-01",
+        "end_date": "2014-11-02",
+        "city": "Николаеве",
+        "year": "2015",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "340",
+        "number": "13",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2013-11-02",
+        "end_date": "2013-11-03",
+        "city": "Запорожье",
+        "year": "2014",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "341",
+        "number": "12",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2012-11-24",
+        "end_date": "2012-11-25",
+        "city": "Запорожье",
+        "year": "2013",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "342",
+        "number": "11",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2011-12-03",
+        "end_date": "2011-12-04",
+        "city": "Николаеве",
+        "year": "2012",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "343",
+        "number": "10",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2010-12-10",
+        "end_date": "2010-12-12",
+        "city": "Харькове",
+        "year": "2011",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
         "comment": ""
       }
     ],
     "links": [
+      {
+        "id": "331",
+        "results": "https://docs.google.com/spreadsheets/d/1P5ywN0HqmOd8N6iL2iz9dl6WJqpb5VwxxEP0h4CIoXU/edit?gid=305643130#gid=305643130",
+        "announce": "",
+        "site": "",
+        "tg": "https://t.me/LigaUK/981",
+        "fb": "https://www.facebook.com/LUCshchdkofficial/posts/pfbid02keEwSkJyJDg6uBkCfwTQMyYe8Gn7RFmuPw6mAERDNA8fmwPNi8zVeuPdeCKfGCUzl?__cft__[0]=AZg1Ot7xOmFG_TkaLa_QjJUkDRuX7hvLysKZOAk3y0vl4TNZ5QohDDW5fOru5jFAQq4IwYlBnZhXc-ac1dvk2kTI_Hm8deEm68OOc6Fv0EdoNVm-mA5ACm3ORfy9Mju8g1AK9kERFpo_pLhaIGSCiQrEe0Cg02G1EzI4dbMUxsjHDTEFkeeocqfYEJ8&__tn__=%2CO%2CP-R",
+        "vk": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1573",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
       {
         "id": "316",
         "results": "https://docs.google.com/spreadsheets/d/1Qcht6JL0mbzF7QyNT5BTcM_9alPasXWK3hIjn71grhM/edit?gid=583114730#gid=583114730",
@@ -359,6 +613,90 @@
       {
         "id": "330",
         "results": "https://docs.google.com/spreadsheets/d/1AFoaaUcMyFaw0CmFsbYS1J042otAczLCpnxb099QeUo/edit?gid=1299839863#gid=1299839863",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "333",
+        "results": "https://luk.org.ua/tournaments/162/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap/rezultatyi",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/162/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "334",
+        "results": "https://rating.chgk.info/tournament/4931",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/177/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/media/set/?set=oa.2087193978182657&type=3",
+        "questions": ""
+      },
+      {
+        "id": "335",
+        "results": "https://luk.org.ua/tournaments/177/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultaty-vseh-etapov",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "344",
+        "results": "https://rating.chgk.info/tournament/4075",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/137/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://www.facebook.com/media/set/?set=oa.1846370732264984&type=3",
+        "questions": ""
+      },
+      {
+        "id": "345",
+        "results": "https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultatyi",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "346",
+        "results": "https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultaty-vseh-etapov",
         "announce": "",
         "site": "",
         "tg": "",
@@ -565,9 +903,162 @@
         "letopis": "",
         "photos": "https://www.facebook.com/media/set?vanity=LUCshchdkofficial&set=a.1256451341208789",
         "questions": ""
+      },
+      {
+        "id": "336",
+        "results": "https://luk.org.ua/tournaments/187/predvaritelnyi-etap-chempionata-ukrainy-po-chgk-chempionat-ukrainy-po-svoei-igre/rezultaty-svoei-igry",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "332",
+        "results": "",
+        "announce": "",
+        "site": "",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "https://luk.org.ua/tournaments/157/predvaritelnyi-etap-chempionata-ukrainy-po-chgk-chempionat-ukrainy-po-svoei-igre",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "337",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/132/kubok-ukrainy-po-chto-gde-kogda-chempionat-ukrainy-po-svoei-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "338",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/110/chempionat-ukrainy-po-svoei-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "339",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/87/chempionat-ukrainy-po-svoei-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "340",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/70/chempionat-ukrainy-po-svoei-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "341",
+        "results": "https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre/rezultatyi",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre/gallery",
+        "questions": ""
+      },
+      {
+        "id": "342",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/4/chempionat-ukrainyi-po-svoey-igre",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "343",
+        "results": "",
+        "announce": "",
+        "site": "https://luk.org.ua/tournaments/64/chempionat-ukrainy-po-svoei-igre-i-erudit-kvartetu",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
       }
     ],
     "podium": [
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "team name": "Минус один",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "team name": "Зненацька",
+        "old name": "",
+        "team city": "Одесса",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "team name": "senes",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
       {
         "id": "316",
         "place": "0",
@@ -647,6 +1138,60 @@
         "team name": "Номер 6",
         "old name": "",
         "team city": "Донецк",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "team name": "Keisecker",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "team name": "Приматы",
+        "old name": "",
+        "team city": "Днепр",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "team name": "Номер 6",
+        "old name": "",
+        "team city": "Донецк",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "team name": "Минус один",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "team name": "Keisecker",
+        "old name": "",
+        "team city": "Киев",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "team name": "Приматы",
+        "old name": "",
+        "team city": "Днепр",
         "roster_complete": "yes"
       },
       {
@@ -786,6 +1331,186 @@
       }
     ],
     "rosters": [
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1517",
+        "player name": "Владимир",
+        "player surname": "Островский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1518",
+        "player name": "Евгений",
+        "player surname": "Спектор",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1519",
+        "player name": "Антон",
+        "player surname": "Саввин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1520",
+        "player name": "Александр",
+        "player surname": "Мудрый",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1521",
+        "player name": "Кирилл",
+        "player surname": "Михайлов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "0",
+        "team id": "242",
+        "player id": "1522",
+        "player name": "Владимир",
+        "player surname": "Шевчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1585",
+        "player name": "Валерий",
+        "player surname": "Болган",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1586",
+        "player name": "Андрей",
+        "player surname": "Штефан",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1587",
+        "player name": "Сергей",
+        "player surname": "Черкасов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1588",
+        "player name": "Сергей",
+        "player surname": "Липовец",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1589",
+        "player name": "Виктор",
+        "player surname": "Вандинский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "1",
+        "team id": "252",
+        "player id": "1590",
+        "player name": "Елена",
+        "player surname": "Болган",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "616",
+        "player name": "Илья",
+        "player surname": "Новиков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "1523",
+        "player name": "Егор",
+        "player surname": "Кузьменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "1524",
+        "player name": "Дмитрий",
+        "player surname": "Антоненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "1525",
+        "player name": "Владимир",
+        "player surname": "Дудчак",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "1526",
+        "player name": "Виктория",
+        "player surname": "Евтушенко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "331",
+        "place": "2",
+        "team id": "243",
+        "player id": "1476",
+        "player name": "Катерина",
+        "player surname": "Коциевская",
+        "old_name": "",
+        "old_surname": ""
+      },
       {
         "id": "316",
         "place": "0",
@@ -1397,6 +2122,406 @@
         "old_surname": ""
       },
       {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1580",
+        "player name": "Александр",
+        "player surname": "Демяненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1581",
+        "player name": "Олег",
+        "player surname": "Беседин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1582",
+        "player name": "Ксения",
+        "player surname": "Кучерова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1583",
+        "player name": "Богдан",
+        "player surname": "Шевченко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1584",
+        "player name": "Дмитрий",
+        "player surname": "Стрильчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "0",
+        "team id": "251",
+        "player id": "1591",
+        "player name": "Ася",
+        "player surname": "Жаглевская-Баранова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1579",
+        "player name": "Иделия",
+        "player surname": "Айзятулова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1542",
+        "player name": "Александр",
+        "player surname": "Чижов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1546",
+        "player name": "Арсен",
+        "player surname": "Малиновский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1542",
+        "player name": "Александр",
+        "player surname": "Чижов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1543",
+        "player name": "Алексей",
+        "player surname": "Филановский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1544",
+        "player name": "Дмитрий",
+        "player surname": "Литвинов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "1",
+        "team id": "246",
+        "player id": "1545",
+        "player name": "Олег",
+        "player surname": "Соловьёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1538",
+        "player name": "Эдуард",
+        "player surname": "Голуб",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1539",
+        "player name": "Виктория",
+        "player surname": "Маландина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1536",
+        "player name": "Алексей",
+        "player surname": "Чирков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1489",
+        "player name": "Павел",
+        "player surname": "Муха",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1576",
+        "player name": "Ярослав",
+        "player surname": "Смолянинов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "335",
+        "place": "2",
+        "team id": "245",
+        "player id": "1577",
+        "player name": "Денис",
+        "player surname": "Михалёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1517",
+        "player name": "Владимир",
+        "player surname": "Островский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1518",
+        "player name": "Евгений",
+        "player surname": "Спектор",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1519",
+        "player name": "Антон",
+        "player surname": "Саввин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1547",
+        "player name": "Ольга",
+        "player surname": "Дубинская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1548",
+        "player name": "Константин",
+        "player surname": "Науменко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "0",
+        "team id": "242",
+        "player id": "1600",
+        "player name": "Антон",
+        "player surname": "Еганов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1580",
+        "player name": "Александр",
+        "player surname": "Демяненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1581",
+        "player name": "Олег",
+        "player surname": "Беседин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1582",
+        "player name": "Ксения",
+        "player surname": "Кучерова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1583",
+        "player name": "Богдан",
+        "player surname": "Шевченко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1584",
+        "player name": "Дмитрий",
+        "player surname": "Стрильчук",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "1",
+        "team id": "251",
+        "player id": "1591",
+        "player name": "Ася",
+        "player surname": "Жаглевская-Баранова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "156",
+        "player name": "Владимир",
+        "player surname": "Итыгин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1542",
+        "player name": "Александр",
+        "player surname": "Чижов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1543",
+        "player name": "Алексей",
+        "player surname": "Филановский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1544",
+        "player name": "Дмитрий",
+        "player surname": "Литвинов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1545",
+        "player name": "Олег",
+        "player surname": "Соловьёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1546",
+        "player name": "Арсен",
+        "player surname": "Малиновский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "346",
+        "place": "2",
+        "team id": "246",
+        "player id": "1601",
+        "player name": "Денис",
+        "player surname": "Попов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
         "id": "299",
         "place": "2",
         "team id": "225",
@@ -1787,9 +2912,284 @@
         "old_name": "",
         "old_surname": "",
         "sex": "male"
+      },
+      {
+        "id": "336",
+        "place": "0",
+        "player id": "1551",
+        "player name": "Андрей",
+        "player surname": "Данченко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "336",
+        "place": "1",
+        "player id": "1538",
+        "player name": "Эдуард",
+        "player surname": "Голуб",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "336",
+        "place": "2",
+        "player id": "1574",
+        "player name": "Евгений",
+        "player surname": "Шляхов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "332",
+        "place": "0",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "332",
+        "place": "1",
+        "player id": "1575",
+        "player name": "Тарас",
+        "player surname": "Вахрив",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "332",
+        "place": "2",
+        "player id": "1534",
+        "player name": "Андрей",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "337",
+        "place": "0",
+        "player id": "1575",
+        "player name": "Тарас",
+        "player surname": "Вахрив",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "337",
+        "place": "1",
+        "player id": "1549",
+        "player name": "Антон",
+        "player surname": "Мартыненко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "337",
+        "place": "2",
+        "player id": "1574",
+        "player name": "Евгений",
+        "player surname": "Шляхов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "338",
+        "place": "0",
+        "player id": "1592",
+        "player name": "Владимир",
+        "player surname": "Печерога",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "338",
+        "place": "1",
+        "player id": "1593",
+        "player name": "Александр",
+        "player surname": "Камин",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "338",
+        "place": "2",
+        "player id": "1594",
+        "player name": "Александр",
+        "player surname": "Кудрявцев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "339",
+        "place": "0",
+        "player id": "1594",
+        "player name": "Александр",
+        "player surname": "Кудрявцев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "339",
+        "place": "1",
+        "player id": "1544",
+        "player name": "Дмитрий",
+        "player surname": "Литвинов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "339",
+        "place": "2",
+        "player id": "1595",
+        "player name": "Андрей",
+        "player surname": "Грищук",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "340",
+        "place": "0",
+        "player id": "1592",
+        "player name": "Владимир",
+        "player surname": "Печерога",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "340",
+        "place": "1",
+        "player id": "1574",
+        "player name": "Евгений",
+        "player surname": "Шляхов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "340",
+        "place": "2",
+        "player id": "1594",
+        "player name": "Александр",
+        "player surname": "Кудрявцев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "341",
+        "place": "0",
+        "player id": "799",
+        "player name": "Анатолий",
+        "player surname": "Вассерман",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "341",
+        "place": "1",
+        "player id": "1592",
+        "player name": "Владимир",
+        "player surname": "Печерога",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "341",
+        "place": "2",
+        "player id": "1159",
+        "player name": "Алексей",
+        "player surname": "Новаков",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "342",
+        "place": "0",
+        "player id": "799",
+        "player name": "Анатолий",
+        "player surname": "Вассерман",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "342",
+        "place": "1",
+        "player id": "1598",
+        "player name": "Константин",
+        "player surname": "Колесник",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "342",
+        "place": "2",
+        "player id": "1594",
+        "player name": "Александр",
+        "player surname": "Кудрявцев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "343",
+        "place": "0",
+        "player id": "799",
+        "player name": "Анатолий",
+        "player surname": "Вассерман",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "343",
+        "place": "1",
+        "player id": "1598",
+        "player name": "Константин",
+        "player surname": "Колесник",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "343",
+        "place": "2",
+        "player id": "1599",
+        "player name": "Максим",
+        "player surname": "Евланов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
       }
     ],
     "languages": [
+      {
+        "id": "331",
+        "language": "uk",
+        "name": "Украинский"
+      },
       {
         "id": "316",
         "language": "uk",
@@ -1834,6 +3234,26 @@
         "id": "319",
         "language": "uk",
         "name": "Украинский"
+      },
+      {
+        "id": "336",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "332",
+        "language": "uk",
+        "name": "Украинский"
+      },
+      {
+        "id": "337",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "338",
+        "language": "ru",
+        "name": "Русский"
       }
     ],
     "names": [
@@ -2024,6 +3444,15 @@
         "ts_id": "27448",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "252",
+        "name": "Зненацька",
+        "non_russian_name": "",
+        "city": "Одесса",
+        "ts_id": "54613",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "players": [
@@ -2074,6 +3503,16 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "5195",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1159",
+        "name": "Алексей",
+        "surname": "Новаков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "",
         "uz_id": "",
         "ua_id": ""
       },
@@ -2704,6 +4143,156 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "30678",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1585",
+        "name": "Валерий",
+        "surname": "Болган",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "3767",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1586",
+        "name": "Андрей",
+        "surname": "Штефан",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "36568",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1587",
+        "name": "Сергей",
+        "surname": "Черкасов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "117262",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1588",
+        "name": "Сергей",
+        "surname": "Липовец",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "110308",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1589",
+        "name": "Виктор",
+        "surname": "Вандинский",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "137018",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1590",
+        "name": "Елена",
+        "surname": "Болган",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "73105",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1591",
+        "name": "Ася",
+        "surname": "Жаглевская-Баранова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "37528",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1592",
+        "name": "Владимир",
+        "surname": "Печерога",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "24852",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1593",
+        "name": "Александр",
+        "surname": "Камин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "37617",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1594",
+        "name": "Александр",
+        "surname": "Кудрявцев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "16799",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1595",
+        "name": "Андрей",
+        "surname": "Грищук",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "8240",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1598",
+        "name": "Константин",
+        "surname": "Колесник",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "15096",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1599",
+        "name": "Максим",
+        "surname": "Евланов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "10136",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1600",
+        "name": "Антон",
+        "surname": "Еганов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "10182",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1601",
+        "name": "Денис",
+        "surname": "Попов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "25691",
         "uz_id": "",
         "ua_id": ""
       }

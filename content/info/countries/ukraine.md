@@ -119,6 +119,14 @@ else wrapTabs();
 </thead>
 <tbody>
 <tr>
+<td><a href="https://rating.chgk.info/teams/316">Мінус один («Минус один»)</a></td>
+<td>Киев</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/540">Стирол</a></td>
 <td>Горловка</td>
 <td>3</td>
@@ -135,11 +143,27 @@ else wrapTabs();
 <td>4</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/316">Мінус один («Минус один»)</a></td>
+<td><a href="https://rating.chgk.info/teams/27448">Keisecker</a></td>
 <td>Киев</td>
+<td>1</td>
 <td>2</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/308">Номер 6</a></td>
+<td>Донецк</td>
 <td>1</td>
 <td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/26956">Приматы</a></td>
+<td>Днепр</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
 <td>3</td>
 </tr>
 <tr>
@@ -151,10 +175,10 @@ else wrapTabs();
 <td>3</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/308">Номер 6</a></td>
-<td>Донецк</td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/teams/85771">seꏢes («senes»)</a></td>
+<td>Киев</td>
 <td>0</td>
+<td>1</td>
 <td>1</td>
 <td>2</td>
 </tr>
@@ -167,16 +191,8 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/27448">Keisecker</a></td>
-<td>Киев</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/85771">seꏢes («senes»)</a></td>
-<td>Киев</td>
+<td><a href="https://rating.chgk.info/teams/54613">Зненацька</a></td>
+<td>Одесса</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -193,14 +209,6 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/teams/45704">От Винта</a></td>
 <td>Харьков</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/26956">Приматы</a></td>
-<td>Днепр</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -238,37 +246,24 @@ else wrapTabs();
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/19990">Антон Мартыненко</a></td>
-<td>3</td>
-<td>2</td>
-<td>0</td>
 <td>5</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/35124">Алексей Чирков</a></td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
 <td>4</td>
-<td>1</td>
 <td>0</td>
+<td>9</td>
 <td>1</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27701">Антон Саввин</a></td>
-<td>2</td>
+<td>4</td>
 <td>1</td>
 <td>0</td>
-<td>3</td>
-<td>2</td>
+<td>5</td>
+<td>4</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -277,11 +272,11 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/23740">Владимир Островский</a></td>
-<td>2</td>
+<td>4</td>
 <td>1</td>
 <td>0</td>
-<td>3</td>
-<td>2</td>
+<td>5</td>
+<td>4</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -290,13 +285,91 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/30260">Евгений Спектор</a></td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35124">Алексей Чирков</a></td>
 <td>2</td>
+<td>0</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18490">Дмитрий Литвинов</a></td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/5195">Анатолий Вассерман</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/7420">Эдуард Голуб</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/16799">Александр Кудрявцев</a></td>
 <td>1</td>
 <td>0</td>
 <td>3</td>
-<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35077">Александр Чижов</a></td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -305,30 +378,251 @@ else wrapTabs();
 <td><a href="https://rating.chgk.info/player/22935">Илья Новиков</a></td>
 <td>0</td>
 <td>3</td>
-<td>0</td>
-<td>3</td>
+<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>2</td>
-<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/36398">Евгений Шляхов</a></td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19992">Андрей Мартыненко</a></td>
 <td>0</td>
 <td>1</td>
-<td>2</td>
 <td>3</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/66309">Александр Мудрый</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21137">Кирилл Михайлов</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/22331">Константин Науменко</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9834">Ольга Дубинская</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/24852">Владимир Печерога</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9094">Александр Демяненко</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35877">Богдан Шевченко</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30678">Дмитрий Стрильчук</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/40201">Ксения Кучерова</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/3278">Олег Беседин</a></td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/5224">Тарас Вахрив</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/66309">Александр Мудрый</a></td>
+<td><a href="https://rating.chgk.info/player/19468">Виктория Маландина</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21952">Павел Муха</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/33197">Алексей Филановский</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19533">Арсен Малиновский</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30030">Олег Соловьёв</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/79185">Владимир Шевчук</a></td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
@@ -342,6 +636,19 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/49173">Александр Кондарев</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/37528">Ася Жаглевская-Баранова</a></td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
@@ -406,32 +713,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/21137">Кирилл Михайлов</a></td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/22331">Константин Науменко</a></td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/10946">Николай Жовнер</a></td>
 <td>1</td>
 <td>1</td>
@@ -445,65 +726,117 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9834">Ольга Дубинская</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/8850">Андрей Данченко</a></td>
 <td>1</td>
 <td>0</td>
+<td>1</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
+<td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/505">Иделия Айзятулова</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/18490">Дмитрий Литвинов</a></td>
-<td>1</td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/15096">Константин Колесник</a></td>
 <td>0</td>
 <td>2</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/19468">Виктория Маландина</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/10176">Виктория Евтушенко</a></td>
 <td>0</td>
 <td>1</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/21952">Павел Муха</a></td>
-<td>1</td>
-<td>0</td>
 <td>1</td>
 <td>2</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/7420">Эдуард Голуб</a></td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/9925">Владимир Дудчак</a></td>
 <td>0</td>
+<td>1</td>
 <td>1</td>
 <td>2</td>
+<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/12773">Владимир Итыгин</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/130038">Дмитрий Антоненко</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/17034">Егор Кузьменко</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/7496">Катерина Коциевская</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -523,7 +856,33 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/5195">Анатолий Вассерман</a></td>
+<td><a href="https://rating.chgk.info/player/21176">Денис Михалёв</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/29751">Ярослав Смолянинов</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10182">Антон Еганов</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -537,19 +896,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/55074">Борис Бурда</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/79185">Владимир Шевчук</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -640,7 +986,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9094">Александр Демяненко</a></td>
+<td><a href="https://rating.chgk.info/player/36568">Андрей Штефан</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -653,7 +999,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/35077">Александр Чижов</a></td>
+<td><a href="https://rating.chgk.info/player/3767">Валерий Болган</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -666,7 +1012,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/33197">Алексей Филановский</a></td>
+<td><a href="https://rating.chgk.info/player/137018">Виктор Вандинский</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -679,137 +1025,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/19533">Арсен Малиновский</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/35877">Богдан Шевченко</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/10176">Виктория Евтушенко</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/9925">Владимир Дудчак</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/12773">Владимир Итыгин</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/130038">Дмитрий Антоненко</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30678">Дмитрий Стрильчук</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/17034">Егор Кузьменко</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/505">Иделия Айзятулова</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/7496">Катерина Коциевская</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/40201">Ксения Кучерова</a></td>
+<td><a href="https://rating.chgk.info/player/73105">Елена Болган</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -835,7 +1051,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/3278">Олег Беседин</a></td>
+<td><a href="https://rating.chgk.info/player/110308">Сергей Липовец</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -848,7 +1064,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/30030">Олег Соловьёв</a></td>
+<td><a href="https://rating.chgk.info/player/117262">Сергей Черкасов</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -861,7 +1077,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/36398">Евгений Шляхов</a></td>
+<td><a href="https://rating.chgk.info/player/37617">Александр Камин</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -939,7 +1155,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/21176">Денис Михалёв</a></td>
+<td><a href="https://rating.chgk.info/player/25691">Денис Попов</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1069,20 +1285,20 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/29751">Ярослав Смолянинов</a></td>
+<td>Алексей Новаков</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/8850">Андрей Данченко</a></td>
+<td><a href="https://rating.chgk.info/player/8240">Андрей Грищук</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1108,7 +1324,7 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/5224">Тарас Вахрив</a></td>
+<td><a href="https://rating.chgk.info/player/10136">Максим Евланов</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1128,9 +1344,12 @@ else wrapTabs();
 
 <a id="game-chgk"></a><a id="chgk_contents" name="chgk_contents"></a>
 
+- [XXVIII чемпионат Украины по спортивному ЧГК (2026, на украинском языке)](#chgk_2026)
 - [XXVII чемпионат Украины по спортивному ЧГК (2025, на украинском языке)](#chgk_2025)
 - [XXVI чемпионат Украины по спортивному ЧГК (2022)](#chgk_2022)
 - [XXV чемпионат Украины по спортивному ЧГК (2019)](#chgk_2019)
+- [XXIV чемпионат Украины по спортивному ЧГК (2018)](#chgk_2018)
+- [XXIII чемпионат Украины по спортивному ЧГК (2017)](#chgk_2017)
 - [X чемпионат Украины по спортивному ЧГК (2004)](#chgk_2004)
 - [IX чемпионат Украины по спортивному ЧГК (2002)](#chgk_2002)
 - [VIII Открытый чемпионат Украины по спортивному ЧГК (2000)](#chgk_2000)
@@ -1138,6 +1357,24 @@ else wrapTabs();
 - [IV чемпионат Украины по спортивному ЧГК (1997)](#chgk_1997)
 - [III чемпионат Украины по спортивному ЧГК (1996)](#chgk_1996)
 
+
+**XXVIII чемпионат Украины по спортивному «Что? Где? Когда?»** прошёл 26–27 сентября 2026 года в онлайне. Вопросы задавались на украинском языке. <a id="chgk_2026"></a>
+
+Победитель: **[Мінус один («Минус один») (Киев)](https://rating.chgk.info/teams/316)**
+- Владимир Островский
+- Евгений Спектор
+- Антон Саввин
+- Александр Мудрый
+- Кирилл Михайлов
+- Владимир Шевчук
+
+Второе место заняла команда [«Зненацька»](https://rating.chgk.info/teams/54613) (Одесса), третье — [seꏢes («senes»)](https://rating.chgk.info/teams/85771) (Киев).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1P5ywN0HqmOd8N6iL2iz9dl6WJqpb5VwxxEP0h4CIoXU/edit?gid=305643130#gid=305643130). Больше информации о турнире — [в этом телеграм-канале](https://t.me/LigaUK/981), [в Facebook](https://www.facebook.com/LUCshchdkofficial/posts/pfbid02keEwSkJyJDg6uBkCfwTQMyYe8Gn7RFmuPw6mAERDNA8fmwPNi8zVeuPdeCKfGCUzl?__cft__[0]=AZg1Ot7xOmFG_TkaLa_QjJUkDRuX7hvLysKZOAk3y0vl4TNZ5QohDDW5fOru5jFAQq4IwYlBnZhXc-ac1dvk2kTI_Hm8deEm68OOc6Fv0EdoNVm-mA5ACm3ORfy9Mju8g1AK9kERFpo_pLhaIGSCiQrEe0Cg02G1EzI4dbMUxsjHDTEFkeeocqfYEJ8&__tn__=%2CO%2CP-R) и [здесь](https://t.me/chgknews/1573).
+
+*[К оглавлению](#chgk_contents)*
+
+---
 
 **XXVII чемпионат Украины по спортивному «Что? Где? Когда?»** прошёл 27–28 сентября 2025 года в онлайне. Вопросы задавались на украинском языке. <a id="chgk_2025"></a>
 
@@ -1190,6 +1427,47 @@ else wrapTabs();
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1AFoaaUcMyFaw0CmFsbYS1J042otAczLCpnxb099QeUo/edit?gid=1299839863#gid=1299839863).
 
 Результаты первого этапа можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5344). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/groups/1571471789754881/posts/2273463126222407/?__cft__[0]=AZgp9M64mZ5qY9p1h9MifY3zXwBAzqKJNi5shaPCYswSXCYmDiydI8aq4bM7hDS1BHN_xnwbq37yVamrNUmlJjObeKGA9wDPslLZYQnx410WnV0B4YFOhEQdn8NNEo7-kVc_u9L5RsigPG_M-QlF_3aXNZ56-l1iE3P6D4fyNL7hhKamAHv3iawGAQu7k90WqeymUHIkzdSoKxlI4TEtGidzlKBmK2xvzbY20oZnlQjXKX-6Kzc0DmtU6tDbkgwlobI&__tn__=%2CO%2CP-R). Больше информации о турнире — [в Facebook](https://www.facebook.com/events/1053568614816442/). Результаты второго этапа можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1iY4-xG9QSnLPVHob3PMUjuhu--nQBfadKMRsDdKgE1w/edit?fbclid=IwY2xjawUkeEdleHRuA2FlbQIxMQBwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeeLBFDP5ac3s6k_ZMheKN5LlQlxmWoENHYKAR3I8z-ThGQSNDh2gj7VS3Ihw_aem_wHYVM8e1FIJR1X_IIYY0fQ&gid=970420865#gid=970420865). Больше информации о турнире — [на сайте чемпионата](https://docs.google.com/spreadsheets/d/1cjnLTWZhfBV1HgSmfF7vPF9feXSceO3OCYNScD1_tTg/edit?fbclid=IwY2xjawUkfIxleHRuA2FlbQIxMABwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEejA1wUFq8YX2oV_QjxAHq9dCFRnuh60rgaaT15xsy13-AWHfP1NVxC1KltI0_aem_w6b-UaHHBW38wJY8lsjURg&gid=614694312#gid=614694312), [в Facebook](https://www.facebook.com/events/351499475437794) и [здесь](https://www.facebook.com/LUCshchdkofficial/posts/pfbid034DHBXNTpEa3VnKxTEJoyPFVmTQWm8oCvpa9u5PSvy6dEi6FPkeYWuqExwJSTZdDhl?__cft__[0]=AZgPXLAChJMzKKNYXP1Wa4kfxushItsnN4K-SF47XVZDYHgALWVGOl9SXKVSMI60bqRQ3wvvf9c6gx_ndCTKmCGaHYKRq5bw8WXAaSetn21JK5NweWptDJRukZY69XNZLko9GYbraTUAVXFUrtEFeYYU_w&__tn__=%2CO%2CP-R).
+
+*[К оглавлению](#chgk_contents)*
+
+---
+
+**XXIV чемпионат Украины по спортивному «Что? Где? Когда?»** проходил в два этапа. Первый этап проходил 2–3 декабря 2017 года в Днепре, второй этап — 21–22 апреля 2018 года в Николаеве. <a id="chgk_2018"></a>
+
+Победитель: **[Keisecker (Киев)](https://rating.chgk.info/teams/27448)**
+- Александр Демяненко
+- Олег Беседин
+- Ксения Кучерова
+- Антон Мартыненко
+- Богдан Шевченко
+- Дмитрий Стрильчук
+- Ася Жаглевская-Баранова
+
+Второе место заняла команда [«Приматы»](https://rating.chgk.info/teams/26956) (Днепр), третье — [«Номер 6»](https://rating.chgk.info/teams/308) (Донецк).
+
+Полные результаты можно найти [на этой странице](https://luk.org.ua/tournaments/177/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultaty-vseh-etapov).
+
+Результаты первого этапа можно найти [на этой странице](https://luk.org.ua/tournaments/162/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap/rezultatyi). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/162/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap). Результаты второго этапа можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4931). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/media/set/?set=oa.2087193978182657&type=3). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/177/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap).
+
+*[К оглавлению](#chgk_contents)*
+
+---
+
+**XXIII чемпионат Украины по спортивному «Что? Где? Когда?»** проходил в два этапа. Первый этап проходил 11–12 декабря 2016 года в Ровно, второй этап — 8–9 апреля 2017 года в Харькове. <a id="chgk_2017"></a>
+
+Победитель: **[Мінус один («Минус один») (Киев)](https://rating.chgk.info/teams/316)**
+- Владимир Островский
+- Евгений Спектор
+- Антон Саввин
+- Ольга Дубинская
+- Константин Науменко
+- Антон Еганов
+
+Второе место заняла команда [Keisecker](https://rating.chgk.info/teams/27448) (Киев), третье — [«Приматы»](https://rating.chgk.info/teams/26956) (Днепр).
+
+Полные результаты можно найти [на этой странице](https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultaty-vseh-etapov).
+
+Результаты первого этапа можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4075). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/media/set/?set=oa.1846370732264984&type=3). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/137/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-1-i-etap). Результаты второго этапа можно найти [на этой странице](https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap/rezultatyi). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/146/vysshaja-i-pervaja-ligi-chempionata-ukrainy-po-chto-gde-kogda-2-i-etap).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -1293,6 +1571,15 @@ else wrapTabs();
 - [XXI чемпионат Украины по ССИ (2024, на украинском языке)](#ssi_2024)
 - [XX чемпионат Украины по ССИ (2021)](#ssi_2021)
 - [XIX чемпионат Украины по ССИ (2020)](#ssi_2020)
+- [XVIII чемпионат Украины по ССИ (2019)](#ssi_2019)
+- [XVII чемпионат Украины по ССИ (2018, на украинском языке)](#ssi_2018)
+- [XVI чемпионат Украины по ССИ (2017)](#ssi_2017)
+- [XV чемпионат Украины по ССИ (2016)](#ssi_2016)
+- [XIV чемпионат Украины по ССИ (2015)](#ssi_2015)
+- [XIII чемпионат Украины по ССИ (2014)](#ssi_2014)
+- [XII чемпионат Украины по ССИ (2013)](#ssi_2013)
+- [XI чемпионат Украины по ССИ (2012)](#ssi_2012)
+- [X чемпионат Украины по ССИ (2011)](#ssi_2011)
 
 
 **XXIII чемпионат Украины по спортивной «Своей игре»** прошёл 7 мая–16 июня 2026 года в онлайне. Вопросы задавались на украинском языке. <a id="ssi_2026"></a>
@@ -1351,9 +1638,103 @@ else wrapTabs();
 
 Победитель: **[Дмитрий Литвинов](https://rating.chgk.info/player/18490)**
 
-Второе место занял [Евгений Шляхов](https://rating.chgk.info/player/36398), третье — [Тарас Вахрив](https://rating.chgk.info/player/5224).
+Второе место занял [Евгений Шляхов](https://rating.chgk.info/player/36398), третье — [Тарас Вахрив](https://rating.chgk.info/player/5224). Больше информации о ходе сезона можно найти в [этой гуглтаблице](https://docs.google.com/spreadsheets/d/1tp51SAn2b6VCb8WP-BQ851i0rGCXXacvdqvqCOdqRoA/edit?gid=1083674975#gid=1083674975).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1jmOqeB3uclt4mc6wZ259Zn_eCFakcinBcMdFkRLQfPs/edit?fbclid=IwY2xjawUkcHhleHRuA2FlbQIxMABwZG9mAWJyaWQRMU5Iam1yd1B1UjZSU05YQ2xzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeeYIZBkewccrIr9l_ZYTAo3WZQUm5MnuLDgzypNRl50DyjDatWj0Z4cx7u3w_aem_-ihH8iOYJULyE9ql5wEdag&gid=1045047531#gid=1045047531). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/media/set?vanity=LUCshchdkofficial&set=a.1256451341208789). Больше информации о турнире — [в Facebook](https://www.facebook.com/events/673565669777449/).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XVIII чемпионат Украины по спортивной «Своей игре»** прошёл 13–15 октября 2018 года в Киеве. <a id="ssi_2019"></a>
+
+Победитель: **[Андрей Данченко](https://rating.chgk.info/player/8850)**
+
+Второе место занял [Эдуард Голуб](https://rating.chgk.info/player/7420), третье — [Евгений Шляхов](https://rating.chgk.info/player/36398).
+
+Полные результаты можно найти [на этой странице](https://luk.org.ua/tournaments/187/predvaritelnyi-etap-chempionata-ukrainy-po-chgk-chempionat-ukrainy-po-svoei-igre/rezultaty-svoei-igry).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XVII чемпионат Украины по спортивной «Своей игре»** прошёл 14–17 октября 2017 года в Львове. Вопросы задавались на украинском языке. <a id="ssi_2018"></a>
+
+Победитель: **[Антон Мартыненко](https://rating.chgk.info/player/19990)**
+
+Второе место занял [Тарас Вахрив](https://rating.chgk.info/player/5224), третье — [Андрей Мартыненко](https://rating.chgk.info/player/19992). Больше информации о турнире — [здесь](https://luk.org.ua/tournaments/157/predvaritelnyi-etap-chempionata-ukrainy-po-chgk-chempionat-ukrainy-po-svoei-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XVI чемпионат Украины по спортивной «Своей игре»** прошёл 14–16 октября 2016 года в Запорожье. <a id="ssi_2017"></a>
+
+Победитель: **[Тарас Вахрив](https://rating.chgk.info/player/5224)**
+
+Второе место занял [Антон Мартыненко](https://rating.chgk.info/player/19990), третье — [Евгений Шляхов](https://rating.chgk.info/player/36398). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/132/kubok-ukrainy-po-chto-gde-kogda-chempionat-ukrainy-po-svoei-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XV чемпионат Украины по спортивной «Своей игре»** прошёл 28–29 ноября 2015 года в Николаеве. <a id="ssi_2016"></a>
+
+Победитель: **[Владимир Печерога](https://rating.chgk.info/player/24852)**
+
+Второе место занял [Александр Камин](https://rating.chgk.info/player/37617), третье — [Александр Кудрявцев](https://rating.chgk.info/player/16799). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/110/chempionat-ukrainy-po-svoei-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XIV чемпионат Украины по спортивной «Своей игре»** прошёл 1–2 ноября 2014 года в Николаеве. <a id="ssi_2015"></a>
+
+Победитель: **[Александр Кудрявцев](https://rating.chgk.info/player/16799)**
+
+Второе место занял [Дмитрий Литвинов](https://rating.chgk.info/player/18490), третье — [Андрей Грищук](https://rating.chgk.info/player/8240). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/87/chempionat-ukrainy-po-svoei-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XIII чемпионат Украины по спортивной «Своей игре»** прошёл 2–3 ноября 2013 года в Запорожье. <a id="ssi_2014"></a>
+
+Победитель: **[Владимир Печерога](https://rating.chgk.info/player/24852)**
+
+Второе место занял [Евгений Шляхов](https://rating.chgk.info/player/36398), третье — [Александр Кудрявцев](https://rating.chgk.info/player/16799). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/70/chempionat-ukrainy-po-svoei-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XII чемпионат Украины по спортивной «Своей игре»** прошёл 24–25 ноября 2012 года в Запорожье. <a id="ssi_2013"></a>
+
+Победитель: **[Анатолий Вассерман](https://rating.chgk.info/player/5195)**
+
+Второе место занял [Владимир Печерога](https://rating.chgk.info/player/24852), третье — Алексей Новаков.
+
+Полные результаты можно найти [на этой странице](https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre/rezultatyi). Фотографии с турнира можно посмотреть по [этой ссылке](https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre/gallery). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/25/chempionat-ukrainyi-po-svoey-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XI чемпионат Украины по спортивной «Своей игре»** прошёл 3–4 декабря 2011 года в Николаеве. <a id="ssi_2012"></a>
+
+Победитель: **[Анатолий Вассерман](https://rating.chgk.info/player/5195)**
+
+Второе место занял [Константин Колесник](https://rating.chgk.info/player/15096), третье — [Александр Кудрявцев](https://rating.chgk.info/player/16799). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/4/chempionat-ukrainyi-po-svoey-igre).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**X чемпионат Украины по спортивной «Своей игре»** прошёл 10–12 декабря 2010 года в Харькове. <a id="ssi_2011"></a>
+
+Победитель: **[Анатолий Вассерман](https://rating.chgk.info/player/5195)**
+
+Второе место занял [Константин Колесник](https://rating.chgk.info/player/15096), третье — [Максим Евланов](https://rating.chgk.info/player/10136). Больше информации о турнире — [на сайте чемпионата](https://luk.org.ua/tournaments/64/chempionat-ukrainy-po-svoei-igre-i-erudit-kvartetu).
 
 *[К оглавлению](#ssi_contents)*
 
