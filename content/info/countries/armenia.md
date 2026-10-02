@@ -1675,7 +1675,7 @@ else wrapTabs();
 
 Второе место заняла команда [«Арагаст»](https://rating.chgk.info/teams/56664) (Ереван), третье — [«54 Рыб»](https://rating.chgk.info/teams/105600) (Ереван).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13878). Больше информации о турнире — [здесь](https://t.me/chgknews/1556).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13878). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/khoranard/posts/pfbid0tdBnfj1UxocYJfYE1CPgzp5HayK47W6Qtqp1oXxkG6zLPBoAo84ntPG2DceSQa2Xl?__cft__[0]=AZhhG4RjUSDzcv6QMaweuotPF2ZQ_vTFkfP2TGumuaXJfDNKYtg0RVZ-1EzTAeqIf5AFRvY89eEl9_wwW8oXsY-OVH_JdyL2RvcXO5VH7JqxdLtWZWLGAflkBtlx3O_TwsIWHh8uNMd_DeFP8C2g4yiqh79wwBSBvilLN27ISvWN_JIP906bt-OC_YY&__tn__=%2CO%2CP-R). Больше информации о турнире — [здесь](https://t.me/chgknews/1556).
 
 *[К оглавлению](#chgk_contents)*
 
