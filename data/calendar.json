@@ -1,91 +1,6 @@
 {
-  "generated": "2026-09-23",
+  "generated": "2026-10-03",
   "events": [
-    {
-      "date": "26–27 сентября",
-      "date_start": "2026-09-26",
-      "date_end": "2026-09-27",
-      "place": "Красноярск",
-      "name": "[Енисейская знать](https://t.me/chgknews/1528)",
-      "place_html": "Красноярск",
-      "name_html": "<a href=\"https://t.me/chgknews/1528\">Енисейская знать</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "26–27 сентября",
-      "date_start": "2026-09-26",
-      "date_end": "2026-09-27",
-      "place": "Уфа",
-      "name": "[Турнир трёх шурупов](https://telegram.me/chgknews/1418)",
-      "place_html": "Уфа",
-      "name_html": "<a href=\"https://telegram.me/chgknews/1418\">Турнир трёх шурупов</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "26–27 сентября",
-      "date_start": "2026-09-26",
-      "date_end": "2026-09-27",
-      "place": "онлайн",
-      "name": "[Чемпионат Украины](https://telegram.me/LigaUK/932) (на украинском языке)",
-      "place_html": "онлайн",
-      "name_html": "<a href=\"https://telegram.me/LigaUK/932\">Чемпионат Украины</a> (на украинском языке)",
-      "geography": [
-        "ukraine"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": true
-    },
-    {
-      "date": "27 сентября",
-      "date_start": "2026-09-27",
-      "date_end": "2026-09-27",
-      "place": "[площадки](https://rating.chgk.info/tournament/13156/requests)",
-      "name": "[Гёмбёц — 9](https://rating.chgk.info/tournament/13156) (строгий синхрон)",
-      "place_html": "<a href=\"https://rating.chgk.info/tournament/13156/requests\">площадки</a>",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13156\">Гёмбёц — 9</a> (строгий синхрон)",
-      "geography": [
-        "synch"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "29 сентября",
-      "date_start": "2026-09-29",
-      "date_end": "2026-09-29",
-      "place": "Ашхабад",
-      "name": "[Мемориал Романа Теплякова](https://rating.chgk.info/tournament/14087)",
-      "place_html": "Ашхабад",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14087\">Мемориал Романа Теплякова</a>",
-      "geography": [
-        "asia"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
     {
       "date": "2–4 октября",
       "date_start": "2026-10-02",
@@ -576,9 +491,9 @@
       "champ": false
     },
     {
-      "date": "26–27 ноября",
-      "date_start": "2026-11-26",
-      "date_end": "2026-11-27",
+      "date": "28–29 ноября",
+      "date_start": "2026-11-28",
+      "date_end": "2026-11-29",
       "place": "Самара",
       "name": "[Самариум](https://t.me/chgknews/1545)",
       "place_html": "Самара",
@@ -700,6 +615,23 @@
       "date": "6–7 марта 2027 года",
       "date_start": "2027-03-06",
       "date_end": "2027-03-07",
+      "place": "Дюссельдорф",
+      "name": "Альтфест",
+      "place_html": "Дюссельдорф",
+      "name_html": "Альтфест",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
+      "date": "6–7 марта 2027 года",
+      "date_start": "2027-03-06",
+      "date_end": "2027-03-07",
       "place": "Иваново",
       "name": "[Гран-при текстильной столицы](https://rating.chgk.info/tournament/14243)",
       "place_html": "Иваново",
@@ -770,6 +702,25 @@
       "date": "3–4 апреля 2027 года",
       "date_start": "2027-04-03",
       "date_end": "2027-04-04",
+      "place": "Сыктывкар",
+      "name": "[ДЧР по интеллектуальным играм](https://t.me/dchr_int/221)",
+      "place_html": "Сыктывкар",
+      "name_html": "<a href=\"https://t.me/dchr_int/221\">ДЧР по интеллектуальным играм</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
+    },
+    {
+      "date": "3–4 апреля 2027 года",
+      "date_start": "2027-04-03",
+      "date_end": "2027-04-04",
       "place": "Минск",
       "name": "[Чемпионат Беларуси](https://rating.chgk.info/tournament/14185)",
       "place_html": "Минск",
@@ -797,6 +748,23 @@
       "age": [
         "school"
       ],
+      "game": [
+        "chgk"
+      ],
+      "champ": true
+    },
+    {
+      "date": "18 апреля 2027 года",
+      "date_start": "2027-04-18",
+      "date_end": "2027-04-18",
+      "place": "Баку",
+      "name": "[Чемпионат Азербайджана](https://rating.chgk.info/tournaments/14271) (на русском языке)",
+      "place_html": "Баку",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14271\">Чемпионат Азербайджана</a> (на русском языке)",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
       "game": [
         "chgk"
       ],
@@ -922,6 +890,23 @@
         "kvrm"
       ],
       "champ": true
+    },
+    {
+      "date": "7–8 ноября 2027 года",
+      "date_start": "2027-11-07",
+      "date_end": "2027-11-08",
+      "place": "Красноярск",
+      "name": "[СЫЧ](https://rating.chgk.info/tournaments/14285)",
+      "place_html": "Красноярск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14285\">СЫЧ</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
     }
   ]
 }
