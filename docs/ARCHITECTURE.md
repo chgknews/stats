@@ -547,7 +547,7 @@ Header: `id | place | team id | player id | player name | player surname | old_n
 - `id`: same internal tournament id as the Tournaments row (`game` and `year` come from that row)
 - `team id` / `player id`: **internal** ids (see Teams / Players registries)
 - `team id` disambiguates rosters when tied teams share the same `place`. Load matches Podium by tournament id, then place + team id; if place is blank it still attaches when that `team id` appears once on the podium. Unmatched rows are reported and skipped, not silently dropped.
-- `old_name` / `old_surname`: per-tournament historical names; when either is set, year-section winner rosters print **only** the old name line, and the Players hall-of-fame shows `Current Name (Old Name)`
+- `old_name` / `old_surname`: per-tournament historical names. Year-section winner rosters and SSI lines fill a blank half from the current name (`Вера Монина` if only `old_surname` is set). The Players table keeps the current name outside the brackets and formats the alias as: only `old_surname` → `Вера Разумов (Монина)`; only `old_name` → `Ари Разумов (Вера Разумов)`; both → `Илья Иванов (Сергей Тальянский)`
 
 ### Section 6: Individuals
 

@@ -1329,7 +1329,7 @@ class StatsGenerator:
                     continue
                 for awardee in tournament.awardees.values():
                     for player in awardee.team.players:
-                        old = f"{player.old_name.strip()} {player.old_surname.strip()}".strip()
+                        old = player.hall_of_fame_alias()
                         if not old or not player.id:
                             continue
                         seen.setdefault(player.id, set())

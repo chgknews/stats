@@ -131,11 +131,22 @@ class Player:
     old_surname: str = ""
 
     def roster_display_name(self) -> str:
-        """Name shown in year-section rosters: old names when present."""
-        old = f"{self.old_name.strip()} {self.old_surname.strip()}".strip()
-        if old:
-            return old
-        return f"{self.name} {self.surname}".strip()
+        """Year-section name: old fields, with current name/surname filling blanks."""
+        given = (self.old_name or self.name or "").strip()
+        family = (self.old_surname or self.surname or "").strip()
+        return f"{given} {family}".strip()
+
+    def hall_of_fame_alias(self) -> str:
+        """Parenthetical historical name in the Players table."""
+        old_given = self.old_name.strip()
+        old_family = self.old_surname.strip()
+        if old_given and old_family:
+            return f"{old_given} {old_family}"
+        if old_family:
+            return old_family
+        if old_given:
+            return f"{old_given} {self.surname.strip()}".strip()
+        return ""
 
     def to_dict(self) -> Dict[str, Any]:
         return {
