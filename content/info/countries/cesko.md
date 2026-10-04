@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Чемпионаты</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники и благодарности</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -123,16 +123,16 @@ else wrapTabs();
 <td>Прага</td>
 <td>3</td>
 <td>4</td>
-<td>0</td>
-<td>7</td>
+<td>1</td>
+<td>8</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/65268">В гостях у Кафки</a></td>
 <td>Прага</td>
-<td>4</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
-<td>4</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/54152">Пражские горцы</a></td>
@@ -151,15 +151,23 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/61753">Номады</a></td>
+<td><a href="https://rating.chgk.info/teams/43515">Анахорет</a></td>
 <td>Прага</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/43515">Анахорет</a></td>
+<td><a href="https://rating.chgk.info/teams/105175">Команда Ř</a></td>
+<td>Прага</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/61753">Номады</a></td>
 <td>Прага</td>
 <td>0</td>
 <td>1</td>
@@ -213,30 +221,58 @@ else wrapTabs();
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/player/10910">Алексей Жилинский</a></td>
-<td>7</td>
+<td>8</td>
 <td>0</td>
 <td>0</td>
-<td>7</td>
+<td>8</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/36246">Антон Ширяев</a></td>
 <td>3</td>
 <td>4</td>
-<td>0</td>
-<td>7</td>
+<td>1</td>
+<td>8</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21006">Павел Миронов</a></td>
 <td>3</td>
 <td>4</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/23487">Илья Онскуль</a></td>
+<td>7</td>
+<td>0</td>
 <td>0</td>
 <td>7</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/23487">Илья Онскуль</a></td>
+<td><a href="https://rating.chgk.info/player/46490">Кирилл Рукавицын</a></td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/130795">Александр Шелёмин</a></td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/117140">Денис Руденко</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/23885">Елена Павлова</a></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
 <td>6</td>
 </tr>
 <tr>
@@ -247,53 +283,25 @@ else wrapTabs();
 <td>6</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/46490">Кирилл Рукавицын</a></td>
-<td>0</td>
-<td>4</td>
-<td>2</td>
-<td>6</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/130795">Александр Шелёмин</a></td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/117140">Денис Руденко</a></td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/23885">Елена Павлова</a></td>
-<td>2</td>
-<td>2</td>
-<td>1</td>
-<td>5</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/37390">Андрей Ярмола</a></td>
-<td>4</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
-<td>4</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/140119">Алексей Рахманов</a></td>
 <td>0</td>
-<td>3</td>
-<td>1</td>
 <td>4</td>
+<td>1</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/10418">Михаил Ерасов</a></td>
 <td>0</td>
-<td>3</td>
-<td>1</td>
 <td>4</td>
+<td>1</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/5034">Инесса Василевская</a></td>
@@ -301,6 +309,13 @@ else wrapTabs();
 <td>0</td>
 <td>4</td>
 <td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/45414">Ольга Александрова</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/222311">Людмила Тимонина</a></td>
@@ -324,6 +339,13 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/158668">Вера Разумов (Монина)</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/22435">Евгений Неймер</a></td>
 <td>1</td>
 <td>1</td>
@@ -331,10 +353,10 @@ else wrapTabs();
 <td>2</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/45414">Ольга Александрова</a></td>
+<td><a href="https://rating.chgk.info/player/198166">Аркадий Рушкевич</a></td>
 <td>0</td>
-<td>2</td>
-<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>2</td>
 </tr>
 <tr>
@@ -373,42 +395,7 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/82128">Арсений Ламеко</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/158668">Вера Разумов</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/142087">Виктор Свистунов</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/157657">Виктория Инденбаум</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/160789">Галина Головская</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -422,13 +409,6 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/154357">Евгения Катасонова</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/176788">Екатерина Кац</a></td>
 <td>1</td>
 <td>0</td>
@@ -436,28 +416,14 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/158158">Михаил Катасонов</a></td>
-<td>1</td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/54574">Александр Карясов</a></td>
 <td>0</td>
 <td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/27246">Наталия Руберте</a></td>
-<td>1</td>
-<td>0</td>
 <td>0</td>
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/150953">Феликс Инденбаум</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/198166">Аркадий Рушкевич</a></td>
+<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -465,6 +431,34 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/129988">Артур Янбеков</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/142087">Виктор Свистунов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/157657">Виктория Инденбаум</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/196907">Виталий Антонов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/160789">Галина Головская</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -485,6 +479,13 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/154357">Евгения Катасонова</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/97006">Елена Рубцова</a></td>
 <td>0</td>
 <td>1</td>
@@ -493,6 +494,20 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/20982">Мария Мироненко</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/158158">Михаил Катасонов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27246">Наталия Руберте</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -528,6 +543,13 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8610">Фаик Гусейнов</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/150953">Феликс Инденбаум</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -632,6 +654,20 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/278935">Елена Курфирштова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/22068">Елена Мясоедова</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/288664">Елизавета Кийко</a></td>
 <td>0</td>
 <td>0</td>
@@ -705,9 +741,19 @@ else wrapTabs();
 - [I чемпионат Чехии по спортивному ЧГК (2017)](#chgk_2017)
 
 
-**VIII чемпионат Чехии по спортивному «Что? Где? Когда?»** пройдёт 3–4 октября 2026 года в Праге. <a id="chgk_2026"></a>
+**VIII чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 3–4 октября 2026 года в Праге. <a id="chgk_2026"></a>
 
-Больше информации о турнире — [в анонсе](https://telegram.me/o44praha/248) и [в этом телеграм-канале](https://telegram.me/o44praha/).
+Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
+- Вера Разумов
+- Александр Шелёмин
+- Денис Руденко
+- Андрей Ярмола
+- Илья Онскуль
+- Алексей Жилинский
+
+Второе место заняла [Команда Ř](https://rating.chgk.info/teams/105175) (Прага), третье — [«Как-то так»](https://rating.chgk.info/teams/4130) (Прага).
+
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14219). Больше информации о турнире — [на сайте чемпионата](https://4gk.pl/ochch/) и [в этом телеграм-канале](https://telegram.me/o44praha/).
 
 *[К оглавлению](#contents)*
 
@@ -716,7 +762,7 @@ else wrapTabs();
 **VII чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 4–5 октября 2025 года в Праге. <a id="chgk_2025"></a>
 
 Победитель: **[«В гостях у Кафки» (Прага)](https://rating.chgk.info/teams/65268)**
-- Вера Разумов
+- Вера Монина
 - Александр Шелёмин
 - Денис Руденко
 - Арсений Ламеко
@@ -807,7 +853,7 @@ else wrapTabs();
 
 **II чемпионат Чехии по спортивному «Что? Где? Когда?»** прошёл 13–14 октября 2018 года в Праге. <a id="chgk_2018"></a>
 
-Первое место разделили команды [«Как-то так»](https://rating.chgk.info/teams/4130) (Прага) и [«Номады»](https://rating.chgk.info/teams/61753) (Прага). Состав команды [«Как-то так»](https://rating.chgk.info/teams/4130):
+Победитель: **[«Как-то так» (Прага)](https://rating.chgk.info/teams/4130)**
 - Екатерина Кац
 - Антон Ширяев
 - Елена Павлова
@@ -816,17 +862,7 @@ else wrapTabs();
 - Алексей Жилинский
 - Татьяна Галицкая
 
-Состав команды [«Номады»](https://rating.chgk.info/teams/61753):
-- Галина Головская
-- Михаил Катасонов
-- Виктория Инденбаум
-- Евгения Катасонова
-- Феликс Инденбаум
-- Виктор Свистунов
-- Наталия Руберте
-- Антон Гусаков
-
-Третье место заняла команда [«Ярость Вассермана»](https://rating.chgk.info/teams/28476) (Прага).
+Второе место заняла команда [«Номады»](https://rating.chgk.info/teams/61753) (Прага), третье — [«Ярость Вассермана»](https://rating.chgk.info/teams/28476) (Прага).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5066).
 
@@ -853,18 +889,18 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
-<div class="country-tab-start" data-tab="missing-data"></div>
+<div class="country-tab-start" data-tab="sources"></div>
 
-<a id="missing-data"></a>
+<a id="sources"></a>
 
-Ниже собрана информация о том, каких данных не хватает в том или ином турнире.
+Здесь указан список источников, откуда взята та или иная информация на этой странице.
 
 <table>
 <thead>
-<tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
+<tr><th>Турнир</th><th>Год</th><th>Источник</th></tr>
 </thead>
 <tbody>
-<tr><td>2018</td><td><a href="https://rating.chgk.info/tournament/5066">II чемпионат Чехии по ЧГК</a></td><td>неизвестен состав обладателей второго места.</td></tr>
+<tr><td>II чемпионат Чехии по ЧГК</td><td>2018</td><td><a href="https://rsvk.cz/ru/2018/10/14/mezhdunarodnyj-otkrytyj-chempionat-chehii-po-igre-chto-gde-kogda-proshel-v-prage/">Новость на сайте «Русского дома в Праге»</a> (победитель чешского зачёта)</td></tr>
 </tbody>
 </table>
 

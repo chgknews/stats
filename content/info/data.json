@@ -27352,13 +27352,13 @@
     "metadata": {
       "country": "cesko",
       "numbers_champ": {
-        "chgk": 7
+        "chgk": 8
       },
       "intro": "Чемпионаты Чехии проводятся с 2017 года.",
       "age": "adult",
-      "generated_at": "2026-09-04T16:51:42.463895",
-      "team_count": 10,
-      "player_count": 68,
+      "generated_at": "2026-10-05T01:48:02.910674",
+      "team_count": 11,
+      "player_count": 72,
       "tournament_count": 8
     },
     "tournaments": [
@@ -27372,7 +27372,7 @@
         "city": "Праге",
         "year": "2026",
         "countable": "yes",
-        "ts_id": "",
+        "ts_id": "14219",
         "uz_id": "",
         "ua_id": "",
         "comment": ""
@@ -27486,9 +27486,9 @@
     "links": [
       {
         "id": "315",
-        "results": "",
+        "results": "https://rating.chgk.info/tournament/14219",
         "announce": "https://telegram.me/o44praha/248",
-        "site": "",
+        "site": "https://4gk.pl/ochch/",
         "tg": "https://telegram.me/o44praha/",
         "fb": "",
         "vk": "",
@@ -27598,6 +27598,33 @@
       }
     ],
     "podium": [
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "team name": "В гостях у Кафки",
+        "old name": "",
+        "team city": "Прага",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "team name": "Команда Ř",
+        "old name": "",
+        "team city": "Прага",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "team name": "Как-то так",
+        "old name": "",
+        "team city": "Прага",
+        "roster_complete": "yes"
+      },
       {
         "id": "209",
         "place": "0",
@@ -27744,7 +27771,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "team name": "Номады",
         "old name": "",
@@ -27799,7 +27826,7 @@
     ],
     "rosters": [
       {
-        "id": "209",
+        "id": "315",
         "place": "0",
         "team id": "145",
         "player id": "891",
@@ -27807,6 +27834,186 @@
         "player surname": "Разумов",
         "old_name": "",
         "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "player id": "892",
+        "player name": "Александр",
+        "player surname": "Шелёмин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "player id": "893",
+        "player name": "Денис",
+        "player surname": "Руденко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "player id": "895",
+        "player name": "Андрей",
+        "player surname": "Ярмола",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "player id": "896",
+        "player name": "Илья",
+        "player surname": "Онскуль",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "0",
+        "team id": "145",
+        "player id": "897",
+        "player name": "Алексей",
+        "player surname": "Жилинский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "1602",
+        "player name": "Виталий",
+        "player surname": "Антонов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "913",
+        "player name": "Алексей",
+        "player surname": "Рахманов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "1603",
+        "player name": "Александр",
+        "player surname": "Карясов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "898",
+        "player name": "Кирилл",
+        "player surname": "Рукавицын",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "914",
+        "player name": "Ольга",
+        "player surname": "Александрова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "1",
+        "team id": "253",
+        "player id": "915",
+        "player name": "Михаил",
+        "player surname": "Ерасов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "1604",
+        "player name": "Елена",
+        "player surname": "Курфирштова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "912",
+        "player name": "Аркадий",
+        "player surname": "Рушкевич",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "899",
+        "player name": "Антон",
+        "player surname": "Ширяев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "901",
+        "player name": "Елена",
+        "player surname": "Павлова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "1605",
+        "player name": "Елена",
+        "player surname": "Мясоедова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "315",
+        "place": "2",
+        "team id": "146",
+        "player id": "902",
+        "player name": "Павел",
+        "player surname": "Миронов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "209",
+        "place": "0",
+        "team id": "145",
+        "player id": "891",
+        "player name": "Вера",
+        "player surname": "Разумов",
+        "old_name": "",
+        "old_surname": "Монина"
       },
       {
         "id": "209",
@@ -28810,7 +29017,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "931",
         "player name": "Галина",
@@ -28820,7 +29027,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "932",
         "player name": "Михаил",
@@ -28830,7 +29037,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "933",
         "player name": "Виктория",
@@ -28840,7 +29047,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "934",
         "player name": "Евгения",
@@ -28850,7 +29057,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "935",
         "player name": "Феликс",
@@ -28860,7 +29067,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "936",
         "player name": "Виктор",
@@ -28870,7 +29077,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "937",
         "player name": "Наталия",
@@ -28880,7 +29087,7 @@
       },
       {
         "id": "214",
-        "place": "0",
+        "place": "1",
         "team id": "151",
         "player id": "938",
         "player name": "Антон",
@@ -29162,6 +29369,11 @@
     "individuals": [],
     "languages": [
       {
+        "id": "315",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
         "id": "209",
         "language": "ru",
         "name": "Русский"
@@ -29195,17 +29407,20 @@
         "id": "215",
         "language": "ru",
         "name": "Русский"
-      },
-      {
-        "id": "315",
-        "language": "ru",
-        "name": "Русский"
       }
     ],
     "names": [],
     "sources": {
       "description": "",
-      "items": []
+      "items": [
+        {
+          "id": 214,
+          "year": 2018,
+          "link": "https://rsvk.cz/ru/2018/10/14/mezhdunarodnyj-otkrytyj-chempionat-chehii-po-igre-chto-gde-kogda-proshel-v-prage/",
+          "link_name": "Новость на сайте «Русского дома в Праге»",
+          "comment": "победитель чешского зачёта"
+        }
+      ]
     },
     "videos": [],
     "teams": [
@@ -29296,6 +29511,15 @@
         "non_russian_name": "",
         "city": "Прага",
         "ts_id": "58755",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "253",
+        "name": "Команда Ř",
+        "non_russian_name": "",
+        "city": "Прага",
+        "ts_id": "105175",
         "uz_id": "",
         "ua_id": ""
       }
@@ -29980,17 +30204,51 @@
         "ts_id": "33540",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "1602",
+        "name": "Виталий",
+        "surname": "Антонов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "196907",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1603",
+        "name": "Александр",
+        "surname": "Карясов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "54574",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1604",
+        "name": "Елена",
+        "surname": "Курфирштова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "278935",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1605",
+        "name": "Елена",
+        "surname": "Мясоедова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "22068",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "errors": {
       "description": "",
-      "items": [
-        {
-          "id": 214,
-          "description": "неизвестен состав обладателей второго места.",
-          "critical": "yes"
-        }
-      ]
+      "items": []
     }
   },
   "israel": {
