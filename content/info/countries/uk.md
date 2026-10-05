@@ -119,22 +119,6 @@ else wrapTabs();
 </thead>
 <tbody>
 <tr>
-<td><a href="https://rating.chgk.info/teams/5397">Ворона и Медведы (SteamPug)</a></td>
-<td>Лондон</td>
-<td>1</td>
-<td>4</td>
-<td>5</td>
-<td>10</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/5086">Стрела</a></td>
-<td>Лондон</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
-<td>6</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/43876">Сова нашла хвост</a></td>
 <td>Лондон</td>
 <td>4</td>
@@ -151,18 +135,18 @@ else wrapTabs();
 <td>5</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/5086">Стрела</a></td>
+<td>Лондон</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/79988">Капибара мордой вниз (Совет в Финчлях / Опекают Капибар / Прикапибарилось)</a></td>
 <td>Лондон</td>
 <td>2</td>
 <td>2</td>
-<td>1</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/48869">2,5 человека</a></td>
-<td>Лондон</td>
-<td>1</td>
-<td>3</td>
 <td>1</td>
 <td>5</td>
 </tr>
@@ -173,6 +157,22 @@ else wrapTabs();
 <td>1</td>
 <td>1</td>
 <td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/5397">Ворона и Медведы (SteamPug)</a></td>
+<td>Лондон</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>10</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/48869">2,5 человека</a></td>
+<td>Лондон</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/98778">Council faces the wrath of the tulip grove defenders (Badger admiring art / Tulip grove defenders)</a></td>

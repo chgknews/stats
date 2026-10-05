@@ -119,22 +119,6 @@ else wrapTabs();
 </thead>
 <tbody>
 <tr>
-<td><a href="https://rating.chgk.info/teams/1025">Двин (РПА-DAF / DAF / ДАФ)</a></td>
-<td>Ереван</td>
-<td>5</td>
-<td>6</td>
-<td>6</td>
-<td>17</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/245">Айастан</a></td>
-<td>Ереван</td>
-<td>2</td>
-<td>7</td>
-<td>6</td>
-<td>15</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/640">Перезагрузка (Перезагрузка-Орион)</a></td>
 <td>Ереван</td>
 <td>7</td>
@@ -151,20 +135,20 @@ else wrapTabs();
 <td>8</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/5141">НУИХ</a></td>
+<td><a href="https://rating.chgk.info/teams/1025">Двин (РПА-DAF / DAF / ДАФ)</a></td>
 <td>Ереван</td>
-<td>0</td>
-<td>2</td>
-<td>4</td>
+<td>5</td>
 <td>6</td>
+<td>6</td>
+<td>17</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/52916">Неловко</a></td>
-<td>сборная</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>4</td>
+<td><a href="https://rating.chgk.info/teams/245">Айастан</a></td>
+<td>Ереван</td>
+<td>2</td>
+<td>7</td>
+<td>6</td>
+<td>15</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/86520">Жуки-акробаты и паук-канатоходец</a></td>
@@ -175,12 +159,12 @@ else wrapTabs();
 <td>3</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/149">АССА</a></td>
-<td>Ереван</td>
+<td><a href="https://rating.chgk.info/teams/52916">Неловко</a></td>
+<td>сборная</td>
+<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
+<td>3</td>
+<td>4</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/103264">Арамазд — Григорян</a></td>
@@ -215,6 +199,14 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/5141">НУИХ</a></td>
+<td>Ереван</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/103265">Арамазд — Элларян</a></td>
 <td>Гюмри</td>
 <td>0</td>
@@ -237,6 +229,14 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/149">АССА</a></td>
+<td>Ереван</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/105600">54 Рыб</a></td>

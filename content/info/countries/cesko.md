@@ -119,14 +119,6 @@ else wrapTabs();
 </thead>
 <tbody>
 <tr>
-<td><a href="https://rating.chgk.info/teams/4130">Как-то так</a></td>
-<td>Прага</td>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td>8</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/65268">В гостях у Кафки</a></td>
 <td>Прага</td>
 <td>5</td>
@@ -135,20 +127,12 @@ else wrapTabs();
 <td>5</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/54152">Пражские горцы</a></td>
+<td><a href="https://rating.chgk.info/teams/4130">Как-то так</a></td>
 <td>Прага</td>
-<td>0</td>
-<td>0</td>
 <td>3</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/28476">Ярость Вассермана</a></td>
-<td>Прага</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/43515">Анахорет</a></td>
@@ -181,6 +165,22 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/54152">Пражские горцы</a></td>
+<td>Прага</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/28476">Ярость Вассермана</a></td>
+<td>Прага</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/38682">Ведуны</a></td>
@@ -227,31 +227,10 @@ else wrapTabs();
 <td>8</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/36246">Антон Ширяев</a></td>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td>8</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/21006">Павел Миронов</a></td>
-<td>3</td>
-<td>4</td>
-<td>1</td>
-<td>8</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/23487">Илья Онскуль</a></td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
-<td>7</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/46490">Кирилл Рукавицын</a></td>
-<td>0</td>
-<td>5</td>
-<td>2</td>
 <td>7</td>
 </tr>
 <tr>
@@ -269,6 +248,27 @@ else wrapTabs();
 <td>6</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/37390">Андрей Ярмола</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/36246">Антон Ширяев</a></td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21006">Павел Миронов</a></td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/23885">Елена Павлова</a></td>
 <td>2</td>
 <td>2</td>
@@ -281,55 +281,6 @@ else wrapTabs();
 <td>2</td>
 <td>2</td>
 <td>6</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/37390">Андрей Ярмола</a></td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/140119">Алексей Рахманов</a></td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/10418">Михаил Ерасов</a></td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/5034">Инесса Василевская</a></td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>4</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/45414">Ольга Александрова</a></td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/222311">Людмила Тимонина</a></td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/9989">Марина Духнич</a></td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-<td>3</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/138163">Айгуль Сембаева</a></td>
@@ -350,41 +301,6 @@ else wrapTabs();
 <td>1</td>
 <td>1</td>
 <td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/198166">Аркадий Рушкевич</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/4418">Антон Буланников</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/69141">Борис Силаков</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/29939">Екатерина Соколова</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/151984">Яна Безродная</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
 <td>2</td>
 </tr>
 <tr>
@@ -414,6 +330,41 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/46490">Кирилл Рукавицын</a></td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/140119">Алексей Рахманов</a></td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10418">Михаил Ерасов</a></td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/45414">Ольга Александрова</a></td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/198166">Аркадий Рушкевич</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/54574">Александр Карясов</a></td>
@@ -561,6 +512,55 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/5034">Инесса Василевская</a></td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/222311">Людмила Тимонина</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9989">Марина Духнич</a></td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/4418">Антон Буланников</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/69141">Борис Силаков</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/29939">Екатерина Соколова</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/151984">Яна Безродная</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/134173">Абдул Алиев</a></td>
