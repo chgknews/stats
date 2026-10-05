@@ -1417,9 +1417,9 @@ class StatsGenerator:
         def sort_key(awardee: Awardee) -> Tuple:
             if not multi_game:
                 return (
-                    -awardee.sum,
                     -awardee.gold,
                     -awardee.silver,
+                    -awardee.sum,
                     name_key(awardee),
                 )
             primary_gold, primary_silver, primary_bronze, _ = awardee.counts_for(
