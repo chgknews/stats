@@ -5,6 +5,7 @@ from typing import Dict, Optional, Tuple
 
 import requests
 from requests.exceptions import RequestException
+from counting import constants
 
 MONTHS_RU: Dict[int, str] = {
     1: "января", 2: "февраля", 3: "марта", 4: "апреля",
@@ -261,7 +262,7 @@ def prepare_tournament_date(sd: int, ed: int, sm: str, em: str, sy: int, ey: int
 
 
 def get_city_tournament(city_id: int) -> str:
-    url = f"https://api.rating.chgk.net/towns/{city_id}.json"
+    url = f"{constants.BASE_API_URL}/towns/{city_id}.json"
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()

@@ -1,12 +1,13 @@
-"""API client for fetching tournament data from rating.chgk.net."""
+"""API client for fetching tournament data from rating.chgk.info."""
 from typing import Dict, List, Optional, Any
 import requests
 from requests.exceptions import RequestException
+from counting import constants
 
 
 class TournamentAPI:
-    """API client for fetching tournament data from rating.chgk.net."""
-    BASE_URL = "https://api.rating.chgk.net"
+    """API client for fetching tournament data from rating.chgk.info."""
+    BASE_URL = constants.BASE_API_URL
     TIMEOUT = 10
     _session = None
 

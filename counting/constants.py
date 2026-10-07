@@ -3,6 +3,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
+# API URLs
+BASE_API_URL = "https://api.rating.chgk.info"
+
 # anchors
 TEAMS_ANCHORS = "teams"
 PLAYERS_ANCHORS = "players"

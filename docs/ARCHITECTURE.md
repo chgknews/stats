@@ -134,7 +134,7 @@ sequenceDiagram
 
 | Source | Used by | Purpose |
 |--------|---------|---------|
-| `https://api.rating.chgk.net` … `*.json` | `tournament_api.py` → `tournament_processor.py` | Live tournament info + top-3 results with rosters (HTTP JSON) |
+| `https://api.rating.chgk.info` … `*.json` | `tournament_api.py` → `tournament_processor.py` | Live tournament info + top-3 results with rosters (HTTP JSON) |
 | Google Spreadsheet (`constants.GOOGLE_SHEETS_SPREADSHEET_ID`) | `google_sheets_exporter.py` | Editable canonical data per country tab |
 | `_entity_ids` worksheet | `EntityIdAllocator` | Global next internal id for team / player / tournament |
 | `ids/*.txt` or `tests/*.txt` | `country_registry.resolve_country_slug()` | Bulk list of rating.chgk.info tournament IDs (newest first) |
@@ -356,7 +356,7 @@ CLI entry points live in `scripts/`. Library modules live in `counting/` and are
 ### API & tournament processing
 
 #### `tournament_api.py`
-**Role:** HTTP client for `api.rating.chgk.net`. Fetches tournament `*.json` endpoints with retries.
+**Role:** HTTP client for `api.rating.chgk.info`. Fetches tournament `*.json` endpoints with retries.
 
 #### `tournament_processor.py`
 **Role:** Converts raw API JSON into `Team` / `Player` with `external_ids={ts_id: ...}` (internal `id=0` until the registry allocates). Filters national-team flagged entries when present.
@@ -574,7 +574,7 @@ Header: `id | language | name`
 One row per language, so an edition played in two languages gets two rows. Order of rows is the order used in the markdown sentence.
 
 - `id`: same internal tournament id as the Tournaments row
-- `language`: ISO 639-1 code (`ru`, `es`, `he`, …) as used by [the rating API](https://api.rating.chgk.net/languages). Export always writes the code; on load a Russian name (`Испанский`) typed by hand is accepted too
+- `language`: ISO 639-1 code (`ru`, `es`, `he`, …) as used by [the rating API](https://api.rating.chgk.info/languages). Export always writes the code; on load a Russian name (`Испанский`) typed by hand is accepted too
 - `name`: Russian name, written on export for readability only — `language` wins on load
 - Known codes live in `languages.py`; the API list is a subset of it, since it has no Spanish, Turkish, Hebrew and so on. An unknown value is reported and skipped, so add the language to `LANGUAGES` before using it
 - Tournaments imported from the API (`-f`, `-at`, `-u ts`) take their languages from the tournament payload; `-u ts` never overwrites languages already present in the sheet
