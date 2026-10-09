@@ -437,6 +437,23 @@
       "champ": false
     },
     {
+      "date": "6 декабря",
+      "date_start": "2026-12-06",
+      "date_end": "2026-12-06",
+      "place": "[площадки](https://rating.chgk.info/tournaments/14230/requests)",
+      "name": "[Friendship Games](https://rating.chgk.info/tournaments/14230) (строгий синхрон)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournaments/14230/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14230\">Friendship Games</a> (строгий синхрон)",
+      "geography": [
+        "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
       "date": "12–13 декабря",
       "date_start": "2026-12-12",
       "date_end": "2026-12-13",
@@ -452,6 +469,23 @@
       ],
       "game": [
         "ssi"
+      ],
+      "champ": false
+    },
+    {
+      "date": "20 декабря",
+      "date_start": "2026-12-20",
+      "date_end": "2026-12-20",
+      "place": "[площадки](https://rating.chgk.info/tournaments/14327/requests)",
+      "name": "[FAST / CUP #0](https://rating.chgk.info/tournaments/14327) (строгий синхрон)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournaments/14327/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14327\">FAST / CUP #0</a> (строгий синхрон)",
+      "geography": [
+        "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
       ],
       "champ": false
     },
