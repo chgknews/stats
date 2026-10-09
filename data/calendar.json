@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08",
+  "generated": "2026-10-09",
   "events": [
     {
       "date": "9–11 октября",
@@ -73,6 +73,25 @@
       "date": "17–18 октября",
       "date_start": "2026-10-17",
       "date_end": "2026-10-18",
+      "place": "Нижний Новгород",
+      "name": "[НижВышФест](https://rating.chgk.info/tournament/14143)",
+      "place_html": "Нижний Новгород",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14143\">НижВышФест</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "17–18 октября",
+      "date_start": "2026-10-17",
+      "date_end": "2026-10-18",
       "place": "Минск",
       "name": "[Школьная Нестерка](https://t.me/schoolnesterka/105)",
       "place_html": "Минск",
@@ -93,9 +112,9 @@
       "date_start": "2026-10-24",
       "date_end": "2026-10-25",
       "place": "Архангельск",
-      "name": "[Говоря](https://rating.chgk.info/tournament/14086)",
+      "name": "[Говоря](https://t.me/chgknews/1551)",
       "place_html": "Архангельск",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14086\">Говоря</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1551\">Говоря</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -189,25 +208,6 @@
         "kvrm"
       ],
       "champ": true
-    },
-    {
-      "date": "31 октября–1 ноября",
-      "date_start": "2026-10-31",
-      "date_end": "2026-11-01",
-      "place": "Нижний Новгород",
-      "name": "[НижВышФест](https://rating.chgk.info/tournament/14143)",
-      "place_html": "Нижний Новгород",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14143\">НижВышФест</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [
-        "student"
-      ],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
     },
     {
       "date": "1 ноября",
@@ -817,6 +817,40 @@
       "age": [
         "school"
       ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "29 ноября 2027 года",
+      "date_start": "2027-11-29",
+      "date_end": "2027-11-29",
+      "place": "Москва",
+      "name": "[Memory Fest V](https://rating.chgk.info/tournaments/14291)",
+      "place_html": "Москва",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14291\">Memory Fest V</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "29 ноября 2027 года",
+      "date_start": "2027-11-29",
+      "date_end": "2027-11-29",
+      "place": "Санкт-Петербург",
+      "name": "[Memory Fest V. Spb](https://rating.chgk.info/tournaments/14329)",
+      "place_html": "Санкт-Петербург",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14329\">Memory Fest V. Spb</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
       "game": [
         "kvrm"
       ],
