@@ -753,7 +753,7 @@ else wrapTabs();
 
 Второе место заняла [Команда Ř](https://rating.chgk.info/teams/105175) (Прага), третье — [«Как-то так»](https://rating.chgk.info/teams/4130) (Прага).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14219). Больше информации о турнире — [на сайте чемпионата](https://4gk.pl/ochch/) и [в этом телеграм-канале](https://telegram.me/o44praha/).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14219). Фотографии с турнира можно посмотреть по [этой ссылке](https://drive.google.com/drive/folders/1cwpNBY9xaOg_aJJq4SsXbUru-YUKjG67). Больше информации о турнире — [на сайте чемпионата](https://4gk.pl/ochch/), [в этом телеграм-канале](https://telegram.me/o44praha/) и [здесь](https://t.me/chgknews/1581).
 
 *[К оглавлению](#contents)*
 
