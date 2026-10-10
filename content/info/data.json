@@ -30255,26 +30255,27 @@
     "metadata": {
       "country": "israel",
       "numbers_champ": {
-        "chgk": 26
+        "chgk": 28
       },
-      "intro": "Чемпионаты Израиля проводятся с 1995 года. Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны. Сейчас не хватает информации о самом первом чемпионате, а также некоторых иных. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.",
+      "intro": "Чемпионаты Израиля проводятся с 1995 года, информация о них собирается также [на этом сайте](https://israel.chgk.info/tur/chil/). Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны. Сейчас не хватает информации о самом первом чемпионате, а также некоторых иных. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.",
       "age": "adult",
-      "generated_at": "2026-09-02T19:40:27.512152",
+      "generated_at": "2026-10-11T00:43:00.223670",
       "team_count": 21,
-      "player_count": 119,
+      "player_count": 122,
       "tournament_count": 28
     },
     "tournaments": [
       {
         "id": "113",
         "number": "28",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2026-10-10",
         "end_date": "2026-10-10",
         "city": "Тель-Авиве",
         "year": "2026",
         "countable": "yes",
-        "ts_id": "",
+        "ts_id": "13979",
         "uz_id": "",
         "ua_id": "",
         "comment": ""
@@ -30282,6 +30283,7 @@
       {
         "id": "86",
         "number": "27",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2025-10-25",
         "end_date": "2025-10-25",
@@ -30296,6 +30298,7 @@
       {
         "id": "87",
         "number": "26",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2024-05-18",
         "end_date": "2024-05-18",
@@ -30310,6 +30313,7 @@
       {
         "id": "88",
         "number": "25",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2023-05-13",
         "end_date": "2023-05-13",
@@ -30324,6 +30328,7 @@
       {
         "id": "89",
         "number": "24",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2019-06-01",
         "end_date": "2019-06-01",
@@ -30338,6 +30343,7 @@
       {
         "id": "90",
         "number": "23",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2018-05-05",
         "end_date": "2018-05-05",
@@ -30352,6 +30358,7 @@
       {
         "id": "91",
         "number": "22",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2017-06-03",
         "end_date": "2017-06-03",
@@ -30366,6 +30373,7 @@
       {
         "id": "92",
         "number": "21",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2016-04-09",
         "end_date": "2016-04-09",
@@ -30380,6 +30388,7 @@
       {
         "id": "93",
         "number": "20",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2015-03-28",
         "end_date": "2015-03-28",
@@ -30394,6 +30403,7 @@
       {
         "id": "94",
         "number": "19",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2014-03-21",
         "end_date": "2014-03-21",
@@ -30408,6 +30418,7 @@
       {
         "id": "95",
         "number": "18",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2013-04-19",
         "end_date": "2013-04-19",
@@ -30422,6 +30433,7 @@
       {
         "id": "96",
         "number": "17",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2012-05-04",
         "end_date": "2012-05-04",
@@ -30436,6 +30448,7 @@
       {
         "id": "97",
         "number": "16",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2011-04-29",
         "end_date": "2011-04-29",
@@ -30450,6 +30463,7 @@
       {
         "id": "98",
         "number": "15",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2010-04-23",
         "end_date": "2010-04-23",
@@ -30464,6 +30478,7 @@
       {
         "id": "99",
         "number": "14",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2009-05-01",
         "end_date": "2009-05-02",
@@ -30478,6 +30493,7 @@
       {
         "id": "100",
         "number": "13",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2008-05-01",
         "end_date": "2008-05-02",
@@ -30492,6 +30508,7 @@
       {
         "id": "101",
         "number": "12",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2007-05-06",
         "end_date": "2007-05-06",
@@ -30506,6 +30523,7 @@
       {
         "id": "102",
         "number": "11",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2006-05-05",
         "end_date": "2006-05-05",
@@ -30520,6 +30538,7 @@
       {
         "id": "103",
         "number": "10",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2005-05-20",
         "end_date": "2005-05-20",
@@ -30534,6 +30553,7 @@
       {
         "id": "104",
         "number": "9",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2004-05-07",
         "end_date": "2004-05-07",
@@ -30548,6 +30568,7 @@
       {
         "id": "105",
         "number": "8",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2003-05-02",
         "end_date": "2003-05-02",
@@ -30562,6 +30583,7 @@
       {
         "id": "106",
         "number": "7",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2002-05-03",
         "end_date": "2002-05-03",
@@ -30576,6 +30598,7 @@
       {
         "id": "107",
         "number": "6",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2001-05-18",
         "end_date": "2001-05-18",
@@ -30590,6 +30613,7 @@
       {
         "id": "108",
         "number": "5",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "2000-05-12",
         "end_date": "2000-05-12",
@@ -30604,6 +30628,7 @@
       {
         "id": "109",
         "number": "4",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1999-05-07",
         "end_date": "1999-05-07",
@@ -30618,6 +30643,7 @@
       {
         "id": "110",
         "number": "3",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1998-04-18",
         "end_date": "1998-04-18",
@@ -30632,6 +30658,7 @@
       {
         "id": "111",
         "number": "2",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1997-04-12",
         "end_date": "1997-04-12",
@@ -30646,6 +30673,7 @@
       {
         "id": "112",
         "number": "1",
+        "subnumber": "",
         "game": "chgk",
         "start_date": "1995-00-00",
         "end_date": "1995-00-00",
@@ -30661,13 +30689,14 @@
     "links": [
       {
         "id": "113",
-        "results": "",
+        "results": "https://rating.chgk.info/tournament/13979",
         "announce": "https://www.facebook.com/groups/309438939151833/posts/27450496921286001",
         "site": "",
         "tg": "",
-        "fb": "",
+        "fb": "https://www.facebook.com/events/1112195168025625/",
         "vk": "",
-        "recap": "",
+        "lj": "",
+        "recap": "https://t.me/chgknews/1590",
         "letopis": "",
         "photos": "",
         "questions": ""
@@ -30680,6 +30709,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30693,6 +30723,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30706,6 +30737,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30719,6 +30751,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30732,6 +30765,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30745,6 +30779,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30758,6 +30793,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30771,6 +30807,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30784,6 +30821,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30797,6 +30835,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30810,6 +30849,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30823,6 +30863,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30836,6 +30877,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30849,6 +30891,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30862,6 +30905,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30875,6 +30919,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30888,6 +30933,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30901,6 +30947,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30914,6 +30961,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30927,6 +30975,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30940,6 +30989,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30953,6 +31003,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30966,6 +31017,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30979,6 +31031,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -30992,6 +31045,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -31005,6 +31059,7 @@
         "tg": "",
         "fb": "",
         "vk": "",
+        "lj": "",
         "recap": "",
         "letopis": "",
         "photos": "",
@@ -31012,6 +31067,33 @@
       }
     ],
     "podium": [
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "team name": "Бристольская шкала",
+        "old name": "",
+        "team city": "Хайфа",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "team name": "Братья",
+        "old name": "",
+        "team city": "Тель-Авив",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "team name": "Клеver",
+        "old name": "",
+        "team city": "Тель-Авив",
+        "roster_complete": "yes"
+      },
       {
         "id": "86",
         "place": "0",
@@ -31752,6 +31834,186 @@
       }
     ],
     "rosters": [
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "365",
+        "player name": "Алексей",
+        "player surname": "Файнбурд",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "366",
+        "player name": "Илья",
+        "player surname": "Фрейдкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "367",
+        "player name": "Алексей",
+        "player surname": "Ковалевский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "368",
+        "player name": "Леонид",
+        "player surname": "Михлин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "369",
+        "player name": "Денис",
+        "player surname": "Микшис",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "0",
+        "team id": "69",
+        "player id": "370",
+        "player name": "Юлия",
+        "player surname": "Дидбаридзе",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "359",
+        "player name": "Михаил",
+        "player surname": "Фрадис",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "360",
+        "player name": "Владислав",
+        "player surname": "Тартаковский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "361",
+        "player name": "Илья",
+        "player surname": "Тальянский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "362",
+        "player name": "Владимир",
+        "player surname": "Садов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "363",
+        "player name": "Сусанна",
+        "player surname": "Бровер",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "1",
+        "team id": "68",
+        "player id": "364",
+        "player name": "Сергей",
+        "player surname": "Амлинский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "371",
+        "player name": "Сергей",
+        "player surname": "Грехов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "1606",
+        "player name": "Михаил",
+        "player surname": "Эдельштейн",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "377",
+        "player name": "Матвей",
+        "player surname": "Гомон",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "378",
+        "player name": "Михаил",
+        "player surname": "Сраго",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "379",
+        "player name": "Лев",
+        "player surname": "Спивак",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "113",
+        "place": "2",
+        "team id": "71",
+        "player id": "382",
+        "player name": "Тимур",
+        "player surname": "Барский",
+        "old_name": "",
+        "old_surname": ""
+      },
       {
         "id": "86",
         "place": "0",
@@ -35576,6 +35838,11 @@
     "individuals": [],
     "languages": [
       {
+        "id": "113",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
         "id": "86",
         "language": "ru",
         "name": "Русский"
@@ -37121,6 +37388,16 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "307288",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1606",
+        "name": "Михаил",
+        "surname": "Эдельштейн",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "148467",
         "uz_id": "",
         "ua_id": ""
       }
