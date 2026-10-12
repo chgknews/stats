@@ -47,6 +47,7 @@ COUNTRY_REGISTRY: dict[str, dict[str, str]] = {
     "montenegro": {"nominative": "Черногория", "genitive": "Черногории", "title": "Черногория", "header": "Черногория"},
     "finland": {"nominative": "Финляндия", "genitive": "Финляндии", "title": "Финляндия", "header": "Финляндия"},
     "swiss": {"nominative": "Швейцария", "genitive": "Швейцарии", "title": "Швейцария", "header": "Швейцария"},
+    "spain": {"nominative": "Испания", "genitive": "Испании", "title": "Испания", "header": "Испания"},
     "kyrgyzstan": {"nominative": "Кыргызстан", "genitive": "Кыргызстана", "title": "Кыргызстан", "header": "Кыргызстан"},
     "turkey": {"nominative": "Турция", "genitive": "Турции", "title": "Турция", "header": "Турция"},
     "uzbekiston": {"nominative": "Узбекистан", "genitive": "Узбекистана", "title": "Узбекистан", "header": "Узбекистан"},
