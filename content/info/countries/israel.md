@@ -186,8 +186,8 @@ else wrapTabs();
 <td><a href="https://rating.chgk.info/teams/50386">Fight Club</a></td>
 <td>Тель-Авив</td>
 <td>0</td>
-<td>3</td>
-<td>3</td>
+<td>2</td>
+<td>4</td>
 <td>6</td>
 </tr>
 <tr>
@@ -359,8 +359,8 @@ else wrapTabs();
 <td><a href="https://rating.chgk.info/player/15152">Игорь Колмаков</a></td>
 <td>4</td>
 <td>4</td>
-<td>3</td>
-<td>11</td>
+<td>4</td>
+<td>12</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/38003">Александр Левитас</a></td>
@@ -477,8 +477,8 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/32583">Игорь Улановский</a></td>
 <td>1</td>
-<td>4</td>
 <td>3</td>
+<td>4</td>
 <td>8</td>
 </tr>
 <tr>
@@ -631,44 +631,37 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/5609">Владимир Винокур</a></td>
 <td>0</td>
-<td>3</td>
-<td>4</td>
+<td>2</td>
+<td>5</td>
 <td>7</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/41208">Эдуард Мительман</a></td>
 <td>0</td>
-<td>3</td>
-<td>4</td>
+<td>2</td>
+<td>5</td>
 <td>7</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/39454">Элинор Айсман</a></td>
 <td>0</td>
-<td>3</td>
-<td>4</td>
+<td>2</td>
+<td>5</td>
 <td>7</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/22473">Елена Немец</a></td>
 <td>0</td>
-<td>3</td>
-<td>3</td>
+<td>2</td>
+<td>4</td>
 <td>6</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/30278">Лев Спивак</a></td>
 <td>0</td>
 <td>2</td>
-<td>2</td>
-<td>4</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/37259">Юрий Яковлев</a></td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>4</td>
+<td>3</td>
+<td>5</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/15964">Дарья Костенко</a></td>
@@ -713,6 +706,20 @@ else wrapTabs();
 <td>4</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/2548">Тимур Барский</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/37259">Юрий Яковлев</a></td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/3677">Анна Бограчёва</a></td>
 <td>0</td>
 <td>1</td>
@@ -728,13 +735,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/18059">Евгений Левин</a></td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2548">Тимур Барский</a></td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
@@ -951,6 +951,20 @@ else wrapTabs();
 <td>3</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/119352">Матвей Гомон</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/58616">Михаил Сраго</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/21632">Роман Морозовский</a></td>
 <td>0</td>
 <td>0</td>
@@ -959,6 +973,13 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/162605">Сергей Грехов</a></td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/15031">Юрий Козьмин</a></td>
 <td>0</td>
 <td>0</td>
 <td>2</td>
@@ -1084,13 +1105,6 @@ else wrapTabs();
 <td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/119352">Матвей Гомон</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/77796">Михаил Кипнис</a></td>
 <td>0</td>
 <td>0</td>
@@ -1099,13 +1113,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/14474">Михаил Клиот</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/58616">Михаил Сраго</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1134,13 +1141,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/33308">Юлия Финкель</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/15031">Юрий Козьмин</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -1273,7 +1273,7 @@ else wrapTabs();
 - Валентин Исраэлит
 - Сусанна Бровер
 
-Второе место разделили команды [«Эволюция»](https://rating.chgk.info/teams/4075) (Тель-Авив) и [Fight Club](https://rating.chgk.info/teams/50386) (Тель-Авив).
+Второе место заняла команда [«Эволюция»](https://rating.chgk.info/teams/4075) (Тель-Авив), третье — [Fight Club](https://rating.chgk.info/teams/50386) (Тель-Авив).
 
 Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5674).
 
@@ -1680,8 +1680,6 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
-<tr><td>2024</td><td><a href="https://rating.chgk.info/tournament/10477">XXVI чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
-<tr><td>2019</td><td><a href="https://rating.chgk.info/tournament/5674">XXIV чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2018</td><td><a href="https://rating.chgk.info/tournament/4849">XXIII чемпионат Израиля по ЧГК</a></td><td>неизвестен состав обладателей второго места.</td></tr>
 <tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/21">IX чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2003</td><td><a href="https://rating.chgk.info/tournament/1381">VIII чемпионат Израиля по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>

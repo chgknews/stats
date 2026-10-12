@@ -30259,7 +30259,7 @@
       },
       "intro": "Чемпионаты Израиля проводятся с 1995 года, информация о них собирается также [на этом сайте](https://israel.chgk.info/tur/chil/). Ниже можно увидеть статистику по всем призёрам — как командам, так и игрокам. Также в отдельной вкладке можно найти информацию обо всех чемпионатах страны. Сейчас не хватает информации о самом первом чемпионате, а также некоторых иных. Если вы что-то знаете о призёрах или их составах, напишите, пожалуйста, на почту <chgknews.info@gmail.com>.",
       "age": "adult",
-      "generated_at": "2026-10-11T00:43:00.223670",
+      "generated_at": "2026-10-12T18:34:18.497308",
       "team_count": 21,
       "player_count": 122,
       "tournament_count": 28
@@ -31195,7 +31195,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "team name": "Fight Club",
         "old name": "",
@@ -32305,6 +32305,66 @@
         "old_surname": ""
       },
       {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "378",
+        "player name": "Михаил",
+        "player surname": "Сраго",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "377",
+        "player name": "Матвей",
+        "player surname": "Гомон",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "379",
+        "player name": "Лев",
+        "player surname": "Спивак",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "380",
+        "player name": "Игорь",
+        "player surname": "Колмаков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "381",
+        "player name": "Юрий",
+        "player surname": "Козьмин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "87",
+        "place": "2",
+        "team id": "71",
+        "player id": "382",
+        "player name": "Тимур",
+        "player surname": "Барский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
         "id": "88",
         "place": "0",
         "team id": "68",
@@ -32616,7 +32676,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "390",
         "player name": "Эдуард",
@@ -32626,7 +32686,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "391",
         "player name": "Элинор",
@@ -32636,7 +32696,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "401",
         "player name": "Юрий",
@@ -32646,7 +32706,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "392",
         "player name": "Игорь",
@@ -32656,7 +32716,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "402",
         "player name": "Елена",
@@ -32666,7 +32726,7 @@
       },
       {
         "id": "89",
-        "place": "1",
+        "place": "2",
         "team id": "73",
         "player id": "393",
         "player name": "Владимир",
@@ -37406,11 +37466,6 @@
       "description": "",
       "items": [
         {
-          "id": 89,
-          "description": "неизвестен состав обладателей третьего места.",
-          "critical": "yes"
-        },
-        {
           "id": 104,
           "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
           "critical": "yes"
@@ -37428,11 +37483,6 @@
         {
           "id": 112,
           "description": "неизвестны составы победителя и обладателей второго и третьего мест, место проведения турнира, точная дата проведения турнира.",
-          "critical": "yes"
-        },
-        {
-          "id": 87,
-          "description": "неизвестен состав обладателей третьего места.",
           "critical": "yes"
         },
         {
