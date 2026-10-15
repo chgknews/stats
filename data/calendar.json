@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13",
+  "generated": "2026-10-15",
   "events": [
     {
       "date": "17–18 октября",
@@ -373,9 +373,9 @@
       "date_start": "2026-12-05",
       "date_end": "2026-12-06",
       "place": "Брест",
-      "name": "[Беловежская зима](https://t.me/belzima2022)",
+      "name": "[Беловежская зима](https://t.me/chgknews/1594)",
       "place_html": "Брест",
-      "name_html": "<a href=\"https://t.me/belzima2022\">Беловежская зима</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1594\">Беловежская зима</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -785,6 +785,23 @@
         "kvrm"
       ],
       "champ": true
+    },
+    {
+      "date": "9–10 октября 2027 года",
+      "date_start": "2027-10-09",
+      "date_end": "2027-10-10",
+      "place": "Баку",
+      "name": "[Caspian Cup](https://www.facebook.com/groups/292505490805707/?multi_permalinks=29017172621245611&hoisted_section_header_type=recently_seen&__cft__[0]=AZgUojlPtqPpsU-8q2licwyBdaVu63Xng4f5kWr4Wfo-dS9DcB7AUwmtI2qkbxmibGxC0gydyybI5Q7jeP_8py3UJ8IdStJV4Pn2Fl3J2h1fe232-rhEnA8Vr7PEYWFHxjKmi8xP1DDYrcFDlPg9yJHbKOfcUeOgTKTOGCRSAjtBQeD3nvfMRG-T7Io2RRBrgw&__tn__=%2CO%2CP-R)",
+      "place_html": "Баку",
+      "name_html": "<a href=\"https://www.facebook.com/groups/292505490805707/?multi_permalinks=29017172621245611&amp;hoisted_section_header_type=recently_seen&amp;__cft__[0]=AZgUojlPtqPpsU-8q2licwyBdaVu63Xng4f5kWr4Wfo-dS9DcB7AUwmtI2qkbxmibGxC0gydyybI5Q7jeP_8py3UJ8IdStJV4Pn2Fl3J2h1fe232-rhEnA8Vr7PEYWFHxjKmi8xP1DDYrcFDlPg9yJHbKOfcUeOgTKTOGCRSAjtBQeD3nvfMRG-T7Io2RRBrgw&amp;__tn__=%2CO%2CP-R\">Caspian Cup</a>",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
     },
     {
       "date": "7–8 ноября 2027 года",
