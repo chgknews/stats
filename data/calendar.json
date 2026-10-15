@@ -229,6 +229,23 @@
       "champ": false
     },
     {
+      "date": "7–8 ноября",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-08",
+      "place": "Красноярск",
+      "name": "[СЫЧ](https://rating.chgk.info/tournaments/14285)",
+      "place_html": "Красноярск",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14285\">СЫЧ</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
       "date": "8 ноября",
       "date_start": "2026-11-08",
       "date_end": "2026-11-08",
@@ -338,10 +355,63 @@
       "date": "28–29 ноября",
       "date_start": "2026-11-28",
       "date_end": "2026-11-29",
+      "place": "Москва",
+      "name": "[Интеллектуальный воронёнок](https://t.me/crowlenok/250)",
+      "place_html": "Москва",
+      "name_html": "<a href=\"https://t.me/crowlenok/250\">Интеллектуальный воронёнок</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school"
+      ],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "28–29 ноября",
+      "date_start": "2026-11-28",
+      "date_end": "2026-11-29",
       "place": "Самара",
       "name": "[Самариум](https://t.me/chgknews/1545)",
       "place_html": "Самара",
       "name_html": "<a href=\"https://t.me/chgknews/1545\">Самариум</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "29 ноября",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "place": "Москва",
+      "name": "[Memory Fest V](https://rating.chgk.info/tournaments/14291)",
+      "place_html": "Москва",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14291\">Memory Fest V</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "29 ноября",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "place": "Санкт-Петербург",
+      "name": "[Memory Fest V. Spb](https://rating.chgk.info/tournaments/14329)",
+      "place_html": "Санкт-Петербург",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14329\">Memory Fest V. Spb</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -800,76 +870,6 @@
       "age": [],
       "game": [
         "chgk"
-      ],
-      "champ": false
-    },
-    {
-      "date": "7–8 ноября 2027 года",
-      "date_start": "2027-11-07",
-      "date_end": "2027-11-08",
-      "place": "Красноярск",
-      "name": "[СЫЧ](https://rating.chgk.info/tournaments/14285)",
-      "place_html": "Красноярск",
-      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14285\">СЫЧ</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "28–29 ноября 2027 года",
-      "date_start": "2027-11-28",
-      "date_end": "2027-11-29",
-      "place": "Москва",
-      "name": "[Интеллектуальный воронёнок](https://t.me/crowlenok/250)",
-      "place_html": "Москва",
-      "name_html": "<a href=\"https://t.me/crowlenok/250\">Интеллектуальный воронёнок</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [
-        "school"
-      ],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "29 ноября 2027 года",
-      "date_start": "2027-11-29",
-      "date_end": "2027-11-29",
-      "place": "Москва",
-      "name": "[Memory Fest V](https://rating.chgk.info/tournaments/14291)",
-      "place_html": "Москва",
-      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14291\">Memory Fest V</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "29 ноября 2027 года",
-      "date_start": "2027-11-29",
-      "date_end": "2027-11-29",
-      "place": "Санкт-Петербург",
-      "name": "[Memory Fest V. Spb](https://rating.chgk.info/tournaments/14329)",
-      "place_html": "Санкт-Петербург",
-      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14329\">Memory Fest V. Spb</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
       ],
       "champ": false
     }
