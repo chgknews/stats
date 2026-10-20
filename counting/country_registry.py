@@ -33,7 +33,6 @@ COUNTRY_REGISTRY: dict[str, dict[str, str]] = {
         "output_subdir": "russia",
     },
     "belarus": {"nominative": "Беларусь", "genitive": "Беларуси", "title": "Беларусь", "header": "Беларусь"},
-    "ukraine": {"nominative": "Украина", "genitive": "Украины", "title": "Украина", "header": "Украина"},
     "georgia": {"nominative": "Грузия", "genitive": "Грузии", "title": "Грузия", "header": "Грузия"},
     "qazaqstan": {"nominative": "Казахстан", "genitive": "Казахстана", "title": "Казахстан", "header": "Казахстан"},
     "eesti": {"nominative": "Эстония", "genitive": "Эстонии", "title": "Эстония", "header": "Эстония"},
@@ -55,6 +54,8 @@ COUNTRY_REGISTRY: dict[str, dict[str, str]] = {
     "turkmaniston": {"nominative": "Туркменистан", "genitive": "Туркменистана", "title": "Туркменистан", "header": "Туркменистан"},
     "cyprus": {"nominative": "Кипр", "genitive": "Кипра", "title": "Кипр", "header": "Кипр"},
     'uk': {'nominative': 'Великобритания', 'genitive': 'Великобритании', 'title': 'Великобритания', 'header': 'Великобритания'},
+    "ukraine": {"nominative": "Украина", "genitive": "Украины", "title": "Украина", "header": "Украина"},
+    'usa': {'nominative': 'США', 'genitive': 'США', 'title': 'США', 'header': 'США'},
 }
 
 
