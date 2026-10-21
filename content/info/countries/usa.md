@@ -194,14 +194,14 @@ else wrapTabs();
 <td>Пало-Альто</td>
 <td>1</td>
 <td>2</td>
-<td>0</td>
-<td>3</td>
+<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
-<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/1181">Лямбда</a></td>
@@ -216,6 +216,20 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/46750">Весёлые монахи</a></td>
+<td>Пало-Альто</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/105990">Надо подкачаться</a></td>
@@ -274,20 +288,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/46750">Весёлые монахи</a></td>
-<td>Пало-Альто</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/teams/69931">АбВер: операция Туда, блин!</a></td>
 <td>Торонто</td>
 <td>1</td>
@@ -326,6 +326,20 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/28217">Выше плинтуса</a></td>
+<td>Чикаго</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -720,6 +734,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/11466">Евгений Затуловский</a></td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>10</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/29950">Мария Соколова</a></td>
 <td>3</td>
 <td>3</td>
@@ -763,22 +793,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/11466">Евгений Затуловский</a></td>
-<td>4</td>
-<td>4</td>
-<td>1</td>
-<td>9</td>
-<td>2</td>
-<td>3</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -992,6 +1006,54 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/28103">Алексей Самсонов</a></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/2033">Вардан Багирян</a></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/56704">Татьяна Веремеенко</a></td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/6853">Мария Гендина</a></td>
 <td>0</td>
 <td>4</td>
@@ -1120,54 +1182,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/28103">Алексей Самсонов</a></td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2033">Вардан Багирян</a></td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/56704">Татьяна Веремеенко</a></td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/5298">Борис Вейцман</a></td>
 <td>1</td>
 <td>1</td>
@@ -1227,6 +1241,70 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27380">Полина Митриковская</a></td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/15470">Алексей Кононенко</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/5717">Денис Власов</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/144088">Олег Годовых</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1392,6 +1470,38 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/28255">Ваган Сардарян</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19720">Турьян Рафаэли</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/11405">Владислав Зарайский</a></td>
 <td>1</td>
 <td>0</td>
@@ -1440,17 +1550,17 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/27380">Полина Митриковская</a></td>
+<td><a href="https://rating.chgk.info/player/4861">Ирина Вайсертрейгер</a></td>
+<td>1</td>
 <td>0</td>
+<td>1</td>
 <td>2</td>
 <td>0</td>
-<td>2</td>
+<td>0</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0</td>
 <td>1</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1472,48 +1582,32 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/15470">Алексей Кононенко</a></td>
+<td><a href="https://rating.chgk.info/player/124895">Сергей Серебряков</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/5717">Денис Власов</a></td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/144088">Олег Годовых</a></td>
+<td><a href="https://rating.chgk.info/player/22792">София Годовых</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1744,7 +1838,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/4861">Ирина Вайсертрейгер</a></td>
+<td><a href="https://rating.chgk.info/player/113202">Виктория Козьмина</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1760,7 +1854,71 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/22935">Илья Новиков</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/29943">Ирина Соколова</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/17851">Павел Лапицкий</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18162">Павел Лейдерман</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/33797">Павел Харитонов</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2144,7 +2302,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/28255">Ваган Сардарян</a></td>
+<td><a href="https://rating.chgk.info/player/23095">Евгений Нудельман</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2192,7 +2350,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/19720">Турьян Рафаэли</a></td>
+<td><a href="https://rating.chgk.info/player/35904">Сергей Шевченко</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2496,39 +2654,23 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/110507">Виталий Киселёв</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/284333">Владимир Пузырёв</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/124895">Сергей Серебряков</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/22792">София Годовых</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2558,6 +2700,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21956">Тимур Мухаматулин</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -2608,7 +2766,7 @@ else wrapTabs();
 
 Второе место заняла команда [«Инк»](https://rating.chgk.info/teams/216) (Пало-Альто), третье — [«Весёлые монахи»](https://rating.chgk.info/teams/46750) (Пало-Альто).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12840), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6679). Больше информации о турнире — [на сайте чемпионата](https://vnm.chgk.info/2025/index.html), [в Facebook](https://www.facebook.com/groups/931240483905423/?multi_permalinks=2634084223621032&hoisted_section_header_type=recently_seen&__cft__[0]=AZU_44PMzl62RcPDUujTNPA7C0cMQxRoVUlGAVa00qHbe4UMVIIpgh5nVcKy4sJUFnBegWBGefJ65zQvXnGQbtYbxSYAUwtXx0Z8yv3bdcHn-Y1Ve7GZnVz7cVfpkgIlt2Un6hO611yb2dlX15V0S3zmjdCnCk5dW-bn6vGWlOP_d-Ift3HFbOCXruuIAqz7jqrdoVyFKuKvddQiJYzWRhtf&__tn__=%2CO%2CP-R) и [здесь](https://t.me/chgknews/1309).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/12840), вопросы турнира можно почитать [здесь](https://gotquestions.online/pack/6679). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/groups/931240483905423/posts/2634084223621032/?__cft__[0]=AZhAfIiMaHyfYBHiOssFokb9Fu0ad3PxbL6gNmPYO8x96Av2G6tmxqKqia8b1U1K_24qvKDYz6tOWL5HsGrs5uOnMjeG_HLH8CMF4dMaGUzunalz4TnKMET9ogZ2L8ZxbFNqttxhqWopxz-PHCk3Juh3UrbNBTGRi7TVbNIXOHnrSm-LECuxDJCk3O-Ot6cD&__tn__=%2CO%2CP-R). Больше информации о турнире — [на сайте чемпионата](https://vnm.chgk.info/2025/index.html), [в Facebook](https://www.facebook.com/groups/931240483905423/?multi_permalinks=2634084223621032&hoisted_section_header_type=recently_seen&__cft__[0]=AZU_44PMzl62RcPDUujTNPA7C0cMQxRoVUlGAVa00qHbe4UMVIIpgh5nVcKy4sJUFnBegWBGefJ65zQvXnGQbtYbxSYAUwtXx0Z8yv3bdcHn-Y1Ve7GZnVz7cVfpkgIlt2Un6hO611yb2dlX15V0S3zmjdCnCk5dW-bn6vGWlOP_d-Ift3HFbOCXruuIAqz7jqrdoVyFKuKvddQiJYzWRhtf&__tn__=%2CO%2CP-R) и [здесь](https://t.me/chgknews/1309).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -2682,7 +2840,7 @@ else wrapTabs();
 
 Второе место заняла команда [«Инк»](https://rating.chgk.info/teams/216) (Пало-Альто), третье — [«Суббота 13»](https://rating.chgk.info/teams/1733) (Нью-Йорк).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5490).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/5490). Больше информации о турнире — [на сайте чемпионата](http://us2019.chgk.info/).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -3066,6 +3224,7 @@ else wrapTabs();
 - [XXVII чемпионат США по БР (2024)](#brain_2024)
 - [XXVI чемпионат США по БР (2023)](#brain_2023)
 - [XXV чемпионат США по БР (2020)](#brain_2020)
+- [XXIV чемпионат США по БР (2019)](#brain_2019)
 
 
 **XXVIII чемпионат США по брейн-рингу** прошёл 16–17 ноября 2025 года в Чикаго. <a id="brain_2025"></a>
@@ -3138,6 +3297,24 @@ else wrapTabs();
 
 ---
 
+**XXIV чемпионат США по брейн-рингу** прошёл 23–25 марта 2019 года в Дублине. <a id="brain_2019"></a>
+
+Победитель: **[«Выше плинтуса» (Чикаго)](https://rating.chgk.info/teams/28217)**
+- Ваган Сардарян
+- Турьян Рафаэли
+- Павел Лапицкий
+- Павел Лейдерман
+- Виктория Козьмина
+- Павел Харитонов
+
+Второе место заняла команда [«Весёлые монахи»](https://rating.chgk.info/teams/46750) (Пало-Альто), третье — [«Заливная»](https://rating.chgk.info/teams/51796) (Пало-Альто).
+
+Полные результаты можно найти [на этой странице](http://us2019.chgk.info/br_res). Больше информации о турнире — [на сайте чемпионата](http://us2019.chgk.info/).
+
+*[К оглавлению](#brain_contents)*
+
+---
+
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi"></div>
 
@@ -3146,7 +3323,9 @@ else wrapTabs();
 - [XXVIII чемпионат США по ССИ (2025)](#ssi_2025)
 - [XXVII чемпионат США по ССИ (2024)](#ssi_2024)
 - [XXVI чемпионат США по ССИ (2023)](#ssi_2023)
+- [Онлайн-чемпионат США (2020)](#ssi_2020)
 - [XXV чемпионат США по ССИ (2020)](#ssi_2020)
+- [XXIV чемпионат США по ССИ (2019)](#ssi_2019)
 
 
 **XXVIII чемпионат США по спортивной «Своей игре»** прошёл 16–17 ноября 2025 года в Чикаго. <a id="ssi_2025"></a>
@@ -3183,6 +3362,20 @@ else wrapTabs();
 
 ---
 
+**Онлайн-чемпионат США** прошёл в июле–августе 2020 года в онлайне. <a id="ssi_2020"></a>
+
+Победитель: **[Вадим Барановский](https://rating.chgk.info/player/2448)**
+
+Второе место занял [Роман Козелов](https://rating.chgk.info/player/14910), третье — [Владимир Грамагин](https://rating.chgk.info/player/7935).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/16uuroV9jHPEHx_aUXGHMwZ0_9fySgg0T-kG8iRoD8SQ/edit?gid=0#gid=0). Больше информации о турнире — [в Facebook](https://www.facebook.com/groups/931240483905423/?multi_permalinks=1164189707277165&hoisted_section_header_type=recently_seen).
+
+*Турнир не учитывается в общей медальной статистике.*
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
 **XXV чемпионат США по спортивной «Своей игре»** прошёл 7–8 марта 2020 года в Чикаго. <a id="ssi_2020"></a>
 
 Победитель: **[Вадим Барановский](https://rating.chgk.info/player/2448)**
@@ -3190,6 +3383,18 @@ else wrapTabs();
 Второе место занял [Григорий Львович](https://rating.chgk.info/player/19025), третье — [Мамедшакир Мамедзаде](https://rating.chgk.info/player/19699).
 
 Полные результаты можно найти [на этой странице](https://www.facebook.com/events/649280039212508/?post_id=693761568097688&view=permalink&__cft__[0]=AZhxYbxjJUuz9DVRgETWU7RyuuP_khM1OxHmgmXyZIdUT4DzWzFnrY4xq_sVnq2E02Sf9gOYJWOD26xE37KVIp6ZgwrjL31bA1w3rA&__tn__=%2CO%2CP-R). Фотографии с турнира можно посмотреть по [этой ссылке](https://www.facebook.com/groups/931240483905423/posts/1073842092978594/?__cft__[0]=AZgQWOYlf4Xl2llytaBypzYyPBOoroQ88EuCW2BYIHbT-DcRoR_Th4xaYT6cdCRj5zvE2cotK56gg-gM68AmkAtm0E4cKXSMsb8kYAsJsHc2ZumEoZcuTcIyF_UNH1uidupDYWaYZ78DzRvUavwMcjTHgi1hA4O8cZyWRkSon0C_qC6zgxzNu_q2oB2iZvzISq_4cUy0BcXb10mudD1AsnuiKH00zhiI0-SDCx1fH09Ox4JETtWRvreKkKgYI9n9zIYb9lWiSwYDr3V3y1sHjJkqOR0OycvdnN29KGA0mDuRMJSORmhIHnfqOVupluGLqZ-XF7Abx0-vpqInkhWXB6rptg8AJQ8KjEs7y2N6&__tn__=%2CO%2CP-R). Больше информации о турнире — [на сайте чемпионата](https://web.archive.org/web/20210620074138/http://vnm.chgk.info/2020/index.html), [в Facebook](https://www.facebook.com/events/649280039212508/permalink/693761568097688/) и [здесь](https://t.me/chgknews/9).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XXIV чемпионат США по спортивной «Своей игре»** прошёл 23–25 марта 2019 года в Дублине. <a id="ssi_2019"></a>
+
+Победитель: **[Илья Новиков](https://rating.chgk.info/player/22935)**
+
+Второе место занял [Евгений Затуловский](https://rating.chgk.info/player/11466), третье — [Тимур Мухаматулин](https://rating.chgk.info/player/21956).
+
+Полные результаты можно найти [на этой странице](http://us2019.chgk.info/si_results). Больше информации о турнире — [на сайте чемпионата](http://us2019.chgk.info/).
 
 *[К оглавлению](#ssi_contents)*
 
@@ -3207,6 +3412,7 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
+<tr><td>2020</td><td>Онлайн-чемпионат США</td><td>неизвестна точная дата проведения.</td></tr>
 <tr><td>2005</td><td><a href="https://rating.chgk.info/tournament/77">X чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей третьего места.</td></tr>
 <tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/40">IX чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1234">VII чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
