@@ -3323,7 +3323,6 @@ else wrapTabs();
 - [XXVIII чемпионат США по ССИ (2025)](#ssi_2025)
 - [XXVII чемпионат США по ССИ (2024)](#ssi_2024)
 - [XXVI чемпионат США по ССИ (2023)](#ssi_2023)
-- [Онлайн-чемпионат США (2020)](#ssi_2020)
 - [XXV чемпионат США по ССИ (2020)](#ssi_2020)
 - [XXIV чемпионат США по ССИ (2019)](#ssi_2019)
 
@@ -3357,20 +3356,6 @@ else wrapTabs();
 Второе место занял [Григорий Львович](https://rating.chgk.info/player/19025), третье — [Андрей Романчев](https://rating.chgk.info/player/27155).
 
 Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/1T53eGcity6ytZaQaX01tbY1Zq7gyDIszh0ZdhZSaW8Q/edit?fbclid=IwAR0N_SARiIZfBGWMSmNWpyqzGbbdsCdfZBxDpK3V7zUsuiTKojg42Qy2xOA#gid=0). Больше информации о турнире — [на сайте чемпионата](https://usachamp.chgk.info/2023/), [в Facebook](https://www.facebook.com/events/667024678205093/) и [здесь](https://t.me/chgknews/651).
-
-*[К оглавлению](#ssi_contents)*
-
----
-
-**Онлайн-чемпионат США** прошёл в июле–августе 2020 года в онлайне. <a id="ssi_2020"></a>
-
-Победитель: **[Вадим Барановский](https://rating.chgk.info/player/2448)**
-
-Второе место занял [Роман Козелов](https://rating.chgk.info/player/14910), третье — [Владимир Грамагин](https://rating.chgk.info/player/7935).
-
-Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/16uuroV9jHPEHx_aUXGHMwZ0_9fySgg0T-kG8iRoD8SQ/edit?gid=0#gid=0). Больше информации о турнире — [в Facebook](https://www.facebook.com/groups/931240483905423/?multi_permalinks=1164189707277165&hoisted_section_header_type=recently_seen).
-
-*Турнир не учитывается в общей медальной статистике.*
 
 *[К оглавлению](#ssi_contents)*
 
@@ -3412,7 +3397,6 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
-<tr><td>2020</td><td>Онлайн-чемпионат США</td><td>неизвестна точная дата проведения.</td></tr>
 <tr><td>2005</td><td><a href="https://rating.chgk.info/tournament/77">X чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей третьего места.</td></tr>
 <tr><td>2004</td><td><a href="https://rating.chgk.info/tournament/40">IX чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
 <tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1234">VII чемпионат США по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>

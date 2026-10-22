@@ -7,10 +7,10 @@
       },
       "intro": "Чемпионаты США проводятся с 1997 года.",
       "age": "adult",
-      "generated_at": "2026-10-21T22:33:32.695339",
+      "generated_at": "2026-10-22T09:59:49.943546",
       "team_count": 28,
       "player_count": 137,
-      "tournament_count": 38
+      "tournament_count": 37
     },
     "tournaments": [
       {
@@ -488,21 +488,6 @@
         "city": "Дублине",
         "year": "2019",
         "countable": "yes",
-        "ts_id": "",
-        "uz_id": "",
-        "ua_id": "",
-        "comment": ""
-      },
-      {
-        "id": "385",
-        "number": "101",
-        "subnumber": "",
-        "game": "ssi",
-        "start_date": "2020-07-00",
-        "end_date": "2020-08-00",
-        "city": "онлайне",
-        "year": "2020",
-        "countable": "no",
         "ts_id": "",
         "uz_id": "",
         "ua_id": "",
@@ -1026,20 +1011,6 @@
         "site": "http://us2019.chgk.info/",
         "tg": "",
         "fb": "",
-        "vk": "",
-        "lj": "",
-        "recap": "",
-        "letopis": "",
-        "photos": "",
-        "questions": ""
-      },
-      {
-        "id": "385",
-        "results": "https://docs.google.com/spreadsheets/d/16uuroV9jHPEHx_aUXGHMwZ0_9fySgg0T-kG8iRoD8SQ/edit?gid=0#gid=0",
-        "announce": "",
-        "site": "",
-        "tg": "",
-        "fb": "https://www.facebook.com/groups/931240483905423/?multi_permalinks=1164189707277165&hoisted_section_header_type=recently_seen",
         "vk": "",
         "lj": "",
         "recap": "",
@@ -6708,36 +6679,6 @@
     ],
     "individuals": [
       {
-        "id": "385",
-        "place": "0",
-        "player id": "1647",
-        "player name": "Вадим",
-        "player surname": "Барановский",
-        "old_name": "",
-        "old_surname": "",
-        "sex": "male"
-      },
-      {
-        "id": "385",
-        "place": "1",
-        "player id": "1752",
-        "player name": "Роман",
-        "player surname": "Козелов",
-        "old_name": "",
-        "old_surname": "",
-        "sex": "male"
-      },
-      {
-        "id": "385",
-        "place": "2",
-        "player id": "1644",
-        "player name": "Владимир",
-        "player surname": "Грамагин",
-        "old_name": "",
-        "old_surname": "",
-        "sex": "male"
-      },
-      {
         "id": "375",
         "place": "0",
         "player id": "1626",
@@ -7065,12 +7006,7 @@
         "name": "Русский"
       }
     ],
-    "names": [
-      {
-        "id": "385",
-        "name": "Онлайн-чемпионат США"
-      }
-    ],
+    "names": [],
     "sources": {
       "description": "",
       "items": [
