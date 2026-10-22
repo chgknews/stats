@@ -7,10 +7,10 @@
       },
       "intro": "Чемпионаты США проводятся с 1997 года.",
       "age": "adult",
-      "generated_at": "2026-10-22T22:06:52.043530",
-      "team_count": 29,
-      "player_count": 141,
-      "tournament_count": 43
+      "generated_at": "2026-10-23T01:00:01.094718",
+      "team_count": 30,
+      "player_count": 147,
+      "tournament_count": 45
     },
     "tournaments": [
       {
@@ -539,6 +539,21 @@
         "comment": ""
       },
       {
+        "id": "392",
+        "number": "20",
+        "subnumber": "",
+        "game": "brain",
+        "start_date": "2015-03-28",
+        "end_date": "2015-03-29",
+        "city": "Дублине",
+        "year": "2015",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
         "id": "375",
         "number": "28",
         "subnumber": "",
@@ -652,6 +667,21 @@
         "end_date": "2016-04-10",
         "city": "Миннеаполисе",
         "year": "2016",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "391",
+        "number": "20",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2015-03-28",
+        "end_date": "2015-03-29",
+        "city": "Дублине",
+        "year": "2015",
         "countable": "yes",
         "ts_id": "",
         "uz_id": "",
@@ -776,14 +806,14 @@
         "id": "356",
         "results": "https://rating.chgk.info/tournament/3226",
         "announce": "",
-        "site": "",
+        "site": "https://web.archive.org/web/20170713112611/http://us2015.chgk.info/",
         "tg": "",
         "fb": "",
         "vk": "",
-        "lj": "",
+        "lj": "https://chgk-us.livejournal.com/tag/ЧСША-2015%20в%20Дублине/",
         "recap": "",
         "letopis": "",
-        "photos": "",
+        "photos": "https://web.archive.org/web/20180510045538/http://us2015.chgk.info/memoirs",
         "questions": ""
       },
       {
@@ -1151,6 +1181,20 @@
         "questions": ""
       },
       {
+        "id": "392",
+        "results": "",
+        "announce": "",
+        "site": "https://web.archive.org/web/20170713112611/http://us2015.chgk.info/",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "https://chgk-us.livejournal.com/tag/ЧСША-2015%20в%20Дублине/",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://web.archive.org/web/20180510045538/http://us2015.chgk.info/memoirs",
+        "questions": ""
+      },
+      {
         "id": "375",
         "results": "https://docs.google.com/spreadsheets/d/1YiMPBa2CEPo7PLzdZXsYX8OqqxCr3_oIMc5UoWRHW6I/edit?gid=1622237669#gid=1622237669",
         "announce": "",
@@ -1246,6 +1290,20 @@
         "recap": "https://chgk-us.livejournal.com/171806.html",
         "letopis": "",
         "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "391",
+        "results": "https://web.archive.org/web/20180510044146/http://us2015.chgk.info/si_results",
+        "announce": "",
+        "site": "https://web.archive.org/web/20170713112611/http://us2015.chgk.info/",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "https://chgk-us.livejournal.com/tag/ЧСША-2015%20в%20Дублине/",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://web.archive.org/web/20180510045538/http://us2015.chgk.info/memoirs",
         "questions": ""
       }
     ],
@@ -2188,6 +2246,33 @@
       },
       {
         "id": "390",
+        "place": "2",
+        "team id": "265",
+        "team name": "Тормоза",
+        "old name": "",
+        "team city": "Пало-Альто",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "team name": "Суббота 13",
+        "old name": "",
+        "team city": "Нью-Йорк",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "team name": "Дом",
+        "old name": "",
+        "team city": "Бостон",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "392",
         "place": "2",
         "team id": "265",
         "team name": "Тормоза",
@@ -7456,6 +7541,186 @@
         "player surname": "Жоголева",
         "old_name": "",
         "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1412",
+        "player name": "Игорь",
+        "player surname": "Шпунгин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1643",
+        "player name": "Григорий",
+        "player surname": "Остров",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1651",
+        "player name": "Римма",
+        "player surname": "Ионтель",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1644",
+        "player name": "Владимир",
+        "player surname": "Грамагин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1664",
+        "player name": "Олег",
+        "player surname": "Гольденштейн",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "0",
+        "team id": "261",
+        "player id": "1647",
+        "player name": "Вадим",
+        "player surname": "Барановский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1757",
+        "player name": "Сергей",
+        "player surname": "Сиденко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1758",
+        "player name": "Лев",
+        "player surname": "Вайсман",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1759",
+        "player name": "Денис",
+        "player surname": "Чебыкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1760",
+        "player name": "Наталья",
+        "player surname": "Бердникова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1761",
+        "player name": "Борис",
+        "player surname": "Бердников",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "1",
+        "team id": "286",
+        "player id": "1762",
+        "player name": "Анна",
+        "player surname": "Тейтельман",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "464",
+        "player name": "Станислав",
+        "player surname": "Малышев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "1671",
+        "player name": "Георгий",
+        "player surname": "Яковлев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "1628",
+        "player name": "Дмитрий",
+        "player surname": "Тейтельман",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "1672",
+        "player name": "Мария",
+        "player surname": "Соколова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "1673",
+        "player name": "Илья",
+        "player surname": "Миронов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "392",
+        "place": "2",
+        "team id": "265",
+        "player id": "1674",
+        "player name": "Юлия",
+        "player surname": "Жоголева",
+        "old_name": "",
+        "old_surname": ""
       }
     ],
     "individuals": [
@@ -7698,6 +7963,36 @@
         "old_name": "",
         "old_surname": "",
         "sex": "male"
+      },
+      {
+        "id": "391",
+        "place": "0",
+        "player id": "1641",
+        "player name": "Юрий",
+        "player surname": "Корчёмкин",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "391",
+        "place": "1",
+        "player id": "1185",
+        "player name": "Виктор",
+        "player surname": "Исаев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "391",
+        "place": "2",
+        "player id": "1715",
+        "player name": "Леонид",
+        "player surname": "Брухис",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
       }
     ],
     "languages": [
@@ -7867,6 +8162,11 @@
         "name": "Русский"
       },
       {
+        "id": "392",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
         "id": "375",
         "language": "ru",
         "name": "Русский"
@@ -7903,6 +8203,11 @@
       },
       {
         "id": "389",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "391",
         "language": "ru",
         "name": "Русский"
       }
@@ -8201,6 +8506,15 @@
         "non_russian_name": "",
         "city": "Торонто",
         "ts_id": "1966",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "286",
+        "name": "Дом",
+        "non_russian_name": "",
+        "city": "Бостон",
+        "ts_id": "1099",
         "uz_id": "",
         "ua_id": ""
       }
@@ -9623,6 +9937,66 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "27525",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1757",
+        "name": "Сергей",
+        "surname": "Сиденко",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "28988",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1758",
+        "name": "Лев",
+        "surname": "Вайсман",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "4863",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1759",
+        "name": "Денис",
+        "surname": "Чебыкин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "34649",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1760",
+        "name": "Наталья",
+        "surname": "Бердникова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "58813",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1761",
+        "name": "Борис",
+        "surname": "Бердников",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "54855",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1762",
+        "name": "Анна",
+        "surname": "Тейтельман",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "31399",
         "uz_id": "",
         "ua_id": ""
       }
