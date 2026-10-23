@@ -1,61 +1,6 @@
 {
-  "generated": "2026-10-15",
+  "generated": "2026-10-23",
   "events": [
-    {
-      "date": "17–18 октября",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-18",
-      "place": "Владимир",
-      "name": "[Владимир Open](https://telegram.me/chgknews/1496)",
-      "place_html": "Владимир",
-      "name_html": "<a href=\"https://telegram.me/chgknews/1496\">Владимир Open</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "17–18 октября",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-18",
-      "place": "Нижний Новгород",
-      "name": "[НижВышФест](https://rating.chgk.info/tournament/14143)",
-      "place_html": "Нижний Новгород",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14143\">НижВышФест</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [
-        "student"
-      ],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "17–18 октября",
-      "date_start": "2026-10-17",
-      "date_end": "2026-10-18",
-      "place": "Минск",
-      "name": "[Школьная Нестерка](https://t.me/schoolnesterka/105)",
-      "place_html": "Минск",
-      "name_html": "<a href=\"https://t.me/schoolnesterka/105\">Школьная Нестерка</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [
-        "school"
-      ],
-      "game": [
-        "chgk"
-      ],
-      "champ": false
-    },
     {
       "date": "24–25 октября",
       "date_start": "2026-10-24",
@@ -197,9 +142,9 @@
       "date_start": "2026-11-07",
       "date_end": "2026-11-08",
       "place": "Калуга",
-      "name": "[Гостиный двор](https://telegram.me/Ghost_teen_eye_dwarf/108)",
+      "name": "[Гостиный двор](https://t.me/chgknews/1515)",
       "place_html": "Калуга",
-      "name_html": "<a href=\"https://telegram.me/Ghost_teen_eye_dwarf/108\">Гостиный двор</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1515\">Гостиный двор</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -214,9 +159,9 @@
       "date_start": "2026-11-07",
       "date_end": "2026-11-08",
       "place": "Гомель",
-      "name": "[Кубок Сухого](https://t.me/sukhoi_cup/110)",
+      "name": "[Кубок Сухого](https://t.me/chgknews/1549)",
       "place_html": "Гомель",
-      "name_html": "<a href=\"https://t.me/sukhoi_cup/110\">Кубок Сухого</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1549\">Кубок Сухого</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -305,9 +250,9 @@
       "date_start": "2026-11-14",
       "date_end": "2026-11-15",
       "place": "Белград",
-      "name": "[Балканфест](https://t.me/balkanfest/2337)",
+      "name": "[Балканфест](https://t.me/chgknews/1524)",
       "place_html": "Белград",
-      "name_html": "<a href=\"https://t.me/balkanfest/2337\">Балканфест</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1524\">Балканфест</a>",
       "geography": [
         "europe"
       ],
@@ -477,9 +422,9 @@
       "date_start": "2026-12-12",
       "date_end": "2026-12-13",
       "place": "Минск",
-      "name": "ТрЭК (школьные чемпионаты Беларуси по ЭК и «Тройке»)",
+      "name": "[ТрЭК](https://rating.chgk.info/tournaments/14404) (школьные чемпионаты Беларуси по ЭК и «Тройке»)",
       "place_html": "Минск",
-      "name_html": "ТрЭК (школьные чемпионаты Беларуси по ЭК и «Тройке»)",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14404\">ТрЭК</a> (школьные чемпионаты Беларуси по ЭК и «Тройке»)",
       "geography": [
         "russia_belarus"
       ],
@@ -518,6 +463,23 @@
       "name_html": "<a href=\"https://telegram.me/turnirushki/222\">Сугробушки</a>",
       "geography": [
         "europe"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "17 января 2027 года",
+      "date_start": "2027-01-17",
+      "date_end": "2027-01-17",
+      "place": "[площадки](https://rating.chgk.info/tournaments/14237/requests)",
+      "name": "[Гёмбёц — 10](https://rating.chgk.info/tournaments/14237) (строгий синхрон)",
+      "place_html": "<a href=\"https://rating.chgk.info/tournaments/14237/requests\">площадки</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14237\">Гёмбёц — 10</a> (строгий синхрон)",
+      "geography": [
+        "synch"
       ],
       "age": [],
       "game": [
@@ -679,6 +641,25 @@
       "age": [],
       "game": [
         "chgk"
+      ],
+      "champ": true
+    },
+    {
+      "date": "9–11 апреля 2027 года",
+      "date_start": "2027-04-09",
+      "date_end": "2027-04-11",
+      "place": "Санкт-Петербург",
+      "name": "[Чемпионат России среди студентов по интеллектуальным играм](https://rating.chgk.info/tournaments/14389)",
+      "place_html": "Санкт-Петербург",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14389\">Чемпионат России среди студентов по интеллектуальным играм</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "student"
+      ],
+      "game": [
+        "kvrm"
       ],
       "champ": true
     },
