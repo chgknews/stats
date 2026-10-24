@@ -7,9 +7,9 @@
       },
       "intro": "Чемпионаты США проводятся с 1997 года.",
       "age": "adult",
-      "generated_at": "2026-10-24T22:56:53.913554",
+      "generated_at": "2026-10-24T23:42:37.519080",
       "team_count": 38,
-      "player_count": 187,
+      "player_count": 190,
       "tournament_count": 74
     },
     "tournaments": [
@@ -2642,7 +2642,7 @@
         "team name": "Суббота 13",
         "old name": "",
         "team city": "Нью-Йорк",
-        "roster_complete": "no"
+        "roster_complete": "yes"
       },
       {
         "id": "366",
@@ -10831,6 +10831,76 @@
         "old_surname": ""
       },
       {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "703",
+        "player name": "Сергей",
+        "player surname": "Вакуленко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "1773",
+        "player name": "Марина",
+        "player surname": "Копылёва",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "1774",
+        "player name": "Алекс",
+        "player surname": "Покрас",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "1775",
+        "player name": "Елена",
+        "player surname": "Покрас",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "1682",
+        "player name": "Олег",
+        "player surname": "Спирт",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "1755",
+        "player name": "Александр",
+        "player surname": "Копылёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "408",
+        "place": "2",
+        "team id": "296",
+        "player id": "464",
+        "player name": "Станислав",
+        "player surname": "Малышев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
         "id": "411",
         "place": "0",
         "team id": "261",
@@ -15542,11 +15612,6 @@
         {
           "id": 419,
           "description": "неизвестны составы победителя и обладателей второго и третьего мест.",
-          "critical": "yes"
-        },
-        {
-          "id": 408,
-          "description": "неизвестен состав обладателей третьего места.",
           "critical": "yes"
         }
       ]
