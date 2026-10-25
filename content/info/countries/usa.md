@@ -1369,6 +1369,25 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/18583">Сергей Лобачёв</a></td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>9</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/20072">Карен Марутян</a></td>
 <td>3</td>
 <td>2</td>
@@ -1386,25 +1405,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/18583">Сергей Лобачёв</a></td>
-<td>2</td>
-<td>2</td>
-<td>4</td>
-<td>8</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/10768">Дмитрий Жарков</a></td>
@@ -1578,6 +1578,25 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/217114">Николай Арчак</a></td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/18141">Олег Леденёв</a></td>
 <td>3</td>
 <td>0</td>
@@ -1650,25 +1669,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/217114">Николай Арчак</a></td>
-<td>3</td>
-<td>1</td>
-<td>0</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -2013,6 +2013,25 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/27155">Андрей Романчев</a></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27062">Яна Рольник</a></td>
@@ -2526,25 +2545,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/27155">Андрей Романчев</a></td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/12769">Владимир Иткин</a></td>
@@ -5380,6 +5380,7 @@ else wrapTabs();
 
 <a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
 
+- [XXII чемпионат США по ССИ (2026)](#ssi_2026)
 - [XXI чемпионат США по ССИ (2025)](#ssi_2025)
 - [XX чемпионат США по ССИ (2024)](#ssi_2024)
 - [XIX чемпионат США по ССИ (2023)](#ssi_2023)
@@ -5402,6 +5403,16 @@ else wrapTabs();
 - [II чемпионат США по ССИ (2004)](#ssi_2004)
 - [I чемпионат США по ССИ (2003)](#ssi_2003)
 
+
+**XXII чемпионат США по спортивной «Своей игре»** прошёл 24–25 октября 2026 года в Филадельфии. <a id="ssi_2026"></a>
+
+Победитель: **[Сергей Лобачёв](https://rating.chgk.info/player/18583)**
+
+Второе место занял [Андрей Романчев](https://rating.chgk.info/player/27155), третье — [Николай Арчак](https://rating.chgk.info/player/217114).
+
+*[К оглавлению](#ssi_contents)*
+
+---
 
 **XXI чемпионат США по спортивной «Своей игре»** прошёл 16–17 ноября 2025 года в Чикаго. <a id="ssi_2025"></a>
 

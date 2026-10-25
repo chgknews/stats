@@ -7,10 +7,10 @@
       },
       "intro": "Чемпионаты США проводятся с 1997 года.",
       "age": "adult",
-      "generated_at": "2026-10-24T23:42:37.519080",
+      "generated_at": "2026-10-26T00:28:37.882639",
       "team_count": 38,
       "player_count": 190,
-      "tournament_count": 74
+      "tournament_count": 75
     },
     "tournaments": [
       {
@@ -802,6 +802,21 @@
         "end_date": "2007-04-22",
         "city": "Ливерморе",
         "year": "2007",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "422",
+        "number": "22",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2026-10-24",
+        "end_date": "2026-10-25",
+        "city": "Филадельфии",
+        "year": "2026",
         "countable": "yes",
         "ts_id": "",
         "uz_id": "",
@@ -12242,6 +12257,36 @@
       }
     ],
     "individuals": [
+      {
+        "id": "422",
+        "place": "0",
+        "player id": "1629",
+        "player name": "Сергей",
+        "player surname": "Лобачёв",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "422",
+        "place": "1",
+        "player id": "1640",
+        "player name": "Андрей",
+        "player surname": "Романчев",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "422",
+        "place": "2",
+        "player id": "1626",
+        "player name": "Николай",
+        "player surname": "Арчак",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
       {
         "id": "375",
         "place": "0",
