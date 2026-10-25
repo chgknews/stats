@@ -5,9 +5,9 @@
       "numbers_champ": {
         "chgk": 28
       },
-      "intro": "Чемпионаты США проводятся с 1997 года.",
+      "intro": "Чемпионаты США проводятся с 1996 года. Статистика ещё неполна, подробнее о недостающих данных — на вкладке «Проблемы».",
       "age": "adult",
-      "generated_at": "2026-10-26T00:28:37.882639",
+      "generated_at": "2026-10-26T00:40:27.382315",
       "team_count": 38,
       "player_count": 190,
       "tournament_count": 75
@@ -1879,6 +1879,20 @@
         "lj": "https://chgk-us.livejournal.com/tag/ЧСША-2007%20в%20Ливерморе/",
         "recap": "https://chgk-us.livejournal.com/31009.html",
         "letopis": "http://letopis.chgk.info/200704PaloAlto.html",
+        "photos": "",
+        "questions": ""
+      },
+      {
+        "id": "422",
+        "results": "https://t.me/postmortemchannel/5824",
+        "announce": "",
+        "site": "https://usachamp.chgk.info/2026/index.html",
+        "tg": "",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
         "photos": "",
         "questions": ""
       },

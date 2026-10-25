@@ -6,7 +6,7 @@ bookToC: false
 
 # США
 
-Чемпионаты США проводятся с 1997 года.
+Чемпионаты США проводятся с 1996 года. Статистика ещё неполна, подробнее о недостающих данных — на вкладке «Проблемы».
 
 <style>
 .country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
@@ -5409,6 +5409,8 @@ else wrapTabs();
 Победитель: **[Сергей Лобачёв](https://rating.chgk.info/player/18583)**
 
 Второе место занял [Андрей Романчев](https://rating.chgk.info/player/27155), третье — [Николай Арчак](https://rating.chgk.info/player/217114).
+
+Полные результаты можно найти [на этой странице](https://t.me/postmortemchannel/5824). Больше информации о турнире — [на сайте чемпионата](https://usachamp.chgk.info/2026/index.html).
 
 *[К оглавлению](#ssi_contents)*
 
