@@ -1,108 +1,6 @@
 {
-  "generated": "2026-10-23",
+  "generated": "2026-10-26",
   "events": [
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Архангельск",
-      "name": "[Говоря](https://t.me/chgknews/1551)",
-      "place_html": "Архангельск",
-      "name_html": "<a href=\"https://t.me/chgknews/1551\">Говоря</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Саулкрасти",
-      "name": "[Кубок Мюнхгаузена](https://t.me/chgknews/1529)",
-      "place_html": "Саулкрасти",
-      "name_html": "<a href=\"https://t.me/chgknews/1529\">Кубок Мюнхгаузена</a>",
-      "geography": [
-        "europe"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Минск",
-      "name": "[Нестерка](https://telegram.me/chgknews/1490)",
-      "place_html": "Минск",
-      "name_html": "<a href=\"https://telegram.me/chgknews/1490\">Нестерка</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Будва",
-      "name": "[Открытый кубок Адриатики](https://telegram.me/chgknews/1505)",
-      "place_html": "Будва",
-      "name_html": "<a href=\"https://telegram.me/chgknews/1505\">Открытый кубок Адриатики</a>",
-      "geography": [
-        "europe"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Москва",
-      "name": "[Сретенка](https://rating.chgk.info/tournament/14106) («зеркало» Нестерки)",
-      "place_html": "Москва",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14106\">Сретенка</a> («зеркало» Нестерки)",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "24–25 октября",
-      "date_start": "2026-10-24",
-      "date_end": "2026-10-25",
-      "place": "Филадельфия",
-      "name": "[Чемпионат США](https://t.me/chgknews/1538)",
-      "place_html": "Филадельфия",
-      "name_html": "<a href=\"https://t.me/chgknews/1538\">Чемпионат США</a>",
-      "geography": [
-        "america"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": true
-    },
     {
       "date": "1 ноября",
       "date_start": "2026-11-01",
@@ -499,6 +397,26 @@
         "russia_belarus"
       ],
       "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
+      "date": "19–21 февраля 2027 года",
+      "date_start": "2027-02-19",
+      "date_end": "2027-02-21",
+      "place": "Новосибирск",
+      "name": "[Первенство Сибири](https://t.me/per_sib/273)",
+      "place_html": "Новосибирск",
+      "name_html": "<a href=\"https://t.me/per_sib/273\">Первенство Сибири</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school",
+        "student"
+      ],
       "game": [
         "chgk"
       ],
