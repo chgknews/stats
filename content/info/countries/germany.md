@@ -6,7 +6,7 @@ bookToC: false
 
 # Германия
 
-Чемпионаты Германии проводятся с 1998 года.
+Чемпионаты Германии проводятся с 1997 года. Статистика ещё неполна, подробнее о недостающих данных — на вкладке «Проблемы».
 
 <style>
 .country-tab-bar{display:flex;flex-wrap:wrap;gap:.25rem .15rem;margin:1.25rem 0 1rem;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
@@ -107,7 +107,7 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else wrapTabs();
 })();
 </script>
-<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники и благодарности</button></nav>
+<nav class="country-tab-bar" role="tablist"><button type="button" role="tab" class="is-active" data-tab="teams" aria-selected="true">Команды</button><button type="button" role="tab" data-tab="players" aria-selected="false">Игроки</button><button type="button" role="tab" data-tab="game-chgk" aria-selected="false">Турниры по ЧГК</button><button type="button" role="tab" data-tab="game-hamsa" aria-selected="false">Турниры по «Хамсе»</button><button type="button" role="tab" data-tab="game-ssi" aria-selected="false">Турниры по ССИ</button><button type="button" role="tab" data-tab="missing-data" aria-selected="false">Проблемы</button><button type="button" role="tab" data-tab="sources" aria-selected="false">Источники и благодарности</button></nav>
 <div class="country-tab-hide-until-ready"></div>
 <div class="country-tab-start" data-tab="teams"></div>
 
@@ -115,48 +115,23 @@ else wrapTabs();
 
 <table>
 <thead>
-<tr><th>Команда</th><th>Город</th><th>I</th><th>II</th><th>III</th><th>∑</th></tr>
+<tr><th rowspan="2">Команда</th><th rowspan="2">Город</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">«Хамса»</th></tr>
+<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://rating.chgk.info/teams/330">Против ветра (Проти вiтру)</a></td>
 <td>Дюссельдорф</td>
 <td>9</td>
-<td>4</td>
+<td>3</td>
 <td>1</td>
-<td>14</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/201">Крейзер Аврора</a></td>
-<td>Бохум</td>
-<td>2</td>
-<td>4</td>
-<td>2</td>
-<td>8</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/54151">Йота Киля</a></td>
-<td>Дрезден</td>
-<td>2</td>
+<td>13</td>
+<td>9</td>
+<td>3</td>
 <td>1</td>
-<td>2</td>
-<td>5</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/51253">Жмурки</a></td>
-<td>Мюнхен</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/5067">Страх и ужас</a></td>
-<td>Кёльн</td>
-<td>2</td>
 <td>0</td>
-<td>0</td>
-<td>2</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/2694">Оки-Доки</a></td>
@@ -165,6 +140,54 @@ else wrapTabs();
 <td>5</td>
 <td>4</td>
 <td>10</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/3166">Понты Пилата (Команда Антона Гусакова)</a></td>
+<td>Берлин</td>
+<td>0</td>
+<td>6</td>
+<td>3</td>
+<td>9</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/201">Крейзер Аврора</a></td>
+<td>Бохум</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>8</td>
+<td>2</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/54151">Йота Киля</a></td>
+<td>Дрезден</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/276">Ералаш</a></td>
@@ -173,62 +196,12 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>4</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/2377">Семь пядей</a></td>
-<td>Франкфурт-на-Майне</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/72474">Шутка со смыслом</a></td>
-<td>Мюнхен</td>
-<td>1</td>
-<td>0</td>
 <td>1</td>
 <td>2</td>
-</tr>
-<tr>
-<td>2 капитана</td>
-<td>сборная</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/29687">Мама мия</a></td>
-<td>Мюнхен</td>
-<td>1</td>
 <td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/85345">Рой Макай</a></td>
-<td>сборная</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/540">Стирол</a></td>
-<td>Горловка</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/3166">Понты Пилата</a></td>
-<td>Берлин</td>
-<td>0</td>
-<td>5</td>
-<td>2</td>
-<td>7</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/551">Филателисты им. Грибоедова</a></td>
@@ -237,6 +210,40 @@ else wrapTabs();
 <td>2</td>
 <td>2</td>
 <td>4</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/3217">Джон и Катапульта (Команда Бориса Юхвеца / КБ)</a></td>
+<td>Дортмунд</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/2377">Семь пядей</a></td>
+<td>Франкфурт-на-Майне</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/6081">Thunderbolt (Тандерболт)</a></td>
@@ -245,38 +252,68 @@ else wrapTabs();
 <td>2</td>
 <td>1</td>
 <td>3</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/6790">Тёмный лес</a></td>
 <td>Мюнхен</td>
 <td>0</td>
 <td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
 <td>1</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/3217">Джон и Катапульта</a></td>
-<td>Дортмунд</td>
+<td><a href="https://rating.chgk.info/teams/51253">Жмурки</a></td>
+<td>Мюнхен</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/97357">И 2</a></td>
-<td>Дюссельдорф</td>
+<td><a href="https://rating.chgk.info/teams/5067">Страх и ужас</a></td>
+<td>Кёльн</td>
+<td>2</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
-<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/68786">Сцилла</a></td>
-<td>Берлин</td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/teams/72474">Шутка со смыслом</a></td>
+<td>Мюнхен</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/248">Цимес</a></td>
@@ -285,6 +322,110 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2 капитана</td>
+<td>сборная</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/29687">Мама мия</a></td>
+<td>Мюнхен</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/85345">Рой Макай</a></td>
+<td>сборная</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/540">Стирол</a></td>
+<td>Горловка</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/97357">И 2</a></td>
+<td>Дюссельдорф</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/68786">Сцилла</a></td>
+<td>Берлин</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>КМ</td>
+<td>сборная</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/85037">Странные агенты</a></td>
@@ -293,6 +434,12 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/teams/42296">Устами Младенца</a></td>
@@ -300,6 +447,40 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Команда Александра Шафферта</td>
+<td>сборная</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Команда Льва Бондаревского</td>
+<td>сборная</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -312,32 +493,38 @@ else wrapTabs();
 
 <table>
 <thead>
-<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">ССИ</th></tr>
-<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
+<tr><th rowspan="2">Игрок</th><th colspan="4" style="text-align:center">Все медали</th><th colspan="3" style="text-align:center">ЧГК</th><th colspan="3" style="text-align:center">«Хамса»</th><th colspan="3" style="text-align:center">ССИ</th></tr>
+<tr><th>I</th><th>II</th><th>III</th><th>∑</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th><th>I</th><th>II</th><th>III</th></tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://rating.chgk.info/player/17811">Александр Ланин</a></td>
+<td><a href="https://rating.chgk.info/player/4261">Борис Брукман</a></td>
 <td>11</td>
+<td>4</td>
 <td>3</td>
+<td>18</td>
+<td>9</td>
+<td>4</td>
 <td>2</td>
-<td>16</td>
-<td>11</td>
-<td>3</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/4261">Борис Брукман</a></td>
-<td>9</td>
-<td>5</td>
+<td><a href="https://rating.chgk.info/player/17811">Александр Ланин</a></td>
+<td>11</td>
 <td>2</td>
-<td>16</td>
-<td>9</td>
-<td>5</td>
 <td>2</td>
+<td>15</td>
+<td>11</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -345,12 +532,15 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/24511">Михаил Перлин</a></td>
 <td>9</td>
-<td>5</td>
+<td>4</td>
 <td>2</td>
-<td>16</td>
+<td>15</td>
 <td>9</td>
-<td>5</td>
+<td>4</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -358,12 +548,15 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/29256">Павел Сироткин</a></td>
 <td>10</td>
-<td>3</td>
+<td>2</td>
 <td>1</td>
-<td>14</td>
+<td>13</td>
 <td>10</td>
-<td>3</td>
+<td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -371,14 +564,33 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/26989">Дмитрий Родионов</a></td>
 <td>9</td>
-<td>4</td>
+<td>3</td>
 <td>1</td>
-<td>14</td>
+<td>13</td>
 <td>9</td>
-<td>4</td>
+<td>3</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
+<td>2</td>
+<td>8</td>
+<td>3</td>
+<td>13</td>
+<td>1</td>
+<td>6</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
 <td>0</td>
 </tr>
 <tr>
@@ -390,6 +602,9 @@ else wrapTabs();
 <td>3</td>
 <td>4</td>
 <td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -406,29 +621,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27209">Виктория Рохленко</a></td>
 <td>1</td>
 <td>5</td>
-<td>4</td>
-<td>10</td>
+<td>5</td>
+<td>11</td>
 <td>1</td>
 <td>5</td>
-<td>4</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
-<td>1</td>
-<td>6</td>
-<td>2</td>
-<td>9</td>
-<td>1</td>
-<td>6</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -436,12 +644,15 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/3251">Валерий Беров</a></td>
 <td>1</td>
-<td>4</td>
+<td>5</td>
 <td>3</td>
-<td>8</td>
+<td>9</td>
 <td>1</td>
 <td>4</td>
 <td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -458,6 +669,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/6525">Александр Галкин</a></td>
@@ -468,6 +682,25 @@ else wrapTabs();
 <td>5</td>
 <td>2</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18323">Максим Ли</a></td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>7</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -484,16 +717,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/18323">Максим Ли</a></td>
+<td><a href="https://rating.chgk.info/player/1340">Виктор Анцелевич</a></td>
+<td>0</td>
+<td>4</td>
+<td>3</td>
+<td>7</td>
+<td>0</td>
+<td>4</td>
 <td>2</td>
-<td>2</td>
-<td>2</td>
-<td>6</td>
-<td>2</td>
-<td>2</td>
-<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -501,12 +740,15 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/4870">Александр Ваксман</a></td>
 <td>2</td>
-<td>1</td>
-<td>3</td>
+<td>0</td>
+<td>4</td>
 <td>6</td>
 <td>2</td>
-<td>1</td>
-<td>3</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -514,12 +756,15 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/player/2475">Михаил Барчук</a></td>
 <td>2</td>
-<td>1</td>
-<td>3</td>
+<td>0</td>
+<td>4</td>
 <td>6</td>
 <td>2</td>
-<td>1</td>
-<td>3</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -536,16 +781,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/1340">Виктор Анцелевич</a></td>
+<td><a href="https://rating.chgk.info/player/33759">Борис Ханукаев</a></td>
 <td>0</td>
-<td>4</td>
 <td>2</td>
+<td>4</td>
 <td>6</td>
 <td>0</td>
+<td>1</td>
 <td>4</td>
-<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -562,6 +813,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/64436">Кирилл Берёзкин</a></td>
@@ -573,18 +827,40 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/33759">Борис Ханукаев</a></td>
+<td><a href="https://rating.chgk.info/player/27246">Наталия Руберте</a></td>
 <td>0</td>
-<td>1</td>
-<td>4</td>
+<td>3</td>
+<td>2</td>
 <td>5</td>
 <td>0</td>
+<td>3</td>
 <td>1</td>
-<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/18938">Эдуард Лурье</a></td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>5</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -601,6 +877,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/30180">Роман Сорокин</a></td>
@@ -612,6 +891,25 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/30352">Иван Стариков</a></td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -627,29 +925,38 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/72279">Денис Шабанов</a></td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/53816">Елена Даскал</a></td>
-<td>1</td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/36208">Роман Шипов</a></td>
 <td>2</td>
+<td>1</td>
+<td>1</td>
 <td>4</td>
+<td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9834">Ольга Дубинская</a></td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -666,16 +973,38 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/27246">Наталия Руберте</a></td>
+<td><a href="https://rating.chgk.info/player/72279">Денис Шабанов</a></td>
+<td>1</td>
 <td>0</td>
 <td>3</td>
-<td>1</td>
 <td>4</td>
+<td>1</td>
 <td>0</td>
 <td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/53816">Елена Даскал</a></td>
 <td>1</td>
+<td>0</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -692,6 +1021,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/34270">Павел Худяков</a></td>
@@ -705,16 +1037,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/18938">Эдуард Лурье</a></td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
-<td>4</td>
-<td>0</td>
-<td>3</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -731,6 +1053,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/8183">Евгений Грицевский</a></td>
@@ -744,6 +1069,25 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/37147">Борис Юхвец</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/20981">Василина Мироненко</a></td>
@@ -753,6 +1097,9 @@ else wrapTabs();
 <td>3</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -770,6 +1117,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/4878">Сергей Вакуленко</a></td>
@@ -779,6 +1129,41 @@ else wrapTabs();
 <td>3</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/17230">Егор Куликов</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/9784">Глеб Дрепин</a></td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -796,6 +1181,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/19235">Борис Майзель</a></td>
@@ -806,6 +1194,9 @@ else wrapTabs();
 <td>1</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -822,6 +1213,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/18189">Марк Ленивкер</a></td>
@@ -835,6 +1229,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/18490">Дмитрий Литвинов</a></td>
@@ -845,9 +1242,28 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>1</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/8968">Елена Дедова</a></td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/35385">Эдуард Шагал</a></td>
@@ -860,20 +1276,10 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>2</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/9834">Ольга Дубинская</a></td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/36483">Борис Шойхет</a></td>
@@ -884,6 +1290,9 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -900,16 +1309,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/12401">Егор Игнатенков</a></td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>3</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -926,6 +1325,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/21504">Илья Моргунов</a></td>
@@ -939,6 +1341,89 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/59898">Артур Матвеев</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/12401">Егор Игнатенков</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/21375">Максим Мозуль</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/10293">Михаил Екимов</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/19428">Николай Максимов</a></td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/115772">Александр Потапенко</a></td>
@@ -947,6 +1432,9 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -965,16 +1453,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/17230">Егор Куликов</a></td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>2</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -986,6 +1464,9 @@ else wrapTabs();
 <td>0</td>
 <td>2</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1004,6 +1485,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/5583">Алексей Виноградов</a></td>
@@ -1016,16 +1500,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/30352">Иван Стариков</a></td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1043,6 +1517,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27491">Павел Рывкин</a></td>
@@ -1056,6 +1533,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/5607">Юлия Виноградова</a></td>
@@ -1063,6 +1543,25 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/20930">Алексей Минц</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
@@ -1082,6 +1581,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/54136">Амаль Имангулов</a></td>
@@ -1092,6 +1594,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1108,16 +1613,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8968">Елена Дедова</a></td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1131,6 +1626,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1143,6 +1641,25 @@ else wrapTabs();
 <td>2</td>
 <td>0</td>
 <td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/14057">Александр Кимков</a></td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1160,16 +1677,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/59898">Артур Матвеев</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1186,9 +1693,12 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/21375">Максим Мозуль</a></td>
+<td><a href="https://rating.chgk.info/player/130709">Михаил Алимов</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -1199,16 +1709,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/10293">Михаил Екимов</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1225,16 +1725,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/19428">Николай Максимов</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1251,16 +1741,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/36208">Роман Шипов</a></td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1275,6 +1755,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 </tr>
@@ -1285,6 +1768,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1303,6 +1789,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/13912">Анна Зайдель</a></td>
@@ -1311,6 +1800,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1329,16 +1821,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/37147">Борис Юхвец</a></td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1350,6 +1832,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1368,6 +1853,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/101864">Елизавета Лысенко</a></td>
@@ -1376,6 +1864,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1394,6 +1885,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/16329">Ксения Шагал</a></td>
@@ -1402,6 +1896,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1420,6 +1917,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/25882">Максим Поташев</a></td>
@@ -1428,6 +1928,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1446,6 +1949,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/22063">Марианна Брукман</a></td>
@@ -1454,6 +1960,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1472,6 +1981,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/77673">Михаил Папков</a></td>
@@ -1480,6 +1992,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1498,6 +2013,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/134991">Павел Семенюк</a></td>
@@ -1506,6 +2024,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1524,6 +2045,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/20691">Станислав Мереминский</a></td>
@@ -1532,6 +2056,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1550,6 +2077,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27257">Татьяна Рубинштейн</a></td>
@@ -1558,6 +2088,9 @@ else wrapTabs();
 <td>0</td>
 <td>1</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1576,6 +2109,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/56000">Евгений Коватенков</a></td>
@@ -1583,6 +2119,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1602,6 +2141,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/9383">Александр Диниц</a></td>
@@ -1614,16 +2156,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/14057">Александр Кимков</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1641,6 +2173,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/108288">Александр Сновский</a></td>
@@ -1650,6 +2185,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1667,6 +2205,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/3240">Александра Берлина</a></td>
@@ -1676,6 +2217,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1693,6 +2237,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/4439">Алла Булашевская</a></td>
@@ -1702,6 +2249,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1719,6 +2269,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/307285">Борис Колигаев</a></td>
@@ -1728,6 +2281,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1745,6 +2301,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/75320">Галина Денискина</a></td>
@@ -1757,16 +2316,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/9784">Глеб Дрепин</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1784,6 +2333,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/3344">Дмитрий Бибичков</a></td>
@@ -1793,6 +2345,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1810,6 +2365,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/37584">Иван Ерёмин</a></td>
@@ -1819,6 +2377,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1836,6 +2397,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/69939">Инна Калитухо</a></td>
@@ -1848,16 +2412,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/130709">Михаил Алимов</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1875,6 +2429,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/35823">Наталия Шебалина</a></td>
@@ -1884,6 +2441,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1901,6 +2461,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/129955">Ольга Флегонтова</a></td>
@@ -1913,16 +2476,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/2005">Пётр Бавин</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1940,6 +2493,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/39906">Теймур Бабаев</a></td>
@@ -1949,6 +2505,9 @@ else wrapTabs();
 <td>1</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1964,7 +2523,26 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6683">Денис Гаркавенко</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -1976,6 +2554,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1992,6 +2573,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/133103">Александр Волков</a></td>
@@ -2002,6 +2586,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2018,6 +2605,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/71061">Анна Свирина</a></td>
@@ -2028,6 +2618,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2044,6 +2637,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27046">Вениамин Розенфельд</a></td>
@@ -2054,6 +2650,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2070,6 +2669,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/49286">Владимир Замятин</a></td>
@@ -2080,6 +2682,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2096,6 +2701,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/35477">Владимир Шалгунов</a></td>
@@ -2106,6 +2714,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2122,6 +2733,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/201073">Елизавета Зиновьева</a></td>
@@ -2132,6 +2746,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2148,6 +2765,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/16075">Ирина Котляр</a></td>
@@ -2158,6 +2778,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2174,6 +2797,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/307286">Лада Гутникова</a></td>
@@ -2184,6 +2810,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2200,6 +2829,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/23342">Леонид Окнянский</a></td>
@@ -2210,6 +2842,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2226,6 +2861,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/16077">Олег Котляр</a></td>
@@ -2236,6 +2874,9 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -2252,6 +2893,57 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35738">Александр Шафферт</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/3861">Лев Бондаревский</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/15809">Юрий Короленко</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -2371,9 +3063,9 @@ else wrapTabs();
 - Владислав Кузькоков
 - Анна Ждан
 
-Второе место разделили команды [«Понты Пилата»](https://rating.chgk.info/teams/3166) (Берлин) и [«Йота Киля»](https://rating.chgk.info/teams/54151) (Дрезден).
+Второе место заняла команда [«Понты Пилата»](https://rating.chgk.info/teams/3166) (Берлин), третье — [«Йота Киля»](https://rating.chgk.info/teams/54151) (Дрезден).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4859).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4859). Больше информации о турнире — [на сайте чемпионата](http://www.znatoki.de/Joomla15/fest/chg2018).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -2390,9 +3082,9 @@ else wrapTabs();
 - Владислав Кузькоков
 - Анна Ждан
 
-Второе место разделили команды [«Против ветра»](https://rating.chgk.info/teams/330) (Дюссельдорф) и [«Понты Пилата»](https://rating.chgk.info/teams/3166) (Берлин).
+Второе место заняла команда [«Понты Пилата»](https://rating.chgk.info/teams/3166) (Берлин), третье — [«Тёмный лес»](https://rating.chgk.info/teams/6790) (Мюнхен). Поделившая 2–3 места в общем зачёте команда «Против ветра» из-за легионера не участвовала в зачёте чемпионата страны.
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4265).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/4265). Больше информации о турнире — [на сайте чемпионата](http://www.znatoki.de/Joomla15/fest/chg2017).
 
 *[К оглавлению](#chgk_contents)*
 
@@ -2728,6 +3420,50 @@ else wrapTabs();
 ---
 
 <div class="country-tab-end"></div>
+<div class="country-tab-start" data-tab="game-hamsa"></div>
+
+<a id="game-hamsa"></a><a id="hamsa_contents" name="hamsa_contents"></a>
+
+- [II чемпионат Германии по «Хамсе» (2014)](#hamsa_2014)
+- [I чемпионат Германии по «Хамсе» (2013)](#hamsa_2013)
+
+
+**II чемпионат Германии по «Хамсе»** прошёл 9–10 мая 2014 года в Бад-Киссингене. <a id="hamsa_2014"></a>
+
+Победитель: **[«КБ» (сборная)](https://rating.chgk.info/teams/3217)**
+- Глеб Дрепин
+- Борис Брукман
+- Борис Юхвец
+- Роман Шипов
+- Ольга Дубинская
+
+Второе место заняла команда «КМ» (сборная), третье — [«Понты Пилата»](https://rating.chgk.info/teams/3166) (Берлин).
+
+Полные результаты можно найти [на этой странице](https://www.facebook.com/groups/chgk.de/permalink/688175377909810/).
+
+*[К оглавлению](#hamsa_contents)*
+
+---
+
+**I чемпионат Германии по «Хамсе»** прошёл 19–20 октября 2013 года в Берлине. <a id="hamsa_2013"></a>
+
+Победитель: **[«Команда Бориса Юхвеца» (сборная)](https://rating.chgk.info/teams/3217)**
+- Глеб Дрепин
+- Борис Брукман
+- Борис Юхвец
+- Роман Шипов
+- Алексей Минц
+- Иван Стариков
+
+Второе место заняла [«Команда Антона Гусакова»](https://rating.chgk.info/teams/3166) (Берлин). Третье место разделили «Команда Льва Бондаревского» (сборная) и «Команда Александра Шафферта» (сборная).
+
+Полные результаты можно найти [на этой странице](https://chgk-de.livejournal.com/172608.html).
+
+*[К оглавлению](#hamsa_contents)*
+
+---
+
+<div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="game-ssi"></div>
 
 <a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
@@ -2735,6 +3471,8 @@ else wrapTabs();
 - [XXV чемпионат Германии по ССИ (2025)](#ssi_2025)
 - [XXIV чемпионат Германии по ССИ (2024)](#ssi_2024)
 - [XXIII чемпионат Германии по ССИ (2023)](#ssi_2023)
+- [XXI чемпионат Германии по ССИ (2018)](#ssi_2018)
+- [XX чемпионат Германии по ССИ (2017)](#ssi_2017)
 
 
 **XXV чемпионат Германии по спортивной «Своей игре»** прошёл 8–9 ноября 2025 года в Мюнхене. <a id="ssi_2025"></a>
@@ -2773,6 +3511,31 @@ else wrapTabs();
 
 ---
 
+**XXI чемпионат Германии по спортивной «Своей игре»** прошёл 5 мая 2018 года в Бад-Киссингене. <a id="ssi_2018"></a>
+
+Победитель: **[Антон Гусаков](https://rating.chgk.info/player/8550)**
+
+Второе место занял [Егор Куликов](https://rating.chgk.info/player/17230), третье — [Борис Брукман](https://rating.chgk.info/player/4261).
+
+Полные результаты можно найти [в этой гуглтаблице](https://docs.google.com/spreadsheets/d/17zvamqdDK3OGeYT0ftmXHeUsxdQTInZdCnfwo5qq_V4/edit?gid=1599879596#gid=1599879596). Больше информации о турнире — [на сайте чемпионата](http://www.znatoki.de/Joomla15/fest/chg2018).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**XX чемпионат Германии по спортивной «Своей игре»** прошёл 10 июня 2017 года в Бад-Киссингене. <a id="ssi_2017"></a>
+
+Победитель: **[Иван Стариков](https://rating.chgk.info/player/30352)**
+
+Второе место занял [Антон Гусаков](https://rating.chgk.info/player/8550). Третье место разделили [Николай Максимов](https://rating.chgk.info/player/19428) и [Юрий Короленко](https://rating.chgk.info/player/15809).
+
+
+Полные результаты можно найти [на этой странице](http://www.znatoki.de/Joomla15/fest/chg2017results). Больше информации о турнире — [на сайте чемпионата](http://www.znatoki.de/Joomla15/fest/chg2017).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
 <div class="country-tab-end"></div>
 <div class="country-tab-start" data-tab="missing-data"></div>
 
@@ -2785,8 +3548,7 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
-<tr><td>2018</td><td><a href="https://rating.chgk.info/tournament/4859">XXI чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
-<tr><td>2017</td><td><a href="https://rating.chgk.info/tournament/4265">XX чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
+<tr><td>2013</td><td>I чемпионат Германии по «Хамса»</td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
 <tr><td>2011</td><td><a href="https://rating.chgk.info/tournament/1916">XIV чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2006</td><td><a href="https://rating.chgk.info/tournament/171">IX чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2002</td><td><a href="https://rating.chgk.info/tournament/1325">VI чемпионат Германии по ЧГК</a></td><td>неизвестны составы победителя и обладателей второго и третьего мест.</td></tr>
@@ -2809,6 +3571,8 @@ else wrapTabs();
 <tr><th>Турнир</th><th>Год</th><th>Источники</th></tr>
 </thead>
 <tbody>
+<tr><td>XXI чемпионат Германии по ЧГК</td><td>2018</td><td><a href="https://docs.google.com/spreadsheets/d/1wq2X9hKAn6p7qqxk5h4jdlY-B0MTyl_3iUzndw-CmCU/edit?gid=0#gid=0">таблица с местами ЧГ</a> (распределение 2 и 3 мест)</td></tr>
+<tr><td>XX чемпионат Германии по ЧГК</td><td>2017</td><td><a href="https://docs.google.com/spreadsheets/d/1KxrHDaNiWkA7osBfbSNoPpwFzGhzEa-PHw5RL8gOmyY/edit?gid=0#gid=0">таблица с местами ЧГ</a> (распределение мест в тройке)</td></tr>
 <tr><td>XI чемпионат Германии по ЧГК</td><td>2008</td><td><a href="https://web.archive.org/web/20090303060806/http://www.znatoki.de/arhiv/turniry/2008/ChempGer/ChGSummary.htm">сайт znatoki.de</a> (повопросные результаты ЧГК)</td></tr>
 <tr><td>X чемпионат Германии по ЧГК</td><td>2007</td><td><a href="https://web.archive.org/web/20070818092419/http://www.znatoki.de/turniry/Vesna/ChGSummary.htm#tur1">сайт znatoki.de</a> (повопросные результаты ЧГК)</td></tr>
 <tr><td>IX чемпионат Германии по ЧГК</td><td>2006</td><td><a href="https://web.archive.org/web/20080214230306/http://www.znatoki.de/arhiv/turniry/2006/ChempGer/Summary.htm">сайт znatoki.de</a> (повопросные результаты ЧГК)</td></tr>
