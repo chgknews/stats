@@ -1,23 +1,6 @@
 {
-  "generated": "2026-11-01",
+  "generated": "2026-11-04",
   "events": [
-    {
-      "date": "1 ноября",
-      "date_start": "2026-11-01",
-      "date_end": "2026-11-01",
-      "place": "[площадки](https://rating.chgk.info/tournament/13980/requests)",
-      "name": "[Нулевой километр](https://rating.chgk.info/tournament/13980) (строгий синхрон)",
-      "place_html": "<a href=\"https://rating.chgk.info/tournament/13980/requests\">площадки</a>",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/13980\">Нулевой километр</a> (строгий синхрон)",
-      "geography": [
-        "synch"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
     {
       "date": "6–8 ноября",
       "date_start": "2026-11-06",
@@ -344,6 +327,23 @@
       "name_html": "<a href=\"https://rating.chgk.info/tournaments/14327\">FAST / CUP #0</a> (строгий синхрон)",
       "geography": [
         "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "7–8 января 2027 года",
+      "date_start": "2027-01-07",
+      "date_end": "2027-01-08",
+      "place": "Тюмень",
+      "name": "[The Not Very Grand Tournament](https://t.me/tmnfest/2/3071)",
+      "place_html": "Тюмень",
+      "name_html": "<a href=\"https://t.me/tmnfest/2/3071\">The Not Very Grand Tournament</a>",
+      "geography": [
+        "russia_belarus"
       ],
       "age": [],
       "game": [
