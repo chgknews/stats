@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "events": [
     {
       "date": "6–8 ноября",
@@ -148,9 +148,9 @@
       "date_start": "2026-11-21",
       "date_end": "2026-11-22",
       "place": "Жодино",
-      "name": "[Zhodino Major](https://rating.chgk.info/tournament/14183)",
+      "name": "[Zhodino Major](https://t.me/chgknews/1584)",
       "place_html": "Жодино",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14183\">Zhodino Major</a>",
+      "name_html": "<a href=\"https://t.me/chgknews/1584\">Zhodino Major</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -782,6 +782,23 @@
       "name": "[Кубок Адриатии](https://t.me/adriatic_opencup/887)",
       "place_html": "Будва",
       "name_html": "<a href=\"https://t.me/adriatic_opencup/887\">Кубок Адриатии</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
+      "date": "10–12 сентября 2027 года",
+      "date_start": "2027-09-10",
+      "date_end": "2027-09-12",
+      "place": "Фиш",
+      "name": "[Альпийский Эдельвейс](https://t.me/AlpineEdelweis/114)",
+      "place_html": "Фиш",
+      "name_html": "<a href=\"https://t.me/AlpineEdelweis/114\">Альпийский Эдельвейс</a>",
       "geography": [
         "europe"
       ],
