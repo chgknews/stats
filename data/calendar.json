@@ -1,93 +1,6 @@
 {
-  "generated": "2026-11-08",
+  "generated": "2026-11-09",
   "events": [
-    {
-      "date": "6–8 ноября",
-      "date_start": "2026-11-06",
-      "date_end": "2026-11-08",
-      "place": "Мюнхен",
-      "name": "[Чемпионат Германии](https://telegram.me/chgknews/1457)",
-      "place_html": "Мюнхен",
-      "name_html": "<a href=\"https://telegram.me/chgknews/1457\">Чемпионат Германии</a>",
-      "geography": [
-        "europe"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": true
-    },
-    {
-      "date": "7–8 ноября",
-      "date_start": "2026-11-07",
-      "date_end": "2026-11-08",
-      "place": "Калуга",
-      "name": "[Гостиный двор](https://t.me/chgknews/1515)",
-      "place_html": "Калуга",
-      "name_html": "<a href=\"https://t.me/chgknews/1515\">Гостиный двор</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "7–8 ноября",
-      "date_start": "2026-11-07",
-      "date_end": "2026-11-08",
-      "place": "Гомель",
-      "name": "[Кубок Сухого](https://t.me/chgknews/1549)",
-      "place_html": "Гомель",
-      "name_html": "<a href=\"https://t.me/chgknews/1549\">Кубок Сухого</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [
-        "student"
-      ],
-      "game": [
-        "chgk"
-      ],
-      "champ": false
-    },
-    {
-      "date": "7–8 ноября",
-      "date_start": "2026-11-07",
-      "date_end": "2026-11-08",
-      "place": "Красноярск",
-      "name": "[СЫЧ](https://rating.chgk.info/tournaments/14285)",
-      "place_html": "Красноярск",
-      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14285\">СЫЧ</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": false
-    },
-    {
-      "date": "8 ноября",
-      "date_start": "2026-11-08",
-      "date_end": "2026-11-08",
-      "place": "Филадельфия",
-      "name": "[Осень в Филадельфии](https://www.facebook.com/groups/931240483905423/?multi_permalinks=2919765695052882&hoisted_section_header_type=recently_seen)",
-      "place_html": "Филадельфия",
-      "name_html": "<a href=\"https://www.facebook.com/groups/931240483905423/?multi_permalinks=2919765695052882&amp;hoisted_section_header_type=recently_seen\">Осень в Филадельфии</a>",
-      "geography": [
-        "america"
-      ],
-      "age": [],
-      "game": [
-        "chgk"
-      ],
-      "champ": false
-    },
     {
       "date": "13–15 ноября",
       "date_start": "2026-11-13",
@@ -435,6 +348,23 @@
       ],
       "game": [
         "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "12–14 февраля 2027 года",
+      "date_start": "2027-02-12",
+      "date_end": "2027-02-14",
+      "place": "Дилижан",
+      "name": "[Дилижанские игры](https://t.me/chgknews/1619)",
+      "place_html": "Дилижан",
+      "name_html": "<a href=\"https://t.me/chgknews/1619\">Дилижанские игры</a>",
+      "geography": [
+        "caucasus"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
       ],
       "champ": false
     },
