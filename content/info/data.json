@@ -3,16 +3,31 @@
     "metadata": {
       "country": "germany",
       "numbers_champ": {
-        "chgk": 25
+        "chgk": 26
       },
       "intro": "Чемпионаты Германии проводятся с 1997 года. Статистика ещё неполна, подробнее о недостающих данных — на вкладке «Проблемы».",
       "age": "adult",
-      "generated_at": "2026-11-02T01:04:41.871807",
-      "team_count": 26,
-      "player_count": 153,
-      "tournament_count": 32
+      "generated_at": "2026-11-09T10:45:29.134169",
+      "team_count": 27,
+      "player_count": 158,
+      "tournament_count": 36
     },
     "tournaments": [
+      {
+        "id": "458",
+        "number": "26",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2026-11-07",
+        "end_date": "2026-11-08",
+        "city": "Мюнхене",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "13921",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
       {
         "id": "425",
         "number": "25",
@@ -419,8 +434,23 @@
         "comment": ""
       },
       {
+        "id": "459",
+        "number": "8",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2026-11-07",
+        "end_date": "2026-11-08",
+        "city": "Мюнхене",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": "В общем (негерманском) зачёте второе место занял Алексей Пак, третье — Денис и четвёртое — Арсений."
+      },
+      {
         "id": "446",
-        "number": "25",
+        "number": "7",
         "subnumber": "",
         "game": "ssi",
         "start_date": "2025-11-08",
@@ -435,7 +465,7 @@
       },
       {
         "id": "447",
-        "number": "24",
+        "number": "6",
         "subnumber": "",
         "game": "ssi",
         "start_date": "2024-11-02",
@@ -450,7 +480,7 @@
       },
       {
         "id": "448",
-        "number": "23",
+        "number": "5",
         "subnumber": "",
         "game": "ssi",
         "start_date": "2023-11-04",
@@ -465,7 +495,7 @@
       },
       {
         "id": "453",
-        "number": "21",
+        "number": "4",
         "subnumber": "",
         "game": "ssi",
         "start_date": "2018-05-05",
@@ -480,7 +510,7 @@
       },
       {
         "id": "455",
-        "number": "20",
+        "number": "3",
         "subnumber": "",
         "game": "ssi",
         "start_date": "2017-06-10",
@@ -492,9 +522,53 @@
         "uz_id": "",
         "ua_id": "",
         "comment": ""
+      },
+      {
+        "id": "461",
+        "number": "2",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2016-05-21",
+        "end_date": "2016-05-21",
+        "city": "Бад-Киссингене",
+        "year": "2016",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      },
+      {
+        "id": "460",
+        "number": "1",
+        "subnumber": "",
+        "game": "ssi",
+        "start_date": "2015-06-06",
+        "end_date": "2015-06-07",
+        "city": "Бад-Киссингене",
+        "year": "2015",
+        "countable": "yes",
+        "ts_id": "",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
       }
     ],
     "links": [
+      {
+        "id": "458",
+        "results": "https://rating.chgk.info/tournament/13921",
+        "announce": "https://t.me/ChampWasWoWann/424",
+        "site": "https://umlaut-muenchen.de/chg26/",
+        "tg": "https://t.me/ChampWasWoWann",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
       {
         "id": "425",
         "results": "https://rating.chgk.info/tournament/12839",
@@ -874,6 +948,20 @@
         "questions": ""
       },
       {
+        "id": "459",
+        "results": "https://umlaut-muenchen.de/chg26/events/3",
+        "announce": "https://t.me/ChampWasWoWann/424",
+        "site": "https://umlaut-muenchen.de/chg26/",
+        "tg": "https://t.me/ChampWasWoWann",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "",
+        "questions": ""
+      },
+      {
         "id": "446",
         "results": "https://docs.google.com/spreadsheets/d/1bhwI81DKxM-2aSQfyMubETjUPYB2bWIhcOoJpfbE3uI/edit?gid=1021328774#gid=1021328774",
         "announce": "",
@@ -945,6 +1033,33 @@
       }
     ],
     "podium": [
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "team name": "На всякий случай",
+        "old name": "",
+        "team city": "сборная",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "team name": "Странные агенты",
+        "old name": "",
+        "team city": "Берлин",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "team name": "Сцилла",
+        "old name": "",
+        "team city": "Берлин",
+        "roster_complete": "yes"
+      },
       {
         "id": "425",
         "place": "0",
@@ -1703,6 +1818,216 @@
       }
     ],
     "rosters": [
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "894",
+        "player name": "Арсений",
+        "player surname": "Ламеко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "1832",
+        "player name": "Дмитрий",
+        "player surname": "Попов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "1833",
+        "player name": "Иван",
+        "player surname": "Ерёмин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "383",
+        "player name": "Ирина",
+        "player surname": "Чернуха",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "1505",
+        "player name": "Егор",
+        "player surname": "Игнатенков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "0",
+        "team id": "323",
+        "player id": "703",
+        "player name": "Сергей",
+        "player surname": "Вакуленко",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1928",
+        "player name": "Нелли",
+        "player surname": "Мамаюсупова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1929",
+        "player name": "Кирилл",
+        "player surname": "Вялков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1822",
+        "player name": "Елизавета",
+        "player surname": "Зиновьева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "320",
+        "player name": "Анна",
+        "player surname": "Баташева",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "321",
+        "player name": "Владимир",
+        "player surname": "Васильев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1823",
+        "player name": "Александр",
+        "player surname": "Волков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1824",
+        "player name": "Антон",
+        "player surname": "Моисеев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "1",
+        "team id": "301",
+        "player id": "1826",
+        "player name": "Маргарита",
+        "player surname": "Чикобава",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "1930",
+        "player name": "Марина",
+        "player surname": "Финкельштейн",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "1810",
+        "player name": "Александр",
+        "player surname": "Сновский",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "1811",
+        "player name": "Михаил",
+        "player surname": "Карачун",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "103",
+        "player name": "Максим",
+        "player surname": "Карачун",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "1812",
+        "player name": "Дмитрий",
+        "player surname": "Чесноков",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "1813",
+        "player name": "Эдуард",
+        "player surname": "Лурье",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "458",
+        "place": "2",
+        "team id": "298",
+        "player id": "938",
+        "player name": "Антон",
+        "player surname": "Гусаков",
+        "old_name": "",
+        "old_surname": ""
+      },
       {
         "id": "425",
         "place": "0",
@@ -5976,6 +6301,36 @@
     ],
     "individuals": [
       {
+        "id": "459",
+        "place": "0",
+        "player id": "1815",
+        "player name": "Александр",
+        "player surname": "Ваксман",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "459",
+        "place": "1",
+        "player id": "30",
+        "player name": "Денис",
+        "player surname": "Шабанов",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
+        "id": "459",
+        "place": "2",
+        "player id": "894",
+        "player name": "Арсений",
+        "player surname": "Ламеко",
+        "old_name": "",
+        "old_surname": "",
+        "sex": "male"
+      },
+      {
         "id": "446",
         "place": "0",
         "player id": "894",
@@ -6138,6 +6493,11 @@
     ],
     "languages": [
       {
+        "id": "458",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
         "id": "425",
         "language": "ru",
         "name": "Русский"
@@ -6239,6 +6599,11 @@
       },
       {
         "id": "445",
+        "language": "ru",
+        "name": "Русский"
+      },
+      {
+        "id": "459",
         "language": "ru",
         "name": "Русский"
       },
@@ -6552,6 +6917,15 @@
         "ts_id": "",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "323",
+        "name": "На всякий случай",
+        "non_russian_name": "",
+        "city": "сборная",
+        "ts_id": "98728",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "players": [
@@ -6586,6 +6960,16 @@
         "ua_id": ""
       },
       {
+        "id": "103",
+        "name": "Максим",
+        "surname": "Карачун",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "38168",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
         "id": "320",
         "name": "Анна",
         "surname": "Баташева",
@@ -6602,6 +6986,16 @@
         "non_russian_name": "",
         "non_russian_surname": "",
         "ts_id": "192886",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "383",
+        "name": "Ирина",
+        "surname": "Чернуха",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "34909",
         "uz_id": "",
         "ua_id": ""
       },
@@ -8094,6 +8488,36 @@
         "ts_id": "35738",
         "uz_id": "",
         "ua_id": ""
+      },
+      {
+        "id": "1928",
+        "name": "Нелли",
+        "surname": "Мамаюсупова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "214806",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1929",
+        "name": "Кирилл",
+        "surname": "Вялков",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "214805",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1930",
+        "name": "Марина",
+        "surname": "Финкельштейн",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "219286",
+        "uz_id": "",
+        "ua_id": ""
       }
     ],
     "errors": {
@@ -8137,6 +8561,16 @@
         {
           "id": 457,
           "description": "неизвестны составы обладателей второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 460,
+          "description": "неизвестны победитель и обладатели второго и третьего мест.",
+          "critical": "yes"
+        },
+        {
+          "id": 461,
+          "description": "неизвестны победитель и обладатели второго и третьего мест.",
           "critical": "yes"
         }
       ]

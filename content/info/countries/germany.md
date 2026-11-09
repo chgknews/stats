@@ -316,6 +316,34 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/teams/85037">Странные агенты</a></td>
+<td>Берлин</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/68786">Сцилла</a></td>
+<td>Берлин</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/teams/248">Цимес</a></td>
 <td>Дортмунд</td>
 <td>0</td>
@@ -346,6 +374,20 @@ else wrapTabs();
 <tr>
 <td><a href="https://rating.chgk.info/teams/29687">Мама мия</a></td>
 <td>Мюнхен</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/teams/98728">На всякий случай</a></td>
+<td>сборная</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -400,20 +442,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/teams/68786">Сцилла</a></td>
-<td>Берлин</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td>КМ</td>
 <td>сборная</td>
 <td>0</td>
@@ -425,20 +453,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/teams/85037">Странные агенты</a></td>
-<td>Берлин</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -546,6 +560,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
+<td>2</td>
+<td>8</td>
+<td>4</td>
+<td>14</td>
+<td>1</td>
+<td>6</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/29256">Павел Сироткин</a></td>
 <td>10</td>
 <td>2</td>
@@ -575,22 +605,6 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/8550">Антон Гусаков</a></td>
-<td>2</td>
-<td>8</td>
-<td>3</td>
-<td>13</td>
-<td>1</td>
-<td>6</td>
-<td>2</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
 <td>0</td>
 </tr>
 <tr>
@@ -690,6 +704,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/4870">Александр Ваксман</a></td>
+<td>3</td>
+<td>0</td>
+<td>4</td>
+<td>7</td>
+<td>2</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/18323">Максим Ли</a></td>
 <td>2</td>
 <td>2</td>
@@ -701,6 +731,22 @@ else wrapTabs();
 <td>0</td>
 <td>0</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/35009">Дмитрий Чесноков</a></td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -738,22 +784,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/4870">Александр Ваксман</a></td>
-<td>2</td>
-<td>0</td>
-<td>4</td>
-<td>6</td>
-<td>2</td>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/2475">Михаил Барчук</a></td>
 <td>2</td>
 <td>0</td>
@@ -770,17 +800,17 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/35009">Дмитрий Чесноков</a></td>
-<td>1</td>
-<td>4</td>
-<td>1</td>
+<td><a href="https://rating.chgk.info/player/18938">Эдуард Лурье</a></td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
 <td>6</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -834,6 +864,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/72279">Денис Шабанов</a></td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/27246">Наталия Руберте</a></td>
 <td>0</td>
 <td>3</td>
@@ -850,17 +896,17 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/18938">Эдуард Лурье</a></td>
-<td>0</td>
+<td><a href="https://rating.chgk.info/player/4878">Сергей Вакуленко</a></td>
 <td>3</td>
-<td>2</td>
-<td>5</td>
+<td>1</td>
 <td>0</td>
+<td>4</td>
 <td>3</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -946,6 +992,22 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/82128">Арсений Ламеко</a></td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/9834">Ольга Дубинская</a></td>
 <td>1</td>
 <td>3</td>
@@ -962,7 +1024,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/13287">Леонид Кандыба</a></td>
+<td><a href="https://rating.chgk.info/player/12401">Егор Игнатенков</a></td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
@@ -978,14 +1040,14 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/72279">Денис Шабанов</a></td>
+<td><a href="https://rating.chgk.info/player/13287">Леонид Кандыба</a></td>
 <td>1</td>
-<td>0</td>
-<td>3</td>
+<td>1</td>
+<td>2</td>
 <td>4</td>
 <td>1</td>
-<td>0</td>
-<td>3</td>
+<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1107,22 +1169,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/7896">Ирина Готлибович</a></td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>3</td>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/4878">Сергей Вакуленко</a></td>
 <td>2</td>
 <td>1</td>
 <td>0</td>
@@ -1346,23 +1392,23 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/59898">Артур Матвеев</a></td>
+<td><a href="https://rating.chgk.info/player/129837">Антон Моисеев</a></td>
 <td>0</td>
-<td>1</td>
 <td>2</td>
+<td>1</td>
 <td>3</td>
 <td>0</td>
 <td>1</td>
-<td>2</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/12401">Егор Игнатенков</a></td>
+<td><a href="https://rating.chgk.info/player/59898">Артур Матвеев</a></td>
 <td>0</td>
 <td>1</td>
 <td>2</td>
@@ -1506,6 +1552,38 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/37730">Дмитрий Попов</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/37584">Иван Ерёмин</a></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/24698">Павел Петров</a></td>
 <td>1</td>
 <td>1</td>
@@ -1618,22 +1696,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/82128">Арсений Ламеко</a></td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/26441">Николай Пятаев</a></td>
 <td>0</td>
 <td>2</td>
@@ -1666,6 +1728,38 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/133103">Александр Волков</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/108288">Александр Сновский</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/16829">Алина Хайтлина</a></td>
 <td>0</td>
 <td>1</td>
@@ -1682,7 +1776,71 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
+<td><a href="https://rating.chgk.info/player/200858">Анна Баташева</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/192886">Владимир Васильев</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
 <td><a href="https://rating.chgk.info/player/16507">Елена Кригер</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/201073">Елизавета Зиновьева</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/6523">Маргарита Чикобава</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -1730,7 +1888,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/9733">Родислав Дрибен</a></td>
+<td><a href="https://rating.chgk.info/player/53031">Михаил Карачун</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
@@ -1746,19 +1904,19 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/129837">Антон Моисеев</a></td>
+<td><a href="https://rating.chgk.info/player/9733">Родислав Дрибен</a></td>
 <td>0</td>
 <td>1</td>
 <td>1</td>
 <td>2</td>
 <td>0</td>
-<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
+<td>0</td>
 <td>0</td>
 </tr>
 <tr>
@@ -1859,6 +2017,22 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/101864">Елизавета Лысенко</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/34909">Ирина Чернуха</a></td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -2178,22 +2352,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/108288">Александр Сновский</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/26911">Александр Фингеров</a></td>
 <td>0</td>
 <td>1</td>
@@ -2354,38 +2512,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/37730">Дмитрий Попов</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/37584">Иван Ерёмин</a></td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/50840">Илана Пастернак</a></td>
 <td>0</td>
 <td>1</td>
@@ -2418,7 +2544,7 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/53031">Михаил Карачун</a></td>
+<td><a href="https://rating.chgk.info/player/214805">Кирилл Вялков</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2435,6 +2561,22 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/35823">Наталия Шебалина</a></td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/214806">Нелли Мамаюсупова</a></td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -2578,38 +2720,6 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/133103">Александр Волков</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/200858">Анна Баташева</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
 <td><a href="https://rating.chgk.info/player/71061">Анна Свирина</a></td>
 <td>0</td>
 <td>0</td>
@@ -2643,22 +2753,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/27046">Вениамин Розенфельд</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/192886">Владимир Васильев</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2723,22 +2817,6 @@ else wrapTabs();
 </tr>
 <tr>
 <td><a href="https://rating.chgk.info/player/28856">Григорий Сергиенко</a></td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td><a href="https://rating.chgk.info/player/201073">Елизавета Зиновьева</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2850,7 +2928,23 @@ else wrapTabs();
 <td>0</td>
 </tr>
 <tr>
-<td><a href="https://rating.chgk.info/player/6523">Маргарита Чикобава</a></td>
+<td><a href="https://rating.chgk.info/player/38168">Максим Карачун</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://rating.chgk.info/player/219286">Марина Финкельштейн</a></td>
 <td>0</td>
 <td>0</td>
 <td>1</td>
@@ -2953,6 +3047,7 @@ else wrapTabs();
 
 <a id="game-chgk"></a><a id="chgk_contents" name="chgk_contents"></a>
 
+- [XXVI чемпионат Германии по спортивному ЧГК (2026)](#chgk_2026)
 - [XXV чемпионат Германии по спортивному ЧГК (2025)](#chgk_2025)
 - [XXIV чемпионат Германии по спортивному ЧГК (2024)](#chgk_2024)
 - [XXIII чемпионат Германии по спортивному ЧГК (2023)](#chgk_2023)
@@ -2979,6 +3074,24 @@ else wrapTabs();
 - [II чемпионат Германии по спортивному ЧГК (1998)](#chgk_1998)
 - [I чемпионат Германии по спортивному ЧГК (1997)](#chgk_1997)
 
+
+**XXVI чемпионат Германии по спортивному «Что? Где? Когда?»** прошёл 7–8 ноября 2026 года в Мюнхене. <a id="chgk_2026"></a>
+
+Победитель: **[«На всякий случай» (сборная)](https://rating.chgk.info/teams/98728)**
+- Арсений Ламеко
+- Дмитрий Попов
+- Иван Ерёмин
+- Ирина Чернуха
+- Егор Игнатенков
+- Сергей Вакуленко
+
+Второе место заняла команда [«Странные агенты»](https://rating.chgk.info/teams/85037) (Берлин), третье — [«Сцилла»](https://rating.chgk.info/teams/68786) (Берлин).
+
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/13921). Больше информации о турнире — [на сайте чемпионата](https://umlaut-muenchen.de/chg26/) и [в этом телеграм-канале](https://t.me/ChampWasWoWann).
+
+*[К оглавлению](#chgk_contents)*
+
+---
 
 **XXV чемпионат Германии по спортивному «Что? Где? Когда?»** прошёл 8–9 ноября 2025 года в Мюнхене. <a id="chgk_2025"></a>
 
@@ -3468,14 +3581,29 @@ else wrapTabs();
 
 <a id="game-ssi"></a><a id="ssi_contents" name="ssi_contents"></a>
 
-- [XXV чемпионат Германии по ССИ (2025)](#ssi_2025)
-- [XXIV чемпионат Германии по ССИ (2024)](#ssi_2024)
-- [XXIII чемпионат Германии по ССИ (2023)](#ssi_2023)
-- [XXI чемпионат Германии по ССИ (2018)](#ssi_2018)
-- [XX чемпионат Германии по ССИ (2017)](#ssi_2017)
+- [VIII чемпионат Германии по ССИ (2026)](#ssi_2026)
+- [VII чемпионат Германии по ССИ (2025)](#ssi_2025)
+- [VI чемпионат Германии по ССИ (2024)](#ssi_2024)
+- [V чемпионат Германии по ССИ (2023)](#ssi_2023)
+- [IV чемпионат Германии по ССИ (2018)](#ssi_2018)
+- [III чемпионат Германии по ССИ (2017)](#ssi_2017)
+- [II чемпионат Германии по ССИ (2016)](#ssi_2016)
+- [I чемпионат Германии по ССИ (2015)](#ssi_2015)
 
 
-**XXV чемпионат Германии по спортивной «Своей игре»** прошёл 8–9 ноября 2025 года в Мюнхене. <a id="ssi_2025"></a>
+**VIII чемпионат Германии по спортивной «Своей игре»** прошёл 7–8 ноября 2026 года в Мюнхене. <a id="ssi_2026"></a>
+
+Победитель: **[Александр Ваксман](https://rating.chgk.info/player/4870)**
+
+Второе место занял [Денис Шабанов](https://rating.chgk.info/player/72279), третье — [Арсений Ламеко](https://rating.chgk.info/player/82128). В общем (негерманском) зачёте второе место занял Алексей Пак, третье — Денис и четвёртое — Арсений.
+
+Полные результаты можно найти [на этой странице](https://umlaut-muenchen.de/chg26/events/3). Больше информации о турнире — [на сайте чемпионата](https://umlaut-muenchen.de/chg26/) и [в этом телеграм-канале](https://t.me/ChampWasWoWann).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**VII чемпионат Германии по спортивной «Своей игре»** прошёл 8–9 ноября 2025 года в Мюнхене. <a id="ssi_2025"></a>
 
 Победитель: **[Арсений Ламеко](https://rating.chgk.info/player/82128)**
 
@@ -3487,7 +3615,7 @@ else wrapTabs();
 
 ---
 
-**XXIV чемпионат Германии по спортивной «Своей игре»** прошёл 2–3 ноября 2024 года в Мюнхене. <a id="ssi_2024"></a>
+**VI чемпионат Германии по спортивной «Своей игре»** прошёл 2–3 ноября 2024 года в Мюнхене. <a id="ssi_2024"></a>
 
 Победитель: **[Дмитрий Литвинов](https://rating.chgk.info/player/18490)**
 
@@ -3499,7 +3627,7 @@ else wrapTabs();
 
 ---
 
-**XXIII чемпионат Германии по спортивной «Своей игре»** прошёл 4–5 ноября 2023 года в Мюнхене. <a id="ssi_2023"></a>
+**V чемпионат Германии по спортивной «Своей игре»** прошёл 4–5 ноября 2023 года в Мюнхене. <a id="ssi_2023"></a>
 
 Победитель: **[Евгений Коватенков](https://rating.chgk.info/player/56000)**
 
@@ -3511,7 +3639,7 @@ else wrapTabs();
 
 ---
 
-**XXI чемпионат Германии по спортивной «Своей игре»** прошёл 5 мая 2018 года в Бад-Киссингене. <a id="ssi_2018"></a>
+**IV чемпионат Германии по спортивной «Своей игре»** прошёл 5 мая 2018 года в Бад-Киссингене. <a id="ssi_2018"></a>
 
 Победитель: **[Антон Гусаков](https://rating.chgk.info/player/8550)**
 
@@ -3523,7 +3651,7 @@ else wrapTabs();
 
 ---
 
-**XX чемпионат Германии по спортивной «Своей игре»** прошёл 10 июня 2017 года в Бад-Киссингене. <a id="ssi_2017"></a>
+**III чемпионат Германии по спортивной «Своей игре»** прошёл 10 июня 2017 года в Бад-Киссингене. <a id="ssi_2017"></a>
 
 Победитель: **[Иван Стариков](https://rating.chgk.info/player/30352)**
 
@@ -3531,6 +3659,18 @@ else wrapTabs();
 
 
 Полные результаты можно найти [на этой странице](http://www.znatoki.de/Joomla15/fest/chg2017results). Больше информации о турнире — [на сайте чемпионата](http://www.znatoki.de/Joomla15/fest/chg2017).
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**II чемпионат Германии по спортивной «Своей игре»** прошёл 21 мая 2016 года в Бад-Киссингене. Результаты пока не учтены в статистике. <a id="ssi_2016"></a>
+
+*[К оглавлению](#ssi_contents)*
+
+---
+
+**I чемпионат Германии по спортивной «Своей игре»** прошёл 6–7 июня 2015 года в Бад-Киссингене. Результаты пока не учтены в статистике. <a id="ssi_2015"></a>
 
 *[К оглавлению](#ssi_contents)*
 
@@ -3548,6 +3688,8 @@ else wrapTabs();
 <tr><th>Год</th><th>Турнир</th><th>Чего не хватает</th></tr>
 </thead>
 <tbody>
+<tr><td>2016</td><td>II чемпионат Германии по ССИ</td><td>неизвестны победитель и обладатели второго и третьего мест.</td></tr>
+<tr><td>2015</td><td>I чемпионат Германии по ССИ</td><td>неизвестны победитель и обладатели второго и третьего мест.</td></tr>
 <tr><td>2013</td><td>I чемпионат Германии по «Хамса»</td><td>неизвестны составы обладателей второго и третьего мест.</td></tr>
 <tr><td>2011</td><td><a href="https://rating.chgk.info/tournament/1916">XIV чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
 <tr><td>2006</td><td><a href="https://rating.chgk.info/tournament/171">IX чемпионат Германии по ЧГК</a></td><td>неизвестен состав обладателей третьего места.</td></tr>
@@ -3578,7 +3720,7 @@ else wrapTabs();
 <tr><td>IX чемпионат Германии по ЧГК</td><td>2006</td><td><a href="https://web.archive.org/web/20080214230306/http://www.znatoki.de/arhiv/turniry/2006/ChempGer/Summary.htm">сайт znatoki.de</a> (повопросные результаты ЧГК)</td></tr>
 <tr><td>III чемпионат Германии по ЧГК</td><td>1999</td><td><a href="https://web.archive.org/web/20040901120036/http://www.znatoki.de/turniri.html">сайт znatoki.de</a> (даты III чемпионата Германии), <a href="https://web.archive.org/web/20080214192158/http://www.znatoki.de/arhiv/turniry/1999/chempger99.html">отчёт Михаила Перлина</a></td></tr>
 <tr><td>II чемпионат Германии по ЧГК</td><td>1998</td><td><a href="https://web.archive.org/web/20040901120036/http://www.znatoki.de/turniri.html">сайт znatoki.de</a> (даты II чемпионата Германии)</td></tr>
-<tr><td>XXV чемпионат Германии по ССИ</td><td>1997</td><td><a href="https://web.archive.org/web/20040901120036/http://www.znatoki.de/turniri.html">сайт znatoki.de</a> (даты I чемпионата Германии)</td></tr>
+<tr><td>VII чемпионат Германии по ССИ</td><td>1997</td><td><a href="https://web.archive.org/web/20040901120036/http://www.znatoki.de/turniri.html">сайт znatoki.de</a> (даты I чемпионата Германии)</td></tr>
 </tbody>
 </table>
 
