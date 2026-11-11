@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09",
+  "generated": "2026-11-11",
   "events": [
     {
       "date": "13–15 ноября",
@@ -248,6 +248,44 @@
       "champ": false
     },
     {
+      "date": "20 декабря",
+      "date_start": "2026-12-20",
+      "date_end": "2026-12-20",
+      "place": "Москва",
+      "name": "[Открытый детский чемпионат Москвы по ЧГК](https://t.me/DChM57/2)",
+      "place_html": "Москва",
+      "name_html": "<a href=\"https://t.me/DChM57/2\">Открытый детский чемпионат Москвы по ЧГК</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [
+        "school"
+      ],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
+      "date": "3 января 2027 года",
+      "date_start": "2027-01-03",
+      "date_end": "2027-01-03",
+      "place": "Таллинн",
+      "name": "[Открытый школьный чемпионат Эстонии](https://t.me/CHGK_Tallinn_XXXI/260)",
+      "place_html": "Таллинн",
+      "name_html": "<a href=\"https://t.me/CHGK_Tallinn_XXXI/260\">Открытый школьный чемпионат Эстонии</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [
+        "school"
+      ],
+      "game": [
+        "chgk"
+      ],
+      "champ": true
+    },
+    {
       "date": "7–8 января 2027 года",
       "date_start": "2027-01-07",
       "date_end": "2027-01-08",
@@ -410,9 +448,9 @@
       "date_start": "2027-02-20",
       "date_end": "2027-02-21",
       "place": "Армавир",
-      "name": "[Открытый кубок Кубани](https://t.me/KubanCup2027/105)",
+      "name": "[Открытый школьный кубок Кубани](https://t.me/KubanCup2027/105)",
       "place_html": "Армавир",
-      "name_html": "<a href=\"https://t.me/KubanCup2027/105\">Открытый кубок Кубани</a>",
+      "name_html": "<a href=\"https://t.me/KubanCup2027/105\">Открытый школьный кубок Кубани</a>",
       "geography": [
         "russia_belarus"
       ],
@@ -429,9 +467,9 @@
       "date_start": "2027-03-06",
       "date_end": "2027-03-07",
       "place": "Дюссельдорф",
-      "name": "Альтфест",
+      "name": "[Альтфест](https://t.me/chgknews/1575)",
       "place_html": "Дюссельдорф",
-      "name_html": "Альтфест",
+      "name_html": "<a href=\"https://t.me/chgknews/1575\">Альтфест</a>",
       "geography": [
         "europe"
       ],
