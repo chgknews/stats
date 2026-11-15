@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13",
+  "generated": "2026-11-15",
   "events": [
     {
       "date": "13–15 ноября",
@@ -654,6 +654,23 @@
       "age": [
         "school"
       ],
+      "game": [
+        "chgk"
+      ],
+      "champ": true
+    },
+    {
+      "date": "16–18 апреля 2027 года",
+      "date_start": "2027-04-16",
+      "date_end": "2027-04-18",
+      "place": "Варшава",
+      "name": "[Открытый чемпионат Польши](https://t.me/chgknews/1626)",
+      "place_html": "Варшава",
+      "name_html": "<a href=\"https://t.me/chgknews/1626\">Открытый чемпионат Польши</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
       "game": [
         "chgk"
       ],
