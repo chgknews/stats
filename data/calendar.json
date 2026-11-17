@@ -529,6 +529,23 @@
       "champ": false
     },
     {
+      "date": "24–29 марта 2027 года",
+      "date_start": "2027-03-24",
+      "date_end": "2027-03-29",
+      "place": "Мюнхен",
+      "name": "[Весенний Умлаут](https://t.me/UmlautFest/830)",
+      "place_html": "Мюнхен",
+      "name_html": "<a href=\"https://t.me/UmlautFest/830\">Весенний Умлаут</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
       "date": "27–28 марта 2027 года",
       "date_start": "2027-03-27",
       "date_end": "2027-03-28",
