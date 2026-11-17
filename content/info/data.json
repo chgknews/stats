@@ -90385,6 +90385,533 @@
       "items": []
     }
   },
+  "srbija": {
+    "metadata": {
+      "country": "srbija",
+      "numbers_champ": {
+        "chgk": 1
+      },
+      "intro": "Чемпионаты Сербии проводятся с 2026 года.",
+      "age": "adult",
+      "generated_at": "2026-11-17T12:18:39.504818",
+      "team_count": 3,
+      "player_count": 20,
+      "tournament_count": 1
+    },
+    "tournaments": [
+      {
+        "id": "462",
+        "number": "1",
+        "subnumber": "",
+        "game": "chgk",
+        "start_date": "2026-11-14",
+        "end_date": "2026-11-15",
+        "city": "Белграде",
+        "year": "2026",
+        "countable": "yes",
+        "ts_id": "14138",
+        "uz_id": "",
+        "ua_id": "",
+        "comment": ""
+      }
+    ],
+    "links": [
+      {
+        "id": "462",
+        "results": "https://rating.chgk.info/tournament/14138",
+        "announce": "https://t.me/balkanfest2026/4",
+        "site": "",
+        "tg": "https://t.me/balkanfest2026",
+        "fb": "",
+        "vk": "",
+        "lj": "",
+        "recap": "",
+        "letopis": "",
+        "photos": "https://photos.app.goo.gl/jwPqRc5PiBzaPvrn7",
+        "questions": ""
+      }
+    ],
+    "podium": [
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "team name": "4 коња дебела",
+        "old name": "",
+        "team city": "Белград",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "team name": "Ужас философии",
+        "old name": "",
+        "team city": "сборная",
+        "roster_complete": "yes"
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "team name": "слат машина",
+        "old name": "",
+        "team city": "Белград",
+        "roster_complete": "yes"
+      }
+    ],
+    "rosters": [
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "1931",
+        "player name": "Елизавета",
+        "player surname": "Донцова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "1932",
+        "player name": "Али",
+        "player surname": "Байчибаев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "1933",
+        "player name": "Павел",
+        "player surname": "Анохин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "134",
+        "player name": "Артём",
+        "player surname": "Сорожкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "871",
+        "player name": "Наталья",
+        "player surname": "Кудряшова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "1934",
+        "player name": "Марина",
+        "player surname": "Анохина",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "0",
+        "team id": "324",
+        "player id": "688",
+        "player name": "Юрий",
+        "player surname": "Выменец",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "1935",
+        "player name": "Алиса",
+        "player surname": "Тараник",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "977",
+        "player name": "Владислав",
+        "player surname": "Тарасов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "211",
+        "player name": "Анастасия",
+        "player surname": "Белова",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "212",
+        "player name": "Серафим",
+        "player surname": "Шибанов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "1936",
+        "player name": "Александр",
+        "player surname": "Тараник",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "1",
+        "team id": "325",
+        "player id": "1937",
+        "player name": "Антон",
+        "player surname": "Буторин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "961",
+        "player name": "Дмитрий",
+        "player surname": "Панкратов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1938",
+        "player name": "Андрей",
+        "player surname": "Моисеев",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1603",
+        "player name": "Александр",
+        "player surname": "Карясов",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1939",
+        "player name": "Михаил",
+        "player surname": "Царёв",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1940",
+        "player name": "Анастасия",
+        "player surname": "Рекшинская",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1941",
+        "player name": "Михаил",
+        "player surname": "Малкин",
+        "old_name": "",
+        "old_surname": ""
+      },
+      {
+        "id": "462",
+        "place": "2",
+        "team id": "326",
+        "player id": "1942",
+        "player name": "Иван",
+        "player surname": "Лукьянов",
+        "old_name": "",
+        "old_surname": ""
+      }
+    ],
+    "individuals": [],
+    "languages": [
+      {
+        "id": "462",
+        "language": "ru",
+        "name": "Русский"
+      }
+    ],
+    "names": [],
+    "sources": {
+      "description": "",
+      "items": []
+    },
+    "videos": [],
+    "teams": [
+      {
+        "id": "324",
+        "name": "4 коња дебела",
+        "non_russian_name": "",
+        "city": "Белград",
+        "ts_id": "96470",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "325",
+        "name": "Ужас философии",
+        "non_russian_name": "",
+        "city": "сборная",
+        "ts_id": "109470",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "326",
+        "name": "слат машина",
+        "non_russian_name": "",
+        "city": "Белград",
+        "ts_id": "106624",
+        "uz_id": "",
+        "ua_id": ""
+      }
+    ],
+    "players": [
+      {
+        "id": "134",
+        "name": "Артём",
+        "surname": "Сорожкин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "30152",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "211",
+        "name": "Анастасия",
+        "surname": "Белова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "39431",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "212",
+        "name": "Серафим",
+        "surname": "Шибанов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "36120",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "688",
+        "name": "Юрий",
+        "surname": "Выменец",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "6212",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "871",
+        "name": "Наталья",
+        "surname": "Кудряшова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "16837",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "961",
+        "name": "Дмитрий",
+        "surname": "Панкратов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "169839",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "977",
+        "name": "Владислав",
+        "surname": "Тарасов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "78358",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1603",
+        "name": "Александр",
+        "surname": "Карясов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "54574",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1931",
+        "name": "Елизавета",
+        "surname": "Донцова",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "87210",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1932",
+        "name": "Али",
+        "surname": "Байчибаев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "78101",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1933",
+        "name": "Павел",
+        "surname": "Анохин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "39244",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1934",
+        "name": "Марина",
+        "surname": "Анохина",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "14904",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1935",
+        "name": "Алиса",
+        "surname": "Тараник",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "88067",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1936",
+        "name": "Александр",
+        "surname": "Тараник",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "31231",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1937",
+        "name": "Антон",
+        "surname": "Буторин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "4637",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1938",
+        "name": "Андрей",
+        "surname": "Моисеев",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "59793",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1939",
+        "name": "Михаил",
+        "surname": "Царёв",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "34328",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1940",
+        "name": "Анастасия",
+        "surname": "Рекшинская",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "26818",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1941",
+        "name": "Михаил",
+        "surname": "Малкин",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "19541",
+        "uz_id": "",
+        "ua_id": ""
+      },
+      {
+        "id": "1942",
+        "name": "Иван",
+        "surname": "Лукьянов",
+        "non_russian_name": "",
+        "non_russian_surname": "",
+        "ts_id": "18871",
+        "uz_id": "",
+        "ua_id": ""
+      }
+    ],
+    "errors": {
+      "description": "",
+      "items": []
+    }
+  },
   "tojikiston": {
     "metadata": {
       "country": "tojikiston",
