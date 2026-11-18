@@ -476,23 +476,6 @@
       "champ": false
     },
     {
-      "date": "6–7 марта 2027 года",
-      "date_start": "2027-03-06",
-      "date_end": "2027-03-07",
-      "place": "Лимасол",
-      "name": "[Открытый чемпионат Кипра](https://rating.chgk.info/tournament/14252)",
-      "place_html": "Лимасол",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14252\">Открытый чемпионат Кипра</a>",
-      "geography": [
-        "near_east"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
-      ],
-      "champ": true
-    },
-    {
       "date": "13–14 марта 2027 года",
       "date_start": "2027-03-13",
       "date_end": "2027-03-14",
@@ -879,13 +862,13 @@
       "champ": false
     },
     {
-      "date": "11–12 марта 2028 года",
-      "date_start": "2028-03-11",
-      "date_end": "2028-03-12",
+      "date": "6–7 марта 2028 года",
+      "date_start": "2028-03-06",
+      "date_end": "2028-03-07",
       "place": "Лимасол",
-      "name": "[Открытый чемпионат Кипра](https://rating.chgk.info/tournaments/14252)",
+      "name": "[Открытый чемпионат Кипра](https://rating.chgk.info/tournament/14252)",
       "place_html": "Лимасол",
-      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14252\">Открытый чемпионат Кипра</a>",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14252\">Открытый чемпионат Кипра</a>",
       "geography": [
         "near_east"
       ],
