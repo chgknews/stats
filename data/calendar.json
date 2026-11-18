@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17",
+  "generated": "2026-11-18",
   "events": [
     {
       "date": "21–22 ноября",
@@ -442,6 +442,23 @@
       "champ": false
     },
     {
+      "date": "27–28 февраля 2027 года",
+      "date_start": "2027-02-27",
+      "date_end": "2027-02-28",
+      "place": "Иваново",
+      "name": "[Гран-при текстильной столицы](https://rating.chgk.info/tournament/14243)",
+      "place_html": "Иваново",
+      "name_html": "<a href=\"https://rating.chgk.info/tournament/14243\">Гран-при текстильной столицы</a>",
+      "geography": [
+        "russia_belarus"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
       "date": "6–7 марта 2027 года",
       "date_start": "2027-03-06",
       "date_end": "2027-03-07",
@@ -455,23 +472,6 @@
       "age": [],
       "game": [
         "chgk"
-      ],
-      "champ": false
-    },
-    {
-      "date": "6–7 марта 2027 года",
-      "date_start": "2027-03-06",
-      "date_end": "2027-03-07",
-      "place": "Иваново",
-      "name": "[Гран-при текстильной столицы](https://rating.chgk.info/tournament/14243)",
-      "place_html": "Иваново",
-      "name_html": "<a href=\"https://rating.chgk.info/tournament/14243\">Гран-при текстильной столицы</a>",
-      "geography": [
-        "russia_belarus"
-      ],
-      "age": [],
-      "game": [
-        "kvrm"
       ],
       "champ": false
     },
@@ -777,6 +777,23 @@
       "champ": false
     },
     {
+      "date": "29–30 мая 2027 года",
+      "date_start": "2027-05-29",
+      "date_end": "2027-05-30",
+      "place": "Берлин",
+      "name": "[Открытый чемпионат Берлина](https://rating.chgk.info/tournaments/14520)",
+      "place_html": "Берлин",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14520\">Открытый чемпионат Берлина</a>",
+      "geography": [
+        "europe"
+      ],
+      "age": [],
+      "game": [
+        "chgk"
+      ],
+      "champ": false
+    },
+    {
       "date": "5–6 июня 2027 года",
       "date_start": "2027-06-05",
       "date_end": "2027-06-06",
@@ -860,6 +877,23 @@
         "chgk"
       ],
       "champ": false
+    },
+    {
+      "date": "11–12 марта 2028 года",
+      "date_start": "2028-03-11",
+      "date_end": "2028-03-12",
+      "place": "Лимасол",
+      "name": "[Открытый чемпионат Кипра](https://rating.chgk.info/tournaments/14252)",
+      "place_html": "Лимасол",
+      "name_html": "<a href=\"https://rating.chgk.info/tournaments/14252\">Открытый чемпионат Кипра</a>",
+      "geography": [
+        "near_east"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": true
     }
   ]
 }

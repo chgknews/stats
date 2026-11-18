@@ -319,7 +319,7 @@ else wrapTabs();
 
 Второе место заняла команда [«Ужас философии»](https://rating.chgk.info/teams/109470) (сборная), третье — [«слат машина»](https://rating.chgk.info/teams/106624) (Белград).
 
-Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14138). Фотографии с турнира можно посмотреть по [этой ссылке](https://photos.app.goo.gl/jwPqRc5PiBzaPvrn7). Больше информации о турнире — [в этом телеграм-канале](https://t.me/balkanfest2026).
+Полные результаты можно найти [на турнирном сайте](https://rating.chgk.info/tournament/14138). Фотографии с турнира можно посмотреть по [этой ссылке](https://photos.app.goo.gl/jwPqRc5PiBzaPvrn7). Больше информации о турнире — [в этом телеграм-канале](https://t.me/balkanfest2026) и [здесь](https://t.me/chgknews/1627).
 
 *[К оглавлению](#contents)*
 
