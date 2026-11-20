@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18",
+  "generated": "2026-11-20",
   "events": [
     {
       "date": "21–22 ноября",
@@ -325,6 +325,23 @@
       "name_html": "<a href=\"https://rating.chgk.info/tournaments/14237\">Гёмбёц — 10</a> (строгий синхрон)",
       "geography": [
         "synch"
+      ],
+      "age": [],
+      "game": [
+        "kvrm"
+      ],
+      "champ": false
+    },
+    {
+      "date": "30–31 января 2027 года",
+      "date_start": "2027-01-30",
+      "date_end": "2027-01-31",
+      "place": "Пущино",
+      "name": "[Окский марафон](https://t.me/chgk_anons/4776)",
+      "place_html": "Пущино",
+      "name_html": "<a href=\"https://t.me/chgk_anons/4776\">Окский марафон</a>",
+      "geography": [
+        "russia_belarus"
       ],
       "age": [],
       "game": [
@@ -815,9 +832,9 @@
       "date_start": "2027-07-03",
       "date_end": "2027-07-04",
       "place": "Будва",
-      "name": "[Кубок Адриатии](https://t.me/adriatic_opencup/887)",
+      "name": "[Кубок Адриатики](https://t.me/adriatic_opencup/887)",
       "place_html": "Будва",
-      "name_html": "<a href=\"https://t.me/adriatic_opencup/887\">Кубок Адриатии</a>",
+      "name_html": "<a href=\"https://t.me/adriatic_opencup/887\">Кубок Адриатики</a>",
       "geography": [
         "europe"
       ],
